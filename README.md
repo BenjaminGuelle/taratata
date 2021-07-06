@@ -28,13 +28,31 @@ Intégration site ecommerce taratata bijoux
 21. Cookies
 
 **************
-### Evaluation des pages :  
+### Avancement du projet :  
 
-***Conformité et rendu navigateur***
-| validation HTML                   | etat      |
-| :-------------------------------- |:---------:|
-| Chrome                            | en cours  |
-| Firefox                           | en cours  |
-| Safari                            | en cours  |
-| Mobile                            | en cours  |
+| index page: |             | commentaires | etat      |
+| :---------: | :---------: | ----------:  |:---------:|
+| 1           |             |              | en cours  |
+| 2           |             |              | en cours  |
+| 3           |             |              | en cours  |
+| 4           |             |              | en cours  |
+| 5           |             |              | en cours  |
+| 6           |             |              | en cours  |
+| 7           |             |              | en cours  |
+| 8           |             |              | en cours  |
+| 9           |             |              | en cours  |
+| 10          |             |              | en cours  |
+| 11          |             |              | en cours  |
+| 12          |             |              | en cours  |
+| 13          |             |              | en cours  |
+| 14          |             |              | en cours  |
+| 15          |             |              | en cours  |
+| 16          |             |              | en cours  |
+| 17          |             |              | en cours  |
+| 18          |             |              | en cours  |
+| 19          |             |              | en cours  |
+| 20          |             |              | en cours  |
+| 21          |             |              | en cours  |
+
+********
 
