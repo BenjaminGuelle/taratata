@@ -1,2 +1,13 @@
-body {
+html {
 }
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+/* Header */
