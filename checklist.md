@@ -2,12 +2,12 @@
 **************
 
 ### Index des maquettes : 
-1.  Accueil
+1. Accueil
 2. Boutique
 3. Produit base
 4. Produit cadeau
 5. Produit rupture
-6. Popup solde
+6. solde
 7. Panier
 8. Panier paiement
 9. A propos
