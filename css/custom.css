@@ -1,0 +1,72 @@
+
+/* Colors custom
+-------------------------- */
+.c-black {
+    color: #1d1d1c;
+}
+.c-red {
+    color: #dd1a1e;
+}
+.c-red-dark {
+    color: #eb1d25;
+}
+.c-gold {
+    color: #E1BE63;
+}
+.c-gold-light {
+    color: #f8edcc;
+}
+.c-green {
+    color: #72c8a9;
+}
+.c-green-dark {
+    color: #12716d;
+}
+.c-grey-dark {
+    color: #EEEEEF;
+}
+.c-grey {
+    color: #FAFAFA;
+}
+.c-white-light {
+    color: #FFFDFD;
+}
+.c-white {
+    color: #ffffff;
+}
+.bg-black {
+    background-color: #1d1d1c;
+}
+.bg-red {
+    background-color: #dd1a1e;
+}
+.bg-red-dark {
+    background-color: #eb1d25;
+}
+.bg-gold {
+    background-color: #E1BE63;
+}
+.bg-gold-light {
+    background-color: #f8edcc;
+}
+.bg-green {
+    background-color: #72c8a9;
+}
+.bg-green-dark {
+    background-color: #12716d;
+}
+.bg-grey-dark {
+    background-color: #EEEEEF;
+}
+.bg-grey {
+    background-color: #FAFAFA;
+}
+.bg-white-light {
+    background-color: #FFFDFD;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+
+/* Components custom
+-------------------------- */

@@ -20,37 +20,49 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="container-fluid py-2 position-sticky">
-        <nav class="navbar navbar-expand-lg" id="main-nav">
-            <div class="container-fluid position-relative">
-                <a href="accueil.html" class="navbar-brand order-2 order-md-1 text-dark fs-2 text-sm-center">Taratata</a>
-                <button class="navbar-toggler order-1 order-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-burger"></span>
+    <header class="container-fluid py-4 position-sticky">
+         <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler navbar-burger order-1 order-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-burger-line"></span>
+            </button>
+            <a href="accueil.html" class="navbar navbar-brand order-2 order-md-1">
+                <img src="../assets/images/logo.png" alt="logo-taratata-bijoux">
+            </a>
+            <ul class="collapse navbar-collapse navbar-nav order-1 order-md-">
+                <li class="nav-item mr-1">
+                    <a href="accueil.html" class="nav-link link-custom fs-6 text-uppercase text-dark">
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a href="accueil.html" class="nav-link link-custom fs-6 text-uppercase text-dark">Boutique</a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a href="accueil.html" class="nav-link link-custom fs-6 text-uppercase text-dark">Actualités</a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a href="accueil.html" class="nav-link link-custom fs-6 text-uppercase text-dark">Contact</a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a href="accueil.html" class="nav-link link-custom fs-6 text-uppercase text-dark">Nous trouver</a>
+                </li>
+                <li class="nav-item mr-1">
+                    <a href="accueil.html" class="nav-link link-custom fs-6 text-uppercase text-dark">Soldes</a>
+                </li>
+            </ul>
+            <div class="d-flex position-relative order-3 order-md-3">
+                <button type="button" class="btn btn-danger rounded-pill d-none d-lg-flex">
+                    <span class="fontbutton text-uppercase">Espace pro</span>
                 </button>
-                
-                <div class="collapse navbar-collapse order-1 order-md-2" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mr-1">
-                            <a href="accueil.html" class="nav-link text-dark">Accueil</a>
-                        </li>
-                        <li class="nav-item mr-1">
-                            <a href="accueil.html" class="nav-link text-dark">Boutique</a>
-                        </li>
-                        <li class="nav-item mr-1">
-                            <a href="accueil.html" class="nav-link text-dark">Actualités</a>
-                        </li>
-                        <li class="nav-item mr-1">
-                            <a href="accueil.html" class="nav-link text-dark">Contact</a>
-                        </li>
-                        <li class="nav-item mr-1">
-                            <a href="accueil.html" class="nav-link text-dark">Nous trouver</a>
-                        </li>
-                        <li class="nav-item mr-1">
-                            <a href="accueil.html" class="nav-link text-dark">Soldes</a>
-                        </li>
-                    </ul>
-                </div>
-                
+                <a href="#" class="nav-link fs-6 text-uppercase text-dark d-none d-lg-flex">
+                    Connexion
+                </a>
+                <a href="#" class="d-flex align-items-center">
+                    <img src="../assets/icons/search.png" alt="icon-search" class="nav-right-logo">
+                </a>
+                <a href="#" class="d-flex align-items-center ms-2">
+                    <img src="../assets/icons/shopping-cart.svg" alt="icon-search" class="nav-right-logo">
+                </a>
             </div>
         </nav>
         
