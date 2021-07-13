@@ -21,47 +21,114 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="container-fluid px-4 py-3 px-xl-4 py-xl-5 position-sticky">
-         <nav class="navbar justify-content-between justify-content-xl-start">
+    <header class="container-fluid position-sticky">
+        <!-- navbar -->
+         <nav class="navbar justify-content-between justify-content-xl-start align-items-center">
              <button type="button" id="burger" class="btn-burger order-1 d-xl-none d-flex justify-content-center align-items-center">
                 <div class="line"></div>
              </button>
             <a href="#" class="navbar-brand order-2 order-xl-1 m-0">
                 <img src="../assets/images/taratata.svg" alt="taratata-bijoux">
             </a>
-            <ul class="nav-links d-flex flex-grow-1 d-none d-xl-flex order-xl-2">
-                <li class="nav-item">
-                   <a href=""# class="c-black">
-                    À propos
+            <ul class="nav-links h-100 pt-3 d-flex flex-grow-1 d-none d-xl-flex order-xl-2">
+                <li class="nav-item h-100 d-flex align-items-center">
+                   <a href=""# class="link-item h-100 c-black d-flex align-items-center">
+                        Accueil
                    </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="c-black">
+                <li class="nav-item h-100 d-flex align-items-center">
+                    <a href="#" class="link-item h-100 c-black d-flex align-items-center">
                         Boutique
                     </a>
+                    <!-- submenu -->
+                    <ul class="submenu-shop">
+                        <div class="submenu-items d-flex h-100 w-25">
+                            <ul class="">
+                                <li class="">
+                                    <a href="#" class="">
+                                        À ne pas rater
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">
+                                        Incontournables
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">
+                                        Soldes hiver 2020
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">
+                                        Solde été 2020
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">
+                                        Outlet
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="">
+                                <li class="">
+                                    <a href="#" class="">
+                                        Bijoux
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">
+                                        Collier
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">
+                                        Broche
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">
+                                        Bracelet
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">
+                                        Bague
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">
+                                        Boucle d'oreille
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="h-100 w-75"></div>
+                    </ul>
+                    <!-- submenu END -->
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="c-black">
+                <li class="nav-item h-100 d-flex align-items-center">
+                    <a href="#" class="link-item h-100 c-black d-flex align-items-center">
                         Actualités
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="c-black">
+                <li class="nav-item h-100 d-flex align-items-center">
+                    <a href="#" class="link-item h-100 c-black d-flex align-items-center">
                         Contact
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="c-black">
+                <li class="nav-item h-100 d-flex align-items-center">
+                    <a href="#" class="link-item h-100 c-black d-flex align-items-center">
                         Nous trouver
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="c-black">
+                <li class="nav-item h-100 d-flex align-items-center">
+                    <a href="#" class="link-item h-100 c-black d-flex align-items-center">
                         Soldes
                     </a>
                 </li>
             </ul>
-            <div class="d-flex align-items-end position-relative order-3 order-xl-3">
+            <div class="d-flex pt-3 align-items-end position-relative order-3 order-xl-3">
                 <button type="button" class="btn-nav bg-red-dark c-white rounded-pill position-relative d-none d-xl-flex">
                     Espace Pro
                 </button>
@@ -73,6 +140,7 @@
                 </a>
                 <a href="#" class="nav-link-icon position-relative">
                     <img src="../assets/svg/taratata-bijoux-caddie.svg" alt="taratata-bijoux-caddie" class="icon-caddie">
+                    <span id="shopping-number" class="c-white number-shop">02</span>
                 </a>
                 <div class="dropdown dropdown-lang d-none d-xl-flex">
                     <a class="dropdown-toggle c-black" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -84,9 +152,12 @@
                   </div>
             </div>
          </nav>
-        
+         <!-- navbar END -->
     </header>
+    <main class="d-flex">
+        <div class="container-fluid bg-grey"></div>
 
+    </main>
 
 
 

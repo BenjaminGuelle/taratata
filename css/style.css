@@ -12,6 +12,11 @@ body {
     font-weight: 400;
 }
 
+main {
+    height: 100vh;
+    width: 100%;
+}
+
 /* Header 
 -------------------------- */
 
@@ -22,6 +27,7 @@ body {
     align-items: flex-end;
     padding-top: 0;
     padding-bottom: 0;
+    height: 8rem;
 }
 
 /* Navbar : btn burger */
@@ -63,13 +69,11 @@ body {
 .navbar .nav-links {
     list-style: none;
     margin: 0;
-    height: 100%;
 }
 
 .nav-item {
     display: block;
     padding: 0 1rem 0 0;
-    height: 100%;
 }
 
 .nav-item a {
@@ -83,7 +87,7 @@ body {
 .nav-item a::after {
     content: '';
     position: absolute;
-    bottom: -4px;
+    bottom: 40px;
     left: 0;
     width: 0;
     height: 3px;
@@ -92,12 +96,66 @@ body {
     transition: width 0.5s ease-in-out;
 }
 
-.nav-item a:hover::after {
+.nav-item .link-item:hover::after {
     width: 100%;
     transition: width 0.4s ease-in-out;
 }
-.nav-item a:hover {
+.nav-item .link-item:hover {
     color: black;
+}
+
+/* Navbar : submenu animation */
+.nav-item .link-item:hover + .submenu-shop,
+.nav-item .link-item + .submenu-shop:hover {
+    display: flex;
+}
+.nav-item .link-item:hover + .submenu-shop {
+    display: flex;
+    animation: growDown 500ms ease-in-out forwards;
+    transform-origin: top left
+}
+
+.nav-item .link-item:hover .submenu-shop .submenu-items {
+    animation: visibility-menu 1000ms ease-in-out forwards;
+}
+
+@keyframes visibility-menu {
+    0% {
+        transform: opacity(0)
+    }
+    70% {
+        transform: opacity(0)
+    }
+    100% {
+        transform: opacity(1)
+    }
+}
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+  
+
+/* Navbar : submenu shop */
+.submenu-shop {
+    position: absolute;
+    top: 128px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    display: none;
+    background: rgba( 129, 129, 129, 0.10 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 9.0px );
+    -webkit-backdrop-filter: blur( 9.0px );
+    padding: 0;
 }
 
 /* Navbar : right */
@@ -152,10 +210,18 @@ body {
     left: 0;
     width: 40px;
 }
+/* Navbar : icon shopping cart -> number */
+.number-shop {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    font-size: 0.8rem;
+}
 
+/* Navbar : dropdown lang */
 .dropdown-lang {
     position: absolute;
-    top: -25px;
+    top: -15px;
     left: 193px;
 }
 .dropdown-lang a {
