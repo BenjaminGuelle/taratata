@@ -10,7 +10,6 @@ body {
     background-color: #FFFFFF;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
-    /* line-height: 1; */
 }
 
 /* Header 
@@ -21,9 +20,43 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    justify-content: flex-start;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+/* Navbar : btn burger */
+.btn-burger {
+    width: 25px;
+    height: 40px;
+    border: none;
+    position: relative;
+    padding: 0;
+    background-color: transparent;
+}
+
+.btn-burger .line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.btn-burger .line::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+.btn-burger .line::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 75%;
+    height: 3px;
+    background-color: black;
 }
 
 /* Navbar : links */
@@ -73,6 +106,7 @@ body {
     text-transform: uppercase;
     padding: .25rem .75rem 0 .75rem;
     font-weight: 300;
+    box-shadow: 0px 8px 50px 1px rgba(0,0,0,0.42);
 }
 .btn-nav:hover {
     background-color: #dd1a1e;
@@ -101,17 +135,35 @@ body {
     color: black;
 }
 
-.link-search {
-
+.nav-link-icon {
+    width: 2rem;
+    height: 2rem;
 }
-.nav-icon {
+.icon-search {
+    position: absolute;
+    top: 5px;
+    left: 0;
     width: 25px;
 }
 
-.caddie {
+.icon-caddie {
+    position: absolute;
+    top: -2px;
+    left: 0;
     width: 40px;
 }
 
+.dropdown-lang {
+    position: absolute;
+    top: -25px;
+    left: 193px;
+}
+.dropdown-lang a {
+    font-size: 1rem;
+    border-bottom: 2px solid gray;
+    text-decoration: none;
+
+}
 
 /* Header => END
 -------------------------- */

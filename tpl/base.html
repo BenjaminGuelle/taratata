@@ -21,12 +21,15 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="container-fluid p-4 position-sticky">
-         <nav class="navbar">
-            <a href="#" class="navbar-brand">
+    <header class="container-fluid px-4 py-3 px-xl-4 py-xl-5 position-sticky">
+         <nav class="navbar justify-content-between justify-content-xl-start">
+             <button type="button" id="burger" class="btn-burger order-1 d-xl-none d-flex justify-content-center align-items-center">
+                <div class="line"></div>
+             </button>
+            <a href="#" class="navbar-brand order-2 order-xl-1 m-0">
                 <img src="../assets/images/taratata.svg" alt="taratata-bijoux">
             </a>
-            <ul class="nav-links d-flex flex-grow-1">
+            <ul class="nav-links d-flex flex-grow-1 d-none d-xl-flex order-xl-2">
                 <li class="nav-item">
                    <a href=""# class="c-black">
                     À propos
@@ -58,19 +61,27 @@
                     </a>
                 </li>
             </ul>
-            <div class="d-flex align-items-end position-relative order-3 order-md-3">
-                <button type="button" class="btn-nav bg-red-dark c-white rounded-pill position-relative">
+            <div class="d-flex align-items-end position-relative order-3 order-xl-3">
+                <button type="button" class="btn-nav bg-red-dark c-white rounded-pill position-relative d-none d-xl-flex">
                     Espace Pro
                 </button>
-                <a href="#" class="link-signup c-black text-uppercase ms-2">
+                <a href="#" class="link-signup c-black text-uppercase ms-2 d-none d-xl-flex">
                     Connexion
                 </a>
-                <a href="#" class="link-search ms-4">
-                    <img src="../assets/icons/search.svg" alt="search" class="nav-icon">
+                <a href="#" class="nav-link-icon position-relative ms-xl-3">
+                    <img src="../assets/icons/search.svg" alt="search" class="icon-search">
                 </a>
-                <a href="#" class="link-search ms-2">
-                    <img src="../assets/svg/taratata-bijoux-caddie.svg" alt="taratata-bijoux-caddie" class="nav-icon caddie">
+                <a href="#" class="nav-link-icon position-relative">
+                    <img src="../assets/svg/taratata-bijoux-caddie.svg" alt="taratata-bijoux-caddie" class="icon-caddie">
                 </a>
+                <div class="dropdown dropdown-lang d-none d-xl-flex">
+                    <a class="dropdown-toggle c-black" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      FR
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">EN</a></li>
+                    </ul>
+                  </div>
             </div>
          </nav>
         
