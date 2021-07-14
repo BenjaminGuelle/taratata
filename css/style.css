@@ -144,6 +144,8 @@ main {
 
 .submenu-list {
     list-style: none;
+    width: 12rem;
+    padding-left: 0;
 }
 .submenu-title {
     font-family: 'DIN Condensed';
@@ -155,11 +157,20 @@ main {
     font-weight: 300;
     text-transform: uppercase;
 }
+.submenu-link:hover {
+    font-weight: 400;
+    color: black;
+}
 
 /* Navbar : submenu -> slider */
 .slider-collection {
     width: 100%;
     height: 300px;
+}
+
+.carousel-indicators {
+    left: -12px;
+    margin-left: 0;
 }
 
 /* Navbar : menu right */
