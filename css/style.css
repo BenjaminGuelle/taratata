@@ -261,7 +261,7 @@ main {
     top: 0;
     left: -90%;
     width: 90%;
-    height: 80%;
+    height: auto;
     transition: left 0.4s ease-in-out;
     background: rgba( 21, 145, 159, 0.65 );
     backdrop-filter: blur( 12.5px );
@@ -328,6 +328,17 @@ main {
     
 }
 
+.panel-title {
+    text-transform: uppercase;
+    padding: 0;
+    font-family: 'DIN Condensed';
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
 .panel-list {
     list-style: none;
     padding: 0;
@@ -337,6 +348,11 @@ main {
 .panel-link {
     text-decoration: none;
     font-size: 1.2rem;
+    height: 1rem;
+}
+
+.panel-link-icon {
+    height: 1rem;
 }
 
 .panel-br {
@@ -353,5 +369,38 @@ main {
 
 .mobile-connect-link {
     text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.btn-mobile-dropdown {
+    border: none;
+    width: 75%;
+    height: 3rem;
+    padding: 0;
+    font-size: 1.2rem;
+    background: rgba(198, 229, 231, 0.25);
+    backdrop-filter: blur( 12.0px );
+    -webkit-backdrop-filter: blur( 12.0px );
+}
+
+.txt-lang-dropdown {
+    font-size: 1.2rem;
+}
+
+.mobile-back {
+    height: 2rem;
+    position: relative;
+    border-bottom: 2px solid white;
+    padding-bottom: 2rem;
+}
+
+.mobile-back-icon {
+    height: 1.2rem;
+}
+
+.mobile-back-txt {
+    position: absolute;
+    top: -10px;
+    left: 40px;
     font-size: 1.2rem;
 }
