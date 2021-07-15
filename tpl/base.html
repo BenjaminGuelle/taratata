@@ -24,7 +24,7 @@
     <header class="container-fluid position-sticky">
         <!-- navbar -->
          <nav class="navbar justify-content-between justify-content-xl-start align-items-center">
-             <button type="button" id="burger" class="btn-burger order-1 d-xl-none d-flex justify-content-center align-items-center">
+             <button type="button" id="btn-mobile-opened" class="btn-burger order-1 d-xl-none d-flex justify-content-center align-items-center">
                 <div class="line"></div>
              </button>
             <a href="#" class="navbar-brand order-2 order-xl-1 m-0">
@@ -166,7 +166,7 @@
                 </li>
             </ul>
             <div class="d-flex pt-3 align-items-end position-relative order-3 order-xl-3">
-                <button type="button" class="btn-nav bg-red-dark c-white rounded-pill position-relative d-none d-xl-flex">
+                <button type="button" class="btn-nav-spacepro bg-red-dark c-white rounded-pill position-relative d-none d-xl-flex">
                     Espace Pro
                 </button>
                 <a href="#" class="link-signup c-black text-uppercase ms-2 d-none d-xl-flex">
@@ -190,7 +190,45 @@
             </div>
          </nav>
          <!-- navbar END -->
+         
     </header>
+    <!-- menu mobile -->
+    <div id="mobile-wrapper" class="menu-mobile">
+        <div class="menu-mobile-close px-5 position-relative d-flex align-items-center">
+            <button type="button" class="btn-mobile-close d-flex justify-content-center align-items-center">
+                <span class="close-icon"></span>
+            </button>
+        </div>
+        <div class="panels px-5">
+            <div class="panel">
+                <ul class="panel-list">
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link text-uppercase c-white">Accueil</a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link text-uppercase c-white">À propos</a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link text-uppercase c-white">Boutique</a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link text-uppercase c-white">Actualités</a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link text-uppercase c-white">Contact</a>
+                    </li>
+                </ul>
+                <div class="panel-br bg-white mb-3"></div>
+                <button type="button" class="btn-mobile-spacepro bg-red-dark c-white rounded-pill position-relative d-flex mb-3">
+                    <span>Espace pro</span>
+                </button>
+                <a href="#" class="mobile-connect-link c-white ps-1">
+                    Connexion
+                </a>
+            </div>  
+        </div>
+    </div>
+    <!-- menu mobile END -->
     <main class="d-flex">
         <div class="container-fluid bg-grey"></div>
 
