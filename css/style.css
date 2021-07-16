@@ -325,7 +325,19 @@ main {
 
 /* Menu mobile : Panels list */
 .panels {
-    
+    position: relative;
+    height: 25rem;
+}
+
+.panel {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .panel-title {
@@ -360,8 +372,7 @@ main {
     height: 2px;
 }
 
-.btn-mobile-spacepro {
-    border: none;
+.btn-panel-spacepro {
     text-transform: uppercase;
     padding: .35rem .75rem 0.2rem .75rem;
     font-weight: 300;
@@ -374,7 +385,10 @@ main {
 
 .btn-mobile-dropdown {
     border: none;
-    width: 75%;
+    position: absolute;
+    bottom: 0;
+    left: 3rem;
+    width: 13rem;
     height: 3rem;
     padding: 0;
     font-size: 1.2rem;
@@ -387,20 +401,92 @@ main {
     font-size: 1.2rem;
 }
 
-.mobile-back {
-    height: 2rem;
+.panel-back {
+    height: 3.5rem;
     position: relative;
     border-bottom: 2px solid white;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
-.mobile-back-icon {
+.panel-back-icon {
     height: 1.2rem;
 }
 
-.mobile-back-txt {
+.panel-back-txt {
     position: absolute;
-    top: -10px;
+    top: 9px;
     left: 40px;
     font-size: 1.2rem;
+}
+
+/* Menu mobile : Panels animation */
+.panel.panel-opened {
+    animation: panelOpened 0.3s ease-in forwards;
+}
+.panel.panel-closed {
+    animation: panelClosed 0.3s ease-in forwards;
+}
+.panel.panel-back {
+    animation: panelBack 0.3s ease-in forwards;
+}
+.panel.panel-start {
+    animation: panelStart 0.3s ease-in forwards;
+}
+.panel.panel-next {
+    animation: panelNext 0.3s ease-in forwards;
+}
+
+@keyframes panelClosed {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes panelOpened {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes panelBack {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes panelNext {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes panelStart {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

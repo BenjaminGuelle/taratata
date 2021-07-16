@@ -200,9 +200,9 @@
             </button>
         </div>
         <!-- menu mobile : panels -->
-        <div class="panels px-5">
+        <div class="panels overflow-hidden px-5">
             <!-- menu mobile : panel 1 -->
-            <div class="panel d-none">
+            <div id="panel-1" class="panel panel-opened" data-set="step-1">
                 <ul class="panel-list">
                     <li class="panel-item pb-3">
                         <a href="#" class="panel-link text-uppercase c-white">Accueil</a>
@@ -211,7 +211,10 @@
                         <a href="#" class="panel-link text-uppercase c-white">À propos</a>
                     </li>
                     <li class="panel-item pb-3">
-                        <a href="#" class="panel-link text-uppercase c-white">Boutique</a>
+                        <a href="#" class="panel-link panel-link-boutique text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Boutique</span>
+                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                        </a>
                     </li>
                     <li class="panel-item pb-3">
                         <a href="#" class="panel-link text-uppercase c-white">Actualités</a>
@@ -221,7 +224,7 @@
                     </li>
                 </ul>
                 <div class="panel-br bg-white mb-3"></div>
-                <button type="button" class="btn-mobile-spacepro bg-red-dark c-white rounded-pill position-relative d-flex mb-3">
+                <button type="button" class="btn-mobile-spacepro bg-red-dark c-white rounded-pill position-relative d-flex mb-3 border-0">
                     <span>Espace pro</span>
                 </button>
                 <a href="#" class="mobile-connect-link d-block c-white">
@@ -229,27 +232,27 @@
                 </a>
             </div>
             <!-- menu mobile : panel 2 -->
-            <div class="panel">
-                <div id="btn-mobile-back" class="mobile-back d-flex align-items-center">
-                    <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="mobile-back-icon">
-                    <span class="mobile-back-txt c-white">Retour</span>
+            <div id="panel-2" class="panel panel-closed" data-set="step-2">
+                <div id="btn-panel-back" class="panel-back d-flex align-items-center">
+                    <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
+                    <span class="panel-back-txt c-white">Retour</span>
                 </div>
                 <h2 class="panel-title c-white">Boutique</h2>
                 <ul class="panel-list">
                     <li class="panel-item pb-3">
-                        <a href="#" class="panel-link text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <a href="#" class="panel-link panel-link-miss text-uppercase c-white d-flex justify-content-between align-items-center">
                             <span>À ne pas rater</span>
                             <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
                         </a>
                     </li>
                     <li class="panel-item pb-3">
-                        <a href="#" class="panel-link text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <a href="#" class="panel-link panel-link-jewelry text-uppercase c-white d-flex justify-content-between align-items-center">
                             <span>Bijoux</span>
                             <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
                         </a>
                     </li>
                     <li class="panel-item pb-3">
-                        <a href="#" class="panel-link text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <a href="#" class="panel-link panel-link-collection text-uppercase c-white d-flex justify-content-between align-items-center">
                             <span>Collections</span>
                             <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
                         </a>
@@ -277,5 +280,6 @@
 
     <!-- Script Custom Js -->
     <script src="../js/main.js"></script>
+    <script src="../js/navigation.js"></script>
 </body>
 </html>
