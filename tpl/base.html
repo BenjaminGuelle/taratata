@@ -202,7 +202,7 @@
         <!-- menu mobile : panels -->
         <div class="panels overflow-hidden px-5">
             <!-- menu mobile : panel 1 -->
-            <div id="panel-1" class="panel panel-opened" data-set="step-1">
+            <div id="panel-1" class="panel panel-opened">
                 <ul class="panel-list">
                     <li class="panel-item pb-3">
                         <a href="#" class="panel-link text-uppercase c-white">Accueil</a>
@@ -210,11 +210,13 @@
                     <li class="panel-item pb-3">
                         <a href="#" class="panel-link text-uppercase c-white">À propos</a>
                     </li>
-                    <li class="panel-item pb-3">
+                    <li class="panel-item d-flex justify-content-between align-items-center pb-3">
                         <a href="#" class="panel-link panel-link-boutique text-uppercase c-white d-flex justify-content-between align-items-center">
                             <span>Boutique</span>
-                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
                         </a>
+                        <div class="panel-next" data-panel="panel-1" data-target="panel-2">
+                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                        </div>
                     </li>
                     <li class="panel-item pb-3">
                         <a href="#" class="panel-link text-uppercase c-white">Actualités</a>
@@ -232,29 +234,65 @@
                 </a>
             </div>
             <!-- menu mobile : panel 2 -->
-            <div id="panel-2" class="panel panel-closed" data-set="step-2">
-                <div id="btn-panel-back" class="panel-back d-flex align-items-center">
+            <div id="panel-2" class="panel panel-closed">
+                <div id="btn-panel-back" class="panel-back d-flex align-items-center" data-target="panel-1">
                     <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
                     <span class="panel-back-txt c-white">Retour</span>
                 </div>
                 <h2 class="panel-title c-white">Boutique</h2>
                 <ul class="panel-list">
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link panel-link-miss text-uppercase c-white d-flex justify-content-between align-items-center">
+                    <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                        <a href="#" class="panel-link text-uppercase c-white">
                             <span>À ne pas rater</span>
-                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
                         </a>
+                        <div class="panel-next" data-panel="panel-2" data-target="panel-3">
+                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                        </div>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link panel-link-jewelry text-uppercase c-white d-flex justify-content-between align-items-center">
+                    <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                        <a href="#" class="panel-link text-uppercase c-white">
                             <span>Bijoux</span>
+                        </a>
+                        <div class="panel-next" data-panel="panel-2" data-target="panel-4">
                             <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                        </div>
+                    </li>
+                    <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                        <a href="#" class="panel-link text-uppercase c-white">
+                            <span>Collections</span>
+                        </a>
+                        <div class="panel-next" data-panel="panel-2" data-target="panel-5">
+                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- menu mobile : panel 3 -->
+            <div id="panel-3" class="panel panel-closed">
+                <div id="btn-panel-back" class="panel-back d-flex align-items-center" data-target="panel-2">
+                    <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
+                    <span class="panel-back-txt c-white">Retour</span>
+                </div>
+                <h2 class="panel-title c-white">À ne pas rater</h2>
+                <ul class="panel-list">
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Incontournables</span>
                         </a>
                     </li>
                     <li class="panel-item pb-3">
-                        <a href="#" class="panel-link panel-link-collection text-uppercase c-white d-flex justify-content-between align-items-center">
-                            <span>Collections</span>
-                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                        <a href="#" class="panel-link text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Soldes hiver 2020</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Soldes été 2020</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Outlet</span>
                         </a>
                     </li>
                 </ul>
@@ -280,6 +318,7 @@
 
     <!-- Script Custom Js -->
     <script src="../js/main.js"></script>
+    <script src="../js/tools.js"></script>
     <script src="../js/navigation.js"></script>
 </body>
 </html>

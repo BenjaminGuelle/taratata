@@ -7,52 +7,16 @@ const initActionNavbar = () => {
 }
 
 const initActionPanel = () => {
-    let panelLinkBoutique = document.querySelector('.panel-link-boutique');
-    panelLinkBoutique.addEventListener('click', handleGetPanelMobile);
+    let panelNext = document.querySelectorAll('.panel-next');
+    panelNext.forEach((item) => (
+        item.addEventListener('click', handleSwitchPanel)
+    ));
     let panelBack = document.querySelectorAll('.panel-back');
     panelBack.forEach((item) => {
-        item.addEventListener('click', handlClickPanelBack);
-    })
+        item.addEventListener('click', handleSwitchPanel);
+    });
 }
 // END TOOLS 
-
-const removeClassOpened = (item) => {
-    item.classList.remove('panel-opened');
-}
-const removeClassClosed = (item) => {
-    item.classList.remove('panel-closed');
-}
-const removeClassBack = (item) => {
-    item.classList.remove('panel-back');
-}
-const removeClassStart = (item) => {
-    item.classList.remove('panel-start');
-}
-const removeClassNext = (item) => {
-    item.classList.remove('panel-next');
-}
-const removeAllClassPanel = (item) => {
-    removeClassOpened(item);
-    removeClassClosed(item);
-    removeClassBack(item);
-    removeClassStart(item);
-    removeClassNext(item);
-}
-const addClassOpened = (item) => {
-    item.classList.add('panel-opened');
-}
-const addClassClosed = (item) => {
-    item.classList.add('panel-closed');
-}
-const addClassBack = (item) => {
-    item.classList.add('panel-back');
-}
-const addClassStart = (item) => {
-    item.classList.add('panel-start');
-}
-const addClassNext = (item) => {
-    item.classList.add('panel-next');
-}
 
 // METHOD LIST
 
@@ -70,6 +34,36 @@ const handleClickBtnMobile = () => {
 }
 
 // Animation panels menu mobile
+const handleSwitchPanel = (e) => {
+    //TODO make function to display panel
+    // list panel
+    const panelList = document.querySelectorAll('.panel');
+    
+    // data set
+    const currentPanel = e.currentTarget.getAttribute('data-panel');
+    const targetPanel = e.currentTarget.getAttribute('data-target');
+
+    console.log(getPanelNext(targetPanel));
+
+    // function
+    if (getPanelNext(targetPanel) != undefined) {
+        removeAllClassPanel(getCurrentPanel(currentPanel));
+        removeAllClassPanel(getPanelNext(targetPanel));
+        addClassBack(getCurrentPanel(currentPanel));
+    }
+    
+    // click boutique panel 1 => switch panel 2
+    // click back panel 2 => switch panel 1
+
+    // click a ne pas rater panel 2 => switch panel 3
+    // click back panel 3 => switch panel 2
+
+    // click bijoux panel 2 => switch panel 4
+    // click back panel 4 => switch panel 2
+
+    // click collections panel 2 => switch panel 5
+    // click back panel 5 => switch panel 2
+}
 const handleGetPanelMobile = () => {
     let panel1 = document.querySelector('#panel-1');
     let panel2 = document.querySelector('#panel-2');
@@ -120,4 +114,6 @@ const handlClickPanelBack = (e) => {
 
 
 // END METHOD LIST
+
+// panel
 
