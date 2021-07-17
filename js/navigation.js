@@ -40,16 +40,21 @@ const handleSwitchPanel = (e) => {
     const panelList = document.querySelectorAll('.panel');
     
     // data set
+    const chevron = e.currentTarget;
     const currentPanel = e.currentTarget.getAttribute('data-panel');
     const targetPanel = e.currentTarget.getAttribute('data-target');
 
-    console.log(getPanelNext(targetPanel));
-
+    console.log(chevron);
     // function
-    if (getPanelNext(targetPanel) != undefined) {
+    if ((getPanelNext(targetPanel) != undefined) && (getCurrentPanel(currentPanel) != undefined ))
+    {
+        console.log('CLICK PANEL NEXT');
         removeAllClassPanel(getCurrentPanel(currentPanel));
         removeAllClassPanel(getPanelNext(targetPanel));
-        addClassBack(getCurrentPanel(currentPanel));
+        addStartLeft(getCurrentPanel(currentPanel));
+        addRightStart(getPanelNext(targetPanel));
+        addPanelOpened(getPanelNext(targetPanel));
+        addPanelClosed(getCurrentPanel(currentPanel));
     }
     
     // click boutique panel 1 => switch panel 2

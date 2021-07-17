@@ -424,23 +424,27 @@ main {
 }
 
 /* Menu mobile : Panels animation */
-.panel.panel-opened {
-    animation: panelOpened 0.2s ease-in forwards;
+.panel.panel-opened  {
+    display: block;
 }
-.panel.panel-closed {
-    animation: panelClosed 0.2s ease-in forwards;
-}
-.panel.panel-back {
-    animation: panelBack 0.2s ease-in forwards;
-}
-.panel.panel-start {
-    animation: panelStart 0.2s ease-in forwards;
-}
-.panel.panel-next {
-    animation: panelNext 0.2s ease-in forwards;
+.panel.panel-closed  {
+    display: none;
 }
 
-@keyframes left-back {
+.panel.start-left {
+    animation: start-left 0.2s ease-in forwards;
+}
+.panel.left-start {
+    animation: left-start 0.2s ease-in forwards;
+}
+.panel.right-start {
+    animation: right-start 0.2s ease-in forwards;
+}
+.panel.start-right {
+    animation: start-right 0.2s ease-in forwards;
+}
+
+@keyframes start-left {
     0% {
         transform: translateX(0);
         opacity: 1;
@@ -451,7 +455,7 @@ main {
     }
 }
 
-@keyframes left-next {
+@keyframes left-start {
     0% {
         transform: translateX(-100%);
         opacity: 0;
@@ -462,7 +466,7 @@ main {
     }
 }
 
-@keyframes right-back {
+@keyframes right-start {
     0% {
         transform: translateX(100%);
         opacity: 0;
@@ -473,7 +477,7 @@ main {
     }
 }
 
-@keyframes right-next {
+@keyframes start-right {
     0% {
         transform: translateX(0);
         opacity: 1;

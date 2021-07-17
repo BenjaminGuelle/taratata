@@ -1,40 +1,51 @@
 // PANEL : add / remove class to slide
-const removeClassOpened = (item) => {
+
+// Remove transition 
+const removePanelOpened = (item) => {
     item.classList.remove('panel-opened');
 }
-const removeClassClosed = (item) => {
+const removePanelClosed = (item) => {
     item.classList.remove('panel-closed');
 }
-const removeClassBack = (item) => {
-    item.classList.remove('panel-back');
+const removeStartLeft = (item) => {
+    item.classList.remove('start-left');
 }
-const removeClassStart = (item) => {
-    item.classList.remove('panel-start');
+const removeLeftStart = (item) => {
+    item.classList.remove('left-start');
 }
-const removeClassNext = (item) => {
-    item.classList.remove('panel-next');
+const removeStartRight = (item) => {
+    item.classList.remove('start-right');
+}
+const removeRightStart = (item) => {
+    item.classList.remove('right-start');
 }
 const removeAllClassPanel = (item) => {
-    removeClassOpened(item);
-    removeClassClosed(item);
-    removeClassBack(item);
-    removeClassStart(item);
-    removeClassNext(item);
+    removePanelOpened(item);
+    removePanelClosed(item);
+    removeStartLeft(item);
+    removeLeftStart(item);
+    removeStartRight(item);
+    removeRightStart(item);
 }
-const addClassOpened = (item) => {
+
+// Add transition 
+const addPanelOpened = (item) => {
     item.classList.add('panel-opened');
 }
-const addClassClosed = (item) => {
+const addPanelClosed = (item) => {
     item.classList.add('panel-closed');
 }
-const addClassBack = (item) => {
-    item.classList.add('panel-back');
+const addStartLeft = (item) => {
+    item.classList.add('start-left');
 }
-const addClassStart = (item) => {
-    item.classList.add('panel-start');
+const addLeftStart = (item) => {
+    item.classList.add('left-start');
 }
-const addClassNext = (item) => {
-    item.classList.add('panel-next');
+const addStartRight = (item) => {
+    item.classList.add('start-right');
+}
+const addRightStart = (item) => {
+    item.classList.add('right-start');
 }
 
 // get panel next
