@@ -1,4 +1,4 @@
-// TOOLS 
+// ADD EVENTS
 const initActionNavbar = () => {
     let btnMobileOpened = document.querySelector('#btn-mobile-opened');
     btnMobileOpened.addEventListener('click', handleClickBtnMobile);
@@ -16,7 +16,7 @@ const initActionPanel = () => {
         item.addEventListener('click', handleSwitchPanel);
     });
 }
-// END TOOLS 
+// END 
 
 // METHOD LIST
 
@@ -35,90 +35,39 @@ const handleClickBtnMobile = () => {
 
 // Animation panels menu mobile
 const handleSwitchPanel = (e) => {
-    //TODO make function to display panel
-    // list panel
-    const panelList = document.querySelectorAll('.panel');
-    
     // data set
-    const chevron = e.currentTarget;
     const currentPanel = e.currentTarget.getAttribute('data-panel');
     const targetPanel = e.currentTarget.getAttribute('data-target');
 
-    console.log(chevron);
-    // function
+    // function to switch
     if ((getPanelNext(targetPanel) != undefined) && (getCurrentPanel(currentPanel) != undefined ))
     {
-        console.log('CLICK PANEL NEXT');
         removeAllClassPanel(getCurrentPanel(currentPanel));
         removeAllClassPanel(getPanelNext(targetPanel));
-        addStartLeft(getCurrentPanel(currentPanel));
-        addRightStart(getPanelNext(targetPanel));
         addPanelOpened(getPanelNext(targetPanel));
         addPanelClosed(getCurrentPanel(currentPanel));
-    }
-    
-    // click boutique panel 1 => switch panel 2
-    // click back panel 2 => switch panel 1
 
-    // click a ne pas rater panel 2 => switch panel 3
-    // click back panel 3 => switch panel 2
-
-    // click bijoux panel 2 => switch panel 4
-    // click back panel 4 => switch panel 2
-
-    // click collections panel 2 => switch panel 5
-    // click back panel 5 => switch panel 2
-}
-const handleGetPanelMobile = () => {
-    let panel1 = document.querySelector('#panel-1');
-    let panel2 = document.querySelector('#panel-2');
-
-    if (panel1.classList.contains('panel-closed'))
-    {
-        removeAllClassPanel(panel1);
-        addClassOpened(panel1);
-    }
-    else (panel1.classList.contains('panel-opened') || panel1.classList.contains('panel-start')) 
-    {
-        removeAllClassPanel(panel1);
-        addClassClosed(panel1);
-    }
-    
-    if (panel2.classList.contains('panel-closed') || panel2.classList.contains('panel-next'))
-    {
-        removeAllClassPanel(panel2);
-        addClassOpened(panel2);
-    }
-    else 
-    {
-        removeAllClassPanel(panel2);
-        addClassClosed(panel2);
+        if (currentPanel === 'panel-1' && targetPanel === 'panel-2') 
+        {
+            addStartLeft(getCurrentPanel(currentPanel));
+            addRightStart(getPanelNext(targetPanel));
+        }
+        else if (currentPanel === 'panel-2' && (targetPanel === 'panel-3' || targetPanel === 'panel-4' || targetPanel === 'panel-5'))
+        {
+            addStartLeft(getCurrentPanel(currentPanel));
+            addRightStart(getPanelNext(targetPanel));
+        }
+        else if ((currentPanel === 'panel-3' || currentPanel === 'panel-4' || currentPanel === 'panel-5') && targetPanel === 'panel-2')
+        {
+            addStartRight(getCurrentPanel(currentPanel));
+            addLeftStart(getPanelNext(targetPanel));
+        }
+        else {
+            addStartRight(getCurrentPanel(currentPanel));
+            addLeftStart(getPanelNext(targetPanel));
+        }      
     }
 }
 
-const handlClickPanelBack = (e) => {
-    const item = e.currentTarget;
-    console.log('click back');
-    const dataSetPanel = e.currentTarget.parentNode.getAttribute('data-set');
-    console.log(dataSetPanel);
-    let panel1 = document.querySelector('#panel-1');
-    let panel2 = document.querySelector('#panel-2');
-
-    if (dataSetPanel == 'step-2') {
-        removeAllClassPanel(panel1);
-        removeAllClassPanel(panel2);
-        addClassStart(panel1);
-        addClassNext(panel2);
-        console.log('BACK OK', dataSetPanel );
-    }
-    else {
-
-    }
-    
-}
-
-
-// END METHOD LIST
-
-// panel
+// END
 

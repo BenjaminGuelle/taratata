@@ -425,10 +425,14 @@ main {
 
 /* Menu mobile : Panels animation */
 .panel.panel-opened  {
-    display: block;
+    visibility: visible;
+    transform: translateX(0);
+    transition: visibility 0.2s ease;
 }
 .panel.panel-closed  {
-    display: none;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: visibility 0.2s ease;
 }
 
 .panel.start-left {
