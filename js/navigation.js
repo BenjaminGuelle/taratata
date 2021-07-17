@@ -27,9 +27,11 @@ const handleClickBtnMobile = () => {
     if (menuMobile.classList.contains('menu-opened')) {
         menuMobile.classList.remove('menu-opened');
         closeIcon.classList.remove('menu-opened');
+        restartMenuMobile();
     } else {
         menuMobile.classList.add('menu-opened');
         closeIcon.classList.add('menu-opened');
+        
     }
 }
 

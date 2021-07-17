@@ -48,6 +48,24 @@ const addRightStart = (item) => {
     item.classList.add('right-start');
 }
 
+// Restart panel menu mobile
+const restartMenuMobile = () => {
+    setTimeout(() => {
+        getAllPanel().forEach((item) => {
+            if (item.getAttribute('data-panel') != 'panel-1') 
+            {
+                removeAllClassPanel(item);
+                addPanelClosed(item);
+            }
+            else 
+            {
+                removeAllClassPanel(item);
+                addPanelOpened(getCurrentPanel('panel-1'));
+            }
+        })
+    }, 500);   
+}
+
 // get panel next
 const getPanelNext = (item) => {
     return document.getElementById(item);
@@ -55,4 +73,8 @@ const getPanelNext = (item) => {
 // get current panel
 const getCurrentPanel = (item) => {
     return document.getElementById(item);
+}
+// get all panel
+const getAllPanel = () => {
+    return document.querySelectorAll('.panel');
 }

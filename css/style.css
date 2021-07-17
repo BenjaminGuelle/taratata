@@ -262,7 +262,7 @@ main {
     left: -90%;
     width: 90%;
     height: auto;
-    transition: left 0.4s ease-in-out;
+    transition: left 0.3s ease-in-out;
     background: rgba( 21, 145, 159, 0.65 );
     backdrop-filter: blur( 12.5px );
     -webkit-backdrop-filter: blur( 12.5px );
@@ -436,16 +436,16 @@ main {
 }
 
 .panel.start-left {
-    animation: start-left 0.2s ease-in forwards;
+    animation: start-left 0.4s cubic-bezier(0.79, 0.02, 0.67, 1.01) forwards;
 }
 .panel.left-start {
-    animation: left-start 0.2s ease-in forwards;
+    animation: left-start 0.4s cubic-bezier(0.79, 0.02, 0.67, 1.01) forwards;
 }
 .panel.right-start {
-    animation: right-start 0.2s ease-in forwards;
+    animation: right-start 0.4s cubic-bezier(0.79, 0.02, 0.67, 1.01) forwards;
 }
 .panel.start-right {
-    animation: start-right 0.2s ease-in forwards;
+    animation: start-right 0.4s cubic-bezier(0.79, 0.02, 0.67, 1.01) forwards;
 }
 
 @keyframes start-left {
