@@ -16,6 +16,11 @@ const initActionPanel = () => {
         item.addEventListener('click', handleSwitchPanel);
     });
 }
+
+const initHoverSubmenu = () => {
+    let linkBoutique = document.querySelector('#hover-boutique');
+    linkBoutique.addEventListener('mouseover', handleHoverSubmenu);
+}
 // END 
 
 // METHOD LIST
@@ -71,5 +76,41 @@ const handleSwitchPanel = (e) => {
     }
 }
 
-// END
+let submenuItems = document.querySelectorAll('.submenu-list .submenu-item');
+let submenuItems1 = document.querySelectorAll('.submenu-list-1 .submenu-item');
+let submenuItems2 = document.querySelectorAll('.submenu-list-2 .submenu-item');
 
+const timelineConfig = () => {
+    for (let i = 0; i < submenuItems.length; i++) {
+        if (i < submenuItems1.length ) {
+            TL.to(submenuItems[i], {duration: 0.2})
+        } else if (i == submenuItems1.length) {
+            TL.to(submenuItems[i], {duration: 0.2}, 0);
+        } else {
+            TL.to(submenuItems[i], {duration: 0.2}, '>')
+        }
+    }
+}
+
+const TL = gsap.timeline({
+    defaults: {
+        // duration: 0.2,
+        ease: "power2",
+        autoAlpha: 1,
+        y: 0,
+    },
+    paused: true,
+    onStart: () => console.log('ANIME START'),
+    onComplete: () => console.log('ANIME FINI')
+});
+
+TL
+.add(timelineConfig())
+
+
+// Submenu
+const handleHoverSubmenu = () => {
+    TL.restart()
+    console.log('submenu 1', submenuItems1);
+    console.log('submenu 2', submenuItems2);
+}

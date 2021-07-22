@@ -28,8 +28,9 @@
                 <div class="line"></div>
              </button>
             <a href="#" class="navbar-brand order-2 order-xl-1 m-0">
-                <img src="../assets/images/taratata.svg" alt="taratata-bijoux">
+                <img src="../assets/images/taratata.svg" alt="taratata-bijoux" class="brand-taratata">
             </a>
+            <!-- navbar navlinks -->
             <ul class="nav-links h-100 pt-3 d-flex flex-grow-1 d-none d-xl-flex order-xl-2">
                 <li class="nav-item h-100 d-flex align-items-center">
                    <a href=""# class="link-item h-100 c-black d-flex align-items-center">
@@ -37,12 +38,12 @@
                    </a>
                 </li>
                 <li class="nav-item h-100 d-flex align-items-center">
-                    <a href="#" class="link-item h-100 c-black d-flex align-items-center">
+                    <a href="#" id="hover-boutique" class="link-item h-100 c-black d-flex align-items-center">
                         Boutique
                     </a>
                     <!-- submenu -->
                     <div class="submenu-shop p-5">
-                        <ul class="submenu-list">
+                        <ul class="submenu-list submenu-list-1">
                             <li class="submenu-item">
                                 <h2 class="submenu-title c-black">
                                     À ne pas rater
@@ -69,7 +70,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <ul class="submenu-list ps-4">
+                        <ul class="submenu-list submenu-list-2 ps-4">
                             <li class="submenu-item">
                                 <h2 class="submenu-title c-black">
                                     Bijoux
@@ -165,6 +166,7 @@
                     </a>
                 </li>
             </ul>
+            <!-- navbar navlinks END -->
             <div class="h-100 d-flex pt-3 align-items-center position-relative order-3 order-xl-3">
                 <button type="button" class="btn-nav-spacepro bg-red-dark c-white rounded-pill position-relative d-none d-xl-flex">
                     Espace Pro
@@ -382,10 +384,12 @@
 
 
 
+    <!-- Script GSAP = Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
     <!-- Script Js Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    
     <!-- Script Custom Js -->
     <script src="../js/main.js"></script>
     <script src="../js/tools.js"></script>
