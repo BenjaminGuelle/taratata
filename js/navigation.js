@@ -131,6 +131,6 @@ const TLFadeMobile = gsap.timeline({
 })
 
 TLFadeMobile
-.to(btnMobileClose, {autoAlpha: 1, delay: 0.2, duration: 0.20})
-.to(panelList, {autoAlpha: 1, delay: 0.2, duration: 0.20, stagger: 0.1}, 0)
+.to(btnMobileClose, {autoAlpha: 1, delay: 0.2, duration: 0.5})
+.to(panelList, {autoAlpha: 1, delay: 0.2, duration: 0.5, stagger: 0.15}, 0)
 .to(panelLine, {autoAlpha: 1, width: '100%', delay: 0.5, duration: 0.50}, '-=0.75')
