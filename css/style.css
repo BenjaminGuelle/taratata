@@ -1,12 +1,16 @@
 html {
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 /* Body 
 -------------------------- */
 body {
+    position: relative;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    width: 100%;
     background-color: #FFFFFF;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -48,7 +52,7 @@ main {
 .btn-burger .line {
     width: 100%;
     height: 3px;
-    background-color: black;
+    background-color: #1d1d1c;
     border-radius: 9999px;
 }
 
@@ -59,7 +63,7 @@ main {
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: black;
+    background-color: #1d1d1c;
     border-radius: 9999px;
 }
 .btn-burger .line::after {
@@ -69,7 +73,7 @@ main {
     left: 0;
     width: 75%;
     height: 3px;
-    background-color: black;
+    background-color: #1d1d1c;
     border-radius: 9999px;
 }
 
@@ -100,7 +104,7 @@ main {
     width: 0;
     height: 3px;
     border-radius: 50rem;
-    background-color: black;
+    background-color: #1d1d1c;
     transition: width 0.5s ease-in-out;
 }
 
@@ -109,7 +113,7 @@ main {
     transition: width 0.4s ease-in-out;
 }
 .nav-item .link-item:hover {
-    color: black;
+    color: #1d1d1c;
 }
 
 /* Navbar : submenu animation */
@@ -166,7 +170,7 @@ main {
     text-transform: uppercase;
 }
 .submenu-link:hover {
-    color: black;
+    color: #1d1d1c;
     font-weight: 400;
 }
 
@@ -213,7 +217,7 @@ main {
     width: 0;
     height: 3px;
     border-radius: 50rem;
-    background-color: black;
+    background-color: #1d1d1c;
     transition: width 0.5s ease-in-out;
 }
 .link-signup:hover::after {
@@ -382,7 +386,7 @@ main {
 }
 
 .panel-link:hover {
-    color: black;
+    color: #1d1d1c;
 }
 
 .panel-link-icon {
@@ -511,6 +515,82 @@ main {
         opacity: 0;
     }
 }
+/* Menu mobile END
+-------------------------- */
 
+/* Menu right => connexion
+-------------------------- */
+.sidebar-signin {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    transform: translateX(100%);
+    background: rgba( 255, 255, 255, 0.30 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+}
 
+.sidebar-signin.sidebar-opened {
+}
 
+/* Menu right btn close */
+.sidebar-close {
+    height: 8rem;
+}
+
+.btn-sidebar-close {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.btn-sidebar-close::before, .btn-sidebar-close::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: .16rem;
+    background-color: #1d1d1c;
+}
+
+.btn-sidebar-close::before {
+    transform: rotate(45deg);
+}
+
+.btn-sidebar-close::after {
+    transform: rotate(-45deg);
+}
+
+/* Menu right titles */
+.title-signin {
+    font-family: 'DIN Condensed';
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.title-signin a {
+    text-decoration: none;
+}
+
+.sidebar-signin h1 {
+    font-size: 2.3rem;
+}
+
+.title-signin a:hover {
+    color: #1d1d1c;
+}
+
+/* Menu right titles */
+.form-sidebar .input-custom {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: #ffffff;
+    border-radius: none;
+}

@@ -1,3 +1,4 @@
+
 // PANEL : add / remove class to slide
 
 // Remove transition 

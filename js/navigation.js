@@ -33,6 +33,14 @@ const initHoverSubmenu = () => {
     linkBoutique.addEventListener('mouseover', handleHoverSubmenu);
 }
 
+// ----- sidebar event
+const initActionSidebar = () => {
+    let linkSignin = document.querySelector('.link-signup');
+    linkSignin.addEventListener('click', handleOpenSidebarSignin);
+    let btnSidebarClose = document.querySelector('.btn-sidebar-close');
+    btnSidebarClose.addEventListener('click', handleCloseSidebarSignin);
+}
+
 /***********************************
  *********** METHOD LIST ***********
  ***********************************
@@ -56,8 +64,8 @@ const handleClickBtnMobile = () => {
 // Animation panels menu mobile
 const handleSwitchPanel = (e) => {
     // data set
-    const currentPanel = e.currentTarget.getAttribute('data-panel');
-    const targetPanel = e.currentTarget.getAttribute('data-target');
+    let currentPanel = e.currentTarget.getAttribute('data-panel');
+    let targetPanel = e.currentTarget.getAttribute('data-target');
 
     // function to switch
     if ((getPanelNext(targetPanel) != undefined) && (getCurrentPanel(currentPanel) != undefined ))
@@ -89,13 +97,21 @@ const handleSwitchPanel = (e) => {
     }
 }
 
+// Animation to switch back panel mobile
 const handleSwitchBackAnim = () => {
-    console.log('START ANIM BACK PANEL');
     TLFadeMobile.restart();
 }
 
+// Animation hover submenu
 const handleHoverSubmenu = () => {
     TLFadeSub.restart();
+}
+
+// Animation slide sidebar
+const handleOpenSidebarSignin = (e) => {
+    const btnOpenSidebar = e.currentTarget;
+    console.log(btnOpenSidebar);
+    TLSideBar.restart();
 }
 
 /***********************************
@@ -111,6 +127,8 @@ let submenuSlider = document.querySelector('.submenu-collection .slider-collecti
 
 const TLFadeSub = gsap.timeline({
     paused: true,
+    onStart: () => console.log('START FADE SUB'),
+    onComplete: () => console.log('COMPLETE FADE SUB'),
 })
 
 TLFadeSub
@@ -134,3 +152,15 @@ TLFadeMobile
 .to(btnMobileClose, {autoAlpha: 1, delay: 0.2, duration: 0.5})
 .to(panelList, {autoAlpha: 1, delay: 0.2, duration: 0.5, stagger: 0.15}, 0)
 .to(panelLine, {autoAlpha: 1, width: '100%', delay: 0.5, duration: 0.50}, '-=0.75')
+
+// ----- Open slide sidebar
+let sideBar = document.querySelector('.sidebar-signin');
+
+const TLSideBar = gsap.timeline({
+    paused: true,
+    onStart: () => console.log('START SIDEBAR'),
+    onComplete: () => console.log('COMPLETE SIDEBAR'),
+});
+
+TLSideBar
+.to(sideBar, {autoAlpha: 1, x: 0, duration: 0.3})
