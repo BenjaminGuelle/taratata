@@ -168,16 +168,16 @@
             </ul>
             <!-- navbar navlinks END -->
             <div class="h-100 d-flex pt-3 align-items-center position-relative order-3 order-xl-3">
-                <button type="button" class="btn-nav-spacepro bg-red-dark c-white rounded-pill position-relative d-none d-xl-flex">
+                <button type="button" class="btn-nav-spacepro pt-2 pb-1 px-4 bg-red-dark c-white rounded-pill position-relative d-none d-xl-flex">
                     Espace Pro
                 </button>
-                <a href="#" class="link-signup c-black text-uppercase ms-2 d-none d-xl-flex">
+                <a href="#" class="btn-sidebar-open nav-link-signup c-black text-uppercase ms-2 d-none d-xl-flex" data-target="signin">
                     Connexion
                 </a>
-                <a href="#" class="nav-link-icon mb-2 position-relative ms-xl-3">
+                <a href="#" class="btn-sidebar-open nav-link-icon mb-2 position-relative ms-xl-3" data-target="search">
                     <img src="../assets/icons/search.svg" alt="search" class="icon-search">
                 </a>
-                <a href="#" class="nav-link-icon mb-2 position-relative">
+                <a href="#" class="btn-sidebar-open nav-link-icon mb-2 position-relative" data-target="cart">
                     <img src="../assets/svg/taratata-bijoux-caddie.svg" alt="taratata-bijoux-caddie" class="icon-caddie">
                     <span id="shopping-number" class="c-white number-shop">02</span>
                 </a>
@@ -230,7 +230,7 @@
                     </li>
                 </ul>
                 <div class="panel-br bg-white mb-3"></div>
-                <button type="button" class="btn-mobile-spacepro bg-red-dark c-white rounded-pill position-relative d-flex mb-3 border-0">
+                <button type="button" class="btn-mobile-spacepro pt-2 pb-1 px-4 bg-red-dark c-white rounded-pill position-relative d-flex mb-3 border-0">
                     <span>Espace pro</span>
                 </button>
                 <button type="button" class="btn-mobile-connect d-block c-white">
@@ -380,33 +380,58 @@
     </div>
     <!-- menu mobile END ------ -->
 
-    <!-- ------ menu right : connexion / cart / search -->
-    <div class="sidebar-signin px-4 d-flex flex-column align-items-center">
+    <!-- ------ sidebar : connexion -->
+    <div class="sidebar px-4" data-set="signin">
         <div class="sidebar-close w-100 p-4 d-flex justify-content-end align-items-center">
-            <div class="btn-sidebar-close"></div>
+            <div class="btn-sidebar-close" data-target="signin"></div>
         </div>
-        <h1 class="title-signin text-uppercase text-center mb-4">
-            <a href="#" class="c-black">
+        <div class="container w-75 mx-auto pt-3 d-flex flex-column align-items-center">
+            <h1 class="title-signin c-black text-uppercase text-center mb-4">
                 Connection
-            </a>
-        </h1>
-        <h2 class="title-signin text-uppercase text-center">
-            <a href="#" class="c-black">
+            </h1>
+            <h2 class="title-signin c-black text-uppercase text-center">
                 Déjà client ?
-            </a>
-        </h2>
-        <form action="#" method="POST" class="form-sidebar px-5">
-            <input type="mail" class="input-custom mb-3" placeholder="Login">
-            <input type="password" class="input-custom" placeholder="Mot de passe">
-        </form>
-        <p class="text-center my-4">
-            Vous avez oublié votre mot de passe ?
-        </p>
-        <button type="button" class="btn-mobile-submit text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4">
-            Se connecter
-        </button>
+            </h2>
+            <form action="#" method="POST" class="form-sidebar w-100">
+                <input type="mail" class="input-custom mb-3" placeholder="Login">
+                <input type="password" class="input-custom" placeholder="Mot de passe">
+            </form>
+            <p class="text-center my-4">
+                Vous avez oublié votre mot de passe ?
+            </p>
+            <button type="button" class="btn-mobile-submit text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4 mb-2">
+                Se connecter
+            </button>
+            <div class="lineBreak bg-black my-5"></div>
+            <h2 class="title-signin c-black text-uppercase text-center">
+                Nouveau client ?
+            </h2>
+            <button type="button" class="btn-mobile-register text-uppercase bg-white c-black rounded-pill pt-2 pb-1 px-4">
+                Créer un compte
+            </button>
+        </div>
     </div>
-    <!-- menu right END ------ -->
+    <!-- sidebar : connexion END ------ -->
+    <!-- ------ sidebar : search -->
+    <div class="sidebar px-4" data-set="search">
+        <div class="sidebar-close w-100 p-4 d-flex justify-content-end align-items-center">
+            <div class="btn-sidebar-close" data-target="search"></div>
+        </div>
+        <div class="container w-75 mx-auto pt-3 d-flex flex-column align-items-center">
+            search
+        </div>
+    </div>
+    <!-- sidebar : search END ------ -->
+    <!-- ------ sidebar : cart -->
+    <div class="sidebar px-4" data-set="cart">
+        <div class="sidebar-close w-100 p-4 d-flex justify-content-end align-items-center">
+            <div class="btn-sidebar-close" data-target="cart"></div>
+        </div>
+        <div class="container w-75 mx-auto pt-3 d-flex flex-column align-items-center">
+            cart
+        </div>
+    </div>
+    <!-- sidebar : cart END ------ -->
 
     <!-- ------ main -->
     <main class="d-flex">

@@ -79,3 +79,9 @@ const getCurrentPanel = (item) => {
 const getAllPanel = () => {
     return document.querySelectorAll('.panel');
 }
+
+// get current sidebar
+const getAllSidebar = () => {
+    return document.querySelectorAll('.sidebar');
+    
+}

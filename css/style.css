@@ -198,7 +198,6 @@ main {
 .btn-nav-spacepro {
     border: none;
     text-transform: uppercase;
-    padding: .25rem .75rem 0 .75rem;
     font-weight: 300;
     box-shadow: 0px 8px 50px 1px rgba(0,0,0,0.42);
 }
@@ -206,11 +205,11 @@ main {
     background-color: #dd1a1e;
 }
 
-.link-signup {
+.nav-link-signup {
     position: relative;
     text-decoration: none;
 }
-.link-signup::after {
+.nav-link-signup::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -221,11 +220,11 @@ main {
     background-color: #1d1d1c;
     transition: width 0.5s ease-in-out;
 }
-.link-signup:hover::after {
+.nav-link-signup:hover::after {
     width: 100%;
     transition: width 0.4s ease-in-out;
 }
-.link-signup:hover {
+.nav-link-signup:hover {
     color: black;
 }
 
@@ -401,9 +400,8 @@ main {
     visibility: hidden;
 }
 
-.btn-panel-spacepro {
+.btn-mobile-spacepro {
     text-transform: uppercase;
-    padding: .35rem .75rem 0.2rem .75rem;
     font-weight: 300;
 }
 
@@ -521,14 +519,14 @@ main {
 /* Menu mobile END
 -------------------------- */
 
-/* Menu right => connexion
+/* Sidebar all
 -------------------------- */
-.sidebar-signin {
+.sidebar {
     position: fixed;
     opacity: 0;
     top: 0;
     right: 0;
-    width: 90%;
+    width: 100%;
     height: 100%;
     transform: translateX(100%);
     background: rgba( 255, 255, 255, 0.30 );
@@ -537,16 +535,16 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
-    .sidebar-signin {
+    .sidebar {
         width: 35%;
     }
 }
 
-.sidebar-signin.sidebar-opened {
+.sidebar.sidebar-opened {
     transform: translateX(0);
 }
 
-/* Menu right btn close */
+/* Sidebar => connexion btn close */
 .sidebar-close {
     height: 8rem;
 }
@@ -576,7 +574,7 @@ main {
     transform: rotate(-45deg);
 }
 
-/* Menu right titles */
+/* Sidebar => connexion content */
 .title-signin {
     font-family: 'DIN Condensed';
     font-size: 2rem;
@@ -595,7 +593,6 @@ main {
     color: #1d1d1c;
 }
 
-/* Menu right titles */
 .form-sidebar .input-custom {
     width: 100%;
     height: 3rem;
@@ -610,4 +607,18 @@ main {
     font-size: 1.2rem;
     border: none;
     letter-spacing: 0.2rem;
+}
+
+.btn-mobile-register {
+    font-family: 'DIN Condensed';
+    font-size: 1.2rem;
+    border: none;
+    letter-spacing: 0.2rem;
+    border: 2px solid #1d1d1c;
+}
+
+.lineBreak {
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 9999px;
 }

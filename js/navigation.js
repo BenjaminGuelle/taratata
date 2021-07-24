@@ -35,10 +35,17 @@ const initHoverSubmenu = () => {
 
 // ----- sidebar event
 const initActionSidebar = () => {
-    let linkSignin = document.querySelector('.link-signup');
-    linkSignin.addEventListener('click', handleOpenSidebarSignin);
-    let btnSidebarClose = document.querySelector('.btn-sidebar-close');
-    btnSidebarClose.addEventListener('click', handleCloseSidebarSignin);
+    // open current sidebar
+    let btnSidebarOpen = document.querySelectorAll('.btn-sidebar-open');
+    btnSidebarOpen.forEach((item) => {
+        item.addEventListener('click', handleFadeAllSidebar);
+    });
+
+    // close current sidebar
+    let btnSidebarClose = document.querySelectorAll('.btn-sidebar-close');
+    btnSidebarClose.forEach((item) => {
+        item.addEventListener('click', handleFadeAllSidebar);
+    });
 }
 
 /***********************************
@@ -108,14 +115,23 @@ const handleHoverSubmenu = () => {
 }
  
 // Animation slide sidebar
-const handleOpenSidebarSignin = (e) => {
-    const btnOpenSidebar = e.currentTarget;
-    TLSideBarOpen.restart();
-}
-
-const handleCloseSidebarSignin = (e) => {
-    const btnCloseSidebar = e.currentTarget;
-    TLSideBarClose.restart();
+const handleFadeAllSidebar = (e) => {
+    const elmtActionSidebar = e.currentTarget;
+    const currentDataTargetSidebar = e.currentTarget.getAttribute('data-target');
+    if (currentDataTargetSidebar != undefined && elmtActionSidebar != undefined) {
+        getAllSidebar().forEach((item) => {
+            if (elmtActionSidebar.classList.contains('btn-sidebar-close')) {
+                if (item.getAttribute('data-set') === currentDataTargetSidebar) {
+                    gsap.effects.fadeSidebar(item, {autoAlpha: 0, x: '100%'});
+                }
+            }
+            else {
+                if (item.getAttribute('data-set') === currentDataTargetSidebar) {
+                    gsap.effects.fadeSidebar(item, {autoAlpha: 1, x: 0});
+                }
+            }
+        })
+    } 
 }
 
 /***********************************
@@ -157,24 +173,19 @@ TLFadeMobile
 .to(panelList, {autoAlpha: 1, delay: 0.2, duration: 0.5, stagger: 0.15}, 0)
 .to(panelLine, {autoAlpha: 1, width: '100%', delay: 0.5, duration: 0.50}, '-=0.75')
 
-// ----- Open slide sidebar
-let sideBar = document.querySelector('.sidebar-signin');
+// ----- Open & close slide sidebar
+gsap.registerEffect({
+    name: 'fadeSidebar',
+    effect: (targets, config) => {
+        return gsap.to(targets, {
+            duration: config.duration,
+            x: config.x,
+            autoAlpha: config.autoAlpha,
+        })
+    },
+    defaults: {
+        paused: true,
+        duration: 0.3,
+    }
 
-const TLSideBarOpen = gsap.timeline({
-    paused: true,
-    onStart: () => console.log('START SIDEBAR'),
-    onComplete: () => console.log('COMPLETE SIDEBAR'),
 });
-
-TLSideBarOpen
-.to(sideBar, {autoAlpha: 1, x: 0, duration: 0.3})
-
-// ----- Open slide sidebar
-const TLSideBarClose = gsap.timeline({
-    paused: true,
-    onStart: () => console.log('START SIDEBAR'),
-    onComplete: () => console.log('COMPLETE SIDEBAR'),
-});
-
-TLSideBarClose
-.to(sideBar, {autoAlpha: 0, x: '100%', duration: 0.3})
