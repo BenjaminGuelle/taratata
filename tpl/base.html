@@ -233,9 +233,9 @@
                 <button type="button" class="btn-mobile-spacepro bg-red-dark c-white rounded-pill position-relative d-flex mb-3 border-0">
                     <span>Espace pro</span>
                 </button>
-                <a href="#" class="mobile-connect-link d-block c-white">
+                <button type="button" class="btn-mobile-connect d-block c-white">
                     Connexion
-                </a>
+                </button>
             </div>
             <!-- menu mobile : panel 2 -->
             <div id="panel-2" class="panel panel-closed" data-panel="panel-2">
@@ -381,7 +381,7 @@
     <!-- menu mobile END ------ -->
 
     <!-- ------ menu right : connexion / cart / search -->
-    <div class="sidebar-signin px-4">
+    <div class="sidebar-signin px-4 d-flex flex-column align-items-center">
         <div class="sidebar-close w-100 p-4 d-flex justify-content-end align-items-center">
             <div class="btn-sidebar-close"></div>
         </div>
@@ -395,10 +395,16 @@
                 Déjà client ?
             </a>
         </h2>
-        <form action="#" method="POST" class="form-sidebar p-5">
+        <form action="#" method="POST" class="form-sidebar px-5">
             <input type="mail" class="input-custom mb-3" placeholder="Login">
             <input type="password" class="input-custom" placeholder="Mot de passe">
         </form>
+        <p class="text-center my-4">
+            Vous avez oublié votre mot de passe ?
+        </p>
+        <button type="button" class="btn-mobile-submit text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4">
+            Se connecter
+        </button>
     </div>
     <!-- menu right END ------ -->
 

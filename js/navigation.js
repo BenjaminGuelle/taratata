@@ -106,12 +106,16 @@ const handleSwitchBackAnim = () => {
 const handleHoverSubmenu = () => {
     TLFadeSub.restart();
 }
-
+ 
 // Animation slide sidebar
 const handleOpenSidebarSignin = (e) => {
     const btnOpenSidebar = e.currentTarget;
-    console.log(btnOpenSidebar);
-    TLSideBar.restart();
+    TLSideBarOpen.restart();
+}
+
+const handleCloseSidebarSignin = (e) => {
+    const btnCloseSidebar = e.currentTarget;
+    TLSideBarClose.restart();
 }
 
 /***********************************
@@ -156,11 +160,21 @@ TLFadeMobile
 // ----- Open slide sidebar
 let sideBar = document.querySelector('.sidebar-signin');
 
-const TLSideBar = gsap.timeline({
+const TLSideBarOpen = gsap.timeline({
     paused: true,
     onStart: () => console.log('START SIDEBAR'),
     onComplete: () => console.log('COMPLETE SIDEBAR'),
 });
 
-TLSideBar
+TLSideBarOpen
 .to(sideBar, {autoAlpha: 1, x: 0, duration: 0.3})
+
+// ----- Open slide sidebar
+const TLSideBarClose = gsap.timeline({
+    paused: true,
+    onStart: () => console.log('START SIDEBAR'),
+    onComplete: () => console.log('COMPLETE SIDEBAR'),
+});
+
+TLSideBarClose
+.to(sideBar, {autoAlpha: 0, x: '100%', duration: 0.3})
