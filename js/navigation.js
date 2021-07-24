@@ -27,7 +27,7 @@ const initActionPanel = () => {
     animBackFirstPanel.addEventListener('click', handleSwitchBackAnim);
 }
 
-// ----- submenu event
+// ----- submenu event`
 const initHoverSubmenu = () => {
     let linkBoutique = document.querySelector('#hover-boutique');
     linkBoutique.addEventListener('mouseover', handleHoverSubmenu);

@@ -225,7 +225,7 @@ main {
     transition: width 0.4s ease-in-out;
 }
 .nav-link-signup:hover {
-    color: black;
+    color: #1d1d1c;
 }
 
 .nav-link-icon {
@@ -519,7 +519,7 @@ main {
 /* Menu mobile END
 -------------------------- */
 
-/* Sidebar all
+/* Sidebar 
 -------------------------- */
 .sidebar {
     position: fixed;
