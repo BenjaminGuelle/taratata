@@ -622,3 +622,12 @@ main {
     height: 0.5rem;
     border-radius: 9999px;
 }
+
+.sidebar-search {
+    width: 2rem;
+    height: 2rem;
+}
+
+.sidebar-search-icon {
+    width: 100%;
+}
