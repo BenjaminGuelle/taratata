@@ -527,7 +527,7 @@ main {
     top: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     transform: translateX(100%);
     background: rgba( 255, 255, 255, 0.30 );
     backdrop-filter: blur( 10.5px );
@@ -602,14 +602,14 @@ main {
     padding-left: 1rem;
 }
 
-.btn-mobile-submit {
+.btn-custom-full {
     font-family: 'DIN Condensed';
     font-size: 1.2rem;
     border: none;
     letter-spacing: 0.2rem;
 }
 
-.btn-mobile-register {
+.btn-custom-border {
     font-family: 'DIN Condensed';
     font-size: 1.2rem;
     border: none;
@@ -623,6 +623,7 @@ main {
     border-radius: 9999px;
 }
 
+/* Sidebar => search content */
 .sidebar-search {
     width: 2rem;
     height: 2rem;
@@ -630,4 +631,18 @@ main {
 
 .sidebar-search-icon {
     width: 100%;
+}
+
+/* Sidebar => cart content */
+.cart-end {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.cart-total {
+    font-family: 'DIN Condensed';
+    font-size: 1.2rem;
 }

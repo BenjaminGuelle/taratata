@@ -46,6 +46,10 @@ const initActionSidebar = () => {
     btnSidebarClose.forEach((item) => {
         item.addEventListener('click', handleFadeAllSidebar);
     });
+
+    // open sidebar connect from btn-mobile-connect
+    let btnMobileConnect = document.querySelector('.btn-mobile-connect');
+    btnMobileConnect.addEventListener('click', handleFadeAllSidebar);
 }
 
 /***********************************
@@ -132,6 +136,10 @@ const handleFadeAllSidebar = (e) => {
             }
         })
     } 
+}
+
+const handleTest = () => {
+    console.log('TEST OK');
 }
 
 /***********************************

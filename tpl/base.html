@@ -249,7 +249,7 @@
                 <button type="button" class="btn-mobile-spacepro pt-2 pb-1 px-4 bg-red-dark c-white rounded-pill position-relative d-flex mb-3 border-0">
                     <span>Espace pro</span>
                 </button>
-                <button type="button" class="btn-mobile-connect d-block c-white">
+                <button type="button" class="btn-mobile-connect d-block c-white" data-target="signin">
                     Connexion
                 </button>
             </div>
@@ -415,14 +415,14 @@
             <p class="text-center my-4">
                 Vous avez oublié votre mot de passe ?
             </p>
-            <button type="button" class="btn-mobile-submit text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4 mb-2">
+            <button type="button" class="btn-custom-full text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4 mb-2">
                 Se connecter
             </button>
             <div class="lineBreak bg-black my-5"></div>
             <h2 class="title-signin c-black text-uppercase text-center">
                 Nouveau client ?
             </h2>
-            <button type="button" class="btn-mobile-register text-uppercase bg-white c-black rounded-pill pt-2 pb-1 px-4">
+            <button type="button" class="btn-custom-border text-uppercase bg-white c-black rounded-pill pt-2 pb-1 px-4">
                 Créer un compte
             </button>
         </div>
@@ -438,9 +438,9 @@
                 <img src="../assets/icons/search.svg" alt="icon-search" class="sidebar-search-icon">
             </div>
             <form action="#" method="POST" class="form-sidebar w-100">
-                <input type="text" class="input-custom mb-3" placeholder="bouvles d'oreilles">
+                <input type="text" class="input-custom mb-3" placeholder="exp: bouvles d'oreilles">
             </form>
-            <button type="button" class="btn-mobile-submit text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4 mb-2">
+            <button type="button" class="btn-custom-full text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4 mb-2">
                 Rechercher
             </button>
         </div>
@@ -452,7 +452,27 @@
             <div class="btn-sidebar-close" data-target="cart"></div>
         </div>
         <div class="container w-75 mx-auto pt-3 d-flex flex-column align-items-center">
-            cart
+            <div class="cart-item w-100 bg-black">
+                
+            </div>
+        </div>
+        <div class="cart-end p-4">
+            <div class="lineBreak bg-black mb-3"></div>
+            <div class="w-100 d-flex justify-content-between">
+                <span class="cart-total c-black text-uppercase">Total</span>
+                <span class="cart-total c-black text-uppercase">70€</span>
+            </div>
+            <p class="c-black py-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati neque fuga quo similique doloribus odit quam molestias.
+            </p>
+            <div class="acton-cart-end d-flex justify-content-between">
+                <button type="button" class="btn-custom-border text-uppercase c-black rounded-pill pt-2 pb-1 px-4 mb-2">
+                    Voir le panier
+                </button>
+                <button type="button" class="btn-custom-full text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4 mb-2">
+                    Paiement
+                </button>
+            </div>
         </div>
     </div>
     <!-- sidebar : cart END ------ -->
@@ -460,7 +480,6 @@
     <!-- ------ main -->
     <main class="d-flex">
         <div class="container-fluid bg-grey"></div>
-
     </main>
     <!-- main END ------ -->
 
