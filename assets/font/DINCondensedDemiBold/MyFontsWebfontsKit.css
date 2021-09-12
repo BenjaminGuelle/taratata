@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4179280, 2021-09-12T04:03:07-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: DINCondensed-DemiBold by ParaType
+ * URL: https://www.myfonts.com/fonts/paratype/din-condensed/demi-bold/
+ * Copyright: Copyright © 1998 Paratype, Inc., ParaType Ltd. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3fc550");
+  
+@font-face {
+  font-family: "DINCondensed-DemiBold";
+  src: url('../DINCondensedDemiBold/font.woff2') format('woff2'), url('../DINCondensedDemiBold/font.woff') format('woff');
+}
+

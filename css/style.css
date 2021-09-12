@@ -1,3 +1,4 @@
+
 html {
     font-size: 16px;
 }
@@ -22,7 +23,6 @@ main {
 
 /* Header 
 -------------------------- */
-
 .navbar {
     position: relative;
     display: flex;
@@ -159,7 +159,7 @@ main {
     padding-left: 0;
 }
 .submenu-title {
-    font-family: 'DIN Condensed';
+    font-family: "DINCondensed-DemiBold";
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 0;
@@ -363,7 +363,7 @@ main {
 .panel-title {
     text-transform: uppercase;
     padding: 0;
-    font-family: 'DIN Condensed';
+    font-family: "DINCondensed-DemiBold";
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     font-size: 1.6rem;
@@ -521,11 +521,12 @@ main {
 -------------------------- */
 .sidebar {
     position: fixed;
+    overflow-y: auto;
     opacity: 0;
     top: 0;
     right: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     transform: translateX(100%);
     background: rgba( 255, 255, 255, 0.30 );
     backdrop-filter: blur( 10.5px );
@@ -574,7 +575,7 @@ main {
 
 /* Sidebar => connexion content */
 .title-signin {
-    font-family: 'DIN Condensed';
+    font-family: "DINCondensed-DemiBold";
     font-size: 2rem;
     letter-spacing: 0.1rem;
 }
@@ -601,14 +602,14 @@ main {
 }
 
 .btn-custom-full {
-    font-family: 'DIN Condensed';
+    font-family: "DINCondensed-DemiBold";
     font-size: 1.2rem;
     border: none;
     letter-spacing: 0.2rem;
 }
 
 .btn-custom-border {
-    font-family: 'DIN Condensed';
+    font-family: "DINCondensed-DemiBold";
     font-size: 1.2rem;
     border: none;
     letter-spacing: 0.2rem;
@@ -641,6 +642,7 @@ main {
 }
 
 .cart-total {
-    font-family: 'DIN Condensed';
+    font-family: "DINCondensed-DemiBold";
     font-size: 1.2rem;
 }
+
