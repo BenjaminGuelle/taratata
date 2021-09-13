@@ -271,6 +271,7 @@ main {
 -------------------------- */
 .menu-mobile {
     position: absolute;
+    z-index: 1100;
     top: 0;
     left: -90%;
     width: 90%;
@@ -526,6 +527,7 @@ main {
 -------------------------- */
 .sidebar {
     position: fixed;
+    z-index: 1150;
     overflow-y: auto;
     opacity: 0;
     top: 0;
@@ -651,3 +653,7 @@ main {
     font-size: 1.2rem;
 }
 
+.sidebar-cart-list {
+    overflow-y: auto;
+
+}
