@@ -550,7 +550,7 @@ main {
 
 /* Sidebar => connexion btn close */
 .sidebar-close {
-    height: 8rem;
+    height: 6rem;
 }
 
 .btn-sidebar-close {
@@ -581,7 +581,7 @@ main {
 /* Sidebar => connexion content */
 .title-signin {
     font-family: "DINCondensed-DemiBold";
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
 }
 
@@ -606,18 +606,18 @@ main {
     padding-left: 1rem;
 }
 
-.btn-custom-full {
+.btn-custom {
     font-family: "DINCondensed-DemiBold";
-    font-size: 1.2rem;
-    border: none;
+    font-size: 1rem;
     letter-spacing: 0.2rem;
 }
 
-.btn-custom-border {
-    font-family: "DINCondensed-DemiBold";
-    font-size: 1.2rem;
+.btn-custom-full {
     border: none;
-    letter-spacing: 0.2rem;
+}
+
+.btn-custom-border {
+    border: none;
     border: 2px solid #1d1d1c;
 }
 
