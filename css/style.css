@@ -542,7 +542,7 @@ main {
 
 @media screen and (min-width: 1200px) {
     .sidebar {
-        width: 35%;
+        width: 30%;
     }
 }
 
@@ -647,19 +647,6 @@ main {
 }
 
 /* Sidebar => cart content */
-.cart-end {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-
-.cart-total {
-    font-family: "DINCondensed-DemiBold";
-    font-size: 1.2rem;
-}
-
 .sidebar-cart-content {
     width: 100%;
     height: calc(100% - 6rem);
@@ -679,13 +666,59 @@ main {
     padding: 0;
     overflow-y: auto;
 }
+/* Sidebar => cart item */
+.sidebar-cart-item {
+    position: relative;
+    height: 6rem;
+}
+.btn-sidebar-cart-remove {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+}
 
+.btn-sidebar-cart-remove img {
+    width: 0.5rem;
+}
+
+.sidebar-cart-item-picture {
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.sidebar-cart-item-picture img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.sidebar-cart-item-content {
+    flex: 2;
+    background-color: red;
+}
+
+.sidebar-cart-item-price {
+    flex: 1;
+    background-color: green;
+}
+
+
+/* Sidebar => cart bot */
 .sidebar-cart-bot {
     height: 35%;
 }
 
-.box25 {
-    width: 10rem;
-    height: 10rem;
-    background-color: #dd1a1e;
+.cart-total {
+    font-family: "DINCondensed-DemiBold";
+    font-size: 1.2rem;
 }
+
+
