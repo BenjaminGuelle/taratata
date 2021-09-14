@@ -271,7 +271,7 @@ main {
 -------------------------- */
 .menu-mobile {
     position: absolute;
-    z-index: 1100;
+    z-index: 1200;
     top: 0;
     left: -90%;
     width: 90%;
@@ -527,8 +527,8 @@ main {
 -------------------------- */
 .sidebar {
     position: fixed;
-    z-index: 1150;
     overflow-y: auto;
+    z-index: 1250;
     opacity: 0;
     top: 0;
     right: 0;
@@ -554,6 +554,13 @@ main {
 .sidebar-close {
     height: 6rem;
 }
+
+@media screen and (min-width: 1200px) {
+    .sidebar-close {
+        height: 8rem;
+    }
+}
+
 
 .btn-sidebar-close {
     position: relative;
@@ -653,7 +660,32 @@ main {
     font-size: 1.2rem;
 }
 
-.sidebar-cart-list {
-    overflow-y: auto;
+.sidebar-cart-content {
+    width: 100%;
+    height: calc(100% - 6rem);
+}
 
+@media screen and (min-width: 1200px) {
+    .sidebar-cart-content {
+        width: 100%;
+        height: calc(100% - 8rem);
+    }
+}
+
+.sidebar-cart-list {
+    height: 65%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.sidebar-cart-bot {
+    height: 35%;
+}
+
+.box25 {
+    width: 10rem;
+    height: 10rem;
+    background-color: #dd1a1e;
 }

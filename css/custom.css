@@ -6,18 +6,14 @@
 
 /* Font-size custom
 -------------------------- */
-@media screen and (max-width: 320px) {
-    .fs-xs {
-        font-size: 1rem;
-    }
-    .fs-title-xs {
-        font-size: 1.5rem;
-    }
+.txt-fz {
+    font-size: 0.8rem;
 }
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    
+    .txt-fz {
+        font-size: 1rem;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
