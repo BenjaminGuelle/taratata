@@ -45,4 +45,21 @@
     height: 100%;
     background-image: linear-gradient(to right, transparent 80%, #ffffff 50%);
     background-size: 10px 100%;
-  }
+}
+
+.footer-map-list {
+    flex: 1;
+}
+
+footer .footer-map-list li h3 {
+    letter-spacing: 0.1rem;
+}
+
+footer .footer-map-list li a:hover {
+    color: #1d1d1c;
+}
+
+footer section p a:hover,
+footer section .footer-link-bot a:hover {
+    color: black;
+}
