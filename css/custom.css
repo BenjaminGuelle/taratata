@@ -111,6 +111,16 @@ input {
     background-color: #ffffff;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
 .btn-circle-custom {
     width: 1.2rem;
     height: 1.2rem;
@@ -122,3 +132,4 @@ input {
     font-size: 1.5rem;
     font-weight: 200;
 }
+
