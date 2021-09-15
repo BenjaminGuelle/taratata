@@ -1,0 +1,20 @@
+.footer-link-tel {
+    transition: color 0.1s ease-in;
+}
+.footer-link-tel:hover {
+    color: #1d1d1c;
+}
+
+.footer-social-link {
+    width: 2rem;
+    height: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-social-link img{
+    width: 100%;
+}

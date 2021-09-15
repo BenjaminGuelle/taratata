@@ -2,38 +2,40 @@
 -------------------------- */
 .DINCondensedDemiBold {
 	font-family: "DINCondensed-DemiBold";
+    font-size: 1.2rem;
 }
 
 /* Font-size custom
 -------------------------- */
 .txt-fz {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .txt-fz {
-        font-size: 1rem;
-    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    
+@media (min-width: 992px) {   
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    
+    .txt-fz {
+        font-size: 1.3rem;
+    }
+    .DINCondensedDemiBold {
+        font-family: "DINCondensed-DemiBold";
+        font-size: 1.5rem;
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-    
+
 }
 
 /* Colors custom
@@ -119,6 +121,14 @@ a {
 p {
     margin: 0;
     padding: 0;
+}
+
+.brand {
+   width: 10rem;
+   height: auto; 
+}
+.brand img {
+   width: 100%;
 }
 
 .btn-circle-custom {
