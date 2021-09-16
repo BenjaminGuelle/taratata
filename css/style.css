@@ -15,12 +15,6 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
 }
-
-main {
-    height: 100vh;
-    width: 100%;
-}
-
 /* Header 
 -------------------------- */
 .navbar {

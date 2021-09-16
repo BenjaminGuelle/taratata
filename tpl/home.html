@@ -567,48 +567,38 @@
 
     <!-- ------ main -->
     <main class="container-fluid">
-        <!-- ------ hero section -->
-        <div class="w-100 h-100 bg-grey">
-             <!-- ------ carousel hero -->
-            <div id="carouselHero" class="carousel slide w-100 h-75" data-bs-ride="carousel">
-                <div class="carousel-indicators carouselHero-indicators row justify-content-lg-end">
+        <!-- ------ section hero -->
+        <section id="hero" class="bg-grey">
+            <!-- ------ slider content -->
+            <div class="slider w-100 h-100 position-relative">
+                <!-- ------ slider list -->
+                <ul class="slider-inner w-100 h-100 list-unstyled m-0 p-0">
+                    <!-- ------ slider item -->
+                    <li class="slider-item active row w-100 h-100 m-0 p-0">
+                        <div class="col-12 col-sm-8 bg-green"></div>
+                        <div class="col-12 col-sm-4 bg-white"></div>
+                    </li>
+                    <li class="slider-item row w-100 h-100 m-0 p-0">
+                        <div class="col-12 col-sm-8 bg-green"></div>
+                        <div class="col-12 col-sm-4 bg-white"></div>
+                    </li>
+                    <li class="slider-item row w-100 h-100 m-0 p-0">
+                        <div class="col-12 col-sm-8 bg-green"></div>
+                        <div class="col-12 col-sm-4 bg-white"></div>
+                    </li>
+                </ul>
+                <aside class="slider-btns row w-100 justify-content-end m-0 p-0 position-absolute">
                     <div class="col-12 col-sm-4 d-flex justify-content-center">
-                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" class="slider-btn me-2" data-slide-target="0" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" class="slider-btn me-2" data-slide-target="1" aria-label="Slide 2"></button>
+                        <button type="button" class="slider-btn" data-slide-target="2" aria-label="Slide 3"></button>
                     </div>
-                </div>
-                <div class="carousel-inner w-100 h-100">
-                    <!-- ------ carousel item -->
-                    <div class="carousel-item active w-100 h-100">
-                        <div class="row h-100 w-100 me-0 g-0 position-relative">
-                            <div class="col-12 col-sm-8 bg-green">
-                                div 1
-                            </div>
-                            <div class="col-12 col-sm-4 bg-white"></div>
-                        </div>
-                    </div>
-                    <!-- ------ carousel item -->
-                    <div class="carousel-item w-100 h-100">
-                        <div class="row h-100 w-100 me-0 g-0 position-relative">
-                            <div class="col-12 col-sm-8 bg-green">
-                                div 2
-                            </div>
-                            <div class="col-12 col-sm-4 bg-white"></div>
-                        </div>
-                    </div>
-                    <!-- ------ carousel item -->
-                    <div class="carousel-item w-100 h-100">
-                        <div class="row h-100 w-100 me-0 g-0 position-relative">
-                            <div class="col-12 col-sm-8 bg-green">
-                                div 3
-                            </div>
-                            <div class="col-12 col-sm-4 bg-white"></div>
-                        </div>
-                    </div>
-                </div>
+                </aside>
             </div>
-        </div>
+        </section>
+        <section id="third" class="w-100 vh-100 bg-red">
+
+        </section>
     </main>
     <!-- ------ footer -->
     <footer class="container-fluid pb-2">
@@ -829,5 +819,6 @@
     <script src="../js/main.js"></script>
     <script src="../js/tools.js"></script>
     <script src="../js/navigation.js"></script>
+    <script src="../js/heroSlider.js"></script>
 </body>
 </html>

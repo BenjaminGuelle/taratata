@@ -1,5 +1,7 @@
 
+// -----------------------------------
 // PANEL : add / remove class to slide
+// -----------------------------------
 
 // Remove transition 
 const removePanelOpened = (item) => {
@@ -84,4 +86,17 @@ const getAllPanel = () => {
 const getAllSidebar = () => {
     return document.querySelectorAll('.sidebar');
     
+}
+
+// -----------------------------------
+// HERO SLIDER : add / remove class to display
+// -----------------------------------
+
+// get all hero slide
+const getAllHeroSlideItem = () => {
+    return document.querySelector('#hero .slider-item'); 
+}
+// get current hero slide active
+const getCurrentHeroSlideItem = () => {
+    return document.querySelector('#hero .slider-item.active');
 }

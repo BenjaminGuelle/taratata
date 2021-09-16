@@ -37,3 +37,40 @@
 .carousel-indicators .active {
     opacity: 1;
 }
+
+
+/* START HOME CSS */
+
+/* Hero 
+-------------------------- */
+#hero {
+    width: 100%;
+    height: calc(100vh - 6rem);
+}
+
+@media screen and (min-width: 1200px) {
+    #hero {
+        width: 100%;
+        height: calc(100vh - 8rem);
+    }
+}
+
+/* Hero Slider 
+-------------------------- */
+#hero .slider-item {
+    display: none;
+}
+#hero .slider-item.active {
+    display: flex;
+}
+
+#hero .slider-btns {
+    bottom: 2rem;
+}
+
+#hero .slider-btn {
+    width: 2rem;
+    height: 0.5rem;
+    background-color: #A3B7BC;
+    border: none;
+}

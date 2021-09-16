@@ -138,10 +138,6 @@ const handleFadeAllSidebar = (e) => {
     } 
 }
 
-const handleTest = () => {
-    console.log('TEST OK');
-}
-
 /***********************************
  ************ Timelines ************
  ***********************************

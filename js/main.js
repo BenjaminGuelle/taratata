@@ -4,4 +4,5 @@ document.addEventListener('DOMContentLoaded', function() {
     initActionPanel();
     initHoverSubmenu();
     initActionSidebar();
+    initActionSlider();
 });
