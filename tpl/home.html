@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- ------ header -->
-    <header class="container-fluid sticky-top z-index-2">
+    <header class="container-fluid sticky-top bg-white z-index-2">
         <!-- navbar -->
          <nav class="navbar bg-white justify-content-between justify-content-xl-start align-items-center">
              <button type="button" id="btn-mobile-opened" class="btn-burger order-1 d-xl-none d-flex justify-content-center align-items-center">
@@ -566,10 +566,48 @@
     <!-- sidebar : cart END ------ -->
 
     <!-- ------ main -->
-    <main class="d-flex">
+    <main class="container-fluid">
         <!-- ------ hero section -->
-        <div class="container-fluid bg-grey">
-            
+        <div class="w-100 h-100 bg-grey">
+             <!-- ------ carousel hero -->
+            <div id="carouselHero" class="carousel slide w-100 h-75" data-bs-ride="carousel">
+                <div class="carousel-indicators carouselHero-indicators row justify-content-lg-end">
+                    <div class="col-12 col-sm-4 d-flex justify-content-center">
+                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+                <div class="carousel-inner w-100 h-100">
+                    <!-- ------ carousel item -->
+                    <div class="carousel-item active w-100 h-100">
+                        <div class="row h-100 w-100 me-0 g-0 position-relative">
+                            <div class="col-12 col-sm-8 bg-green">
+                                div 1
+                            </div>
+                            <div class="col-12 col-sm-4 bg-white"></div>
+                        </div>
+                    </div>
+                    <!-- ------ carousel item -->
+                    <div class="carousel-item w-100 h-100">
+                        <div class="row h-100 w-100 me-0 g-0 position-relative">
+                            <div class="col-12 col-sm-8 bg-green">
+                                div 2
+                            </div>
+                            <div class="col-12 col-sm-4 bg-white"></div>
+                        </div>
+                    </div>
+                    <!-- ------ carousel item -->
+                    <div class="carousel-item w-100 h-100">
+                        <div class="row h-100 w-100 me-0 g-0 position-relative">
+                            <div class="col-12 col-sm-8 bg-green">
+                                div 3
+                            </div>
+                            <div class="col-12 col-sm-4 bg-white"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- ------ footer -->
