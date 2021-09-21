@@ -94,9 +94,9 @@ const getAllSidebar = () => {
 
 // get all hero slide
 const getAllHeroSlideItem = () => {
-    return document.querySelector('#hero .slider-item'); 
+    return document.querySelectorAll('#hero .hero-slider-item'); 
 }
 // get current hero slide active
 const getCurrentHeroSlideItem = () => {
-    return document.querySelector('#hero .slider-item.active');
+    return document.querySelector('#hero .hero-slider-item.active');
 }

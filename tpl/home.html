@@ -570,32 +570,64 @@
         <!-- ------ section hero -->
         <section id="hero" class="bg-grey">
             <!-- ------ slider content -->
-            <div class="slider w-100 h-100 position-relative">
-                <!-- ------ slider list -->
-                <ul class="slider-inner w-100 h-100 list-unstyled m-0 p-0">
+            <div class="w-100 h-100 position-relative">
+                <ul class="hero-slider-inner w-100 h-100 list-unstyled m-0 p-0">
                     <!-- ------ slider item -->
-                    <li class="slider-item active row w-100 h-100 m-0 p-0">
-                        <div class="col-12 col-sm-8 bg-green"></div>
-                        <div class="col-12 col-sm-4 bg-white"></div>
+                    <li class="hero-slider-item active w-100 h-100 flex-column flex-xl-row" data-hero-slide="1">
+                        <h1 class="DINCondensedDemiBold text-uppercase hero-slider-title d-xl-none py-3 py-xl-5 ps-3 ps-xl-5">
+                            Bienvenue<br>sur notre boutique
+                        </h1>
+                        <div class="hero-slider-start bg-green"></div>
+                        <div class="hero-slider-end bg-grey d-flex flex-column">
+                            <h1 class="DINCondensedDemiBold text-uppercase hero-slider-title d-none d-xl-block py-3 py-xl-5 ps-3 ps-xl-5">
+                                Bienvenue<br>sur notre boutique
+                            </h1>
+                            <aside class="hero-slider-content position-relative d-flex flex-xl-row justify-content-xl-end">
+                                <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
+                                    <img src="../assets/images/face/face1.jpg" alt="portrait" class="w-100">
+                                </div>
+                                <div class="hero-slider-content-txt d-flex align-content-xl-center">
+                                    <p class="fw-light pt-2 pt-xl-0 p-xl-2 my-xl-auto">
+                                        de bijoux fantaisie originaux pour femmes joyeuses et plaine de vie !
+                                    </p>
+                                </div>
+                            </aside>
+                        </div>
                     </li>
-                    <li class="slider-item row w-100 h-100 m-0 p-0">
-                        <div class="col-12 col-sm-8 bg-green"></div>
-                        <div class="col-12 col-sm-4 bg-white"></div>
-                    </li>
-                    <li class="slider-item row w-100 h-100 m-0 p-0">
-                        <div class="col-12 col-sm-8 bg-green"></div>
-                        <div class="col-12 col-sm-4 bg-white"></div>
+
+                    <!-- ------ slider item -->
+                    <li class="hero-slider-item w-100 h-100 flex-column flex-xl-row" data-hero-slide="2">
+                        <h1 class="DINCondensedDemiBold text-uppercase hero-slider-title d-xl-none py-3 py-xl-5 ps-3 ps-xl-5">
+                            Bienvenue<br>sur notre boutique
+                        </h1>
+                        <div class="hero-slider-start bg-black"></div>
+                        <div class="hero-slider-end bg-grey d-flex flex-column">
+                            <h1 class="DINCondensedDemiBold text-uppercase hero-slider-title d-none d-xl-block py-3 py-xl-5 ps-3 ps-xl-5">
+                                Bienvenue<br>sur notre boutique
+                            </h1>
+                            <aside class="hero-slider-content position-relative d-flex flex-xl-row justify-content-xl-end">
+                                <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
+                                    <img src="../assets/images/face/face1.jpg" alt="portrait" class="w-100">
+                                </div>
+                                <div class="hero-slider-content-txt d-flex align-content-xl-center">
+                                    <p class="fw-light pt-2 pt-xl-0 p-xl-2 my-xl-auto">
+                                        de bijoux fantaisie originaux pour femmes joyeuses et plaine de vie !
+                                    </p>
+                                </div>
+                            </aside>
+                        </div>
                     </li>
                 </ul>
-                <aside class="slider-btns row w-100 justify-content-end m-0 p-0 position-absolute">
-                    <div class="col-12 col-sm-4 d-flex justify-content-center">
-                        <button type="button" class="slider-btn me-2" data-slide-target="0" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" class="slider-btn me-2" data-slide-target="1" aria-label="Slide 2"></button>
-                        <button type="button" class="slider-btn" data-slide-target="2" aria-label="Slide 3"></button>
+                <div class="hero-slider-nav w-100 d-flex justify-content-center justify-content-xl-end">
+                    <div class="hero-slider-btns d-flex justify-content-center">
+                        <button type="button" data-slide-target="0" class="hero-slider-btn active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-slide-target="1" class="hero-slider-btn" aria-label="Slide 2"></button>
+                        <button type="button" data-slide-target="2" class="hero-slider-btn" aria-label="Slide 3"></button>
                     </div>
-                </aside>
+                </div>
             </div>
         </section>
+
         <section id="third" class="w-100 vh-100 bg-red">
 
         </section>

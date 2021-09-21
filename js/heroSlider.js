@@ -6,7 +6,7 @@
  // ----- hero slider event
  const initActionSlider = () => {
      const slider = document.querySelector('.slider');
-     const sliderBtns = document.querySelectorAll('.slider-btn');
+     const sliderBtns = document.querySelectorAll('.hero-slider-btn');
      sliderBtns.forEach((item) => {
         item.addEventListener('click', handleSliderBtn);
      });
@@ -20,11 +20,13 @@
  */
 
  const handleSliderBtn = (e) => {
-    console.log('CLICK BTN SLIDER');
-    const currentBtnSlideHero = e.currentTarget;
-    const currentDataTargetSlideHero = e.currentTarget.getAttribute('data-slide-target');
-    console.log('SLIDE TARGET', currentDataTargetSlideHero);
+    const targetSlideHero = e.currentTarget.getAttribute('data-slide-target');
+    console.log('DATA SLIDE TARGET', targetSlideHero);
+    console.log('ALL SLIDE', getAllHeroSlideItem());
+    console.log('CURRENT SLIDE', getCurrentHeroSlideItem());
 
-    console.log(getCurrentSlideItem());
-
+    if (getAllHeroSlideItem().length > targetSlideHero) {
+        getCurrentHeroSlideItem().classList.remove('active');
+        getAllHeroSlideItem()[targetSlideHero].classList.add('active');
+    }
 }
