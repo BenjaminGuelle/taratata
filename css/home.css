@@ -70,6 +70,7 @@
 .hero-slider-start {
     width: 100%;
     height: 40%;
+    opacity: 0;
 }
 .hero-slider-end {
     width: 100%;
@@ -88,9 +89,10 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateY(-50%);
+    transform: translateY(0);
     width: 9rem;
     height: 9rem;
+    opacity: 0;
 }
 
 .hero-slider-content-txt {
@@ -144,9 +146,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        transform: translateX(-50%);
+        transform: translateX(0%);
         width: 25rem;
         height: 25rem;
+        opacity: 0;
     }
     .hero-slider-content-txt {
         height: 25rem;
