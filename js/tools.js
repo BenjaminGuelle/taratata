@@ -1,3 +1,6 @@
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
 // -----------------------------------
 // PANEL : add / remove class to slide
@@ -100,3 +103,4 @@ const getAllHeroSlideItem = () => {
 const getCurrentHeroSlideItem = () => {
     return document.querySelector('#hero .hero-slider-item.active');
 }
+

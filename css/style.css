@@ -24,7 +24,19 @@ body {
     align-items: flex-end;
     padding-top: 0;
     padding-bottom: 0;
-    height: 8rem;
+    height: 4rem;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        height: 6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar {
+        height: 8rem;
+    }
 }
 
 /* Navbar : btn burger */
@@ -530,7 +542,19 @@ body {
 
 /* Sidebar => connexion btn close */
 .sidebar-close {
-    height: 8rem;
+    height: 4rem;
+}
+
+@media (min-width: 992px) {
+    .sidebar-close {
+        height: 6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sidebar-close {
+        height: 8rem;
+    }
 }
 
 .btn-sidebar-close {

@@ -5,7 +5,6 @@
 
  // ----- hero slider event
  const initActionSlider = () => {
-     const slider = document.querySelector('.slider');
      const sliderBtns = document.querySelectorAll('.hero-slider-btn');
      sliderBtns.forEach((item) => {
         item.addEventListener('click', handleSliderBtn);
@@ -28,7 +27,6 @@
 
     if (getAllHeroSlideItem() != undefined || targetSlideHero != undefined) {
         if (getAllHeroSlideItem().length > targetSlideHero) {
-            // TLHeroSlider.restart();
             handleHeroSliderTl();
             getCurrentHeroSlideItem().classList.remove('active');
             getAllHeroSlideItem()[targetSlideHero].classList.add('active');
@@ -37,6 +35,26 @@
         }
     }
 }
+// Auto switch hero slide after Xs.
+const totalSteps = getAllHeroSlideItem().length;
+let selectedStep = 0;
+const myInterval = null;
+const switchSlideAfterdelay = () => {
+    setInterval(() => {
+        if (selectedStep >= totalSteps) {
+            selectedStep = 0;
+        }
+        selectStepToSlideHero(selectedStep);
+        selectedStep++;
+    }, 10000);
+}
+
+const selectStepToSlideHero = (item) => {
+    console.log(item)
+    handleHeroSliderTl();
+    getCurrentHeroSlideItem().classList.remove('active');
+    getAllHeroSlideItem()[item].classList.add('active');
+}
 
 /***********************************
  ************ Timelines ************
@@ -44,10 +62,14 @@
  */
 const heroSliderPicture = document.querySelectorAll('.hero-slider-start');
 const heroSliderFace = document.querySelectorAll('.hero-slider-content-box');
-const heroSliderTextContent = document.querySelectorAll('.hero-slider-content-txt');
 const heroSliderTitleTop = document.querySelectorAll('.hero-slider-title-top');
 const heroSliderTitleDesktop = document.querySelectorAll('.hero-slider-title-desktop');
 
+// TODO
+const heroSliderTextContent = document.querySelectorAll('.hero-slider-content-txt');
+
+
+// slide animation depending on the device
 if (window.matchMedia("(orientation: landscape)").matches) {
     console.log('orientation landscape');
     TLHeroSliderLandscape = gsap.timeline({
@@ -57,8 +79,10 @@ if (window.matchMedia("(orientation: landscape)").matches) {
     
      TLHeroSliderLandscape
      .to(heroSliderPicture, {duration: 1, opacity: 1})
-     .to(heroSliderFace, {x: '-50%', duration: 1, opacity: 1, ease: "power1"}, 0.5) 
-     .to(heroSliderTitleDesktop, {x: 0, duration: 1, opacity: 1, ease: "power1"}, 0.5) 
+     .to(heroSliderFace, {x: '-50%', duration: 1, opacity: 1, ease: "power1"}, 0.3) 
+     .to(heroSliderTitleDesktop, {x: 0, duration: 1, opacity: 1, ease: "power1"}, 0.3)
+
+
 }
 else {
     console.log('orientation portarait')
@@ -69,8 +93,8 @@ else {
     
      TLHeroSliderPortrait
      .to(heroSliderPicture, {duration: 1, opacity: 1})
-     .to(heroSliderFace, {y: '-50%', duration: 1, opacity: 1}, 0.5)
-     .to(heroSliderTitleTop, {x: 0, duration: 1, opacity: 1, ease: "power1"}, 0.5)
+     .to(heroSliderFace, {y: '-50%', duration: 1, opacity: 1}, 0.3)
+     .to(heroSliderTitleTop, {x: 0, duration: 1, opacity: 1, ease: "power1"}, 0.3)
 }
 
 const handleHeroSliderTl = () => {
