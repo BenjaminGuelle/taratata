@@ -45,14 +45,7 @@
 -------------------------- */
 #hero {
     width: 100%;
-    height: calc(100vh - 6rem);
-}
-
-@media screen and (min-width: 1200px) {
-    #hero {
-        width: 100%;
-        height: calc(100vh - 8rem);
-    }
+    height: calc(100vh - 8rem);
 }
 
 /* Hero Slider 
@@ -81,6 +74,16 @@
     font-size: 2rem;
 }
 
+.hero-slider-title-desktop {
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
+.hero-slider-title-top {
+    transform: translateX(-100px);
+    opacity: 0;
+}
+
 .hero-slider-content {
     flex: 1;
 }
@@ -89,7 +92,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateY(0);
+    transform: translateY(0%);
     width: 9rem;
     height: 9rem;
     opacity: 0;
@@ -109,7 +112,7 @@
 
 .hero-slider-nav {
     position: absolute;
-    bottom: 8%;
+    bottom: 5%;
 }
 
 .hero-slider-btns {
@@ -128,8 +131,7 @@
 .hero-slider-btns .hero-slider-btn.active {
     opacity: 1;
 }
-
-@media screen and (min-width: 1200px) {
+@media (min-width: 992px) {
     .hero-slider-start {
         width: 65%;
         height: 100%;
@@ -139,7 +141,7 @@
         height: 100%;
     }
     .hero-slider-title {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .hero-slider-content-box {
@@ -147,20 +149,63 @@
         top: 0;
         left: 0;
         transform: translateX(0%);
-        width: 25rem;
-        height: 25rem;
+        width: 15rem;
+        height: 15rem;
         opacity: 0;
     }
     .hero-slider-content-txt {
-        height: 25rem;
-        padding-left: 13rem;
+        height: 15rem;
+        padding-left: 7rem;
         padding-right: 0;
     }
     .hero-slider-content-txt p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .hero-slider-btns {
         width: 35%;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-slider-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-slider-content-box {
+        transform: translateX(0%);
+        width: 15rem;
+        height: 15rem;
+        opacity: 0;
+    }
+    .hero-slider-content-txt {
+        height: 15rem;
+        padding-left: 7.5rem;
+    }
+    .hero-slider-content-txt p {
+        font-size: 1.5rem;
+    }
+
+    .hero-slider-btns {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hero-slider-title {
+        font-size: 3rem;
+    }
+
+    .hero-slider-content-box {
+        width: 25rem;
+        height: 25rem;
+    }
+    .hero-slider-content-txt {
+        height: 25rem;
+        padding-left: 13rem;
+    }
+    .hero-slider-content-txt p {
+        font-size: 2rem;
+    }
+
 }

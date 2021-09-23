@@ -26,15 +26,15 @@
     <!-- ------ header -->
     <header class="container-fluid sticky-top bg-white z-index-2">
         <!-- navbar -->
-         <nav class="navbar bg-white justify-content-between justify-content-xl-start align-items-center">
-             <button type="button" id="btn-mobile-opened" class="btn-burger order-1 d-xl-none d-flex justify-content-center align-items-center">
+         <nav class="navbar bg-white justify-content-between justify-content-lg-start align-items-center">
+             <button type="button" id="btn-mobile-opened" class="btn-burger order-1 d-lg-none d-flex justify-content-center align-items-center">
                 <div class="line"></div>
              </button>
-            <a href="#" class="navbar-brand order-2 order-xl-1 m-0">
+            <a href="#" class="navbar-brand order-2 order-lg-1 m-0">
                 <img src="../assets/images/taratata.svg" alt="taratata-bijoux" class="brand-taratata">
             </a>
             <!-- navbar navlinks -->
-            <ul class="nav-links h-100 pt-3 d-flex flex-grow-1 d-none d-xl-flex order-xl-2">
+            <ul class="nav-links h-100 p-0 ps-3 pt-3 d-flex flex-grow-1 d-none d-lg-flex order-lg-2">
                 <li class="nav-item h-100 d-flex align-items-center">
                    <a href=""# class="link-item h-100 c-black d-flex align-items-center">
                         Accueil
@@ -185,22 +185,23 @@
                     </a>
                 </li>
             </ul>
+            <!-- TODO MQ 980 navbar end systeme -->
             <!-- navbar navlinks END -->
-            <div class="h-100 d-flex pt-3 align-items-center position-relative order-3 order-xl-3">
-                <button type="button" class="btn-nav-spacepro pt-2 pb-1 px-4 bg-red-dark c-white rounded-pill position-relative d-none d-xl-flex">
+            <div class="h-100 d-flex pt-3 align-items-center position-relative order-3 order-lg-3">
+                <button type="button" class="btn-nav-spacepro pt-2 pb-1 px-4 bg-red-dark c-white rounded-pill position-relative d-none d-lg-flex">
                     Espace Pro
                 </button>
-                <a href="#" class="btn-sidebar-open nav-link-signup c-black text-uppercase ms-2 d-none d-xl-flex" data-target="signin">
+                <a href="#" class="btn-sidebar-open nav-link-signup c-black text-uppercase ms-2 d-none d-lg-flex" data-target="signin">
                     Connexion
                 </a>
-                <a href="#" class="btn-sidebar-open nav-link-icon mb-2 position-relative ms-xl-3" data-target="search">
+                <a href="#" class="btn-sidebar-open nav-link-icon mb-2 position-relative ms-lg-3" data-target="search">
                     <img src="../assets/icons/search.svg" alt="search" class="icon-search">
                 </a>
                 <a href="#" class="btn-sidebar-open nav-link-icon mb-2 position-relative" data-target="cart">
                     <img src="../assets/svg/taratata-bijoux-caddie.svg" alt="taratata-bijoux-caddie" class="icon-caddie">
                     <span id="shopping-number" class="c-white number-shop">02</span>
                 </a>
-                <div class="dropdown dropdown-lang d-none d-xl-flex">
+                <div class="dropdown dropdown-lang d-none d-lg-flex">
                     <a class="dropdown-toggle c-black" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                       FR
                     </a>
@@ -406,6 +407,7 @@
                 </ul>
             </div>
         </div>
+        <!-- TODO dropdown a coder-->
         <button type="menu" class="btn-mobile-dropdown d-flex justify-content-between align-items-center px-3 mx-auto mt-2">
             <span class="txt-lang-dropdown c-white">Français</span>
             <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="h-25">
@@ -573,73 +575,74 @@
             <div class="w-100 h-100 position-relative">
                 <ul class="hero-slider-inner w-100 h-100 list-unstyled m-0 p-0">
                     <!-- ------ slider item -->
-                    <li class="hero-slider-item active w-100 h-100 flex-column flex-xl-row" data-hero-slide="1">
-                        <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase hero-slider-title d-xl-none py-3 py-xl-5 ps-3 ps-xl-5">
+                    <li class="hero-slider-item active w-100 h-100 flex-column flex-lg-row" data-hero-slide="1">
+                        <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase hero-slider-title d-lg-none py-3 py-lg-5 ps-3 ps-lg-5">
                             Bienvenue<br>sur notre boutique
                         </h1>
                         <div class="hero-slider-start bg-green"></div>
                         <div class="hero-slider-end bg-grey d-flex flex-column">
-                            <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase hero-slider-title d-none d-xl-block py-3 py-xl-5 ps-3 ps-xl-5">
+                            <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase hero-slider-title d-none d-lg-block py-3 py-lg-5 ps-3 ps-lg-5">
                                 Bienvenue<br>sur notre boutique
                             </h1>
-                            <aside class="hero-slider-content position-relative d-flex flex-xl-row justify-content-xl-end">
+                            <aside class="hero-slider-content position-relative d-flex flex-lg-row justify-content-lg-end">
                                 <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
                                     <img src="../assets/images/face/face3.jpg" alt="portrait" class="w-100">
                                 </div>
-                                <div class="hero-slider-content-txt d-flex align-content-xl-center">
-                                    <p class="fw-light pt-2 pt-xl-0 p-xl-2 my-xl-auto">
-                                        vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleine de vie !
+                                <div class="hero-slider-content-txt d-flex align-content-lg-center">
+                                    <p class="fw-light pt-2 pt-lg-0 p-lg-2 my-lg-auto">
+                                        vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleines de vie !
                                     </p>
                                 </div>
                             </aside>
                         </div>
                     </li>
                     <!-- ------ slider item -->
-                    <li class="hero-slider-item w-100 h-100 flex-column flex-xl-row" data-hero-slide="2">
-                        <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase hero-slider-title d-xl-none py-3 py-xl-5 ps-3 ps-xl-5">
+                    <li class="hero-slider-item w-100 h-100 flex-column flex-lg-row" data-hero-slide="2">
+                        <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase hero-slider-title d-lg-none py-3 py-lg-5 ps-3 ps-lg-5">
+                            Bienvenue<br>sur notre boutique
+                        </h1>
+                        <div class="hero-slider-start bg-red"></div>
+                        <div class="hero-slider-end bg-grey d-flex flex-column">
+                            <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase hero-slider-title d-none d-lg-block py-3 py-lg-5 ps-3 ps-lg-5">
+                                Bienvenue<br>sur notre boutique
+                            </h1>
+                            <aside class="hero-slider-content position-relative d-flex flex-lg-row justify-content-lg-end">
+                                <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
+                                    <img src="../assets/images/face/face2.jpg" alt="portrait" class="w-100">
+                                </div>
+                                <div class="hero-slider-content-txt d-flex align-content-lg-center">
+                                    <p class="fw-light pt-2 pt-lg-0 p-lg-2 my-lg-auto">
+                                        vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleines de vie !
+                                    </p>
+                                </div>
+                            </aside>
+                        </div>
+                    </li>
+                    <!-- ------ slider item -->
+                    <li class="hero-slider-item w-100 h-100 flex-column flex-lg-row" data-hero-slide="3">
+                        <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase hero-slider-title d-lg-none py-3 py-lg-5 ps-3 ps-lg-5">
                             Bienvenue<br>sur notre boutique
                         </h1>
                         <div class="hero-slider-start bg-black"></div>
                         <div class="hero-slider-end bg-grey d-flex flex-column">
-                            <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase hero-slider-title d-none d-xl-block py-3 py-xl-5 ps-3 ps-xl-5">
+                            <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase hero-slider-title d-none d-lg-block py-3 py-lg-5 ps-3 ps-lg-5">
                                 Bienvenue<br>sur notre boutique
                             </h1>
-                            <aside class="hero-slider-content position-relative d-flex flex-xl-row justify-content-xl-end">
-                                <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
-                                    <img src="../assets/images/face/face2.jpg" alt="portrait" class="w-100">
-                                </div>
-                                <div class="hero-slider-content-txt d-flex align-content-xl-center">
-                                    <p class="fw-light pt-2 pt-xl-0 p-xl-2 my-xl-auto">
-                                        vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleine de vie !
-                                    </p>
-                                </div>
-                            </aside>
-                        </div>
-                    </li>
-                    <!-- ------ slider item -->
-                    <li class="hero-slider-item w-100 h-100 flex-column flex-xl-row" data-hero-slide="3">
-                        <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase hero-slider-title d-xl-none py-3 py-xl-5 ps-3 ps-xl-5">
-                            Bienvenue<br>sur notre boutique
-                        </h1>
-                        <div class="hero-slider-start bg-gold"></div>
-                        <div class="hero-slider-end bg-grey d-flex flex-column">
-                            <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase hero-slider-title d-none d-xl-block py-3 py-xl-5 ps-3 ps-xl-5">
-                                Bienvenue<br>sur notre boutique
-                            </h1>
-                            <aside class="hero-slider-content position-relative d-flex flex-xl-row justify-content-xl-end">
+                            <aside class="hero-slider-content position-relative d-flex flex-lg-row justify-content-lg-end">
                                 <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
                                     <img src="../assets/images/face/face1.jpg" alt="portrait" class="w-100">
                                 </div>
-                                <div class="hero-slider-content-txt d-flex align-content-xl-center">
-                                    <p class="fw-light pt-2 pt-xl-0 p-xl-2 my-xl-auto">
-                                        vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleine de vie !
+                                <div class="hero-slider-content-txt d-flex align-content-lg-center">
+                                    <p class="fw-light pt-2 pt-lg-0 p-lg-2 my-lg-auto">
+                                        vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleines de vie !
                                     </p>
                                 </div>
                             </aside>
                         </div>
                     </li>
+                    
                 </ul>
-                <div class="hero-slider-nav w-100 d-flex justify-content-center justify-content-xl-end">
+                <div class="hero-slider-nav w-100 d-flex justify-content-center justify-content-lg-end">
                     <div class="hero-slider-btns d-flex justify-content-center">
                         <button type="button" data-slide-target="0" class="hero-slider-btn active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-slide-target="1" class="hero-slider-btn" aria-label="Slide 2"></button>

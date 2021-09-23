@@ -45,7 +45,7 @@
 const heroSliderPicture = document.querySelectorAll('.hero-slider-start');
 const heroSliderFace = document.querySelectorAll('.hero-slider-content-box');
 const heroSliderTextContent = document.querySelectorAll('.hero-slider-content-txt');
-const heroSliderHTop = document.querySelectorAll('.hero-slider-title-top');
+const heroSliderTitleTop = document.querySelectorAll('.hero-slider-title-top');
 const heroSliderTitleDesktop = document.querySelectorAll('.hero-slider-title-desktop');
 
 if (window.matchMedia("(orientation: landscape)").matches) {
@@ -57,7 +57,8 @@ if (window.matchMedia("(orientation: landscape)").matches) {
     
      TLHeroSliderLandscape
      .to(heroSliderPicture, {duration: 1, opacity: 1})
-     .to(heroSliderFace, {x: -200, duration: 1, opacity: 1}) 
+     .to(heroSliderFace, {x: '-50%', duration: 1, opacity: 1, ease: "power1"}, 0.5) 
+     .to(heroSliderTitleDesktop, {x: 0, duration: 1, opacity: 1, ease: "power1"}, 0.5) 
 }
 else {
     console.log('orientation portarait')
@@ -68,7 +69,8 @@ else {
     
      TLHeroSliderPortrait
      .to(heroSliderPicture, {duration: 1, opacity: 1})
-     .to(heroSliderFace, {y: -80, duration: 1, opacity: 1})
+     .to(heroSliderFace, {y: '-50%', duration: 1, opacity: 1}, 0.5)
+     .to(heroSliderTitleTop, {x: 0, duration: 1, opacity: 1, ease: "power1"}, 0.5)
 }
 
 const handleHeroSliderTl = () => {
