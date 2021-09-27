@@ -28,6 +28,7 @@
     if (getAllHeroSlideItem() != undefined || targetSlideHero != undefined) {
         if (getAllHeroSlideItem().length > targetSlideHero) {
             handleHeroSliderTl();
+            // TODO clear interval after click btn
             getCurrentHeroSlideItem().classList.remove('active');
             getAllHeroSlideItem()[targetSlideHero].classList.add('active');
             lastBtnActive.classList.remove('active');
@@ -64,8 +65,6 @@ const heroSliderPicture = document.querySelectorAll('.hero-slider-start');
 const heroSliderFace = document.querySelectorAll('.hero-slider-content-box');
 const heroSliderTitleTop = document.querySelectorAll('.hero-slider-title-top');
 const heroSliderTitleDesktop = document.querySelectorAll('.hero-slider-title-desktop');
-
-// TODO
 const heroSliderTextContent = document.querySelectorAll('.hero-slider-content-txt');
 
 
@@ -81,6 +80,7 @@ if (window.matchMedia("(orientation: landscape)").matches) {
      .to(heroSliderPicture, {duration: 1, opacity: 1})
      .to(heroSliderFace, {x: '-50%', duration: 1, opacity: 1, ease: "power1"}, 0.3) 
      .to(heroSliderTitleDesktop, {x: 0, duration: 1, opacity: 1, ease: "power1"}, 0.3)
+     .to(heroSliderTextContent, {duration: 1, opacity: 1, ease: "power1"}, 0.5)
 
 
 }
@@ -95,6 +95,7 @@ else {
      .to(heroSliderPicture, {duration: 1, opacity: 1})
      .to(heroSliderFace, {y: '-50%', duration: 1, opacity: 1}, 0.3)
      .to(heroSliderTitleTop, {x: 0, duration: 1, opacity: 1, ease: "power1"}, 0.3)
+     .to(heroSliderTextContent, {duration: 1, opacity: 1, ease: "power1"}, 0.5)
 }
 
 const handleHeroSliderTl = () => {

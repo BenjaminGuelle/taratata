@@ -10,36 +10,13 @@
 .txt-fz {
     font-size: 0.9rem;
 }
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+.fz-title-din {
+    font-size: 2rem;
+}
+.fz-title-txt {
+    font-size: 0.9rem;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    .txt-fz {
-        font-size: 1rem;
-    } 
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .txt-fz {
-        font-size: 1.2rem;
-    }
-    .DINCondensedDemiBold {
-        font-family: "DINCondensed-DemiBold";
-        font-size: 1.5rem;
-    }
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-
-}
 
 /* Colors custom
 -------------------------- */
@@ -146,3 +123,73 @@ p {
     font-weight: 200;
 }
 
+.icon-title-start, .icon-title-end {
+    position: absolute;
+    top: -40%;
+    width: 3rem;
+}
+
+.icon-title-start {
+    left: -25%;
+}
+
+.icon-title-end {
+    right: -25%;
+}
+
+
+/*
+******* MEDIA QUERIES
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .txt-fz {
+        font-size: 1rem;
+    } 
+    .fz-title-txt {
+        font-size: 1.3rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .txt-fz {
+        font-size: 1.2rem;
+    }
+    .DINCondensedDemiBold {
+        font-family: "DINCondensed-DemiBold";
+        font-size: 1.5rem;
+    }
+    .fz-title-din {
+        font-size: 2.5rem;
+    }
+    .fz-title-txt {
+        font-size: 1.5rem;
+    }
+    .icon-title-start {
+        left: -18%;
+    }
+    
+    .icon-title-end {
+        right: -18%;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .fz-title-din {
+        font-size: 3rem;
+    }
+    .fz-title-txt {
+        font-size: 2rem;
+    }
+}

@@ -1,50 +1,8 @@
-
-.carouselHero-indicators {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    list-style: none;
-}
-
-.carousel-indicators [data-bs-target] {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 35px;
-    height: 4px;
-    padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    z-index: 1200;
-    background-color: #A3B7BC;
-    background-clip: padding-box;
-    border: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity .6s ease;
-}
-
-.carousel-indicators .active {
-    opacity: 1;
-}
-
-
 /* START HOME CSS */
 
 /* Hero 
 -------------------------- */
 #hero {
-    width: 100%;
     height: calc(100vh - 4rem);
 }
 
@@ -116,6 +74,7 @@
     height: 100%;
     padding-left: 0;
     padding-right: 9rem;
+    opacity: 0;
 }
 .hero-slider-content-txt p {
     width: 100%;
@@ -152,9 +111,6 @@
     .hero-slider-end {
         width: 35%;
         height: 100%;
-    }
-    .hero-slider-title {
-        font-size: 2rem;
     }
 
     .hero-slider-content-box {
@@ -222,3 +178,6 @@
     }
 
 }
+
+/* Hero Best saler 
+-------------------------- */

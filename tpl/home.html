@@ -568,11 +568,11 @@
     <!-- sidebar : cart END ------ -->
 
     <!-- ------ main -->
-    <main class="container-fluid">
+    <main class="container-fluid px-0 px-lg-2">
         <!-- ------ section hero -->
-        <section id="hero" class="bg-grey">
+        <section id="hero" class="container-fluid">
             <!-- ------ slider content -->
-            <div class="w-100 h-100 position-relative">
+            <div class="w-100 h-100 position-relative bg-grey">
                 <ul class="hero-slider-inner w-100 h-100 list-unstyled m-0 p-0">
                     <!-- ------ slider item -->
                     <li class="hero-slider-item active w-100 h-100 flex-column flex-lg-row" data-hero-slide="1">
@@ -651,13 +651,53 @@
                 </div>
             </div>
         </section>
-
-        <section id="third" class="w-100 vh-100 bg-red">
-
+        <!-- ------ section best sales -->
+        <section id="best-sales" class="container-fluid">
+            <div class="w-100 bg-grey py-4">
+                <h2 class="text-center fz-title-txt fw-light m-0">Bijoux Fantaisies</h2>
+                <h3 class="title-all text-center DINCondensedDemiBold text-uppercase fz-title-din m-0">
+                    <div class="d-inline-block position-relative">
+                        <img src="../assets/png/taratata-bijoux-icon-titre-gauche.png" class="icon-title-start" alt="icon-title">
+                        <span class="">Meilleurs ventes</span>
+                        <img src="../assets/png/taratata-bijoux-icon-titre-droit.png" class="icon-title-end" alt="icon-title">
+                    </div>
+                </h3>
+            </div>
+            <div class="w-100 p-2 bg-grey-dark">
+                <div class="w-100 bg-white">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="..." class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
         </section>
     </main>
     <!-- ------ footer -->
-    <footer class="container-fluid pb-2">
+    <!-- TODO container fluid to child -->
+    <footer class="container-fluid px-0 px-lg-2 pb-2">
         <section class="w-100 bg-green">
             <div class="footer-container mx-auto d-flex flex-column align-items-center c-white">
                 <!-- Footer top -->
