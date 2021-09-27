@@ -137,9 +137,40 @@ p {
     right: -25%;
 }
 
+/*
+*************************
+CSS CUSTOM SPLIDE -------
+*************************
+*/
+#best-sales .splide__pagination__page {
+    display: inline-block;
+    width: 3rem;
+    height: 0.5rem;
+    background: #A3B7BC;
+    border-radius: 0;
+    margin: 3px;
+    padding: 0;
+    transition: transform .2s linear;
+    border: none;
+    opacity: .5;
+}
+
+#best-sales .splide__pagination__page.is-active {
+    transform: scale(1);
+    opacity: 1;
+    background: #A3B7BC;
+}
 
 /*
-******* MEDIA QUERIES
+*************************
+CSS CUSTOM SPLIDE END ---
+*************************
+*/
+
+/*
+*************************
+MEDIA QUERIES CUSTOM ----
+*************************
 */
 
 /* Small devices (landscape phones, 576px and up) */
