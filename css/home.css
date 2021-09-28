@@ -261,10 +261,35 @@
 .wrapper-grid .col {
     height: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.wrapper-grid .col a img{
+    object-fit: cover;
+}
 
+.wrapper-grid .col a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in;
+}
+.wrapper-grid .col a:hover {
+    color: black;
+    opacity: 0.8;
+}
+
+.grid-item-box {
+
+}
+.grid-picture-box {
+
+}
 @media (min-width: 992px)  {
     .wrapper-grid .col {
         height: calc(100vw / 2);
@@ -280,6 +305,5 @@
     }
     .wrapper-grid .row.span-2 {
         height: calc((100vw / 3)*2);
-    }
-    
+    }  
 }

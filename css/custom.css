@@ -10,6 +10,12 @@
 .txt-fz {
     font-size: 0.9rem;
 }
+.fz-txt {
+    font-size: 0.9rem;
+}
+.fz-txt-din {
+
+}
 .fz-title-din {
     font-size: 2rem;
 }
@@ -123,6 +129,8 @@ p {
     font-weight: 200;
 }
 
+/* Icon left & right for title 
+-------------------------- */
 .icon-title-start, .icon-title-end {
     position: absolute;
     top: -40%;
@@ -194,7 +202,7 @@ MEDIA QUERIES CUSTOM ----
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .txt-fz {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .DINCondensedDemiBold {
         font-family: "DINCondensed-DemiBold";
