@@ -1,6 +1,6 @@
 /* START HOME CSS */
 
-/* Hero 
+/* section hero
 -------------------------- */
 #hero {
     height: calc(100vh - 4rem);
@@ -179,7 +179,7 @@
 
 }
 
-/* Hero Best saler 
+/* section best sales
 -------------------------- */
 .item-image {
     width: 100%;
@@ -204,3 +204,82 @@
     display: inline;
 }
 
+/* section unmissable
+-------------------------- */
+.unmissable-title {
+    width: 100%;
+    border-top-right-radius: 4rem 4rem;
+}
+
+.unmissable-picture {
+    width: 100%;
+}
+.unmissable-picture img{
+    width: 100%;
+    height: auto;
+}
+.unmissable-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .unmissable-title {
+        width: 60%;
+        border-top-right-radius: 4rem 4rem;
+    }
+    
+    .unmissable-picture {
+        width: 60%;
+    }
+    .unmissable-picture img{
+        width: 100%;
+        height: auto;
+    }
+    .unmissable-description {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+
+}
+
+
+/* section unmissable => GRID
+-------------------------- */
+.wrapper-grid .col {
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 992px)  {
+    .wrapper-grid .col {
+        height: calc(100vw / 2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper-grid .col {
+        height: calc(100vw / 3);
+    }
+    .wrapper-grid .col.span-2 {
+        height: calc((100vw / 3)*2);
+    }
+    .wrapper-grid .row.span-2 {
+        height: calc((100vw / 3)*2);
+    }
+    
+}
