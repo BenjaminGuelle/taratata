@@ -122,16 +122,16 @@ p {
 -------------------------- */
 .icon-title-start, .icon-title-end {
     position: absolute;
-    top: -40%;
+    top: -100%;
     width: 3rem;
 }
 
 .icon-title-start {
-    left: -25%;
+    left: -40%;
 }
 
 .icon-title-end {
-    right: -25%;
+    right: -40%;
 }
 
 /*
@@ -188,6 +188,16 @@ MEDIA QUERIES CUSTOM ----
     .fz-txt-din {
         font-size: 1.6rem;
     }
+    .icon-title-start, .icon-title-end {
+        top: -90%;
+    }
+    .icon-title-start {
+        left: -30%;
+    }
+    
+    .icon-title-end {
+        right: -30%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -200,12 +210,15 @@ MEDIA QUERIES CUSTOM ----
     .fz-txt-din {
         font-size: 2rem;
     }
+    .icon-title-start, .icon-title-end {
+        top: -75%;
+    }
     .icon-title-start {
-        left: -18%;
+        left: -25%;
     }
     
     .icon-title-end {
-        right: -18%;
+        right: -25%;
     }
 }
 
@@ -215,5 +228,15 @@ MEDIA QUERIES CUSTOM ----
     }
     .fz-txt-din {
         font-size: 2.5rem;
+    }
+    .icon-title-start, .icon-title-end {
+        top: -60%;
+    }
+    .icon-title-start {
+        left: -18%;
+    }
+    
+    .icon-title-end {
+        right: -18%;
     }
 }

@@ -1,5 +1,3 @@
-/* START HOME CSS */
-
 /* section hero
 -------------------------- */
 #hero {
@@ -19,10 +17,7 @@
     }
 }
 
-/* Hero Slider 
--------------------------- */
-
-/* Hero slider item */
+/* section hero : Slider  */
 #hero .hero-slider-item {
     display: none;
 }
@@ -30,7 +25,6 @@
     display: flex;
 }
 
-/* Hero slider content */
 .hero-slider-start {
     width: 100%;
     height: 40%;
@@ -39,10 +33,6 @@
 .hero-slider-end {
     width: 100%;
     height: 40%;
-}
-
-.hero-slider-title {
-    font-size: 2rem;
 }
 
 .hero-slider-title-desktop {
@@ -102,6 +92,8 @@
 .hero-slider-btns .hero-slider-btn.active {
     opacity: 1;
 }
+
+/* section hero : MQ  */
 @media (min-width: 992px) {
     .hero-slider-start {
         width: 65%;
@@ -133,10 +125,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .hero-slider-title {
-        font-size: 2.5rem;
-    }
-
     .hero-slider-content-box {
         transform: translateX(0%);
         width: 15rem;
@@ -154,10 +142,6 @@
 }
 
 @media screen and (min-width: 1400px) {
-    .hero-slider-title {
-        font-size: 3rem;
-    }
-
     .hero-slider-content-box {
         width: 25rem;
         height: 25rem;
@@ -171,6 +155,9 @@
 
 /* section best sales
 -------------------------- */
+.splide-best-item:hover {
+    color: black;
+}
 .item-image {
     width: 100%;
     height: 75%;
@@ -196,58 +183,12 @@
 
 /* section unmissable
 -------------------------- */
-.unmissable-title {
-    width: 100%;
-    border-top-right-radius: 4rem 4rem;
-}
-
-.unmissable-picture {
-    width: 100%;
-}
-.unmissable-picture img{
-    width: 100%;
-    height: auto;
-}
-.unmissable-description {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (min-width: 992px) {
-    .unmissable-title {
-        width: 60%;
-        border-top-right-radius: 4rem 4rem;
-    }
-    
-    .unmissable-picture {
-        width: 60%;
-    }
-    .unmissable-picture img{
-        width: 100%;
-        height: auto;
-    }
-    .unmissable-description {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-}
-
-@media screen and (min-width: 1400px) {
-
+.unmissable-box-title {
+    border-top-right-radius: 3rem 3rem;
 }
 
 
-/* section unmissable => GRID
--------------------------- */
+/* section unmissable : GRID */
 .wrapper-grid .col {
     height: 100vw;
     display: flex;
@@ -274,12 +215,7 @@
     opacity: 0.8;
 }
 
-.grid-item-box {
-
-}
-.grid-picture-box {
-
-}
+/* section unmissable : GRID : MQ*/
 @media (min-width: 992px)  {
     .wrapper-grid .col {
         height: calc(100vw / 2);
