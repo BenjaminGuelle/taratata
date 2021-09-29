@@ -2,27 +2,16 @@
 -------------------------- */
 .DINCondensedDemiBold {
 	font-family: "DINCondensed-DemiBold";
-    font-size: 1.2rem;
 }
 
 /* Font-size custom
 -------------------------- */
-.txt-fz {
-    font-size: 0.9rem;
-}
 .fz-txt {
     font-size: 0.9rem;
 }
 .fz-txt-din {
-
+    font-size: 1.2rem;
 }
-.fz-title-din {
-    font-size: 2rem;
-}
-.fz-title-txt {
-    font-size: 0.9rem;
-}
-
 
 /* Colors custom
 -------------------------- */
@@ -180,39 +169,36 @@ CSS CUSTOM SPLIDE END ---
 MEDIA QUERIES CUSTOM ----
 *************************
 */
+@media (min-width: 360px) {
+    .fz-txt {
+        font-size: 1rem;
+    }
+    .fz-txt-din {
+        font-size: 1.4rem;
+    }
+}
 
-/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .fz-txt {
+        font-size: 1.2rem;
+    }
+    .fz-txt-din {
+        font-size: 1.6rem;
+    }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .txt-fz {
-        font-size: 1rem;
-    } 
-    .fz-title-txt {
+}
+
+@media (min-width: 1200px) {
+    .fz-txt {
         font-size: 1.3rem;
     }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .txt-fz {
-        font-size: 1.5rem;
-    }
-    .DINCondensedDemiBold {
-        font-family: "DINCondensed-DemiBold";
-        font-size: 1.5rem;
-    }
-    .fz-title-din {
-        font-size: 2.5rem;
-    }
-    .fz-title-txt {
-        font-size: 1.5rem;
+    .fz-txt-din {
+        font-size: 2rem;
     }
     .icon-title-start {
         left: -18%;
@@ -223,12 +209,11 @@ MEDIA QUERIES CUSTOM ----
     }
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-    .fz-title-din {
-        font-size: 3rem;
+    .fz-txt {
+        font-size: 1.5rem;
     }
-    .fz-title-txt {
-        font-size: 2rem;
+    .fz-txt-din {
+        font-size: 2.5rem;
     }
 }

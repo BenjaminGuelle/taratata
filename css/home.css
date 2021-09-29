@@ -79,7 +79,6 @@
 .hero-slider-content-txt p {
     width: 100%;
     height: auto;
-    font-size: 1.2rem;
 }
 
 .hero-slider-nav {
@@ -127,9 +126,6 @@
         padding-left: 7rem;
         padding-right: 0;
     }
-    .hero-slider-content-txt p {
-        font-size: 1.5rem;
-    }
 
     .hero-slider-btns {
         width: 35%;
@@ -151,9 +147,6 @@
         height: 15rem;
         padding-left: 7.5rem;
     }
-    .hero-slider-content-txt p {
-        font-size: 1.5rem;
-    }
 
     .hero-slider-btns {
         width: 35%;
@@ -172,9 +165,6 @@
     .hero-slider-content-txt {
         height: 25rem;
         padding-left: 13rem;
-    }
-    .hero-slider-content-txt p {
-        font-size: 2rem;
     }
 
 }
