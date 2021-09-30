@@ -143,18 +143,11 @@ header {
     left: 12px;
     width: calc(100vw - 2.5rem);
     display: none;
-    background: rgba( 129, 129, 129, 0.10 );
-    backdrop-filter: blur( 9.0px );
-    -webkit-backdrop-filter: blur( 9.0px );
+    background: rgba( 209, 205, 205, 0.55 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 7px );
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
     padding: 0;
-    
-}
-
-.submenu-list {
-    list-style: none;
-    width: 12rem;
-    padding-left: 0;
 }
 
 .submenu-link {
@@ -243,6 +236,12 @@ header {
     position: absolute;
     top: 1rem;
     right: 10%;
+}
+
+@media (min-width: 1200px) {
+    .dropdown-lang {
+        right: 5%;
+    }
 }
 .dropdown-lang a {
     font-size: 1rem;
