@@ -1,43 +1,40 @@
-.footer-container {
-    width: 75%;
-}
-@media screen and (min-width: 1200px) {
-    .footer-container {
-        width: 50%;
-    }
-}
-
-.footer-link-tel {
+/* Footer 
+--------------------------*/
+footer a {
     transition: color 0.1s ease-in;
 }
-.footer-link-tel:hover {
+
+footer a:hover {
     color: #1d1d1c;
 }
 
-.footer-social-link {
-    width: 2rem;
-    height: 2rem;
+/* footer : social networks */
+.footer-social-list li {
+    width: 3rem;
+    height: 3rem;
+}
 
+.footer-social-list li a {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer-social-list {
-    width: 75%;
+.footer-social-list li a img{
+    width: 60%;
+    height: auto;
 }
 
-.footer-social-link img{
-    width: 100%;
-}
-
-.lineBreak-vertical {
+/* footer : linebreak */
+.footer-linebreak {
     position: relative;
     height: 10px;
     width: 100%;
 }
 
-.lineBreak-vertical .line {
+.footer-linebreak .line {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,19 +44,21 @@
     background-size: 10px 100%;
 }
 
+/* footer : map list */
 .footer-map-list {
-    flex: 1;
+    width: 100%;
 }
 
-footer .footer-map-list li h3 {
-    letter-spacing: 0.1rem;
+/* footer : MQ */
+@media (min-width: 992px) {
+    .footer-linebreak {
+        position: relative;
+        height: 10px;
+        width: 75%;
+    }
+
+    .footer-map-list {
+        width: 75%;
+    }
 }
 
-footer .footer-map-list li a:hover {
-    color: #1d1d1c;
-}
-
-footer section p a:hover,
-footer section .footer-link-bot a:hover {
-    color: black;
-}

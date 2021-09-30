@@ -11,7 +11,7 @@
 }
 .fz-txt-din {
     font-size: 1.2rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.05rem;
 }
 
 /* Colors custom
@@ -190,6 +190,7 @@ MEDIA QUERIES CUSTOM ----
     }
     .fz-txt-din {
         font-size: 1.6rem;
+        letter-spacing: 0.2rem;
     }
 }
 
