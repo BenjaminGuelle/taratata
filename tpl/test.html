@@ -1,17 +1,191 @@
-<div class="w-100 bg-grey d-flex flex-column flex-lg-row">
-                <div class="unmissable-picture order-2 order-lg-1">
-                    <img src="../assets/images/face/face4.jpg" alt="photo manequin boucle d'oreille">
-                </div>
-                <div class="unmissable-description py-2 py-lg-3 px-lg-5 order-1 order-lg-2">
-                    <h3 class="DINCondensedDemiBold text-uppercase c-red fz-title-din">Des bijoux fantaisie tendances et originaux</h3>
-                    <p class="fz-title-txt fw-light">
-                        <strong>A vous les bagues, clips, broches, bracelets, manchettes, boucles d'oreilles, colliers, sautoirs et pendentifs !</strong>
-                    </p>
-                    <p class="fz-title-txt fw-light py-3">
-                        Deux options pour vous faire plaisir ou choisir un cadeau à offrir :
-                    </p>
-                    <p class="fz-title-txt fw-light">
-                        <strong>commandez en ligne</strong> en restant lovées dans votre canapé. Gardez vos chaussons, on s'occupe de la livraison !  Courageuses, enfourchez vos vélos, trottinettes et autres bolides à roulettes et <strong>foncez faire votre shopping en boutique chez nos revendeurs</strong> pour nous offrir l'immense plaisir de vous voir porter nos bijoux, et ça on adore, on aime !
-                    </p>
+    <!-- ------ header -->
+    <header class="container-fluid sticky-top bg-white z-index-2">
+        <!-- navbar -->
+         <nav class="navbar bg-white justify-content-between justify-content-lg-start align-items-center">
+             <button type="button" id="btn-mobile-opened" class="btn-burger order-1 d-lg-none d-flex justify-content-center align-items-center">
+                <div class="line"></div>
+             </button>
+            <a href="#" class="navbar-brand order-2 order-lg-1 m-0">
+                <img src="../assets/images/taratata.svg" alt="taratata-bijoux" class="brand-taratata">
+            </a>
+            <!-- navbar navlinks -->
+            <ul class="nav-links h-100 p-0 ps-3 pt-3 d-flex flex-grow-1 d-none d-lg-flex order-lg-2">
+                <li class="nav-item h-100 d-flex align-items-center">
+                   <a href=""# class="link-item h-100 c-black d-flex align-items-center">
+                        Accueil
+                   </a>
+                </li>
+                <li class="nav-item h-100 d-flex align-items-center">
+                    <a href="#" id="hover-boutique" class="link-item h-100 c-black d-flex align-items-center">
+                        Boutique
+                    </a>
+                    <!-- submenu -->
+                    <div class="submenu-shop p-5">
+                        <ul class="submenu-list submenu-list-1">
+                            <li class="submenu-item">
+                                <h2 class="text-uppercase DINCondensedDemiBold c-black">
+                                    À ne pas rater
+                                </h2>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link c-black">
+                                    Incontournables
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link c-black">
+                                    Soldes hiver 2020
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link c-black">
+                                    Solde été 2020
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link c-black">
+                                    Outlet
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="submenu-list submenu-list-2 ps-4">
+                            <li class="submenu-item">
+                                <h2 class="text-uppercase DINCondensedDemiBold c-black">
+                                    Bijoux
+                                </h2>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link c-black">
+                                    Collier
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link c-black">
+                                    Broche
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link c-black">
+                                    Bracelet
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link c-black">
+                                    Bague
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link c-black">
+                                    Boucle d'oreille
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link text-capitalize c-black">
+                                    - clips
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link text-capitalize c-black">
+                                    - dormeuses
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-link text-capitalize c-black">
+                                    - puces
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <div class="submenu-collection d-flex flex-column flex-grow-1 ps-4">
+                            <h2 class="m-0 text-uppercase submenu-item c-black DINCondensedDemiBold">Collection</h2>
+                            <!-- submenu : slider -->
+                            <div class="slider-collection">
+                                <div id="submenu-collection-slider" class="carousel slide h-100 w-100" data-bs-ride="carousel">
+                                    <div class="carousel-indicators w-75">
+                                      <button type="button" data-bs-target="#submenu-collection-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#submenu-collection-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#submenu-collection-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner h-100 w-75">
+                                      <div class="carousel-item active container h-100">
+                                        <div class="row h-100">
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item container h-100">
+                                        <div class="row h-100">
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item container h-100">
+                                        <div class="row h-100">
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- submenu : slider END -->
+                        </div>
+                    </div>
+                    <!-- submenu END -->
+                </li>
+                <li class="nav-item h-100 d-flex align-items-center">
+                    <a href="#" class="link-item h-100 c-black d-flex align-items-center">
+                        Actualités
+                    </a>
+                </li>
+                <li class="nav-item h-100 d-flex align-items-center">
+                    <a href="#" class="link-item h-100 c-black d-flex align-items-center">
+                        Contact
+                    </a>
+                </li>
+                <li class="nav-item h-100 d-flex align-items-center">
+                    <a href="#" class="link-item h-100 c-black d-flex align-items-center">
+                        Nous trouver
+                    </a>
+                </li>
+                <li class="nav-item h-100 d-flex align-items-center">
+                    <a href="#" class="link-item h-100 c-black d-flex align-items-center">
+                        Soldes
+                    </a>
+                </li>
+            </ul>
+            <!-- TODO MQ 980 navbar end systeme -->
+            <!-- navbar navlinks END -->
+            <div class="h-100 d-flex pt-3 align-items-center position-relative order-3 order-lg-3">
+                <button type="button" class="btn-nav-spacepro pt-2 pb-1 px-4 bg-red-dark c-white rounded-pill position-relative d-none d-lg-flex">
+                    Espace Pro
+                </button>
+                <a href="#" class="btn-sidebar-open nav-link-signup c-black text-uppercase ms-2 d-none d-lg-flex" data-target="signin">
+                    Connexion
+                </a>
+                <a href="#" class="btn-sidebar-open nav-link-icon mb-2 position-relative ms-lg-3" data-target="search">
+                    <img src="../assets/icons/search.svg" alt="search" class="icon-search">
+                </a>
+                <a href="#" class="btn-sidebar-open nav-link-icon mb-2 position-relative" data-target="cart">
+                    <img src="../assets/svg/taratata-bijoux-caddie.svg" alt="taratata-bijoux-caddie" class="icon-caddie">
+                    <span id="shopping-number" class="c-white number-shop">02</span>
+                </a>
+                <div class="dropdown dropdown-lang d-none d-lg-flex">
+                    <a class="dropdown-toggle c-black" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      FR
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">EN</a></li>
+                    </ul>
                 </div>
             </div>
+         </nav>
+         <!-- navbar END -->
+         
+    </header>

@@ -15,15 +15,12 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
 }
+header {
+    z-index: 10000;
+}
 /* Header 
 -------------------------- */
 .navbar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    padding-top: 0;
-    padding-bottom: 0;
     height: 4rem;
 }
 
@@ -143,8 +140,8 @@ body {
 .submenu-shop {
     position: absolute;
     top: 128px;
-    left: 0;
-    width: 100%;
+    left: 12px;
+    width: calc(100vw - 2.5rem);
     display: none;
     background: rgba( 129, 129, 129, 0.10 );
     backdrop-filter: blur( 9.0px );
@@ -190,14 +187,14 @@ body {
 
 /* Navbar : menu right */
 .btn-nav-spacepro {
-    border: none;
-    text-transform: uppercase;
-    font-weight: 300;
     box-shadow: 0px 8px 50px 1px rgba(0,0,0,0.42);
+    font-size: 1rem;
 }
 .btn-nav-spacepro:hover {
     background-color: #dd1a1e;
+    color: #1d1d1c;
 }
+
 
 .nav-link-signup {
     position: relative;
@@ -223,40 +220,54 @@ body {
 }
 
 .nav-link-icon {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .icon-search {
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 25px;
+    width: 70%;
 }
 
-.icon-caddie {
-    position: absolute;
-    top: -2px;
-    left: 0;
-    width: 40px;
-}
 /* Navbar : icon shopping cart -> number */
 .number-shop {
     position: absolute;
-    top: 8px;
-    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
 }
 
 /* Navbar : dropdown lang */
 .dropdown-lang {
     position: absolute;
-    top: 25px;
-    left: 193px;
+    top: 1rem;
+    right: 10%;
 }
 .dropdown-lang a {
     font-size: 1rem;
-    border-bottom: 2px solid gray;
     text-decoration: none;
+}
 
+.dropdown-toggle:hover {
+    color: #1d1d1c;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+    background: #FAFAFA;
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+}
+
+
+.dropdown-item {
+    color: #1e2125;
+}
+
+item:hover {
+    color: #1e2125;
 }
 
 /* Header => END

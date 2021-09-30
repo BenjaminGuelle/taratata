@@ -37,6 +37,8 @@ const initHoverSubmenu = () => {
 const initActionSidebar = () => {
     // open current sidebar
     let btnSidebarOpen = document.querySelectorAll('.btn-sidebar-open');
+    console.log('ALL BTN');
+    console.log(btnSidebarOpen);
     btnSidebarOpen.forEach((item) => {
         item.addEventListener('click', handleFadeAllSidebar);
     });
@@ -120,6 +122,7 @@ const handleHoverSubmenu = () => {
  
 // Animation slide sidebar
 const handleFadeAllSidebar = (e) => {
+    console.log('OPEN');
     const elmtActionSidebar = e.currentTarget;
     const currentDataTargetSidebar = e.currentTarget.getAttribute('data-target');
     if (currentDataTargetSidebar != undefined && elmtActionSidebar != undefined) {
