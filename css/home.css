@@ -258,12 +258,62 @@
 @media screen and (min-width: 1200px) {
     .jewerly-designer-picture {
         width: 70%;
+        height: 80%;
         transform: rotate(345deg);
+    }
+    .jewerly-designer-content {
+        width: 70%;
     }
 }
 @media screen and (min-width: 1400px) {
     .jewerly-designer-picture {
         width: 60%;
         transform: rotate(345deg);
+    }
+}
+
+/* section home actu
+-------------------------- */
+#home-actus .see-more-line {
+    width: 100%;
+    height: 1rem;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+#home-actus .hover-see-more-line {
+    width: 100%;
+    height: 100%;
+    transition: width 0.2s ease-in;
+}
+#home-actus a:hover .see-more-line .hover-see-more-line{
+    width: 100%;
+}
+
+#home-actus .home-propos {
+    border-radius: 3rem;
+    min-height: 50vh;
+}
+
+@media screen and (min-width: 1200px) {
+    #home-actus .hover-see-more-line {
+        width: 0;
+        height: 100%;
+        transition: width 0.3s ease-in;
+    }
+}
+
+/* section instagram
+-------------------------- */
+#instagramm .col {
+    height: calc(100vw / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section unmissable : GRID : MQ*/
+@media screen and (min-width: 1200px) {
+    #instagramm .col {
+        height: calc(100vw / 6 - 0.5rem);
     }
 }

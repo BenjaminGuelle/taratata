@@ -11,6 +11,7 @@
 }
 .fz-txt-din {
     font-size: 1.2rem;
+    letter-spacing: 0.2rem;
 }
 
 /* Colors custom
@@ -104,6 +105,11 @@ p {
 }
 .brand img {
    width: 100%;
+}
+
+.btn-pillue {
+    border-radius: 3rem;
+    border: none;
 }
 
 .btn-circle-custom {
