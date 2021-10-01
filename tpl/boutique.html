@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../css/custom.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/shop.css">
 
     <!-- Splide Js -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
@@ -585,13 +586,91 @@
         </div>
     </div>
     <!-- sidebar : cart END ------ -->
-
     <!-- ------ main -->
-    <main class="container-fluid px-0 px-lg-2">
+    <main class="container-fluid px-0 px-lg-2 position-relative">
         <!-- ------ section boutique -->
         <section id="shop" class="container-fluid">
-            <div class="w-100 vh-100 bg-grey">
-                <div class="row">
+            <div class="row w-100 bg-grey m-0 pt-3 pt-lg-0">
+                <!-- ------ breadcrump -->
+                <nav class="col-12 py-2 d-none d-lg-block" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb pt-2">
+                        <li class="breadcrumb-item"><a href="#" class="text-uppercase">Home</a></li>
+                        <li class="breadcrumb-item text-uppercase active" aria-current="page">Collection</li>
+                    </ol>
+                </nav>
+                <!-- ------ title -->
+                <div class="col-12 w-100 d-flex justify-content-center pt-5 pb-2 pt-lg-3 pb-lg-5">
+                    <div class="d-inline-block position-relative">
+                        <h2 class="fz-txt fw-light m-0 c-light-blue">Bijoux Fantaisies</h2>
+                        <h3 class="DINCondensedDemiBold fz-txt-din text-uppercase c-light-blue">Collection</h3>
+                        <img src="../assets/svg/taratata-bijoux-icon-titre-gauche-blue.svg" class="position-absolute top-0 icon-title-start" alt="icon du titre créateur de bijoux">
+                        <img src="../assets/svg/taratata-bijoux-icon-titre-droit-blue.svg" class="position-absolute top-0 icon-title-end" alt="icon du titre créateur de bijoux">
+                    </div>
+                </div>
+                <!-- ------ shop description -->
+                <div class="col-12 d-flex justify-content-center mx-auto p-2 pb-4">
+                    <div class="shop-description bg-gold p-4 text-center fz-txt c-white">
+                        <h3 class="DINCondensedDemiBold text-uppercase fz-txt-din m-0 py-2">
+                            Bijoux fantaisie
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione itaque recusandae impedit eum sit eaque, nobis quod quisquam fugit nesciunt obcaecati veniam fugiat ullam provident ducimus molestias temporibus illo omnis?
+                            Dignissimos nesciunt, repudiandae aliquam nam unde fugiat magnam veniam fugit consectetur quaerat minima. Quod voluptates tenetur doloribus debitis maiores velit distinctio totam consectetur! Temporibus, id inventore architecto modi sunt obcaecati!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- ------ shop product-filters -->
+            <!-- TODO create filter bar on mobile display -->
+            <div class="col-12 product-filters w-100 bg-grey px-lg-5">
+                <div class="w-100 h-100 bg-black">
+
+                    <div class="row w-100 h-100 m-0 d-none d-lg-flex">
+                        <div class="col-12 bg-red">
+                            <ul class="w-100 h-100 bg-black d-flex justify-content-between list-unstyled">
+                                <li class="bg-light-blue h-100 product-filter-item"></li>
+                                <li class="bg-light-blue h-100 product-filter-item"></li>
+                                <li class="bg-light-blue h-100 product-filter-item"></li>
+                                <li class="bg-light-blue h-100 product-filter-item"></li>
+                                <li class="bg-light-blue h-100 product-filter-item"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ------ shop product list -->
+            <div class="w-100 bg-grey p-lg-5">
+                <div class="w-100 vh-100 bg-black">
+                    <div class="row product-inner w-100 h-100 m-0">
+                        <div class="col-12 col-lg-4 bg-red">
+                            <div class="w-100 h-100 bg-black"></div>
+                        </div>
+                        <div class="col-12 col-lg-4 bg-red">
+                            <div class="w-100 h-100 bg-black"></div>
+                        </div>
+                        <div class="col-12 col-lg-4 bg-red">
+                            <div class="w-100 h-100 bg-black"></div>
+                        </div>
+                        <div class="col-12 col-lg-4 bg-red">
+                            <div class="w-100 h-100 bg-black"></div>
+                        </div>
+                        <div class="col-12 col-lg-4 bg-red">
+                            <div class="w-100 h-100 bg-black"></div>
+                        </div>
+                        <div class="col-12 col-lg-4 bg-red">
+                            <div class="w-100 h-100 bg-black"></div>
+                        </div>
+                        <div class="col-12 col-lg-4 bg-red">
+                            <div class="w-100 h-100 bg-black"></div>
+                        </div>
+                        <div class="col-12 col-lg-4 bg-red">
+                            <div class="w-100 h-100 bg-black"></div>
+                        </div>
+                        <div class="col-12 col-lg-4 bg-red">
+                            <div class="w-100 h-100 bg-black"></div>
+                        </div>
+                    </div>
 
                 </div>
             </div>

@@ -37,6 +37,9 @@
 .c-green-dark {
     color: #12716d;
 }
+.c-light-blue {
+    color: #1b91a0;
+}
 .c-grey-dark {
     color: #EEEEEF;
 }
@@ -69,6 +72,9 @@
 }
 .bg-green-dark {
     background-color: #12716d;
+}
+.bg-light-blue {
+    background-color: #1b91a0;
 }
 .bg-grey-dark {
     background-color: #EEEEEF;
