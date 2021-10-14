@@ -130,6 +130,16 @@ p {
     font-weight: 200;
 }
 
+/* SHOP Product
+-------------------------- */
+.badge-solde {
+    z-index: 1000;
+    display: none;
+}
+.badge-solde.active {
+    display: block;
+}
+
 /* TITLE WITH CHEVRON
 -------------------------- */
 .icon-title-start, .icon-title-end {
