@@ -130,7 +130,90 @@ p {
     font-weight: 200;
 }
 
-/* SHOP Product
+/*
+*************************
+CUSTOM Product card -----
+*************************
+*/
+
+/* Product item
+-------------------------- */
+.product-item {
+    cursor: pointer;
+}
+
+/* Product item : CARD
+-------------------------- */
+.product-card {
+    min-height: calc(100vh / 3);
+}
+.product-card img,
+.product-card_hover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-price_outline {
+    text-decoration: none;
+    padding-right: 1rem;
+}
+
+.product-price-solde {
+    display: none;
+}
+
+.product-price.active .product-price_outline {
+    text-decoration:line-through;
+}
+.product-price.active .product-price-solde {
+    display: flex;
+}
+
+
+
+/* Product item : CARD-HOVER
+-------------------------- */
+.product-card_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba( 251, 248, 248, 0.55 );
+    box-shadow: 0 2px 20px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+
+    transition: all 0.5s ease-in-out;
+}
+
+.product-item:hover .product-card_hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.product-card-icon_hover {
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+    
+}
+.product-card-icon_hover:hover {
+    transform: scale(1.1);
+}
+
+/* Product item : GIF CARD
+-------------------------- */
+.card-gif {
+    border-radius: 50%;
+}
+
+/* Product item : BADGE SOLDE
 -------------------------- */
 .badge-solde {
     z-index: 1000;
@@ -140,8 +223,11 @@ p {
     display: block;
 }
 
-/* TITLE WITH CHEVRON
--------------------------- */
+/*
+*************************
+     TITLE CHEVRON ------
+*************************
+*/
 .icon-title-start, .icon-title-end {
     width: 2rem;
 }
@@ -155,7 +241,7 @@ p {
 }
 /*
 *************************
-CSS CUSTOM SPLIDE -------
+    CUSTOM SPLIDE -------
 *************************
 */
 #best-sales .splide__pagination__page {
@@ -176,12 +262,6 @@ CSS CUSTOM SPLIDE -------
     opacity: 1;
     background: #A3B7BC;
 }
-
-/*
-*************************
-CSS CUSTOM SPLIDE END ---
-*************************
-*/
 
 /*
 *************************
@@ -230,6 +310,11 @@ MEDIA QUERIES CUSTOM ----
     
     .icon-title-end {
         right: -3rem;
+    }
+
+    .product-card-icon_hover {
+        width: 5rem;
+        height: 5rem;
     }
 }
 
