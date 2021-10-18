@@ -5,5 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initHoverSubmenu();
     initActionSidebar();
     initActionSlider();
+    initOpenFiltersOnMobile();
     switchSlideAfterdelay();
 });

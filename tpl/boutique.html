@@ -624,6 +624,7 @@
             <!-- TODO create filter bar on mobile display -->
             <div class="col-12 product-filters w-100 bg-grey px-lg-5 pt-lg-5">
                 <div class="w-100 h-100">
+                    <!-- ------ landscape product-filters -->
                     <div class="row w-100 h-100 m-0 d-none d-lg-flex">
                         <div class="col-12">
                             <ul class="w-100 h-100 d-flex justify-content-between list-unstyled">
@@ -635,7 +636,93 @@
                             </ul>
                         </div>
                     </div>
-
+                    <!-- ------ mobile product-filters -->
+                    <div class="btn-mobile-filters_open row bg-black w-100 h-100 m-0 d-flex flex-column justify-content-center align-items-center d-lg-none">
+                        <div class="mobile-filters-nav d-flex">
+                            <div class="mobile-filters-lines d-flex justify-content-center align-items-center me-2 position-relative">
+                                <div class="mobile-filters-line bg-white"></div>
+                            </div>
+                            <span class="c-white d-flex justify-content-center align-items-center">Filters</span>
+                        </div>
+                    </div>
+                    <!-- ------ mobile product-filters : list -->
+                    <div class="mobile-filters-sidebar px-5 pb-2">
+                        <div id="btn-mobile-filters-back" class="mobile-filters-back d-flex align-items-center">
+                            <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="mobile-filters-back-icon">
+                            <span class="mobile-filters-back-txt c-white">Reset</span>
+                        </div>
+                        <div class="mobile-filters-content">
+                            <!-- ------ mobile product-filters : dropdown -->
+                            <div class="dropdown">
+                                <button class="mobile-filters-dropdown dropdown-toggle c-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tri
+                                </button>
+                                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="mobile-filters-dropdown dropdown-toggle c-white" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Couleur
+                                </button>
+                                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item" href="#">Bleu</a></li>
+                                <li><a class="dropdown-item" href="#">Rouge</a></li>
+                                <li><a class="dropdown-item" href="#">Vert</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="mobile-filters-dropdown dropdown-toggle c-white" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                Promotion
+                                </button>
+                                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton3">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="mobile-filters-dropdown dropdown-toggle c-white" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                                Collection
+                                </button>
+                                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton4">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <!-- ------ mobile product-filters : list -->
+                            <h3 class="mobile-filters-title DINCondensedDemiBold text-uppercase fz-txt-din c-white pb-2">
+                                Bijoux
+                            </h3>
+                            <ul class="list-unstyled c-white">
+                                <li class="mobile-filters-item fz-txt text-uppercase"><a href="#" class="c-white">Tous</a></li>
+                                <li class="mobile-filters-item fz-txt text-uppercase"><a href="#" class="c-white">Collier</a></li>
+                                <li class="mobile-filters-item fz-txt text-uppercase"><a href="#" class="c-white">Broche</a></li>
+                                <li class="mobile-filters-item fz-txt text-uppercase"><a href="#" class="c-white">Bracelet</a></li>
+                                <li class="mobile-filters-item fz-txt text-uppercase"><a href="#" class="c-white">Bague</a></li>
+                                <li class="fz-txt text-uppercase">
+                                    <ul class="list-unstyled c-white">
+                                        <li class="mobile-filters-item fz-txt text-uppercase"><a href="#" class="c-white">Boucle d'oreilles</a></li>
+                                        <li class="mobile-filters-item fz-txt"><a href="#" class="c-white">- clips</a></li>
+                                        <li class="mobile-filters-item fz-txt"><a href="#" class="c-white">- dormeuses</a></li>
+                                        <li class="mobile-filters-item fz-txt"><a href="#" class="c-white">- puces</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h3 class="mobile-filters-title DINCondensedDemiBold text-uppercase fz-txt-din c-white pb-2">
+                                Collections
+                            </h3>
+                            <ul class="list-unstyled c-white">
+                                <li class="mobile-filters-item fz-txt text-uppercase"><a href="#" class="c-white">Incontournables</a></li>
+                                <li class="mobile-filters-item fz-txt text-uppercase"><a href="#" class="c-white">Soldes hiver 2020</a></li>
+                                <li class="mobile-filters-item fz-txt text-uppercase"><a href="#" class="c-white">Solde été 2020</a></li>
+                                <li class="mobile-filters-item fz-txt text-uppercase"><a href="#" class="c-white">Outlet</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- ------ shop product -->
@@ -857,7 +944,7 @@
                     </div>       
                 </div>
             </div>
-            <div class="w-100 d-flex justify-content-center align-items-center">
+            <div class="w-100 bg-grey d-flex justify-content-center align-items-center">
                 <button type="button" class="btn btn-see-more px-3 my-3 rounded-pill border-1 bord bg-white DINCondensedDemiBold text-uppercase">
                     En voir +
                 </button>

@@ -54,10 +54,31 @@ const initActionSidebar = () => {
     btnMobileConnect.addEventListener('click', handleFadeAllSidebar);
 }
 
+// ----- mobile filters event`
+const initOpenFiltersOnMobile = () => {
+   const btnMobileOpenFilters = document.querySelector('.btn-mobile-filters_open');
+   btnMobileOpenFilters.addEventListener('click', handleOpenFiltersMobile);
+}
+
 /***********************************
  *********** METHOD LIST ***********
  ***********************************
  */
+
+// Display filters sidebar on mobile
+const handleOpenFiltersMobile = () => {
+    
+    const elmtFiltersSidebar = document.querySelector('.mobile-filters-sidebar');
+    if (elmtFiltersSidebar.classList.contains('active')) {
+        elmtFiltersSidebar.classList.remove('active');
+    }
+    else {
+        elmtFiltersSidebar.classList.add('active');
+    }
+
+    console.log('CLICK FILTERS');
+    console.log(elmtFiltersSidebar);
+}
 
 // Display menu mobile
 const handleClickBtnMobile = () => {

@@ -24,6 +24,7 @@
     top: 4rem;
     left: 0;
     height: 2rem;
+    z-index: 1020;
 }
 
 .product-filter-item {
@@ -34,6 +35,115 @@
     border: 1px solid black;
 }
 
+/* shop : filter bar => line */
+.mobile-filters-nav {
+    width: auto;
+    height: 100%;
+}
+
+.mobile-filters-lines {
+    width: 1.5rem;
+    height: 100%;
+}
+
+.mobile-filters-line {
+    width: 75%;
+    height: 0.1rem;
+}
+
+.mobile-filters-line::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: white;
+}
+.mobile-filters-line::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    width: 50%;
+    height: 0.1rem;
+    background-color: white;
+}
+
+/* shop : filter bar => list MOBILE */
+.mobile-filters-sidebar {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    transform: translateX(-100%);
+    width: 100%;
+    height: calc(100vh - 6rem);
+    transition: transform 0.3s ease-in-out;
+    background: rgba( 255, 109, 115, 0.8 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.mobile-filters-content {
+    width: 100%;
+    height: calc(100vh - 10rem);
+    overflow-y: auto;
+}
+
+.mobile-filters-sidebar.active {
+    transform: translateX(0);
+}
+
+.mobile-filters-back {
+    cursor: pointer;
+    height: 3.5rem;
+    position: relative;
+}
+
+.mobile-filters-back-icon {
+    height: 1.2rem;
+}
+
+.mobile-filters-back-txt {
+    position: absolute;
+    top: 18px;
+    left: 40px;
+    font-size: 1.2rem;
+}
+/* TODO : dropdown hover : set color */
+.mobile-filters-sidebar .mobile-filters-dropdown {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba( 251, 134, 140, 0.65 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+}
+
+.mobile-filters-sidebar .dropdown-menu {
+    width: 100%;
+    background: rgba( 251, 134, 140, 0.65 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+}
+
+.mobile-filters-title {
+    border-bottom: 2px solid white;
+}
+
+.mobile-filters-item a:hover {
+    color: white;
+}
+.mobile-filters-item:hover {
+    background-color: rgba(255,255,255,.6);
+    backdrop-filter: blur(5px);
+    color: white;
+}
 
 /* shop : MQ */
 @media (min-width: 1200px) {
