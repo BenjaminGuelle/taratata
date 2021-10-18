@@ -35,6 +35,31 @@
     border: 1px solid black;
 }
 
+/* shop : filter landscape */
+.filters-landscape  .filters-landscape-dropdown {
+    width: 100%;
+    margin: 0;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters-landscape  .filters-landscape-dropdown:hover {
+    color: white;
+}
+
+.filters-landscape .dropdown-menu {
+    width: 100%;
+    background: rgba( 27, 145, 160, 0.55 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    transform: translate(0px, 30px);
+    z-index: 1010;
+}
+
+
 /* shop : filter bar => line */
 .mobile-filters-nav {
     width: auto;
