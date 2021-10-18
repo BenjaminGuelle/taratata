@@ -692,24 +692,42 @@
                             <li class="d-flex py-1 py-lg-2">
                                 <p class="fz-txt fw-light">
                                     <span class="product-label fw-normal fz-txt">Stock :</span>
-                                    10
+                                    <span class="stock-full">10</span>
+                                    <span class="stock-empty c-red active">non-disponible</span>
                                 </p>
                             </li>
                         </ul>
-                        <div class="add-remove-item d-flex align-items-center justify-content-center justify-content-lg-start mt-4">
-                            <button class="btn-circle me-3">
-                                <div class="btn-circle-line"></div>
-                            </button>
-                            <span class="add-remove-item_number me-3 fw-light ">2</span>
-                            <button class="btn-circle">
-                                <div class="btn-circle-line remove"></div>
-                            </button>
+                        <!-- ------ Product-card => stock full -->
+                        <div class="add-remove-item active flex-column">
+                            <div class="d-flex align-items-center justify-content-center justify-content-lg-start mt-4">
+                                <button class="btn-circle me-3">
+                                    <div class="btn-circle-line"></div>
+                                </button>
+                                <span class="add-remove-item_number me-3 fw-light ">2</span>
+                                <button class="btn-circle">
+                                    <div class="btn-circle-line remove"></div>
+                                </button>
+                            </div>
+                            <div class="buy-item d-flex align-items-center justify-content-center justify-content-lg-start my-4">
+                                <button class="btn btn-buy-item d-flex justify-content-around rounded-pill border-1 bord c-white DINCondensedDemiBold text-uppercase">
+                                    Acheter
+                                </button>
+                            </div>
                         </div>
-                        <div class="buy-item d-flex align-items-center justify-content-center justify-content-lg-start my-4">
-                            <button class="btn btn-buy-item d-flex justify-content-around rounded-pill border-1 bord c-white DINCondensedDemiBold text-uppercase">
-                                Acheter
-                            </button>
+                        <!-- ------ Product-card => stock empty -->
+                        <div class="notify-me flex-column">
+                            <div class="buy-item d-flex align-items-center justify-content-center justify-content-lg-start my-4">
+                                <button class="btn btn-notify-me d-flex justify-content-around rounded-pill border-1 bord c-white DINCondensedDemiBold text-uppercase">
+                                    Me prévenir
+                                </button>
+                            </div>
+                            <div class="w-100 position-relative input-notify-me">
+                                <input type="text" class="px-2 py-3 border-0 bg-grey-dark fz-txt fw-light c-black" placeholder="Email">
+                                <button type="button" class="bg-gold c-white px-4 rounded-pill border-0 py-1 text-uppercase DINCondensedDemiBold fz-txt-din">ok</button>
+                            </div>
                         </div>
+                        
+                        <!-- ------ cta social -->
                         <div class="product-card-social pt-3 d-flex justify-content-center justify-content-lg-start">
                             <div class="product-card-social_icon me-4">
                                 <img src="../assets/icons/social/facebook-black.png" alt="icon faceboock">
