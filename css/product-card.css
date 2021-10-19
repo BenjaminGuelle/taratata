@@ -8,6 +8,10 @@
 /* Product crad : btn back to shop */
 .btn-back-shop {
     border: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+.btn-back-shop:hover {
+    transform: scale(1.1);
 }
 
 .btn-back-shop .btn-back-shop_svg {
@@ -23,6 +27,10 @@
 }
 
 /* Product crad : content box */
+.product-price {
+    font-size: 2.5rem;
+}
+
 .btn-buy-item,
 .btn-notify-me {
     padding: 0.5rem 1.2rem;

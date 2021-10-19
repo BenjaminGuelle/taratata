@@ -120,7 +120,7 @@ p {
     border-radius: 3rem;
     border: none;
 }
-
+/* TODO : revoir cette classe pour la supp */
 .btn-circle-custom {
     width: 1.2rem;
     height: 1.2rem;
@@ -246,7 +246,17 @@ CUSTOM Product card -----
 
 /* Product item : GIF CARD
 -------------------------- */
-.card-gif {
+.free-gif {
+    width: 100%;
+    height: calc(100vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.free-gif img {
+    width: 50%;
+    height: auto;
+    background-color: #E1BE63;
     border-radius: 50%;
 }
 
@@ -342,6 +352,17 @@ CUSTOM Product card -----
     left: 10%;
 }
 
+/*
+*************************
+     Input  ------
+*************************
+*/
+.input-custom {
+    background-color: white;
+    border: 1px solid #1d1d1c;
+    
+}
+
 
 /*
 *************************
@@ -413,9 +434,14 @@ MEDIA QUERIES CUSTOM ----
         top: 10%;
         left: 0;
     }
+
     .buying-process-linebreak::after{
         top: 10%;
         left: 100%;
+    }
+
+    .free-gif {
+        height: calc(100vw / 2.5);
     }
 }
 
