@@ -589,8 +589,8 @@
     <!-- sidebar : cart END ------ -->
     <!-- ------ main -->
     <main class="container-fluid px-0 px-lg-2 position-relative">
-        <!-- ------ section product card -->
-        <section id="product-card" class="container-fluid">
+        <!-- ------ section gift card -->
+        <section id="gift-card" class="container-fluid">
             <div class="w-100 bg-grey">
                 <!-- ------ breadcrump -->
                 <nav class="col-12 py-2 d-none d-lg-block" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
@@ -603,11 +603,11 @@
                     </ol>
                 </nav>
                 <div class="row m-0">
-                    <!-- ------ section product card : picture of product -->
+                    <!-- ------ section gift-card : picture -->
                     <div class="col-12 col-lg-6 px-0 px-lg-5 py-5">
                         <div class="container-fluid p-0 container-lg product-card-picture position-relative">
                             <div class="w-100 bg-white">
-                                <div class="free-gif">
+                                <div class="gift-card-picture">
                                     <img src="../assets/svg/taratata-bijoux-cadeau-white.svg" alt="photo de carte cadeau">
                                 </div>
                             </div>
@@ -622,7 +622,7 @@
                             </button>
                         </div>      
                     </div>
-                    <!-- ------ section product card : content of product -->
+                    <!-- ------ section gift-card : content -->
                     <div class="col-12 col-lg-6 px-0 px-lg-5 pb-3 py-lg-5">
                         <div class="fz-txt fw-light">
                             <p>
@@ -642,43 +642,36 @@
                                 lieu à aucun rendu de monnaie. Elle n'est ni remplacée, ni remboursée en cas de perte de code ou de fin de validité.
                             </p>
                         </div>
-                        <form action="" class="d-flex flex-column">
-                            <input type="text" class="py-3 ps-2 fz-txt mt-5 input-custom fw-light c-black" placeholder="De la part de :">
-                            <input type="number" class="py-3 ps-2 fz-txt mt-3 input-custom fw-light c-black" placeholder="Montant de la carte cadeau">
-                            <input type="text" class="py-3 ps-2 fz-txt mt-3 input-custom fw-light c-black" placeholder="Pour qui ?">
-                            <input type="mail" class="py-3 ps-2 fz-txt mt-3 input-custom fw-light c-black" placeholder="Son adresse mail">
-                            <textarea name="" id="" class="py-3 ps-2 fz-txt mt-3 input-custom fw-light c-black" cols="30" rows="10" placeholder="Message pour le destinataire de la carte cadeau"></textarea>
+                        <form action="" class="d-flex flex-column mb-5">
+                            <fieldset>
+                                <p>
+                                    <input type="text" class="w-100 py-3 ps-2 fz-txt mt-5 input-custom fw-light c-black" placeholder="De la part de :">
+                                </p>
+                                <p>
+                                    <input type="number" class="w-100 py-3 ps-2 fz-txt mt-3 input-custom fw-light c-black" placeholder="Montant de la carte cadeau">
+                                </p>
+                                <p>
+                                    <input type="text" class="w-100 py-3 ps-2 fz-txt mt-3 input-custom fw-light c-black" placeholder="Pour qui ?">
+                                </p>
+                                <p>
+                                    <input type="mail" class="w-100 py-3 ps-2 fz-txt mt-3 input-custom fw-light c-black" placeholder="Son adresse mail">
+                                </p>
+                                <p>
+                                    <textarea name="" id="" class="w-100 py-3 ps-2 fz-txt mt-3 input-custom fw-light c-black" cols="30" rows="10" placeholder="Message pour le destinataire de la carte cadeau"></textarea>
+                                </p>
+                                <p class="d-flex position-relative">
+                                    <input type="checkbox" id="gift-card-form-valide">
+                                    <label for="gift-card-form-valide" class="ps-4 fz-txt fw-light">
+                                        J'ai lu et j'accepte les Conditions d'utilisation des cartes cadeaux et j'ai compris la Politique de confidentialité et en matière de cookies.
+                                    </label>
+                                </p>
+                            </fieldset>
                         </form>
-                        <!-- ------ Product-card => stock full -->
-                        <div class="add-remove-item active flex-column">
-                            <div class="d-flex align-items-center justify-content-center justify-content-lg-start mt-4">
-                                <button class="btn-circle me-3">
-                                    <div class="btn-circle-line"></div>
-                                </button>
-                                <span class="add-remove-item_number me-3 fw-light ">2</span>
-                                <button class="btn-circle">
-                                    <div class="btn-circle-line remove"></div>
-                                </button>
-                            </div>
-                            <div class="buy-item d-flex align-items-center justify-content-center justify-content-lg-start my-4">
-                                <button class="btn btn-buy-item d-flex justify-content-around rounded-pill border-1 bord c-white DINCondensedDemiBold text-uppercase">
-                                    Acheter
-                                </button>
-                            </div>
+                        <div class="buy-item d-flex align-items-center justify-content-center justify-content-lg-start my-4">
+                            <button class="btn btn-buy-item d-flex justify-content-around rounded-pill border-1 bord c-white DINCondensedDemiBold text-uppercase">
+                                Acheter
+                            </button>
                         </div>
-                        <!-- ------ Product-card => stock empty -->
-                        <div class="notify-me flex-column">
-                            <div class="buy-item d-flex align-items-center justify-content-center justify-content-lg-start my-4">
-                                <button class="btn btn-notify-me d-flex justify-content-around rounded-pill border-1 bord c-white DINCondensedDemiBold text-uppercase">
-                                    Me prévenir
-                                </button>
-                            </div>
-                            <div class="w-100 position-relative input-notify-me">
-                                <input type="text" class="px-2 py-3 border-0 bg-grey-dark fz-txt fw-light c-black" placeholder="Email">
-                                <button type="button" class="bg-gold c-white px-4 rounded-pill border-0 py-1 text-uppercase DINCondensedDemiBold fz-txt-din">ok</button>
-                            </div>
-                        </div>
-                        
                         <!-- ------ cta social -->
                         <div class="product-card-social pt-3 d-flex justify-content-center justify-content-lg-start">
                             <div class="product-card-social_icon me-4">
