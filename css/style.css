@@ -370,7 +370,7 @@ item:hover {
     padding: 0;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    font-weight: 400;
+    /* font-weight: 400; */
     letter-spacing: 0.1rem;
 }
 
@@ -449,7 +449,6 @@ item:hover {
     position: absolute;
     top: 9px;
     left: 40px;
-    font-size: 1.2rem;
 }
 
 /* Menu mobile : Panels animation switch */

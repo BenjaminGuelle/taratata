@@ -591,449 +591,51 @@
 
     <!-- ------ main -->
     <main class="container-fluid px-0 px-lg-2 position-relative">
-        <!-- ------ section product card -->
-        <section id="product-card" class="container-fluid">
+        <!-- ------ section cart -->
+        <section id="cart" class="container-fluid">
             <div class="w-100 bg-grey">
-                <!-- ------ breadcrump -->
-                <nav class="col-12 py-2 d-none d-lg-block" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-                    <ol class="breadcrumb pt-2">
-                        <li class="breadcrumb-item"><a href="#" class="text-uppercase">Accueil</a></li>
-                        <li class="breadcrumb-item text-uppercase active" aria-current="page">Printemps</li>
-                        <li class="breadcrumb-item text-uppercase active" aria-current="page">été 2021</li>
-                        <li class="breadcrumb-item text-uppercase active" aria-current="page">Demoiselle</li>
-                        <li class="breadcrumb-item text-uppercase active" aria-current="page">Collier demoiselle couleur argent rouge</li>
-                    </ol>
-                </nav>
-                <div class="row m-0">
-                    <!-- ------ section product card : picture of product -->
-                    <div class="col-12 col-lg-6 px-0 px-lg-5 py-5">
-                        <div class="container-fluid p-0 container-lg product-card-picture position-relative">
-                            <span class="badge-solde active position-absolute badge rounded-pill bg-red fs-5 fw-light">
-                                + Soldes
-                                <span class="visually-hidden">unread messages</span>
-                            </span>
-                            <div class="w-100">
-                                <img src="../assets/images/items/bague-banane.jpg" class="w-100" alt="photo de produit">
-                            </div>
+                <div class="row py-5">
+                    <!-- ------ cart : content -->
+                    <div class="col-12 col-lg-8 d-flex flex-column align-items-center">
+                        <!-- ------ cart : content title -->
+                        <div class="d-inline-block position-relative">
+                            <h2 class="text-center fs-2 fw-light m-0 c-black">Bijoux Fantaisies</h2>
+                            <h3 class="DINCondensedDemiBold fs-1 text-center text-uppercase c-black">Pannier</h3>
+                            <img src="../assets/png/taratata-bijoux-icon-titre-gauche.png" class="position-absolute top-0 icon-title-start" alt="icon du titre créateur de bijoux">
+                            <img src="../assets/png/taratata-bijoux-icon-titre-droit.png" class="position-absolute top-0 icon-title-end" alt="icon du titre créateur de bijoux">
                         </div>
-                        <div class="row mt-4">
-                            <div class="col-4 product-card-picture">
-                                <img src="../assets/images/items/bague-troika.jpg" class="w-100" alt="photo de bijoux">
-                            </div>
-                            <div class="col-4 product-card-picture">
-                                <img src="../assets/images/items/boucle-oreille-banane.jpg" class="w-100" alt="photo de bijoux">
-                            </div>
-                            <div class="col-4 product-card-picture">
-                                <img src="../assets/images/items/bracelet-banane.jpg" class="w-100" alt="photo de bijoux">
-                            </div>
-                        </div>
-                        <!-- ------ btn back to shop landscape -->
-                        <div class="w-100 bg-grey d-none d-lg-flex justify-content-center align-items-center">
-                            <button type="button" class="btn btn-back-shop d-flex px-3 my-5 rounded-pill border-1 bord bg-white DINCondensedDemiBold text-uppercase">
-                                <div class="btn-back-shop_svg pe-1">
-                                    <img src="../assets/svg/taratata-bijoux-fleche-gauche.svg" alt="">
+                        <!-- ------ cart : content list item -->
+                        <ul class="cart-list w-100 list-unstyled">
+                            <li class="cart-item col-12 d-flex">
+                                <div class="cart-item_picture p-lg-0 position-relative">
+                                    <img src="../assets/images/items/bague-banane.jpg" alt="photo de produit">
+                                    <button type="button" class="btn-cart-item_remove rounded-circle p-0 bg-white">
+                                        <img src="../assets/icons/remove.png" alt="">
+                                    </button>
                                 </div>
-                                <span>Continuer mes achats</span>
-                            </button>
-                        </div>      
-                    </div>
-                    <!-- ------ section product card : content of product -->
-                    <div class="col-12 col-lg-6 px-0 px-lg-5 pb-3 py-lg-5">
-                        <div class="d-flex flex-column pb-3">
-                            <h4 class="fs-2 text-uppercase">Collier Fantaisie</h4>
-                            <h3 class="DINCondensedDemiBold fs-1 text-uppercase">Demoiselle</h3>
-                            <p class="product-price active d-flex py-3">
-                                <span class="product-price_outline">35€</span>
-                                <span class="product-price-solde c-red">25€</span>
-                            </p>
-                        </div>
-                        <ul class="list-unstyled">
-                            <li class="d-flex py-1 py-lg-2">
-                                <p class="fs-3 fw-light">
-                                    <span class="product-label fw-normal fs-3">Référence :</span>
-                                    E21-07113-103
-                                </p>
-                            </li>
-                            <li class="d-flex py-1 py-lg-2">
-                                <p class="fs-3 fw-light">
-                                    <span class="product-label fw-normal fs-3">Collection :</span>
-                                    Printemps / été 2021
-                                </p>
-                            </li>
-                            <li class="d-flex py-1 py-lg-2">
-                                <p class="fs-3 fw-light">
-                                    <span class="product-label fw-normal fs-3">Thème :</span>
-                                    Demoiselle
-                                </p>
-                            </li>
-                            <li class="d-flex py-1 py-lg-2">
-                                <p class="fs-3 fw-light">
-                                    <span class="product-label fw-normal fs-3">Surface :</span>
-                                    Couleur argent
-                                </p>
-                            </li>
-                            <li class="d-flex py-1 py-lg-2">
-                                <p class="fs-3 fw-light">
-                                    <span class="product-label fw-normal fs-3">Couleur :</span>
-                                    Rouge
-                                </p>
-                            </li>
-                            <li class="d-flex py-1 py-lg-2">
-                                <p class="fs-3 fw-light">
-                                    <span class="product-label fw-normal fs-3">Composition :</span>
-                                    Métal, inclusion d'un motif imprimé dans une résine transparente, résines colorées
-                                    dont les motifs sont peints à la main, perles en verre, paillettes.
-                                </p>
-                            </li>
-                            <li class="d-flex py-1 py-lg-2">
-                                <p class="fs-3 fw-light">
-                                    <span class="product-label fw-normal fs-3">Détails :</span>
-                                    Longueur minimum 4lcm, Longueur maximum 44,5cm
-                                </p>
-                            </li>
-                            <li class="d-flex py-1 py-lg-2">
-                                <p class="fs-3 fw-light">
-                                    <span class="product-label fw-normal fs-3">Stock :</span>
-                                    <!-- ------ Product-card => stock full -->
-                                    <span class="stock-full">10</span>
-                                    <!-- ------ Product-card => stock empty -->
-                                    <span class="stock-empty c-red active">non-disponible</span>
-                                </p>
-                            </li>
-                        </ul>
-                        <!-- ------ Product-card => stock full -->
-                        <div class="add-remove-item active flex-column">
-                            <div class="d-flex align-items-center justify-content-center justify-content-lg-start mt-4">
-                                <button class="btn-circle me-3">
-                                    <div class="btn-circle-line"></div>
-                                </button>
-                                <span class="add-remove-item_number me-3 fw-light ">2</span>
-                                <button class="btn-circle">
-                                    <div class="btn-circle-line remove"></div>
-                                </button>
-                            </div>
-                            <div class="buy-item d-flex align-items-center justify-content-center justify-content-lg-start my-4">
-                                <button class="btn btn-buy-item d-flex justify-content-around rounded-pill border-1 bord c-white DINCondensedDemiBold text-uppercase">
-                                    Acheter
-                                </button>
-                            </div>
-                        </div>
-                        <!-- ------ Product-card => stock empty -->
-                        <div class="notify-me flex-column">
-                            <div class="buy-item d-flex align-items-center justify-content-center justify-content-lg-start my-4">
-                                <button class="btn btn-notify-me d-flex justify-content-around rounded-pill border-1 bord c-white DINCondensedDemiBold text-uppercase">
-                                    Me prévenir
-                                </button>
-                            </div>
-                            <div class="w-100 position-relative input-notify-me">
-                                <input type="text" class="px-2 py-3 border-0 bg-grey-dark fs-3 fw-light c-black" placeholder="Email">
-                                <button type="button" class="bg-gold c-white px-4 rounded-pill border-0 py-1 text-uppercase DINCondensedDemiBold fs-1">ok</button>
-                            </div>
-                        </div>
-                        
-                        <!-- ------ cta social -->
-                        <div class="product-card-social pt-3 d-flex justify-content-center justify-content-lg-start">
-                            <div class="product-card-social_icon me-4">
-                                <img src="../assets/icons/social/facebook-black.png" alt="icon faceboock">
-                            </div>
-                            <div class="product-card-social_icon">
-                                <img src="../assets/icons/social/instagram-black.png" alt="icon instagram">
-                            </div>
-                        </div>
-                        <!-- ------ btn back to shop mobile -->
-                        <div class="w-100 bg-grey d-flex d-lg-none justify-content-center align-items-center">
-                            <button type="button" class="btn w-75 btn-back-shop d-flex justify-content-around px-3 my-5 rounded-pill border-1 bord bg-white DINCondensedDemiBold text-uppercase">
-                                <div class="btn-back-shop_svg pe-1">
-                                    <img src="../assets/svg/taratata-bijoux-fleche-gauche.svg" alt="">
-                                </div>
-                                <span>Continuer mes achats</span>
-                            </button>
-                        </div> 
-                    </div>
-                </div>
-                <!-- ------ Buying process -->
-                <div class="buying-process row">
-                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center align-items-center">
-                        <p class="fs-3 fw-light text-center">
-                            <span class="fw-normal">Livraison gratuite</span>
-                            à<br> partir de 50€ de commande
-                        </p>
-                        <div class="buying-process_icon">
-                            <img src="../assets/svg/taratata-bijoux-transport.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 py-3 py-lg-0">
-                        <div class="w-100 h-100  position-relative d-flex flex-column justify-content-center align-items-center">
-                            <div class="buying-process-linebreak"></div>
-                            <p class="fs-3 text-center">
-                                <span>Paiement</span><br>
-                                <span>Sécurisé</span>
-                            </p>
-                            <div class="buying-process_icon">
-                                <img src="../assets/svg/taratata-bijoux-scurité.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center align-items-center">
-                        <p class="fs-3 fw-light text-center">
-                            <span class="fw-normal">Programme fidélité</span><br>
-                            <span>Vos achats sont récompensés !</span>
-                        </p>
-                        <div class="buying-process_icon">
-                            <img src="../assets/svg/taratata-bijoux-tirelire.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- ------ Best sales -->
-                    <div class="container-fluid pt-lg-5">
-                        <div class="w-100 p-2 bg-grey-dark">
-                            <div class="w-100 bg-white">
-                                <div class="splide">
-                                    <div class="splide__track">
-                                        <ul class="splide__list">
-                                            <li class="splide__slide p-4 p-lg-5 d-flex flex-column justify-content-center align-content-center">
-                                                <div class="product-item position-relative">
-                                                    <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                                        -20%
-                                                        <span class="visually-hidden">unread messages</span>
-                                                    </span>
-                                                    <article class="product-card">
-                                                        <div class="w-100 h-75 bg-white d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/items/bague-troika.jpg" alt="photo de bijoux">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex flex-column justify-content-center align-content-center">
-                                                            <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-red">La havanne</h3>
-                                                            <p class="fs-3 text-uppercase text-center">Bague troika</p>
-                                                            <p class="product-price d-flex justify-content-center align-items-center">
-                                                                <span class="fs-3 product-price_outline">35€</span>
-                                                                <span class="fs-3 product-price-solde c-red">25€</span>
-                                                            </p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="product-card_hover">
-                                                        <div class="w-100 h-75 bg-white  d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/face/face1.jpg" alt="photo de produit">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex justify-content-center align-items-center">
-                                                            <a href="#" class="product-card-icon_hover me-3 me-lg-5">
-                                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                            </a>
-                                                            <a href="#" class="product-card-icon_hover">
-                                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                            </a>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide p-4 p-lg-5 d-flex flex-column justify-content-center align-content-center">
-                                                <div class="product-item position-relative">
-                                                    <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                                        -20%
-                                                        <span class="visually-hidden">unread messages</span>
-                                                    </span>
-                                                    <article class="product-card">
-                                                        <div class="w-100 h-75 bg-white d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/items/bague-banane.jpg" alt="photo de bijoux">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex flex-column justify-content-center align-content-center">
-                                                            <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-red">La havanne</h3>
-                                                            <p class="fs-3 text-uppercase text-center">Bague troika</p>
-                                                            <p class="product-price d-flex justify-content-center align-items-center">
-                                                                <span class="fs-3 product-price_outline">35€</span>
-                                                                <span class="fs-3 product-price-solde c-red">25€</span>
-                                                            </p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="product-card_hover">
-                                                        <div class="w-100 h-75 bg-white  d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/face/face2.jpg" alt="photo de produit">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex justify-content-center align-items-center">
-                                                            <a href="#" class="product-card-icon_hover me-3 me-lg-5">
-                                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                            </a>
-                                                            <a href="#" class="product-card-icon_hover">
-                                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                            </a>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide p-4 p-lg-5 d-flex flex-column justify-content-center align-content-center">
-                                                <div class="product-item position-relative">
-                                                    <span class="badge-solde active position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                                        -20%
-                                                        <span class="visually-hidden">unread messages</span>
-                                                    </span>
-                                                    <article class="product-card">
-                                                        <div class="w-100 h-75 bg-white d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/items/boucle-oreille-banane.jpg" alt="photo de bijoux">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex flex-column justify-content-center align-content-center">
-                                                            <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-red">La havanne</h3>
-                                                            <p class="fs-3 text-uppercase text-center">Bague troika</p>
-                                                            <p class="product-price active d-flex justify-content-center align-items-center">
-                                                                <span class="fs-3 product-price_outline">35€</span>
-                                                                <span class="fs-3 product-price-solde c-red">25€</span>
-                                                            </p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="product-card_hover">
-                                                        <div class="w-100 h-75 bg-white  d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/face/face1.jpg" alt="photo de produit">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex justify-content-center align-items-center">
-                                                            <a href="#" class="product-card-icon_hover me-3 me-lg-5">
-                                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                            </a>
-                                                            <a href="#" class="product-card-icon_hover">
-                                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                            </a>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide p-4 p-lg-5 d-flex flex-column justify-content-center align-content-center">
-                                                <div class="product-item position-relative">
-                                                    <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                                        -20%
-                                                        <span class="visually-hidden">unread messages</span>
-                                                    </span>
-                                                    <article class="product-card">
-                                                        <div class="w-100 h-75 bg-white d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/items/bague-banane.jpg" alt="photo de bijoux">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex flex-column justify-content-center align-content-center">
-                                                            <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-red">La havanne</h3>
-                                                            <p class="fs-3 text-uppercase text-center">Bague troika</p>
-                                                            <p class="product-price d-flex justify-content-center align-items-center">
-                                                                <span class="fs-3 product-price_outline">35€</span>
-                                                                <span class="fs-3 product-price-solde c-red">25€</span>
-                                                            </p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="product-card_hover">
-                                                        <div class="w-100 h-75 bg-white  d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/face/face2.jpg" alt="photo de produit">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex justify-content-center align-items-center">
-                                                            <a href="#" class="product-card-icon_hover me-3 me-lg-5">
-                                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                            </a>
-                                                            <a href="#" class="product-card-icon_hover">
-                                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                            </a>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide p-4 p-lg-5 d-flex flex-column justify-content-center align-content-center">
-                                                <div class="product-item position-relative">
-                                                    <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                                        -20%
-                                                        <span class="visually-hidden">unread messages</span>
-                                                    </span>
-                                                    <article class="product-card">
-                                                        <div class="w-100 h-75 bg-white d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/items/bague-banane.jpg" alt="photo de bijoux">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex flex-column justify-content-center align-content-center">
-                                                            <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-red">La havanne</h3>
-                                                            <p class="fs-3 text-uppercase text-center">Bague troika</p>
-                                                            <p class="product-price d-flex justify-content-center align-items-center">
-                                                                <span class="fs-3 product-price_outline">35€</span>
-                                                                <span class="fs-3 product-price-solde c-red">25€</span>
-                                                            </p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="product-card_hover">
-                                                        <div class="w-100 h-75 bg-white  d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/face/face2.jpg" alt="photo de produit">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex justify-content-center align-items-center">
-                                                            <a href="#" class="product-card-icon_hover me-3 me-lg-5">
-                                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                            </a>
-                                                            <a href="#" class="product-card-icon_hover">
-                                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                            </a>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide p-4 p-lg-5 d-flex flex-column justify-content-center align-content-center">
-                                                <div class="product-item position-relative">
-                                                    <span class="badge-solde active position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                                        -20%
-                                                        <span class="visually-hidden">unread messages</span>
-                                                    </span>
-                                                    <article class="product-card">
-                                                        <div class="w-100 h-75 bg-white d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/items/bague-banane.jpg" alt="photo de bijoux">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex flex-column justify-content-center align-content-center">
-                                                            <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-red">La havanne</h3>
-                                                            <p class="fs-3 text-uppercase text-center">Bague troika</p>
-                                                            <p class="product-price active d-flex justify-content-center align-items-center">
-                                                                <span class="fs-3 product-price_outline">35€</span>
-                                                                <span class="fs-3 product-price-solde c-red">25€</span>
-                                                            </p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="product-card_hover">
-                                                        <div class="w-100 h-75 bg-white  d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/face/face2.jpg" alt="photo de produit">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex justify-content-center align-items-center">
-                                                            <a href="#" class="product-card-icon_hover me-3 me-lg-5">
-                                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                            </a>
-                                                            <a href="#" class="product-card-icon_hover">
-                                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                            </a>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide p-4 p-lg-5 d-flex flex-column justify-content-center align-content-center">
-                                                <div class="product-item position-relative">
-                                                    <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                                        -20%
-                                                        <span class="visually-hidden">unread messages</span>
-                                                    </span>
-                                                    <article class="product-card">
-                                                        <div class="w-100 h-75 bg-white d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/items/bague-banane.jpg" alt="photo de bijoux">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex flex-column justify-content-center align-content-center">
-                                                            <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-red">La havanne</h3>
-                                                            <p class="fs-3 text-uppercase text-center">Bague troika</p>
-                                                            <p class="product-price d-flex justify-content-center align-items-center">
-                                                                <span class="fs-3 product-price_outline">35€</span>
-                                                                <span class="fs-3 product-price-solde c-red">25€</span>
-                                                            </p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="product-card_hover">
-                                                        <div class="w-100 h-75 bg-white  d-flex justify-content-center align-items-center overflow-hidden">
-                                                            <img src="../assets/images/face/face2.jpg" alt="photo de produit">
-                                                        </div>
-                                                        <div class="w-100 h-25 py-3 d-flex justify-content-center align-items-center">
-                                                            <a href="#" class="product-card-icon_hover me-3 me-lg-5">
-                                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                            </a>
-                                                            <a href="#" class="product-card-icon_hover">
-                                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                            </a>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                <div class="cart-item_content row m-0 px-lg-3">
+                                    <div class="col-12 col-lg-8 d-flex flex-column justify-content-center">
+                                        <h3 class="fw-light fs-2">
+                                            <span>
+                                                Demoiselle
+                                            </span>
+                                            <span>
+                                                - Colliers
+                                            </span>
+                                        </h3>
+                                    </div>
+                                    <div class="col-12 col-lg-4 d-flex justify-content-lg-end align-items-center">
+                                        <p class="fs-3">
+                                            <span>75€</span>
+                                        </p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ------ cart : infos -->
+                    <div class="col-12 col-lg-4">
+                        
                     </div>
                 </div>
             </div>

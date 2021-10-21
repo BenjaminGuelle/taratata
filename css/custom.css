@@ -2,15 +2,6 @@
 -------------------------- */
 .DINCondensedDemiBold {
 	font-family: "DINCondensed-DemiBold";
-}
-
-/* Font-size custom
--------------------------- */
-.fz-txt {
-    font-size: 0.9rem;
-}
-.fz-txt-din {
-    font-size: 1.2rem;
     letter-spacing: 0.05rem;
 }
 
@@ -426,24 +417,13 @@ CUSTOM Product card -----
 MEDIA QUERIES CUSTOM ----
 *************************
 */
-@media (min-width: 360px) {
-    .fz-txt {
-        font-size: 1rem;
-    }
-    .fz-txt-din {
-        font-size: 1.4rem;
-    }
-}
+@media (min-width: 360px) {}
 
 @media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
-    .fz-txt {
-        font-size: 1.2rem;
-    }
-    .fz-txt-din {
-        font-size: 1.6rem;
+    .DINCondensedDemiBold {
         letter-spacing: 0.2rem;
     }
 }
@@ -452,12 +432,6 @@ MEDIA QUERIES CUSTOM ----
 }
 
 @media (min-width: 1200px) {
-    .fz-txt {
-        font-size: 1.3rem;
-    }
-    .fz-txt-din {
-        font-size: 2rem;
-    }
     .icon-title-start, .icon-title-end {
         width: 3rem;
     }
@@ -502,11 +476,4 @@ MEDIA QUERIES CUSTOM ----
     }
 }
 
-@media (min-width: 1400px) {
-    .fz-txt {
-        font-size: 1.5rem;
-    }
-    .fz-txt-din {
-        font-size: 2.5rem;
-    }
-}
+@media (min-width: 1400px) {}
