@@ -11,3 +11,7 @@ new Splide( '.splide', {
         },
     }
 } ).mount();
+
+new Splide( '.splide-single', {
+    perPage: 1
+} ).mount();

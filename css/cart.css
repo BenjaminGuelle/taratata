@@ -59,6 +59,14 @@
     height: 0.3rem;
 }
 
+.txt-remise {
+    font-size: 1rem;
+}
+
+.box-right {
+    width: 100%;
+}
+
 
 @media (min-width: 1200px) {
     .cart-item_picture {
@@ -70,5 +78,9 @@
         top: 50%;
         left: -2.5rem;
         transform: translate(-50%, -50%);
+    }
+
+    .box-right {
+        width: 75%;
     }
 }
