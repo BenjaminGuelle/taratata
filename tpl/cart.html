@@ -606,14 +606,14 @@
                         </div>
                         <!-- ------ cart : content list item -->
                         <ul class="cart-list w-100 list-unstyled">
-                            <li class="cart-item col-12 d-flex">
+                            <li class="cart-item col-12 d-flex mb-3 mb-lg-5">
                                 <div class="cart-item_picture p-lg-0 position-relative">
-                                    <img src="../assets/images/items/bague-banane.jpg" alt="photo de produit">
+                                    <img src="../assets/images/items/bague-banane.jpg" class="cart-item_img" alt="photo de produit">
                                     <button type="button" class="btn-cart-item_remove rounded-circle p-0 bg-white">
-                                        <img src="../assets/icons/remove.png" alt="">
+                                        <img src="../assets/icons/remove.png" alt="icon boutton supprimer item">
                                     </button>
                                 </div>
-                                <div class="cart-item_content row m-0 px-lg-3">
+                                <div class="cart-item_content row m-0 mt-3 mt-lg-0 px-lg-3">
                                     <div class="col-12 col-lg-8 d-flex flex-column justify-content-center">
                                         <h3 class="fw-light fs-2">
                                             <span>
@@ -623,15 +623,100 @@
                                                 - Colliers
                                             </span>
                                         </h3>
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn-circle me-3">
+                                                <div class="btn-circle-line"></div>
+                                            </button>
+                                            <span class="add-remove-item_number me-3 fw-light ">2</span>
+                                            <button class="btn-circle">
+                                                <div class="btn-circle-line remove"></div>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="col-12 col-lg-4 d-flex justify-content-lg-end align-items-center">
-                                        <p class="fs-3">
-                                            <span>75€</span>
+                                    <div class="col-12 col-lg-4 d-flex mt-2 mt-lg-0 justify-content-lg-end align-items-center">
+                                        <p class="fs-3 cart-item_price">
+                                            75€
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-item col-12 d-flex mb-3 mb-lg-5">
+                                <div class="cart-item_picture p-lg-0 position-relative">
+                                    <img src="../assets/images/items/bague-banane.jpg" class="cart-item_img" alt="photo de produit">
+                                    <button type="button" class="btn-cart-item_remove rounded-circle p-0 bg-white">
+                                        <img src="../assets/icons/remove.png" alt="icon boutton supprimer item">
+                                    </button>
+                                </div>
+                                <div class="cart-item_content row m-0 mt-3 mt-lg-0 px-lg-3">
+                                    <div class="col-12 col-lg-8 d-flex flex-column justify-content-center">
+                                        <h3 class="fw-light fs-2">
+                                            <span>
+                                                Demoiselle
+                                            </span>
+                                            <span>
+                                                - Colliers
+                                            </span>
+                                        </h3>
+                                        <div class="d-flex align-items-center">
+                                            <button class="btn-circle me-3">
+                                                <div class="btn-circle-line"></div>
+                                            </button>
+                                            <span class="add-remove-item_number me-3 fw-light ">2</span>
+                                            <button class="btn-circle">
+                                                <div class="btn-circle-line remove"></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 d-flex mt-2 mt-lg-0 justify-content-lg-end align-items-center">
+                                        <p class="fs-4 cart-item_price">
+                                            75€
                                         </p>
                                     </div>
                                 </div>
                             </li>
                         </ul>
+                        <div class="free-delivery w-100 fs-3 fw-light text-start ps-2 ps-lg-5 mb-5">
+                            <p>
+                                Toutes nos félicitations !
+                            </p>
+                            <p>
+                                Vous bénéficiez d'une livraison gratuite avec votre commande supérieure à 50€
+                            </p>
+                        </div>
+                        <div class="w-100 ps-2 ps-lg-5 position-relative">
+                            <input type="text" class="px-2 py-3 input-left-rounded w-100 border-0 bg-grey-dark fs-3 fw-light c-black" placeholder="Code promo">
+                            <button type="button" class="bg-gold h-100 position-absolute top-0 end-0 c-white px-4 rounded-pill border-0 py-1 text-uppercase DINCondensedDemiBold fs-1">ok</button>
+                        </div>
+                        <div class="w-100 ps-2 ps-lg-5">
+                            <div class="cart-linebreak bg-black my-5"></div>
+                            <ul class="list-unstyled ps-3 fs-3 fw-light">
+                                <li class="w-100 py-2 d-flex justify-content-between align-items-center">
+                                    <p>4 produits</p>
+                                    <p>170€</p>
+                                </li>
+                                <li class="w-100 py-2 d-flex justify-content-between align-items-center">
+                                    <p>Expédition</p>
+                                    <p>4,5€</p>
+                                </li>
+                                <li class="w-100 py-2 d-flex justify-content-between align-items-center">
+                                    <p>Remise</p>
+                                    <p>-10€</p>
+                                </li>
+                            </ul>
+                            <div class="cart-linebreak bg-black my-5"></div>
+                            <div class="ps-3 fs-3 fw-light">
+                                <h4>Programme Fidélité</h4>
+                                <p>Je souhaite utiliser mes points</p>
+                            </div>
+                            <div class="w-100 ps-3 position-relative">
+                                <div class="px-2 py-3 input-left-rounded w-100 border-0 bg-grey-dark fs-5 fw-light c-black">
+                                    <span>0 point(s), soit 0€ de remise</span>
+                                </div>
+                                <button type="button" class="bg-gold h-100 position-absolute top-0 end-0 c-white px-4 rounded-pill border-0 py-1 text-uppercase DINCondensedDemiBold fs-1 d-flex justify-content-center align-items-center">
+                                    <img src="../assets/icons/chevron.svg" class="chevron-droit" alt="icon de chevron droite">
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <!-- ------ cart : infos -->
                     <div class="col-12 col-lg-4">
