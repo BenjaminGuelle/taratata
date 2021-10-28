@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taratata Bijoux</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="../assets/font/DINCondensedDemiBold/MyFontsWebfontsKit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="../css/product-card.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/about.css">
+
+    <!-- Splide Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+</head>
+<body>
+    <!-- ------ header -->
+    <header class="container-fluid sticky-top bg-white px-0 px-lg-2">
+        <nav class="container-fluid py-0 navbar">
+            <div class="row w-100 h-100 m-0">
+                <!-- navbar : brand -->
+                <div class="col-4 order-1 order-lg-0 col-lg-1 p-0 d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <a href="#" class="navbar-brand mx-auto mx-lg-0">
+                        <img src="../assets/images/taratata.svg" alt="taratata-bijoux" class="w-100">
+                    </a>
+                </div>
+                <div class="col-4 order-0 order-lg-1 col-lg-7 p-0 d-flex align-items-center">
+                    <!-- navbar : btn menu mobile -->
+                    <button type="button" id="btn-mobile-opened" class="btn-burger d-flex d-lg-none justify-content-center align-items-center">
+                        <div class="line"></div>
+                    </button>
+                    <!-- navbar navlink list & submenu -->
+                    <ul class="nav-links h-100 p-0 ps-3 pt-3 d-flex flex-grow-1 d-none d-lg-flex order-lg-2">
+                        <li class="nav-item h-100 d-flex align-items-center">
+                           <a href=""# class="link-item h-100 c-black d-flex align-items-center">
+                                Accueil
+                           </a>
+                        </li>
+                        <li class="nav-item h-100 d-flex align-items-center">
+                            <a href="#" id="hover-boutique" class="link-item h-100 c-black d-flex align-items-center">
+                                Boutique
+                            </a>
+                            <!-- submenu -->
+                            <div class="submenu-shop p-5">
+                                <div class="row m-0 w-100 ps-5 h-auto">
+                                    <div class="col-2 p-o">
+                                        <ul class="submenu-list submenu-list-1 list-unstyled">
+                                            <li class="submenu-item">
+                                                <h2 class="text-uppercase DINCondensedDemiBold c-black">
+                                                    À ne pas rater
+                                                </h2>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link c-black">
+                                                    Incontournables
+                                                </a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link c-black">
+                                                    Soldes hiver 2020
+                                                </a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link c-black">
+                                                    Solde été 2020
+                                                </a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link c-black">
+                                                    Outlet
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-2 p-o">
+                                        <ul class="submenu-list submenu-list-2 list-unstyled">
+                                            <li class="submenu-item">
+                                                <h2 class="text-uppercase DINCondensedDemiBold c-black">
+                                                    Bijoux
+                                                </h2>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link c-black">
+                                                    Collier
+                                                </a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link c-black">
+                                                    Broche
+                                                </a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link c-black">
+                                                    Bracelet
+                                                </a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link c-black">
+                                                    Bague
+                                                </a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link c-black">
+                                                    Boucle d'oreille
+                                                </a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link text-capitalize c-black">
+                                                    - clips
+                                                </a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link text-capitalize c-black">
+                                                    - dormeuses
+                                                </a>
+                                            </li>
+                                            <li class="submenu-item">
+                                                <a href="#" class="submenu-link text-capitalize c-black">
+                                                    - puces
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-8 p-o">
+                                        <div class="submenu-collection d-flex flex-column flex-grow-1">
+                                            <h2 class="m-0 text-uppercase submenu-item c-black DINCondensedDemiBold">Collection</h2>
+                                            <!-- submenu : slider -->
+                                            <div class="slider-collection">
+                                                <div id="submenu-collection-slider" class="carousel slide h-100 w-100" data-bs-ride="carousel">
+                                                    <div class="carousel-indicators w-75">
+                                                      <button type="button" data-bs-target="#submenu-collection-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                      <button type="button" data-bs-target="#submenu-collection-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                      <button type="button" data-bs-target="#submenu-collection-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    </div>
+                                                    <div class="carousel-inner h-100 w-75">
+                                                      <div class="carousel-item active container h-100 p-0">
+                                                        <div class="row h-100 m-0">
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="carousel-item container h-100 p-0">
+                                                        <div class="row h-100 m-0">
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="carousel-item container h-100 p-0">
+                                                        <div class="row h-100 m-0">
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- submenu : slider END -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- submenu END -->
+                        </li>
+                        <li class="nav-item h-100 d-flex align-items-center">
+                            <a href="#" class="link-item h-100 c-black d-flex align-items-center">
+                                Actualités
+                            </a>
+                        </li>
+                        <li class="nav-item h-100 d-flex align-items-center">
+                            <a href="#" class="link-item h-100 c-black d-flex align-items-center">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="nav-item h-100 d-flex align-items-center">
+                            <a href="#" class="link-item h-100 c-black d-flex align-items-center">
+                                Nous trouver
+                            </a>
+                        </li>
+                        <li class="nav-item h-100 d-flex align-items-center">
+                            <a href="#" class="link-item h-100 c-black d-flex align-items-center">
+                                Soldes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar : navlinks end -->
+                <div class="col-4 order-2 col-lg-4 p-0 d-flex justify-content-end align-items-center">
+                    <a type="button" class="btn-nav-spacepro border-0 rounded-pill text-uppercase fw-light c-white bg-red d-none d-lg-flex pt-1 px-2 mb-1">
+                        Espace Pro
+                    </a>
+                    <a href="#" class="btn-sidebar-open nav-link-signup c-black text-uppercase mx-4 d-none d-lg-flex" data-target="signin">
+                        Connexion
+                    </a>
+                    <a href="#" class="btn-sidebar-open nav-link-icon mb-lg-1" data-target="search">
+                        <img src="../assets/icons/search.svg" alt="search" class="icon-search">
+                    </a>
+                    <a href="#" class="btn-sidebar-open nav-link-icon position-relative" data-target="cart">
+                        <img src="../assets/svg/taratata-bijoux-caddie.svg" alt="taratata-bijoux-caddie" class="w-100 mb-lg-1">
+                        <span id="shopping-number" class="c-white number-shop ms-1">02</span>
+                    </a>
+                    <!-- navbar : dropdown lang -->
+                    <div class="dropdown dropdown-lang d-none d-lg-flex">
+                        <a class="dropdown-toggle c-black" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          FR
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">EN</a></li>
+                          <li><a class="dropdown-item" href="#">ES</a></li>
+                          <li><a class="dropdown-item" href="#">FR</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header END ------ -->
+
+    <!-- ------ menu mobile -->
+    <div id="mobile-wrapper" class="menu-mobile pb-5">
+        <div class="menu-mobile-close px-5 position-relative d-flex align-items-center">
+            <button type="button" class="btn-mobile-close d-flex justify-content-center align-items-center">
+                <span class="close-icon"></span>
+            </button>
+        </div>
+        <!-- menu mobile : panels -->
+        <div class="panels overflow-hidden px-5">
+            <!-- menu mobile : panel 1 -->
+            <div id="panel-1" class="panel panel-opened" data-panel="panel-1">
+                <ul class="panel-list panel-list-1">
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white">Accueil</a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white">À propos</a>
+                    </li>
+                    <li class="panel-item d-flex justify-content-between align-items-center pb-3">
+                        <a href="#" class="panel-link fs-4 panel-link-boutique text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Boutique</span>
+                        </a>
+                        <div class="panel-next" data-panel="panel-1" data-target="panel-2">
+                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                        </div>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white">Actualités</a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white">Contact</a>
+                    </li>
+                </ul>
+                <div class="panel-br bg-white mb-3"></div>
+                <button type="button" class="btn-mobile-spacepro pt-2 pb-1 px-4 bg-red-dark c-white rounded-pill position-relative d-flex mb-3 border-0">
+                    <span>Espace pro</span>
+                </button>
+                <button type="button" class="btn-mobile-connect d-block c-white" data-target="signin">
+                    Connexion
+                </button>
+            </div>
+            <!-- menu mobile : panel 2 -->
+            <div id="panel-2" class="panel panel-closed" data-panel="panel-2">
+                <div id="panel-back-first" class="panel-back d-flex align-items-center" data-panel="panel-2" data-target="panel-1">
+                    <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
+                    <span class="panel-back-txt fs-2 c-white">Retour</span>
+                </div>
+                <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Boutique</h2>
+                <ul class="panel-list">
+                    <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white">
+                            <span>À ne pas rater</span>
+                        </a>
+                        <div class="panel-next" data-panel="panel-2" data-target="panel-3">
+                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                        </div>
+                    </li>
+                    <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white">
+                            <span>Bijoux</span>
+                        </a>
+                        <div class="panel-next" data-panel="panel-2" data-target="panel-4">
+                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                        </div>
+                    </li>
+                    <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white">
+                            <span>Collections</span>
+                        </a>
+                        <div class="panel-next" data-panel="panel-2" data-target="panel-5">
+                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- menu mobile : panel 3 -->
+            <div id="panel-3" class="panel panel-closed" data-panel="panel-3">
+                <div class="panel-back d-flex align-items-center" data-panel="panel-3" data-target="panel-2">
+                    <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
+                    <span class="panel-back-txt fs-2 c-white">Retour</span>
+                </div>
+                <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">À ne pas rater</h2>
+                <ul class="panel-list">
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Incontournables</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Soldes hiver 2020</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Soldes été 2020</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Outlet</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- menu mobile : panel 4 -->
+            <div id="panel-4" class="panel panel-closed" data-panel="panel-4">
+                <div class="panel-back d-flex align-items-center" data-panel="panel-4" data-target="panel-2">
+                    <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
+                    <span class="panel-back-txt fs-2 c-white">Retour</span>
+                </div>
+                <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Bijoux</h2>
+                <ul class="panel-list">
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Collier</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Broche</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Bracelet</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Bague</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Boucle d'oreille</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- menu mobile : panel 5 -->
+            <div id="panel-5" class="panel panel-closed" data-panel="panel-5">
+                <div class="panel-back d-flex align-items-center" data-panel="panel-5" data-target="panel-2">
+                    <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
+                    <span class="panel-back-txt fs-2 c-white">Retour</span>
+                </div>
+                <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Collections</h2>
+                <ul class="panel-list">
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Lien</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Lien</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Lien</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Lien</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Lien</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Lien</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Lien</span>
+                        </a>
+                    </li>
+                    <li class="panel-item pb-3">
+                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                            <span>Lien</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- TODO dropdown a coder-->
+        <button type="menu" class="btn-mobile-dropdown d-flex justify-content-between align-items-center px-3 mx-auto mt-2">
+            <span class="txt-lang-dropdown c-white">Français</span>
+            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="h-25">
+        </button> 
+        <!-- menu mobile : panels END -->
+    </div>
+    <!-- menu mobile END ------ -->
+
+    <!-- ------ sidebar : connexion -->
+    <div class="sidebar px-4" data-set="signin">
+        <div class="sidebar-close w-100 pt-4 d-flex justify-content-end align-items-center">
+            <div class="btn-sidebar-close" data-target="signin"></div>
+        </div>
+        <div class="container w-75 mx-auto pt-3 d-flex flex-column align-items-center">
+            <h1 class="title-signin DINCondensedDemiBold c-black text-uppercase text-center mb-4">
+                Connexion
+            </h1>
+            <h2 class="title-signin DINCondensedDemiBold c-black text-uppercase text-center">
+                Déjà client ?
+            </h2>
+            <form action="#" method="POST" class="form-sidebar w-100">
+                <input type="mail" class="input-custom mb-3" placeholder="Login">
+                <input type="password" class="input-custom" placeholder="Mot de passe">
+            </form>
+            <p class="text-center my-4">
+                Vous avez oublié votre mot de passe ?
+            </p>
+            <button type="button" class="btn-custom btn-custom-full text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4 mb-2">
+                Se connecter
+            </button>
+            <div class="lineBreak bg-black my-4"></div>
+            <h2 class="title-signin DINCondensedDemiBold c-black text-uppercase text-center">
+                Nouveau client ?
+            </h2>
+            <button type="button" class="btn-custom btn-custom-border text-uppercase bg-white c-black rounded-pill pt-2 pb-1 px-4">
+                Créer un compte
+            </button>
+        </div>
+    </div>
+    <!-- sidebar : connexion END ------ -->
+    <!-- ------ sidebar : search -->
+    <div class="sidebar px-4" data-set="search">
+        <div class="sidebar-close w-100 p-4 d-flex justify-content-end align-items-center">
+            <div class="btn-sidebar-close" data-target="search"></div>
+        </div>
+        <div class="container w-75 mx-auto pt-3 d-flex flex-column align-items-center">
+            <div class="sidebar-search mb-4">
+                <img src="../assets/icons/search.svg" alt="icon-search" class="sidebar-search-icon">
+            </div>
+            <form action="#" method="POST" class="form-sidebar w-100">
+                <input type="text" class="input-custom mb-3" placeholder="exp: boucles d'oreilles">
+            </form>
+            <button type="button" class="btn-custom-full text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4 mb-2">
+                Rechercher
+            </button>
+        </div>
+    </div>
+    <!-- sidebar : search END ------ -->
+    <!-- ------ sidebar : cart -->
+    <div class="sidebar px-4" data-set="cart">
+        <div class="sidebar-close w-100 p-4 d-flex justify-content-end align-items-center">
+            <div class="btn-sidebar-close" data-target="cart"></div>
+        </div>
+        <div class="sidebar-cart-content px-0 px-lg-3 pb-2 d-flex flex-column justify-content-between">
+            <ul class="w-100 sidebar-cart-list overflow-auto">
+                <li class="cart-empty fs-4">
+                    <p>Votre panier est vide</p>
+                </li>
+                <li class="w-100 sidebar-cart-item d-flex px-4 my-2">
+                    <button class="btn-sidebar-cart-remove btn-circle-custom">
+                        <img src="../assets/png/cancel.png" alt="button-cancel-item">
+                    </button>
+                    <div class="sidebar-cart-item-picture h-100">
+                        <img src="../assets/images/items/item-1.jpg" alt="produit-1">
+                    </div>
+                    <div class="sidebar-cart-item-content h-100 ps-2 d-flex justify-content-between">
+                        <div class="sidebar-cart-item-content-title d-flex flex-column">
+                            <a href="">
+                                <h3 class="c-red text-uppercase DINCondensedDemiBold">
+                                    Demoiselle 
+                                </h3>
+                            </a>
+                            <h3 class="text-uppercase fs-4">
+                                Colliers
+                            </h3>
+                            <div class="sidebar-cart-item-change d-flex">
+                                <button class="btn-sidebar-cart-item-remove btn-circle-custom fs-4">
+                                    -
+                                </button>
+                                <p class="px-2 fs-4">
+                                    2
+                                </p>
+                                <button class="btn-sidebar-cart-item-add btn-circle-custom fs-4">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        <p class="sidebar-cart-item-content-price fw-bold fs-4">
+                            35€
+                        </p>
+                    </div>
+                </li>
+                <li class="w-100 sidebar-cart-item d-flex px-4 my-2">
+                    <button class="btn-sidebar-cart-remove btn-circle-custom">
+                        <img src="../assets/png/cancel.png" alt="button-cancel-item">
+                    </button>
+                    <div class="sidebar-cart-item-picture h-100">
+                        <img src="../assets/images/items/item-2.jpg" alt="produit-1">
+                    </div>
+                    <div class="sidebar-cart-item-content h-100 ps-2 d-flex justify-content-between">
+                        <div class="sidebar-cart-item-content-title d-flex flex-column">
+                            <a href="">
+                                <h3 class="c-red text-uppercase DINCondensedDemiBold">
+                                    Demoiselle 
+                                </h3>
+                            </a>
+                            <h3 class="text-uppercase fs-4">
+                                Colliers
+                            </h3>
+                            <div class="sidebar-cart-item-change d-flex">
+                                <button class="btn-sidebar-cart-item-remove btn-circle-custom fs-4">
+                                    -
+                                </button>
+                                <p class="px-2 fs-4">
+                                    2
+                                </p>
+                                <button class="btn-sidebar-cart-item-add btn-circle-custom fs-4">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        <p class="sidebar-cart-item-content-price fw-bold fs-4">
+                            35€
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="w-100 sidebar-cart-bot d-flex flex-column justify-content-center">
+                <div class="lineBreak bg-black mb-1 mb-lg-3"></div>
+                <div class="w-100 d-flex justify-content-between">
+                    <span class="cart-total c-black text-uppercase DINCondensedDemiBold">Total</span>
+                    <span class="cart-total c-black text-uppercase DINCondensedDemiBold">70€</span>
+                </div>
+                <p class="c-black py-1 py-lg-4 fs-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaec neque fuga quo  Obcaec neque fuga quo.
+                </p>
+                <div class="acton-cart-end d-flex justify-content-between mb-1 mb-sm-0">
+                    <button type="button" class="btn-custom-border text-uppercase bg-white c-black rounded-pill pt-2 pb-1">
+                        Voir le panier
+                    </button>
+                    <button type="button" class="btn-custom-full text-uppercase bg-black c-white rounded-pill pt-2 pb-1">
+                        Paiement
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar : cart END ------ -->
+
+    <!-- ------ main -->
+    <main class="container-fluid px-0 px-lg-2 position-relative">
+        <!-- ------ section about -->
+        <section id="legal-notice" class="container-fluid">
+            <div class="w-100 bg-grey">
+                <!-- ------ section legal : title -->
+                <div class="w-100 bg-grey d-flex justify-content-center py-5">
+                    <div class="d-inline-block position-relative">
+                        <h2 class="text-center fs-2 fw-light m-0 c-black">Bijoux Fantaisies</h2>
+                        <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-black">Mensions légales</h3>
+                        <img src="../assets/png/taratata-bijoux-icon-titre-gauche.png" class="position-absolute top-0 icon-title-start" alt="icon du titre créateur de bijoux">
+                        <img src="../assets/png/taratata-bijoux-icon-titre-droit.png" class="position-absolute top-0 icon-title-end" alt="icon du titre créateur de bijoux">
+                    </div>
+                </div>
+                <!-- ------ section legal : text description -->
+                <div class="container-sm fs-4 fw-light pb-5">
+                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 pt-5">Propriété du site :</h3>
+                    <p>
+                        Le présent site est la propriété de la société <strong>SAS J.L.N. (Taratata)</strong>, dont le siège est situé 17 Rue de la Miséricorde - 14000 CAEN Tél : 02 31 39 71 99. <strong>SAS J.L.N.</strong> est une société enregistrée au registre des commerces de CAEN sous le numéro 351 693 973, adresse e-mail : taratata@taratatabijoux.com.
+                    </p>
+                    <p>
+                        La société JLN est assujettie à la TVA et identifiée par un numéro individuel en application de l'article 286 ter du code général des impôts. Son numéro individuel d'identification est le n° FR30351693973.
+                    </p>
+                    <p>
+                        CNIL : n° d'enregistrement : 1487803
+                    </p>
+                    <p>
+                        Le site est hébergé par la société : TGMultimedia, 17 boulevard Raimbaldi, 06000, NICE.
+                    </p>
+                    <p>
+                        Tél. : 04.92.09.02.03.
+                    </p>
+                    <p>
+                        WebDesign Alice Reveilliez & Johann Van Aerden Collectif BlackMagik - Webdesign Caen
+                    </p>
+                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 pt-5">Avertissement légal :</h3>
+                    <p>
+                        Vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données vous concernant (art. 34 de la loi « informatique et libertés » du 6 janvier 1978).
+                    </p>
+                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 pt-5">Avertissement, Politique de confidentialité et Autres :</h3>
+                    <p>
+                        www.taratatabijoux.com, considère les informations personnelles, telles que vos nom, adresse postale et de courrier électronique ou numéro de téléphone, comme des informations à caractère privé et confidentiel. Par conséquent, les informations personnelles que vous nous communiquez sont stockées en lieu sûr, ne sont accessibles que par un personnel désigné ou des mandataires autorisés, et sont exclusivement utilisées pour les besoins de certains services de ce site.
+                    </p>
+                    <p>
+                        www.taratatabijoux.com, ne divulguera aucune information personnelle vous concernant à d'autres organisations.
+                    </p>
+                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 pt-5">Recueil des informations :</h3>
+                    <p>
+                        Lorsque vous visitez le site Web www.taratatabijoux.com, vous le faites de manière anonyme. Aucune information personnelle n'est recueillie. Toutefois, dans certaines parties de nos sites Web, vous pouvez être invité à nous communiquer volontairement des informations personnelles telles que votre nom, votre adresse de courrier électronique, etc., aux fins de correspondance, d'enregistrement sur le site.
+                    </p>
+                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 pt-5">Utilisation des informations :</h3>
+                    <p>
+                        www.taratatabijoux.com peut utiliser les informations communiquées par les utilisateurs par exemple pour fournir un service, ou informer les utilisateurs sur de nouveaux programmes, nouvelles fonctionnalités du site. Toutes les listes utilisées sont établies et gérées dans des conditions rigoureuses, destinées à garantir la sécurité et la confidentialité des informations personnelles. Vous pouvez à tout moment demander une copie de vos informations personnelles, et demander qu'elles soient corrigées ou retirées de notre base de données.
+                    </p>
+                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 pt-5">Utilisation des informations :</h3>
+                    <p>
+                        www.taratatabijoux.com peut utiliser les informations communiquées par les utilisateurs par exemple pour fournir un service, ou informer les utilisateurs sur de nouveaux programmes, nouvelles fonctionnalités du site. Toutes les listes utilisées sont établies et gérées dans des conditions rigoureuses, destinées à garantir la sécurité et la confidentialité des informations personnelles. Vous pouvez à tout moment demander une copie de vos informations personnelles, et demander qu'elles soient corrigées ou retirées de notre base de données.
+                    </p>
+                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 pt-5">Divulgation :</h3>
+                    <p>
+                        Parce que nous considérons les informations individuelles que nous détenons comme confidentielles, la politique de www.taratatabijoux.com est de ne divulguer aucune information personnelle recueillie en ligne à des tiers, sauf si cette divulgation est requise par la loi ou s'inscrit dans le cadre d'une enquête ou d'une procédure judiciaire ou administrative. www.taratatabijoux.com ne vend, ne loue ni ne transmet aucune information personnelle à d'autres organisations.
+                    </p>
+                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 pt-5">Autres sites Web :</h3>
+                    <p>
+                        Le site Web de www.taratatabijoux.com peut contenir des liens vers d'autres sites. Nous nous efforçons à cet égard d'établir des liens uniquement vers des sites qui partagent notre niveau d'exigence en matière de respect de la confidentialité. Toutefois, nous ne sommes pas responsables du contenu des autres sites ni de leurs pratiques en matière d'informations personnelles.
+                    </p>
+                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 pt-5">Copyright :</h3>
+                    <p>
+                        Tous les textes, images, éléments graphiques, fichiers son, fichiers d'animation, fichiers vidéo et leur disposition sur le site Web de www.taratatabijoux.com ne peuvent pas être copiés à des fins commerciales ou de diffusion, ni être modifiés ou utilisés sur d'autres sites.
+                    </p>
+                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 pt-5">Avertissement :</h3>
+                    <p>
+                        En utilisant le site Web www.taratatabijoux.com, vous signifiez votre assentiment à la Politique de confidentialité en ligne de www.taratatabijoux.com. Si vous n'êtes pas d'accord avec cette politique, veuillez ne pas utiliser notre site. Nous nous réservons le droit, à notre entière discrétion, de changer, modifier, ajouter ou retirer des éléments de cette politique à tout moment. Nous vous invitons à consulter régulièrement cette page afin de prendre connaissance d'éventuelles modifications. En continuant à utiliser notre site après l'affichage de modifications de ces conditions, vous signifiez votre acceptation de celles-ci.
+                    </p>
+                </div>
+                <!-- ------ section legal : end page -->
+                <div class="row py-3">
+                    <div class="col-12 col-lg-4 order-2 order-lg-0">
+                        <div class="row mb-3">
+                            <div class="col-6 overflow-hidden">
+                                <img src="../assets/images/face/face3.jpg" class="w-100 h-auto" alt="photo d'instagram">
+                            </div>
+                            <div class="col-6 overflow-hidden">
+                                <img src="../assets/images/face/face2.jpg" class="w-100 h-auto" alt="photo d'instagram">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 overflow-hidden">
+                                <img src="../assets/images/face/face4.jpg" class="w-100 h-auto" alt="photo d'instagram">
+                            </div>
+                            <div class="col-6 overflow-hidden">
+                                <img src="../assets/images/face/face3.jpg" class="w-100 h-auto" alt="photo d'instagram">
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-12 col-lg-4 order-0 order-lg-1 mb-5 mb-lg-0">
+                            <div class="bg-grey-dark p-2">
+                                <div class="w-100 h-100 bg-white">
+                                    <div class="splide splide-single">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide d-flex flex-column justify-content-center align-content-center">
+                                                    <div class="product-item position-relative">
+                                                        <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
+                                                            -20%
+                                                            <span class="visually-hidden">unread messages</span>
+                                                        </span>
+                                                        <article class="product-card h-auto">
+                                                            <div class="product-card_picture bg-white">
+                                                                <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
+                                                            </div>
+                                                            <div class="product-card_content">
+                                                                <h3 class="DINCondensedDemiBold fs-2 text-uppercase c-red">La havanne</h3>
+                                                                <p class="fs-4 text-uppercase">Bague troika</p>
+                                                                <p class="product-price fs-4 d-flex justify-content-center align-items-center">
+                                                                    <span class="product-price_outline">35€</span>
+                                                                    <span class="product-price-solde c-red">25€</span>
+                                                                </p>
+                                                            </div>
+                                                        </article>
+                                                        <article class="product-card-hover">
+                                                            <div class="product-card-hover_picture bg-white">
+                                                                <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
+                                                            </div>
+                                                            <div class="product-card-hover_content">
+                                                                <a href="#" class="me-3 me-lg-5">
+                                                                    <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
+                                                                </a>
+                                                                <a href="#" class="">
+                                                                    <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
+                                                                </a>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-12 col-lg-4 order-1 order-lg-2 d-flex flex-column justify-content-center align-items-center">
+                        <button class="rounded-pill mb-3 px-3 py-2 bg-gold c-white DINCondensedDemiBold text-uppercase fs-3 border-0">
+                            Accès boutique
+                        </button>
+                        <div class="col-12 py-3 d-flex flex-column justify-content-center align-items-center">
+                            <p class="fs-3 fw-light text-center">
+                                <span class="fw-normal">Livraison gratuite</span>
+                                à<br> partir de 50€ de commande
+                            </p>
+                            <div class="buying-process_icon">
+                                <img src="../assets/svg/taratata-bijoux-transport.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ------ footer -->
+    <footer class="container-fluid px-0 px-lg-2 mb-4">
+        <section class="container-fluid">
+            <div class="w-100 min-vh-100 bg-green">
+                <div class="container-lg h-100 d-flex flex-column align-items-center bg-green c-white">
+                    <!-- Footer top -->
+                    <a href="" class="py-5 brand">
+                        <img src="../assets/images/taratata-white.svg" alt="taratata-bijoux">
+                    </a>
+                    <p class="fs-3 fw-light text-center">
+                        7 rue de la miséricorde - 14000 Caen
+                    </p>
+                    <h5 class="DINCondensedDemiBold fs-1 text-uppercase m-0">
+                        Service clients
+                    </h5>
+                    <p class="fs-3 fw-light text-center">
+                        du lundi au vendredi
+                    </p>
+                    <div class="d-flex flex-column flex-lg-row text-center fs-3 fw-light  c-white">
+                        <span>
+                            9h - 12h30 et 13h30 - 13h30 
+                        </span>
+                        <a href="tel:0231397199" class="c-white">
+                            (+33) 02 31 39 71 99
+                        </a>
+                    </div>
+                    <!-- Footer social -->
+                    <ul class="footer-social-list py-2 py-lg-4 px-0 m-0 d-flex list-unstyled mx-auto">
+                        <li class="footer-social-link fs-3 overflow-hidden">
+                            <a href="#">
+                                <img src="../assets/icons/social/facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="footer-social-link fs-3 overflow-hidden">
+                            <a href="#">
+                                <img src="../assets/icons/social/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="footer-social-link fs-3 overflow-hidden">
+                            <a href="#">
+                                <img src="../assets/icons/social/twitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="footer-social-link fs-3 overflow-hidden">
+                            <a href="#">
+                                <img src="../assets/icons/social/pinterest.png" alt="pinterest">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Footer linebreak -->
+                    <div class="my-4 footer-linebreak">
+                        <div class="line"></div>
+                    </div>
+                    <!-- Footer map -->
+                    <div class="footer-map-list row m-0 p-0 py-4 list-unstyled">
+                        <div class="col-12 col-lg-4 p-0">
+                            <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start">
+                                <li>
+                                    <h3 class="DINCondensedDemiBold text-uppercase fs-1 m-0 py-2 py-lg-4">
+                                        Boutique
+                                    </h3>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Collier
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Broche
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Bracelet
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Bague
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Boucles d'oreilles
+                                    </a>
+                                    <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start">
+                                        <li>
+                                            <a href="#" class="fs-3 fw-light c-white">
+                                                - clips
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="fs-3 fw-light c-white">
+                                                - dormeuses
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="fs-3 fw-light c-white">
+                                                - puces
+                                            </a>
+                                        </li> 
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-4 p-0">
+                            <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start py-4 py-lg-0">
+                                <li>
+                                    <h3 class="DINCondensedDemiBold text-uppercase fs-1 m-0 py-2 py-lg-4">
+                                        Collection
+                                    </h3>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Soldes hiver 2020
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Taraboum 2021
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Soldes Taraboum 2021
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Soldes été 2020
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Nouveautés
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Incontournables
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fs-3 text-uppercase fw-light c-white">
+                                        Outlet
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-4 p-0">
+                            <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start">
+                                <li>
+                                    <h3 class="DINCondensedDemiBold text-uppercase fs-1 m-0 py-2 py-lg-4">
+                                        Bijoux Frantaisie
+                                    </h3>
+                                </li>
+                                <li>
+                                    <a href="" class="fs-3 text-uppercase fw-light c-white">
+                                        À propos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="fs-3 text-uppercase fw-light c-white">
+                                        Actualités
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="fs-3 text-uppercase fw-light c-white">
+                                        Contact
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="fs-3 text-uppercase fw-light c-white">
+                                        Mentions légales
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="fs-3 text-uppercase fw-light c-white">
+                                        Conditions de vente
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="fs-3 text-uppercase fw-light c-white">
+                                        Livraison
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="fs-3 text-uppercase fw-light c-white">
+                                        Entretien des bijoux
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="fs-3 text-uppercase fw-light c-white">
+                                        Faq
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer bot -->
+                    <p class="fs-3 fw-light text-center">
+                        Copyright 2016 Taratata - Tous droits réservés SAS JLN Capital 60000€ R.C.S CAEN 351693 973 -
+                    </p>
+                    <p class="fs-3 fw-light text-center">
+                        Design by 
+                        <a class="text-decoration-underline c-white">
+                            Alice Reveilliez - Webdesign Caen
+                        </a>
+                         - 
+                        <a class="text-decoration-underline c-white">
+                            Site développé et hébergé par TGM
+                        </a>
+                        , solutions points de vente et création de site internet 
+                    </p>
+                    <div class="d-flex flex-column flex-lg-row fs-3 fw-light text-center text-uppercase py-5">
+                        <a href="#" class="c-white">
+                            CGV
+                        </a>
+                        <span class="px-2">-</span>
+                        <a href="#" class="c-white">
+                            Mentions Légales
+                        </a>
+                        <span class="px-2">-</span>
+                        <a href="#" class="c-white">
+                            GRPD
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- script GSAP = Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    <!-- script Js Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- script Custom Js -->
+    <script src="../js/main.js"></script>
+    <script src="../js/tools.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/heroSlider.js"></script>
+    <script src="../js/sliderBestSales.js"></script>
+</body>
+</html>
