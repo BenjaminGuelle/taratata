@@ -462,6 +462,119 @@ CUSTOM Product card -----
 [type="checkbox"]:checked + label::after {
 	opacity: 1;
 }
+
+
+/* ACCORDION CUSTOM
+------------------------------*/
+.accordion .accordion-item {
+    background-color: transparent;
+    border: none;
+}
+.accordion .accordion-item .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: scale 0.2s ease-in-out;
+}
+.accordion .accordion-item .accordion-button:hover .accordion-icon{
+    transform: scale(1.05);
+}
+.accordion .accordion-item .accordion-button.collapsed {
+    border-top-left-radius: 0;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 3rem;
+}
+
+.accordion .accordion-item .accordion-button.collapsed img {
+    transform: rotate(0);
+    
+}
+.accordion .accordion-item .accordion-button img {
+    transform: rotate(90deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.accordion .accordion-item .accordion-collapse {
+    background-color: #ffffff;   
+}
+
+.accordion-button:not(.collapsed) {
+    color: #1d1d1c;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-icon {
+    width: 4rem;
+    height: 100%;
+    border-radius: 3rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: -6px 2px 10px 2px #EEEEEF; 
+    box-shadow: -6px 2px 10px 2px #EEEEEF;
+}
+.accordion-icon img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.accordion a:hover {
+    color: #1d1d1c;
+}
+
+.accordion .accordion-collapse .accordion-body div a:first-child {
+    border-right: 1px solid #1d1d1c;
+}
+
+/* Accordion btn radio custom
+------------------------------ */
+.accordion input[type="radio"].accordion-radio {
+    display: none;
+  }
+.accordion input[type="radio"].accordion-radio + label {
+    position: relative;
+    padding-left: 1.3rem;
+}
+.accordion input[type="radio"].accordion-radio + label::before,
+.accordion input[type="radio"].accordion-radio + label::after {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 6px;
+    left: -6px;
+    content:'';
+    width: 1.5rem;
+    height: 1.5rem; 
+    border-radius: 1rem;
+}
+.accordion input[type="radio"].accordion-radio + label::before {
+    border: 1px solid #1d1d1c;
+    background-color: #ffffff;
+}
+.accordion input[type="radio"].accordion-radio:checked + label::after {
+    background-color: #1d1d1c;
+    width: 0.8rem;
+    height: 0.8rem;
+    bottom: 11px;
+    left: 0px;
+}
+
+
 /*
 *************************
 MEDIA QUERIES CUSTOM ----
@@ -508,23 +621,34 @@ MEDIA QUERIES CUSTOM ----
     }
 
     #product-card .buying-process-linebreak::before, 
-    #product-card.buying-process-linebreak::after {
+    #product-card .buying-process-linebreak::after,
+    #cart-payment .buying-process-linebreak::before, 
+    #cart-payment .buying-process-linebreak::after,
+    #gift-card .buying-process-linebreak::before, 
+    #gift-card .buying-process-linebreak::after {
         width: 0.3rem;
         height: 80%;
     }
 
-    #product-card.buying-process-linebreak::before{
+    #product-card .buying-process-linebreak::before,
+    #cart-payment .buying-process-linebreak::before,
+    #gift-card .buying-process-linebreak::before {
         top: 10%;
         left: 0;
     }
 
-    #product-card.buying-process-linebreak::after{
+    #product-card .buying-process-linebreak::after,
+    #cart-payment .buying-process-linebreak::after,
+    #gift-card .buying-process-linebreak::after {
         top: 10%;
         left: 100%;
     }
 
     .gift-card-picture {
         height: calc(100vw / 2.5);
+    }
+    .accordion-icon {
+        width: 5rem;
     }
 }
 

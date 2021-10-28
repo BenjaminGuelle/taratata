@@ -593,20 +593,227 @@
     <!-- ------ main -->
     <main class="container-fluid px-0 px-lg-2 position-relative">
         <!-- ------ section cart -->
-        <section id="cart" class="container-fluid">
-            <div class="w-100 bg-grey">
-                <div class="row py-5">
-                    <!-- ------ cart : content -->
-                    <div class="col-12 col-lg-7 d-flex flex-column align-items-center">
-                        <!-- ------ cart : content title -->
+        <section id="cart-payment" class="container-fluid">
+            <div class="w-100 bg-grey px-2 px-lg-0">
+                <div class="row pb-5 py-lg-5">
+                    <div class="w-100 bg-grey d-flex justify-content-center py-5">
                         <div class="d-inline-block position-relative">
                             <h2 class="text-center fs-2 fw-light m-0 c-black">Bijoux Fantaisies</h2>
-                            <h3 class="DINCondensedDemiBold fs-1 text-center text-uppercase c-black">Pannier</h3>
+                            <h3 class="DINCondensedDemiBold fs-1 text-uppercase c-black">Validation de commande</h3>
                             <img src="../assets/png/taratata-bijoux-icon-titre-gauche.png" class="position-absolute top-0 icon-title-start" alt="icon du titre créateur de bijoux">
                             <img src="../assets/png/taratata-bijoux-icon-titre-droit.png" class="position-absolute top-0 icon-title-end" alt="icon du titre créateur de bijoux">
                         </div>
+                    </div>
+                    <!-- ------ cart : content -->
+                    <div class="col-12 col-lg-7 pb-3 pb-lg-0 px-lg-5 d-flex flex-column align-items-center">
+                        <div id="accordion-custom" class="accordion accordion-flush w-100">
+                            <!-- Cart process - step 1 -->
+                            <div class="accordion-item mb-3">
+                                <h2 id="flush-headingOne" class="accordion-header">
+                                    <button class="accordion-button p-0 ps-2 collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <span class="DINCondensedDemiBold text-uppercase fs-4 ">1. Information personnelles</span>
+                                        <div class="accordion-icon bg-gold py-2 py-lg-3">
+                                            <img src="../assets/icons/chevron.svg" alt="">
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionCartPayment">
+                                    <div class="accordion-body">
+                                        <div class="w-100 d-flex">
+                                            <a href="#" class="c-gold text-uppercase pe-3">
+                                                Nouveau client
+                                            </a>
+                                            <a href="#" class="c-black text-uppercase ps-3">
+                                                Connexion
+                                            </a>
+                                        </div>
+                                        <form action="" class="w-100 pt-3">
+                                            <fieldset class="d-flex align-items-center c-black fs-5 mb-3">
+                                                <legend class="d-inline-flex w-auto m-0 pe-3 pe-lg-5">Civilités</legend>
+                                                <input type="radio" id="monsieur" name="civilite" class="accordion-radio">
+                                                <label for="monsieur" class="pe-4 fw-light">M.</label>
+
+                                                <input type="radio" id="madame" name="civilite" class="accordion-radio">
+                                                <label for="madame" class="pe-4 fw-light">Mme</label>
+
+                                                <input type="radio" id="mademoiselle" name="civilite" class="accordion-radio">
+                                                <label for="mademoiselle" class="pe-4 fw-light">Mlle</label>
+                                            </fieldset>
+                                            <fieldset class="d-flex flex-column mb-3">
+                                                <p>
+                                                    <input type="text" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Prénom, Nom">
+                                                </p>
+                                                <p>
+                                                    <textarea name="" id="" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" cols="30" rows="2" placeholder="Adresse"></textarea>
+                                                </p>
+                                                <p>
+                                                    <input type="number" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Code postal">
+                                                </p>
+                                                <p>
+                                                    <input type="text" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Ville">
+                                                </p>
+                                                <p>
+                                                    <input type="text" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Pays">
+                                                </p>
+                                                <p>
+                                                    <input type="tel" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Téléphone">
+                                                </p>
+                                                <p>
+                                                    <input type="email" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="email">
+                                                </p>
+                                                <p>
+                                                    <input type="password" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Mot de passe">
+                                                </p>
+                                                <p>
+                                                    <input type="date" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Anniversaire">
+                                                </p>
+                                            </fieldset>
+                                            <fieldset class="d-flex align-items-center c-black fs-5">
+                                                <legend class="d-inline-flex w-auto m-0 pe-3 pe-lg-5">Accepter les newsletters</legend>
+                                                <input type="radio" id="radio-newsletters-on" name="radio-newsletters" class="accordion-radio">
+                                                <label for="radio-newsletters-on" class="pe-4 fw-light">Oui</label>
+
+                                                <input type="radio" id="radio-newsletters-off" name="radio-newsletters" class="accordion-radio">
+                                                <label for="radio-newsletters-off" class="pe-4 fw-light">Non</label>
+                                            </fieldset>
+                                        </form>
+                                        <div class="w-100 d-flex justify-content-center justify-content-lg-end pt-5 pb-3">
+                                            <button type="submit" class="btn-pillue bg-black c-white border-0 DINCondensedDemiBold text-uppercase fs-3 px-3 py-2">
+                                                Continuer
+                                            </button>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <!-- Cart process - step 2 -->
+                            <div class="accordion-item mb-3">
+                                <h2 id="flush-headingTwo" class="accordion-header">
+                                    <button class="accordion-button p-0 ps-2 collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <span class="DINCondensedDemiBold text-uppercase fs-4 ">2. Adresse de livraison</span>
+                                        <div class="accordion-icon bg-gold py-2 py-lg-3">
+                                            <img src="../assets/icons/chevron.svg" alt="">
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionCartPayment">
+                                    <div class="accordion-body">
+                                        <form action="" class="w-100 pt-3">
+                                            <fieldset class="d-flex flex-column mb-3">
+                                                <p>
+                                                    <input type="text" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Prénom, Nom">
+                                                </p>
+                                                <p>
+                                                    <textarea name="" id="" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" cols="30" rows="2" placeholder="Adresse"></textarea>
+                                                </p>
+                                                <p>
+                                                    <input type="number" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Code postal">
+                                                </p>
+                                            </fieldset>
+                                            <fieldset class="d-flex align-items-center c-black fs-5">
+                                                <legend class="d-inline-flex w-auto m-0 pe-3 pe-lg-5">Accepter les newsletters</legend>
+                                                <input type="radio" id="radio-newsletters-on" name="radio-newsletters" class="accordion-radio">
+                                                <label for="radio-newsletters-on" class="pe-4 fw-light">Oui</label>
+
+                                                <input type="radio" id="radio-newsletters-off" name="radio-newsletters" class="accordion-radio">
+                                                <label for="radio-newsletters-off" class="pe-4 fw-light">Non</label>
+                                            </fieldset>
+                                        </form>
+                                        <div class="w-100 d-flex justify-content-center justify-content-lg-end pt-5 pb-3">
+                                            <button type="submit" class="btn-pillue bg-black c-white border-0 DINCondensedDemiBold text-uppercase fs-3 px-3 py-2">
+                                                Continuer
+                                            </button>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <!-- Cart process - step 3 -->
+                            <div class="accordion-item mb-3">
+                                <h2 id="flush-headingTree" class="accordion-header">
+                                    <button class="accordion-button p-0 ps-2 collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTree" aria-expanded="false" aria-controls="flush-collapseTree">
+                                        <span class="DINCondensedDemiBold text-uppercase fs-4 ">3. Méthodes de paiement</span>
+                                        <div class="accordion-icon bg-gold py-2 py-lg-3">
+                                            <img src="../assets/icons/chevron.svg" alt="">
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTree" class="accordion-collapse collapse" aria-labelledby="flush-headingTree" data-bs-parent="#accordionCartPayment">
+                                    <div class="accordion-body">
+                                        <form action="" class="w-100 pt-3">
+                                            <fieldset class="d-flex flex-column mb-3">
+                                                <p>
+                                                    <input type="text" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Prénom, Nom">
+                                                </p>
+                                                <p>
+                                                    <textarea name="" id="" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" cols="30" rows="2" placeholder="Adresse"></textarea>
+                                                </p>
+                                                <p>
+                                                    <input type="number" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Code postal">
+                                                </p>
+                                            </fieldset>
+                                            <fieldset class="d-flex align-items-center c-black fs-5">
+                                                <legend class="d-inline-flex w-auto m-0 pe-3 pe-lg-5">Accepter les newsletters</legend>
+                                                <input type="radio" id="radio-newsletters-on" name="radio-newsletters" class="accordion-radio">
+                                                <label for="radio-newsletters-on" class="pe-4 fw-light">Oui</label>
+
+                                                <input type="radio" id="radio-newsletters-off" name="radio-newsletters" class="accordion-radio">
+                                                <label for="radio-newsletters-off" class="pe-4 fw-light">Non</label>
+                                            </fieldset>
+                                        </form>
+                                        <div class="w-100 d-flex justify-content-center justify-content-lg-end pt-5 pb-3">
+                                            <button type="submit" class="btn-pillue bg-black c-white border-0 DINCondensedDemiBold text-uppercase fs-3 px-3 py-2">
+                                                Continuer
+                                            </button>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <!-- Cart process - step 4 -->
+                            <div class="accordion-item mb-3">
+                                <h2 id="flush-headingFor" class="accordion-header">
+                                    <button class="accordion-button p-0 ps-2 collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFor" aria-expanded="false" aria-controls="flush-collapseFor">
+                                        <span class="DINCondensedDemiBold text-uppercase fs-4 ">4. Paiement</span>
+                                        <div class="accordion-icon bg-gold py-2 py-lg-3">
+                                            <img src="../assets/icons/chevron.svg" alt="">
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFor" class="accordion-collapse collapse" aria-labelledby="flush-headingFor" data-bs-parent="#accordionCartPayment">
+                                    <div class="accordion-body">
+                                        <form action="" class="w-100 pt-3">
+                                            <fieldset class="d-flex flex-column mb-3">
+                                                <p>
+                                                    <input type="text" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Prénom, Nom">
+                                                </p>
+                                                <p>
+                                                    <textarea name="" id="" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" cols="30" rows="2" placeholder="Adresse"></textarea>
+                                                </p>
+                                                <p>
+                                                    <input type="number" class="w-100 py-3 ps-2 fs-5 mt-2 input-custom fw-light c-black" placeholder="Code postal">
+                                                </p>
+                                            </fieldset>
+                                            <fieldset class="d-flex align-items-center c-black fs-5">
+                                                <legend class="d-inline-flex w-auto m-0 pe-3 pe-lg-5">Accepter les newsletters</legend>
+                                                <input type="radio" id="radio-newsletters-on" name="radio-newsletters" class="accordion-radio">
+                                                <label for="radio-newsletters-on" class="pe-4 fw-light">Oui</label>
+
+                                                <input type="radio" id="radio-newsletters-off" name="radio-newsletters" class="accordion-radio">
+                                                <label for="radio-newsletters-off" class="pe-4 fw-light">Non</label>
+                                            </fieldset>
+                                        </form>
+                                        <div class="w-100 d-flex justify-content-center justify-content-lg-end pt-5 pb-3">
+                                            <button type="submit" class="btn-pillue bg-black c-white border-0 DINCondensedDemiBold text-uppercase fs-3 px-3 py-2">
+                                                Continuer
+                                            </button>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------ cart : infos -->
+                    <aside class="col-12 col-lg-5 px-lg-5 d-flex flex-column align-items-center">
                         <!-- ------ cart : content list item -->
-                        <ul class="cart-list w-100 list-unstyled">
+                        <ul class="cart-list w-100 list-unstyled p-0 m-0">
                             <li class="cart-item col-12 d-flex mb-3 mb-lg-5">
                                 <div class="cart-item_picture p-lg-0 position-relative">
                                     <img src="../assets/images/items/bague-banane.jpg" class="cart-item_img" alt="photo de produit">
@@ -614,7 +821,7 @@
                                         <img src="../assets/icons/remove.png" alt="icon boutton supprimer item">
                                     </button>
                                 </div>
-                                <div class="cart-item_content row m-0 mt-3 mt-lg-0 px-lg-3">
+                                <div class="cart-item_content row m-0 mt-3 mt-lg-0">
                                     <div class="col-12 col-lg-8 d-flex flex-column justify-content-center">
                                         <h3 class="fw-light fs-2">
                                             <span>
@@ -676,7 +883,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="free-delivery w-100 fs-3 fw-light text-start ps-2 ps-lg-5 mb-5">
+                        <div class="free-delivery w-100 fs-3 fw-light text-start mb-5">
                             <p>
                                 Toutes nos félicitations !
                             </p>
@@ -684,11 +891,11 @@
                                 Vous bénéficiez d'une livraison gratuite avec votre commande supérieure à 50€
                             </p>
                         </div>
-                        <div class="w-100 ps-2 ps-lg-5 position-relative">
+                        <div class="w-100 position-relative">
                             <input type="text" class="px-2 py-3 input-left-rounded w-100 border-0 bg-grey-dark fs-3 fw-light c-black" placeholder="Code promo">
                             <button type="button" class="bg-gold h-100 position-absolute top-0 end-0 c-white px-4 rounded-pill border-0 py-1 text-uppercase DINCondensedDemiBold fs-1">ok</button>
                         </div>
-                        <div class="w-100 ps-2 ps-lg-5">
+                        <div class="w-100">
                             <div class="cart-linebreak bg-black my-5"></div>
                             <ul class="list-unstyled ps-3 fs-3 fw-light">
                                 <li class="w-100 py-2 d-flex justify-content-between align-items-center">
@@ -732,149 +939,43 @@
                                 <input type="text" class="px-2 py-3 input-left-rounded w-100 border-0 bg-grey-dark fs-3 fw-light c-black" placeholder="J'ai une carte cadeau !!!">
                                 <button type="button" class="bg-gold h-100 position-absolute top-0 end-0 c-white px-4 rounded-pill border-0 py-1 text-uppercase DINCondensedDemiBold fs-1">ok</button>
                             </div>
-                            <div class="w-100 bg-grey d-flex justify-content-center align-items-center">
-                                <button type="button" class="btn btn-back-shop d-flex px-3 my-5 rounded-pill border-1 bord bg-white DINCondensedDemiBold text-uppercase">
-                                    <div class="btn-back-shop_svg pe-1">
-                                        <img src="../assets/svg/taratata-bijoux-fleche-gauche.svg" alt="">
-                                    </div>
-                                    <span>Continuer mes achats</span>
-                                </button>
-                            </div>   
-                        </div>
-                    </div>
-                    <!-- ------ cart : infos -->
-                    <aside class="col-12 col-lg-5 px-lg-5 d-flex flex-column align-items-center">
-                        <div class="box-right h-auto p-2 bg-grey-dark mb-3">
-                            <div class="w-100 bg-white">
-                                <div class="splide splide-single">
-                                    <div class="splide__track">
-                                        <ul class="splide__list">
-                                            <li class="splide__slide p-4 p-lg-5 d-flex flex-column justify-content-center align-content-center">
-                                                <div class="product-item position-relative">
-                                                    <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                                        -20%
-                                                        <span class="visually-hidden">unread messages</span>
-                                                    </span>
-                                                    <article class="product-card">
-                                                        <div class="product-card_picture bg-white">
-                                                            <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                                        </div>
-                                                        <div class="product-card_content">
-                                                            <h3 class="DINCondensedDemiBold fs-2 text-uppercase c-red">La havanne</h3>
-                                                            <p class="fs-4 text-uppercase">Bague troika</p>
-                                                            <p class="product-price fs-4 d-flex justify-content-center align-items-center">
-                                                                <span class="product-price_outline">35€</span>
-                                                                <span class="product-price-solde c-red">25€</span>
-                                                            </p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="product-card-hover">
-                                                        <div class="product-card-hover_picture bg-white">
-                                                            <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                                        </div>
-                                                        <div class="product-card-hover_content">
-                                                            <a href="#" class="me-3 me-lg-5">
-                                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                            </a>
-                                                            <a href="#" class="">
-                                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                            </a>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide p-4 p-lg-5 d-flex flex-column justify-content-center align-content-center">
-                                                <div class="product-item position-relative">
-                                                    <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                                        -20%
-                                                        <span class="visually-hidden">unread messages</span>
-                                                    </span>
-                                                    <article class="product-card">
-                                                        <div class="product-card_picture bg-white">
-                                                            <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                                        </div>
-                                                        <div class="product-card_content">
-                                                            <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
-                                                            <p class="fs-4 text-uppercase">Bague troika</p>
-                                                            <p class="product-price fs-4 d-flex justify-content-center align-items-center">
-                                                                <span class="product-price_outline">35€</span>
-                                                                <span class="product-price-solde c-red">25€</span>
-                                                            </p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="product-card-hover">
-                                                        <div class="product-card-hover_picture bg-white">
-                                                            <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                                        </div>
-                                                        <div class="product-card-hover_content">
-                                                            <a href="#" class="me-3 me-lg-5">
-                                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                            </a>
-                                                            <a href="#" class="">
-                                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                            </a>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-right p-2 mt-5 bg-grey-dark">
-                            <div class="w-100 bg-white">
-                                <article class="product-card">
-                                    <div class="product-card_picture bg-white">
-                                        <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                    </div>
-                                    <div class="product-card_content">
-                                        <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">Chiffon de nettoyage</h3>
-                                        <p class="fs-5 text-uppercase">Les petits +</p>
-                                        <p class="product-price fs-5 d-flex justify-content-center align-items-center">
-                                            <span class="product-price_outline">4€</span>
-                                            <span class="product-price-solde c-red">25€</span>
-                                        </p>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- ------ Buying process -->
-                        <div class="box-right pt-5 buying-process row">
-                            <div class="col-12 py-3 d-flex flex-column justify-content-center align-items-center">
-                                <p class="fs-3 fw-light text-center">
-                                    <span class="fw-normal">Livraison gratuite</span>
-                                    à<br> partir de 50€ de commande
-                                </p>
-                                <div class="buying-process_icon">
-                                    <img src="../assets/svg/taratata-bijoux-transport.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-12 py-5">
-                                <div class="w-100 h-100  position-relative d-flex flex-column justify-content-center align-items-center">
-                                    <div class="buying-process-linebreak"></div>
-                                    <p class="fs-3 text-center">
-                                        <span>Paiement</span><br>
-                                        <span>Sécurisé</span>
-                                    </p>
-                                    <div class="buying-process_icon">
-                                        <img src="../assets/svg/taratata-bijoux-scurité.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 py-3 d-flex flex-column justify-content-center align-items-center">
-                                <p class="fs-3 fw-light text-center">
-                                    <span class="fw-normal">Programme fidélité</span><br>
-                                    <span>Vos achats sont récompensés !</span>
-                                </p>
-                                <div class="buying-process_icon">
-                                    <img src="../assets/svg/taratata-bijoux-tirelire.svg" alt="">
-                                </div>
-                            </div>
-                            
                         </div>
                     </aside>
                 </div>
+            </div>
+            <!-- ------ Buying process -->
+            <div class="buying-process row bg-grey pb-5">
+                <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center align-items-center">
+                    <p class="fs-3 fw-light text-center">
+                        <span class="fw-normal">Livraison gratuite</span>
+                        à<br> partir de 50€ de commande
+                    </p>
+                    <div class="buying-process_icon">
+                        <img src="../assets/svg/taratata-bijoux-transport.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 py-3 py-lg-0">
+                    <div class="w-100 h-100  position-relative d-flex flex-column justify-content-center align-items-center">
+                        <div class="buying-process-linebreak"></div>
+                        <p class="fs-3 text-center">
+                            <span>Paiement</span><br>
+                            <span>Sécurisé</span>
+                        </p>
+                        <div class="buying-process_icon">
+                            <img src="../assets/svg/taratata-bijoux-scurité.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 py-3 py-lg-0 d-flex flex-column justify-content-center align-items-center">
+                    <p class="fs-3 fw-light text-center">
+                        <span class="fw-normal">Programme fidélité</span><br>
+                        <span>Vos achats sont récompensés !</span>
+                    </p>
+                    <div class="buying-process_icon">
+                        <img src="../assets/svg/taratata-bijoux-tirelire.svg" alt="">
+                    </div>
+                </div>
+                
             </div>
         </section>
     </main>
