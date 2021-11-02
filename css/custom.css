@@ -158,6 +158,7 @@ p {
     font-size: 2rem;
 }
 
+
 /*
 *************************
 CUSTOM Product card -----
@@ -475,6 +476,14 @@ CUSTOM Product card -----
     border-top-right-radius: 3rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    transition: scale 0.2s ease-in-out;
+}
+
+#faq .accordion .accordion-item .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 3rem;
     transition: scale 0.2s ease-in-out;
 }
 .accordion .accordion-item .accordion-button:hover .accordion-icon{
