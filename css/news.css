@@ -11,10 +11,24 @@
     border-radius: 3rem;
     overflow: hidden;
 }
+
 .news-single-picture img{
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.news-single-container {
+    width: 100%;
+}
+
+.back-to-news-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-to-news-list img {
+    width: 3rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -23,5 +37,8 @@
     }
     .news-single-picture {
         height: 30rem;
+    }
+    .news-single-container {
+        width: 50%;
     }
 }

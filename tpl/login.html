@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/faq.css">
     <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/login.css">
 
     <!-- Splide Js -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
@@ -51,12 +52,12 @@
                     <!-- navbar navlink list & submenu -->
                     <ul class="nav-links h-100 p-0 ps-3 pt-3 d-flex flex-grow-1 d-none d-lg-flex order-lg-2">
                         <li class="nav-item h-100 d-flex align-items-center">
-                           <a href="../tpl/home.html" class="link-item h-100 c-black d-flex align-items-center">
+                           <a href="#" class="link-item h-100 c-black d-flex align-items-center">
                                 Accueil
                            </a>
                         </li>
                         <li class="nav-item h-100 d-flex align-items-center">
-                            <a href="../tpl/shop.html" id="hover-boutique" class="link-item h-100 c-black d-flex align-items-center">
+                            <a href="#" id="hover-boutique" class="link-item h-100 c-black d-flex align-items-center">
                                 Boutique
                             </a>
                             <!-- submenu -->
@@ -193,7 +194,7 @@
                             </a>
                         </li>
                         <li class="nav-item h-100 d-flex align-items-center">
-                            <a href="../tpl/contact.html" class="link-item h-100 c-black d-flex align-items-center">
+                            <a href="#" class="link-item h-100 c-black d-flex align-items-center">
                                 Contact
                             </a>
                         </li>
@@ -594,118 +595,65 @@
 
     <!-- ------ main -->
     <main class="container-fluid px-0 px-lg-2">
-        <!-- ------ section news single -->
-        <section id="news-single" class="container-fluid">
-            <div class="w-100 bg-grey">
-                <div class="w-100 bg-grey d-flex justify-content-center py-5">
-                    <div class="d-inline-block position-relative">
+        <!-- ------ section login -->
+        <section id="login" class="container-fluid">
+            <div class="w-100 min-vh-100 bg-grey">
+                <!-- ------ section login : title -->
+                <div class="w-100 py-3 d-flex justify-content-center">
+                    <div class="d-lg-none d-inline-block position-relative">
                         <h2 class="text-center fs-2 fw-light m-0 c-black">Bijoux Fantaisies</h2>
-                        <h3 class="DINCondensedDemiBold fs-1 text-uppercase text-center c-black">Actus</h3>
+                        <h3 class="DINCondensedDemiBold fs-1 text-center text-uppercase c-black">connexion</h3>
                         <img src="../assets/png/taratata-bijoux-icon-titre-gauche.png" class="position-absolute top-0 icon-title-start" alt="icon du titre créateur de bijoux">
                         <img src="../assets/png/taratata-bijoux-icon-titre-droit.png" class="position-absolute top-0 icon-title-end" alt="icon du titre créateur de bijoux">
                     </div>
                 </div>
-                <div class="news-single-container mx-auto mb-5 fs-4 fw-light ">
-                    <div class="news-single-picture mx-auto mb-5">
-                        <img src="../assets/images/face/face2.jpg" class="w-100 h-auto" alt="illustration">
-                    </div>
-                    <div class="px-3 px-lg-5">
-                        <h3 class="DINCondensedDemiBold fs-2 text-uppercase">C'est partit pour les soldes</h3>
-                        <span class="fw-lighter fst-italic">18/01/2021</span>
-                        <p class="pt-5">
-                            Craquez pour la collection automne hiver 2020 à prix doux. Du 20 janvier
-                            au 16 février 2021, 40% de remise sur un large choix d'articles, vous allez adorer !
-                        </p><br>
-                        <p>
-                            Laissez-vous tenter par nos thèmes colorés qui égayeront à coup sûr ce début d'année !
-                        </p>
-                    </div>
-                </div>
-                <div class="my-5">
-                    <button type="button" class="back-to-news-list border-0 bg-black c-white py-2 px-3 rounded-pill mx-auto">
-                        <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="">
-                        <p class="DINCondensedDemiBold text-uppercase fs-4 ps-3">Retour actus</p>
-                    </button>
-                </div>
-                <!-- section news single : end page -->
-                <div class="row py-3">
-                    <div class="col-12 col-lg-4 order-2 order-lg-0">
-                        <div class="row gx-3 mb-3">
-                            <div class="col-6 overflow-hidden">
-                                <img src="../assets/images/face/face3.jpg" class="w-100 h-auto" alt="photo d'instagram">
-                            </div>
-                            <div class="col-6 overflow-hidden">
-                                <img src="../assets/images/face/face2.jpg" class="w-100 h-auto" alt="photo d'instagram">
-                            </div>
-                        </div>
-                        <div class="row gx-3">
-                            <div class="col-6 overflow-hidden">
-                                <img src="../assets/images/face/face4.jpg" class="w-100 h-auto" alt="photo d'instagram">
-                            </div>
-                            <div class="col-6 overflow-hidden">
-                                <img src="../assets/images/face/face3.jpg" class="w-100 h-auto" alt="photo d'instagram">
+                <div class="row">
+                    <div class="col-12 col-lg-6 pb-5 py-lg-5 d-lg-flex justify-content-center">
+                        <div class="first-box position-relative bg-gold">
+                            <img src="../assets/images/face/face1.jpg" alt="">
+                            <div class="second-box bg-white p-2">
+                                <img src="../assets/images/face/face2.jpg" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 order-0 order-lg-1 mb-5 mb-lg-0">
-                        <div class="box-right w-100 h-100 p-2 bg-grey-dark">
-                            <div class="w-100 h-100 bg-white">
-                                <div class="splide splide-single h-100">
-                                    <div class="splide__track h-100">
-                                        <ul class="splide__list">
-                                            <li class="splide__slide px-5 d-flex flex-column justify-content-center align-content-center">
-                                                <div class="product-item position-relative h-100">
-                                                    <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                                        -20%
-                                                        <span class="visually-hidden">unread messages</span>
-                                                    </span>
-                                                    <article class="product-card h-100">
-                                                        <div class="product-card_picture bg-white">
-                                                            <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                                        </div>
-                                                        <div class="product-card_content">
-                                                            <h3 class="DINCondensedDemiBold fs-2 text-uppercase c-red">La havanne</h3>
-                                                            <p class="fs-4 text-uppercase">Bague troika</p>
-                                                            <p class="product-price fs-4 d-flex justify-content-center align-items-center">
-                                                                <span class="product-price_outline">35€</span>
-                                                                <span class="product-price-solde c-red">25€</span>
-                                                            </p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="product-card-hover">
-                                                        <div class="product-card-hover_picture bg-white">
-                                                            <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                                        </div>
-                                                        <div class="product-card-hover_content">
-                                                            <a href="#" class="me-3 me-lg-5">
-                                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                            </a>
-                                                            <a href="#" class="">
-                                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                            </a>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                    <div class="col-12 col-lg-6 mb-5 mb-lg-0 p-lg-5 d-flex flex-column align-items-center">
+                        <!-- ------ section login : title -->
+                        <div class="d-none d-lg-inline-block position-relative mb-5">
+                            <h2 class="text-center fs-2 fw-light m-0 c-black">Bijoux Fantaisies</h2>
+                            <h3 class="DINCondensedDemiBold fs-1 text-center text-uppercase c-black">connexion</h3>
+                            <img src="../assets/png/taratata-bijoux-icon-titre-gauche.png" class="position-absolute top-0 icon-title-start" alt="icon du titre créateur de bijoux">
+                            <img src="../assets/png/taratata-bijoux-icon-titre-droit.png" class="position-absolute top-0 icon-title-end" alt="icon du titre créateur de bijoux">
+                        </div>
+                        <form action="" class="w-100">
+                            <fieldset class="w-100 d-flex flex-column justify-content-center align-items-center">
+                                <legend class="DINCondensedDemiBold text-uppercase fs-2 text-center">
+                                    Déjà client ?
+                                </legend>
+                                <p class="my-3 login-input">
+                                    <input type="text" class="w-100 fs-4 border-1 bg-white c-black px-3 py-3" placeholder="Nom d'utilisateur">
+                                </p>
+                                <p class="my-3 login-input">
+                                    <input type="password" class="w-100 fs-4 border-1 bg-white c-black px-3 py-3" placeholder="Mot de passe">
+                                </p>
+                                <div class="w-100 d-flex justify-content-center">
+                                    <a href="#" class="w-100 text-center c-black fs-4 py-5">
+                                        Vous avez oublié votre mot de passe ?
+                                    </a>
                                 </div>
-                            </div>
+                                <button type="button" class="rounded-pill mx-auto px-3 py-2 c-white bg-black DINCondensedDemiBold text-uppercase fs-3">
+                                    Se connecter
+                                </button>
+                            </fieldset>
+                        </form>
+                        <div class="w-100 py-5">
+                            <div class="login-linebreak"></div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-4 order-1 order-lg-2 d-flex flex-column justify-content-center align-items-center ">
-                        <button class="rounded-pill mb-3 px-3 py-2 bg-gold c-white DINCondensedDemiBold text-uppercase fs-3 border-0">
-                            Accès boutique
-                        </button>
-                        <div class="col-12 py-3 d-flex flex-column justify-content-center align-items-center">
-                            <p class="fs-3 fw-light text-center">
-                                <span class="fw-normal">Livraison gratuite</span>
-                                à<br> partir de 50€ de commande
-                            </p>
-                            <div class="buying-process_icon">
-                                <img src="../assets/svg/taratata-bijoux-transport.svg" alt="">
-                            </div>
-                        </div>
+                        <h4 class="DINCondensedDemiBold text-uppercase fs-2 mb-5">
+                            Nouveau client ?
+                        </h4>
+                        <a href="#" class="rounded-pill mx-auto px-3 py-2 border border-2 border-dark bg-white c-black DINCondensedDemiBold text-uppercase fs-3">
+                            Créer un compte
+                        </a>
                     </div>
                 </div>
             </div>
