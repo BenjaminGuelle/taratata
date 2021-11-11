@@ -18,6 +18,9 @@
 }
 
 /* section hero : Slider  */
+#hero .hero-slider {
+    height: 100%;
+}
 #hero .hero-slider-item {
     display: none;
 }

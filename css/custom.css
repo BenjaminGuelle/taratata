@@ -1,11 +1,20 @@
-/* Font custom
--------------------------- */
+/*
+*************************
+Font Custom -----------
+*************************
+*/
 .DINCondensedDemiBold {
 	font-family: "DINCondensed-DemiBold";
     letter-spacing: 0.05rem;
 }
 
-/* Colors custom
+/*
+*************************
+Colors Custom -----------
+*************************
+*/
+
+/* font color
 -------------------------- */
 .c-black {
     color: #1d1d1c;
@@ -43,6 +52,9 @@
 .c-white {
     color: #ffffff;
 }
+
+/* background color
+-------------------------- */
 .bg-black {
     background-color: #1d1d1c;
 }
@@ -83,8 +95,12 @@
     background-color: #ffffff;
 }
 
-/* Components custom
--------------------------- */
+/*
+*************************
+Components custom -------
+*************************
+*/
+
 input {
     background-color: #ffffff;
 }
@@ -92,6 +108,10 @@ input {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: #1d1d1c;
+}
+a:hover {
+    color: #1d1d1c;
 }
 
 p {
@@ -158,10 +178,9 @@ p {
     font-size: 2rem;
 }
 
-
 /*
 *************************
-CUSTOM Product card -----
+     Product card -------
 *************************
 */
 
