@@ -554,7 +554,7 @@ CUSTOM Product card -----
 ------------------------------ */
 .accordion input[type="radio"].accordion-radio {
     display: none;
-  }
+}
 .accordion input[type="radio"].accordion-radio + label {
     position: relative;
     padding-left: 1.3rem;
@@ -576,6 +576,41 @@ CUSTOM Product card -----
     background-color: #ffffff;
 }
 .accordion input[type="radio"].accordion-radio:checked + label::after {
+    background-color: #1d1d1c;
+    width: 0.8rem;
+    height: 0.8rem;
+    bottom: 11px;
+    left: 0px;
+}
+
+
+
+
+
+input[type="radio"].radio-custom {
+    display: none;
+}
+input[type="radio"].radio-custom + label {
+    position: relative;
+    padding-left: 1.3rem;
+}
+input[type="radio"].radio-custom + label::before,
+input[type="radio"].radio-custom + label::after {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 6px;
+    left: -6px;
+    content:'';
+    width: 1.5rem;
+    height: 1.5rem; 
+    border-radius: 1rem;
+}
+input[type="radio"].radio-custom + label::before {
+    border: 1px solid #1d1d1c;
+    background-color: #ffffff;
+}
+input[type="radio"].radio-custom:checked + label::after {
     background-color: #1d1d1c;
     width: 0.8rem;
     height: 0.8rem;
