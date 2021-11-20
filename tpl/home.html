@@ -242,43 +242,44 @@
     <!-- header END ------ -->
 
     <!-- ------ menu mobile -->
-    <div id="mobile-wrapper" class="menu-mobile pb-5">
+    <div id="mobile-wrapper" class="menu-mobile pb-3">
+        <!-- menu mobile : btn close -->
         <div class="menu-mobile-close px-5 position-relative d-flex align-items-center">
             <button type="button" class="btn-mobile-close d-flex justify-content-center align-items-center">
                 <span class="close-icon"></span>
             </button>
         </div>
-        <!-- menu mobile : panels -->
-        <div class="panels overflow-hidden px-5">
+        <!-- menu mobile : list panels -->
+        <div class="panels px-5">
             <!-- menu mobile : panel 1 -->
             <div id="panel-1" class="panel panel-opened" data-panel="panel-1">
                 <ul class="panel-list panel-list-1">
                     <li class="panel-item pb-3">
-                        <a href="../tpl/home.html" class="panel-link fs-4 text-uppercase c-white">Accueil</a>
+                        <a href="../tpl/home.html" class="panel-link fs-5 text-uppercase c-white">Accueil</a>
                     </li>
                     <li class="panel-item pb-3">
-                        <a href="../tpl/about.html" class="panel-link fs-4 text-uppercase c-white">À propos</a>
+                        <a href="../tpl/about.html" class="panel-link fs-5 text-uppercase c-white">À propos</a>
                     </li>
                     <li class="panel-item d-flex justify-content-between align-items-center pb-3">
-                        <a href="../tpl/shop.html" class="panel-link fs-4 panel-link-boutique text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <a href="../tpl/shop.html" class="panel-link fs-5 panel-link-boutique text-uppercase c-white d-flex justify-content-between align-items-center">
                             <span>Boutique</span>
                         </a>
-                        <div class="panel-next" data-panel="panel-1" data-target="panel-2">
+                        <div class="panel-next pb-1" data-panel="panel-1" data-target="panel-2">
                             <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
                         </div>
                     </li>
                     <li class="panel-item pb-3">
-                        <a href="../tpl/news-list.html" class="panel-link fs-4 text-uppercase c-white">Actualités</a>
+                        <a href="../tpl/news-list.html" class="panel-link fs-5 text-uppercase c-white">Actualités</a>
                     </li>
                     <li class="panel-item pb-3">
-                        <a href="../tpl/contact.html" class="panel-link fs-4 text-uppercase c-white">Contact</a>
+                        <a href="../tpl/contact.html" class="panel-link fs-5 text-uppercase c-white">Contact</a>
                     </li>
                 </ul>
-                <div class="panel-br bg-white mb-3"></div>
-                <button type="button" class="btn-mobile-spacepro pt-2 pb-1 px-4 bg-red-dark c-white rounded-pill position-relative d-flex mb-3 border-0">
-                    <span>Espace pro</span>
-                </button>
-                <button type="button" class="btn-mobile-connect d-block c-white" data-target="signin">
+                <div class="panel-br bg-white mb-4"></div>
+                <a href="#" class="rounded-pill c-white bg-red-dark DINCondensedDemiBold text-uppercase fs-3 px-3 py-2">
+                    Espace pro
+                </a><br>
+                <button type="button" class="btn-mobile-connect c-white fs-3 py-2 mt-3" data-target="signin">
                     Connexion
                 </button>
             </div>
@@ -286,12 +287,12 @@
             <div id="panel-2" class="panel panel-closed" data-panel="panel-2">
                 <div id="panel-back-first" class="panel-back d-flex align-items-center" data-panel="panel-2" data-target="panel-1">
                     <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
-                    <span class="panel-back-txt fs-2 c-white">Retour</span>
+                    <span class="panel-back-txt fs-4 c-white">Retour</span>
                 </div>
                 <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Boutique</h2>
                 <ul class="panel-list">
                     <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>À ne pas rater</span>
                         </a>
                         <div class="panel-next" data-panel="panel-2" data-target="panel-3">
@@ -299,7 +300,7 @@
                         </div>
                     </li>
                     <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>Bijoux</span>
                         </a>
                         <div class="panel-next" data-panel="panel-2" data-target="panel-4">
@@ -307,7 +308,7 @@
                         </div>
                     </li>
                     <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>Collections</span>
                         </a>
                         <div class="panel-next" data-panel="panel-2" data-target="panel-5">
@@ -320,27 +321,27 @@
             <div id="panel-3" class="panel panel-closed" data-panel="panel-3">
                 <div class="panel-back d-flex align-items-center" data-panel="panel-3" data-target="panel-2">
                     <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
-                    <span class="panel-back-txt fs-2 c-white">Retour</span>
+                    <span class="panel-back-txt fs-4 c-white">Retour</span>
                 </div>
                 <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">À ne pas rater</h2>
                 <ul class="panel-list">
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>Incontournables</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>Soldes hiver 2020</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>Soldes été 2020</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>Outlet</span>
                         </a>
                     </li>
@@ -350,32 +351,32 @@
             <div id="panel-4" class="panel panel-closed" data-panel="panel-4">
                 <div class="panel-back d-flex align-items-center" data-panel="panel-4" data-target="panel-2">
                     <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
-                    <span class="panel-back-txt fs-2 c-white">Retour</span>
+                    <span class="panel-back-txt fs-4 c-white">Retour</span>
                 </div>
                 <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Bijoux</h2>
                 <ul class="panel-list">
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>Collier</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>Broche</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>Bracelet</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>Bague</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
                             <span>Boucle d'oreille</span>
                         </a>
                     </li>
@@ -385,59 +386,70 @@
             <div id="panel-5" class="panel panel-closed" data-panel="panel-5">
                 <div class="panel-back d-flex align-items-center" data-panel="panel-5" data-target="panel-2">
                     <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
-                    <span class="panel-back-txt fs-2 c-white">Retour</span>
+                    <span class="panel-back-txt fs-4 c-white">Retour</span>
                 </div>
                 <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Collections</h2>
                 <ul class="panel-list">
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
-                            <span>Lien</span>
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                            <span>Item collection</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
-                            <span>Lien</span>
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                            <span>Item collection</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
-                            <span>Lien</span>
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                            <span>Item collection</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
-                            <span>Lien</span>
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                            <span>Item collection</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
-                            <span>Lien</span>
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                            <span>Item collection</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
-                            <span>Lien</span>
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                            <span>Item collection</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
-                            <span>Lien</span>
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                            <span>Item collection</span>
                         </a>
                     </li>
-                    <li class="panel-item pb-3">
-                        <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
-                            <span>Lien</span>
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                            <span>Item collection</span>
+                        </a>
+                    </li>
+                    <li class="panel-item mb-2">
+                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                            <span>Item collection</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <!-- TODO dropdown a coder-->
-        <button type="menu" class="btn-mobile-dropdown d-flex justify-content-between align-items-center px-3 mx-auto mt-2">
-            <span class="txt-lang-dropdown c-white">Français</span>
-            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="h-25">
-        </button> 
-        <!-- menu mobile : panels END -->
+        <!-- Dorpdown lang mobile -->
+        <div class="btn-mobile-dropdown d-flex justify-content-between align-items-center px-3 mx-auto">
+            <a class="dropdown-toggle d-flex justify-content-between align-items-center w-100 c-white" href="#" role="button" id="dropdownLangMobile" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>Français</span>
+                <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="dropdown-mobile-icon">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownLangMobile">
+              <li><a class="dropdown-item" href="#">EN</a></li>
+              <li><a class="dropdown-item" href="#">ES</a></li>
+              <li><a class="dropdown-item" href="#">FR</a></li>
+            </ul>
+        </div>
     </div>
     <!-- menu mobile END ------ -->
 

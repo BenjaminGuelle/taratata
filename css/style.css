@@ -539,7 +539,7 @@ item:hover {
 -------------------------- */
 .sidebar {
   position: fixed;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   z-index: 1250;
   opacity: 0;
   top: 0;
@@ -619,11 +619,10 @@ item:hover {
   padding-left: 1rem;
 }
 
-/* TODO: components linebreak à build */
 .lineBreak {
   width: 100%;
   height: 0.5rem;
-  border-radius: 9999px;
+  border-radius: 3rem;
 }
 
 /* Sidebar => search content */
@@ -637,73 +636,15 @@ item:hover {
 }
 
 /* Sidebar => cart content */
-.sidebar-cart-content {
-  width: 100%;
-  height: calc(100% - 6rem);
+.mobile-cart {
+  flex: 1;
 }
 
-@media screen and (min-width: 1200px) {
-  .sidebar-cart-content {
-    width: 100%;
-    height: calc(100% - 8rem);
-  }
-}
-
-.sidebar-cart-list {
-  height: 65%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.mobile-cart ul {
+  height: auto;
   overflow-y: auto;
 }
-/* Sidebar => cart item */
-.cart-empty {
-  display: none;
-}
 
-.sidebar-cart-item {
-  position: relative;
-  height: 6rem;
-}
-
-.btn-sidebar-cart-remove {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  border: 1px solid black;
-}
-
-.btn-sidebar-cart-remove img {
-  width: 0.5rem;
-}
-
-.sidebar-cart-item-picture {
-  width: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-}
-
-.sidebar-cart-item-picture img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.sidebar-cart-item-content {
-  flex: 1;
-}
-
-.sidebar-cart-item-content-title {
-  flex: 1;
-}
-.btn-sidebar-cart-item-add,
-.btn-sidebar-cart-item-remove {
-  border: none;
-}
-
-/* Sidebar => cart bot */
-.sidebar-cart-bot {
-  height: 35%;
+.mobile-cart ul li {
+  /* height: 6rem; */
 }
