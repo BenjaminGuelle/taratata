@@ -1,293 +1,295 @@
 /* section hero
 -------------------------- */
 #hero {
-    height: calc(100vh - 4rem);
+  height: calc(100vh - 2rem);
 }
 
-
 @media (min-width: 992px) {
-    #hero {
-        height: calc(100vh - 6rem);
-    }
+  #hero {
+    height: calc(100vh - 6rem);
+  }
 }
 
 @media (min-width: 1200px) {
-    #hero {
-        height: calc(100vh - 8rem);
-    }
+  #hero {
+    height: calc(100vh - 8rem);
+  }
 }
 
 /* section hero : Slider  */
 #hero .hero-slider {
-    height: 100%;
+  height: 100%;
 }
 #hero .hero-slider-item {
-    display: none;
+  display: none;
 }
 #hero .hero-slider-item.active {
-    display: flex;
+  display: flex;
 }
 
 .hero-slider-start {
-    width: 100%;
-    height: 40%;
-    opacity: 0;
+  width: 100%;
+  height: 40%;
+  opacity: 0;
 }
 .hero-slider-end {
-    width: 100%;
-    height: 40%;
+  width: 100%;
+  height: 40%;
 }
 
 .hero-slider-title-desktop {
-    transform: translateX(-100px);
-    opacity: 0;
+  transform: translateX(-100px);
+  opacity: 0;
 }
 
 .hero-slider-title-top {
-    transform: translateX(-100px);
-    opacity: 0;
+  transform: translateX(-100px);
+  opacity: 0;
 }
 
 .hero-slider-content {
-    flex: 1;
+  flex: 1;
 }
 
 .hero-slider-content-box {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateY(0%);
-    width: 9rem;
-    height: 9rem;
-    opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(0%);
+  width: 9rem;
+  height: 9rem;
+  opacity: 0;
 }
 
 .hero-slider-content-txt {
-    width: 100%;
-    height: 100%;
-    padding-left: 0;
-    padding-right: 9rem;
-    opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 9rem;
+  opacity: 0;
 }
 .hero-slider-content-txt p {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .hero-slider-nav {
-    position: absolute;
-    bottom: 10%;
+  position: absolute;
+  bottom: 0%;
 }
 
 .hero-slider-btns {
-    width: 100%;
+  width: 100%;
 }
 
 .hero-slider-btns .hero-slider-btn {
-    width: 3rem;
-    height: 0.5rem;
-    margin-right: 0.5rem;
-    background-color: #A3B7BC;
-    border: none;
-    opacity: 0.5;
+  width: 3rem;
+  height: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: #a3b7bc;
+  border: none;
+  opacity: 0.5;
 }
 
 .hero-slider-btns .hero-slider-btn.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* section hero : MQ  */
+@media (min-width: 360px) {
+  .hero-slider-nav {
+    bottom: 10%;
+  }
+}
+
 @media (min-width: 992px) {
-    .hero-slider-start {
-        width: 65%;
-        height: 100%;
-    }
-    .hero-slider-end {
-        width: 35%;
-        height: 100%;
-    }
+  .hero-slider-start {
+    width: 65%;
+    height: 100%;
+  }
+  .hero-slider-end {
+    width: 35%;
+    height: 100%;
+  }
 
-    .hero-slider-content-box {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateX(0%);
-        width: 15rem;
-        height: 15rem;
-        opacity: 0;
-    }
-    .hero-slider-content-txt {
-        height: 15rem;
-        padding-left: 7rem;
-        padding-right: 0;
-    }
+  .hero-slider-content-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
+    width: 15rem;
+    height: 15rem;
+    opacity: 0;
+  }
+  .hero-slider-content-txt {
+    height: 15rem;
+    padding-left: 7rem;
+    padding-right: 0;
+  }
 
-    .hero-slider-btns {
-        width: 35%;
-    }
+  .hero-slider-btns {
+    width: 35%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .hero-slider-content-box {
-        transform: translateX(0%);
-        width: 15rem;
-        height: 15rem;
-        opacity: 0;
-    }
-    .hero-slider-content-txt {
-        height: 15rem;
-        padding-left: 7.5rem;
-    }
+  .hero-slider-content-box {
+    transform: translateX(0%);
+    width: 15rem;
+    height: 15rem;
+    opacity: 0;
+  }
+  .hero-slider-content-txt {
+    height: 15rem;
+    padding-left: 7.5rem;
+  }
 
-    .hero-slider-btns {
-        width: 35%;
-    }
+  .hero-slider-btns {
+    width: 35%;
+  }
 }
 
 @media screen and (min-width: 1400px) {
-    .hero-slider-content-box {
-        width: 25rem;
-        height: 25rem;
-    }
-    .hero-slider-content-txt {
-        height: 25rem;
-        padding-left: 13rem;
-    }
-
+  .hero-slider-content-box {
+    width: 25rem;
+    height: 25rem;
+  }
+  .hero-slider-content-txt {
+    height: 25rem;
+    padding-left: 13rem;
+  }
 }
 
 /* section unmissable
 -------------------------- */
 .unmissable-box-title {
-    border-top-right-radius: 3rem 3rem;
+  border-top-right-radius: 3rem 3rem;
 }
-
 
 /* section unmissable : GRID */
 .wrapper-grid .col {
-    height: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* section unmissable : GRID : MQ*/
-@media (min-width: 992px)  {
-    .wrapper-grid .col {
-        height: calc(100vw / 2);
-    }
+@media (min-width: 992px) {
+  .wrapper-grid .col {
+    height: calc(100vw / 2);
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .wrapper-grid .col {
-        height: calc(100vw / 3);
-    }
-    .wrapper-grid .col.span-2 {
-        height: calc((100vw / 3)*2);
-    }
-    .wrapper-grid .row.span-2 {
-        height: calc((100vw / 3)*2);
-    }  
+  .wrapper-grid .col {
+    height: calc(100vw / 3);
+  }
+  .wrapper-grid .col.span-2 {
+    height: calc((100vw / 3) * 2);
+  }
+  .wrapper-grid .row.span-2 {
+    height: calc((100vw / 3) * 2);
+  }
 }
-
 
 /* section jewerly designer
 -------------------------- */
 .jewerly-designer-picture {
-    width: 100%;
-    height: 100%;
-    transform: rotate(0);
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: rotate(0);
+  overflow: hidden;
 }
 .jewerly-designer-picture img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .jewerly-designer-content {
-    width: 100%;
-    max-height: 50vh;
-    overflow-y: scroll;
-    line-height: 1.8rem;
+  width: 100%;
+  max-height: 50vh;
+  overflow-y: scroll;
+  line-height: 1.8rem;
 }
 
 @media screen and (min-width: 1200px) {
-    .jewerly-designer-picture {
-        width: 70%;
-        height: 80%;
-        transform: rotate(355deg);
-    }
-    .jewerly-designer-content {
-        width: 70%;
-    }
+  .jewerly-designer-picture {
+    width: 70%;
+    height: 80%;
+    transform: rotate(355deg);
+  }
+  .jewerly-designer-content {
+    width: 70%;
+  }
 }
 @media screen and (min-width: 1400px) {
-    .jewerly-designer-picture {
-        width: 60%;
-        transform: rotate(355deg);
-    }
+  .jewerly-designer-picture {
+    width: 60%;
+    transform: rotate(355deg);
+  }
 }
 
 /* section home actu
 -------------------------- */
 #home-actus .see-more-line {
-    width: 100%;
-    height: 1rem;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  width: 100%;
+  height: 1rem;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 #home-actus .hover-see-more-line {
-    width: 100%;
-    height: 100%;
-    transition: width 0.2s ease-in;
+  width: 100%;
+  height: 100%;
+  transition: width 0.2s ease-in;
 }
-#home-actus a:hover .see-more-line .hover-see-more-line{
-    width: 100%;
+#home-actus a:hover .see-more-line .hover-see-more-line {
+  width: 100%;
 }
 
 #home-actus .home-propos {
-    border-radius: 3rem;
-    min-height: 50vh;
+  border-radius: 3rem;
+  min-height: 50vh;
 }
 
 #home-actus .btn-home-actus {
-    width: 60%;
-    padding: .3rem 0rem;
-    font-size: 1.5rem;
+  width: 60%;
+  padding: 0.3rem 0rem;
+  font-size: 1.5rem;
 }
 #home-actus .btn-home-actus:hover {
-    background-color: black;
-    color: #FFFFFF;
+  background-color: black;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 1200px) {
-    #home-actus .hover-see-more-line {
-        width: 0;
-        height: 100%;
-        transition: width 0.3s ease-in;
-    }
+  #home-actus .hover-see-more-line {
+    width: 0;
+    height: 100%;
+    transition: width 0.3s ease-in;
+  }
 
-    #home-actus .btn-home-actus {
-        width: initial;
-        font-size: 2rem;
-        padding: .3rem 2.3rem;
-    }
+  #home-actus .btn-home-actus {
+    width: initial;
+    font-size: 2rem;
+    padding: 0.3rem 2.3rem;
+  }
 }
 
 /* section instagram
 -------------------------- */
 #instagramm .col {
-    height: calc(100vw / 2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: calc(100vw / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* section unmissable : GRID : MQ*/
 @media screen and (min-width: 1200px) {
-    #instagramm .col {
-        height: calc(100vw / 6 - 0.5rem);
-    }
+  #instagramm .col {
+    height: calc(100vw / 6 - 0.5rem);
+  }
 }

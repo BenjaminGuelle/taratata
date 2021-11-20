@@ -1,70 +1,197 @@
-<!-- ------ shop product item : gift-card -->
-<div class="col-12 col-lg-4 product-item position-relative">
-    <div class="product-item position-relative">
-        <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-            -20%
-            <span class="visually-hidden">unread messages</span>
-        </span>
-        <article class="product-card">
-            <div class="product-card_picture bg-white">
-                <img src="../assets/svg/taratata-bijoux-cadeauFond.svg" alt="photo du produit">
-            </div>
-            <div class="product-card_content">
-                <h3 class="DINCondensedDemiBold fs-1 text-uppercase c-red">Carte cadeau</h3>
-                <p class="fs-3 text-uppercase">Montant de votre choix</p>
-                <p class="product-price fs-3 d-flex justify-content-center align-items-center">
-                    <span class="product-price_outline">35€</span>
-                    <span class="product-price-solde c-red">25€</span>
-                </p>
-            </div>
-        </article>
-        <article class="product-card-hover">
-            <div class="product-card-hover_picture bg-white">
-                <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-            </div>
-            <div class="product-card-hover_content">
-                <a href="../tpl/gift-card.html" class="me-3 me-lg-5">
-                    <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                </a>
-                <a href="#" class="">
-                    <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                </a>
-            </div>
-        </article>
+<div id="mobile-wrapper" class="menu-mobile pb-5">
+    <div class="menu-mobile-close px-5 position-relative d-flex align-items-center">
+        <button type="button" class="btn-mobile-close d-flex justify-content-center align-items-center">
+            <span class="close-icon"></span>
+        </button>
     </div>
-</div>
-<!-- ------ shop product item : item-card -->
-<div class="col-12 col-lg-4 product-item position-relative">
-    <div class="product-item position-relative">
-        <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-            -20%
-            <span class="visually-hidden">unread messages</span>
-        </span>
-        <article class="product-card">
-            <div class="product-card_picture bg-white">
-                <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
+    <!-- menu mobile : panels -->
+    <div class="panels overflow-hidden px-5">
+        <!-- menu mobile : panel 1 -->
+        <div id="panel-1" class="panel panel-opened" data-panel="panel-1">
+            <ul class="panel-list panel-list-1">
+                <li class="panel-item pb-3">
+                    <a href="../tpl/home.html" class="panel-link fs-4 text-uppercase c-white">Accueil</a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="../tpl/about.html" class="panel-link fs-4 text-uppercase c-white">À propos</a>
+                </li>
+                <li class="panel-item d-flex justify-content-between align-items-center pb-3">
+                    <a href="../tpl/shop.html" class="panel-link fs-4 panel-link-boutique text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Boutique</span>
+                    </a>
+                    <div class="panel-next" data-panel="panel-1" data-target="panel-2">
+                        <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                    </div>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="../tpl/news-list.html" class="panel-link fs-4 text-uppercase c-white">Actualités</a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="../tpl/contact.html" class="panel-link fs-4 text-uppercase c-white">Contact</a>
+                </li>
+            </ul>
+            <div class="panel-br bg-white mb-3"></div>
+            <button type="button" class="btn-mobile-spacepro pt-2 pb-1 px-4 bg-red-dark c-white rounded-pill position-relative d-flex mb-3 border-0">
+                <span>Espace pro</span>
+            </button>
+            <button type="button" class="btn-mobile-connect d-block c-white" data-target="signin">
+                Connexion
+            </button>
+        </div>
+        <!-- menu mobile : panel 2 -->
+        <div id="panel-2" class="panel panel-closed" data-panel="panel-2">
+            <div id="panel-back-first" class="panel-back d-flex align-items-center" data-panel="panel-2" data-target="panel-1">
+                <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
+                <span class="panel-back-txt fs-2 c-white">Retour</span>
             </div>
-            <div class="product-card_content">
-                <h3 class="DINCondensedDemiBold fs-1 text-uppercase c-red">La havanne</h3>
-                <p class="fs-3 text-uppercase">Bague troika</p>
-                <p class="product-price fs-3 d-flex justify-content-center align-items-center">
-                    <span class="product-price_outline">35€</span>
-                    <span class="product-price-solde c-red">25€</span>
-                </p>
+            <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Boutique</h2>
+            <ul class="panel-list">
+                <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white">
+                        <span>À ne pas rater</span>
+                    </a>
+                    <div class="panel-next" data-panel="panel-2" data-target="panel-3">
+                        <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                    </div>
+                </li>
+                <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white">
+                        <span>Bijoux</span>
+                    </a>
+                    <div class="panel-next" data-panel="panel-2" data-target="panel-4">
+                        <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                    </div>
+                </li>
+                <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white">
+                        <span>Collections</span>
+                    </a>
+                    <div class="panel-next" data-panel="panel-2" data-target="panel-5">
+                        <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- menu mobile : panel 3 -->
+        <div id="panel-3" class="panel panel-closed" data-panel="panel-3">
+            <div class="panel-back d-flex align-items-center" data-panel="panel-3" data-target="panel-2">
+                <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
+                <span class="panel-back-txt fs-2 c-white">Retour</span>
             </div>
-        </article>
-        <article class="product-card-hover">
-            <div class="product-card-hover_picture bg-white">
-                <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
+            <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">À ne pas rater</h2>
+            <ul class="panel-list">
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Incontournables</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Soldes hiver 2020</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Soldes été 2020</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Outlet</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- menu mobile : panel 4 -->
+        <div id="panel-4" class="panel panel-closed" data-panel="panel-4">
+            <div class="panel-back d-flex align-items-center" data-panel="panel-4" data-target="panel-2">
+                <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
+                <span class="panel-back-txt fs-2 c-white">Retour</span>
             </div>
-            <div class="product-card-hover_content">
-                <a href="../tpl/product-card.html" class="me-3 me-lg-5">
-                    <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                </a>
-                <a href="#" class="">
-                    <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                </a>
+            <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Bijoux</h2>
+            <ul class="panel-list">
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Collier</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Broche</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Bracelet</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Bague</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Boucle d'oreille</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- menu mobile : panel 5 -->
+        <div id="panel-5" class="panel panel-closed" data-panel="panel-5">
+            <div class="panel-back d-flex align-items-center" data-panel="panel-5" data-target="panel-2">
+                <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
+                <span class="panel-back-txt fs-2 c-white">Retour</span>
             </div>
-        </article>
+            <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Collections</h2>
+            <ul class="panel-list">
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Lien</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Lien</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Lien</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Lien</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Lien</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Lien</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Lien</span>
+                    </a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="#" class="panel-link fs-4 text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Lien</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+    <!-- TODO dropdown a coder-->
+    <button type="menu" class="btn-mobile-dropdown d-flex justify-content-between align-items-center px-3 mx-auto mt-2">
+        <span class="txt-lang-dropdown c-white">Français</span>
+        <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="h-25">
+    </button> 
+    <!-- menu mobile : panels END -->
 </div>
