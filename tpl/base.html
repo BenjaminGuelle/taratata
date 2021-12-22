@@ -506,100 +506,69 @@
     </div>
     <!-- sidebar : search END ------ -->
     <!-- ------ sidebar : cart -->
-    <div class="sidebar px-4" data-set="cart">
+    <div class="sidebar d-flex flex-column px-4" data-set="cart">
         <div class="sidebar-close w-100 p-4 d-flex justify-content-end align-items-center">
             <div class="btn-sidebar-close" data-target="cart"></div>
         </div>
-        <div class="sidebar-cart-content px-0 px-lg-3 pb-2 d-flex flex-column justify-content-between">
-            <ul class="w-100 sidebar-cart-list overflow-auto">
-                <li class="cart-empty fs-4">
-                    <p>Votre panier est vide</p>
-                </li>
-                <li class="w-100 sidebar-cart-item d-flex px-4 my-2">
-                    <button class="btn-sidebar-cart-remove btn-circle-custom">
-                        <img src="../assets/png/cancel.png" alt="button-cancel-item">
-                    </button>
-                    <div class="sidebar-cart-item-picture h-100">
-                        <img src="../assets/images/items/item-1.jpg" alt="produit-1">
+        <div class="sidebar-cart">
+            <ul class="sidebar-cart-list overflow-auto flex-grow-1 list-unstyled m-0 p-0">
+                <li class="sidebar-cart-item d-flex my-2">
+                    <div class="sidebar-cart-item_picture bg-white">
+                        <button class="cart-button rounded rounded-circle bg-white p-0 border-0">
+                            <img src="../assets/icons/remove.png" alt="boutton suppression produit">
+                        </button>
+                        <img src="../assets/images/items/bague-banane.jpg" alt="photo de produit">
                     </div>
-                    <div class="sidebar-cart-item-content h-100 ps-2 d-flex justify-content-between">
-                        <div class="sidebar-cart-item-content-title d-flex flex-column">
+                    <div class="d-flex flex-grow-1 justify-content-between flex-wrap pt-3">
+                        <div class="sidebar-cart-content flex-grow-1 d-flex flex-column ps-3">
                             <a href="">
-                                <h3 class="c-red text-uppercase DINCondensedDemiBold">
+                                <h3 class="c-red text-uppercase DINCondensedDemiBold fs-5 pt-1">
                                     Demoiselle 
                                 </h3>
                             </a>
-                            <h3 class="text-uppercase fs-4">
+                            <h3 class="text-uppercase fs-6 m-0">
                                 Colliers
                             </h3>
-                            <div class="sidebar-cart-item-change d-flex">
-                                <button class="btn-sidebar-cart-item-remove btn-circle-custom fs-4">
-                                    -
+                            
+                            <div class="sidebar-cart-item-action d-flex align-items-center position-relative">
+                                <button class="cart-button rounded rounded-circle bg-white p-0 border-0">
+                                    <img src="../assets/icons/less.png" alt="">
                                 </button>
-                                <p class="px-2 fs-4">
+                                <p class="px-2 fs-5">
                                     2
                                 </p>
-                                <button class="btn-sidebar-cart-item-add btn-circle-custom fs-4">
-                                    +
+                                <button class="cart-button rounded rounded-circle bg-white p-0 border-0">
+                                    <img src="../assets/icons/add.png" alt="">
                                 </button>
                             </div>
+                            
                         </div>
-                        <p class="sidebar-cart-item-content-price fw-bold fs-4">
-                            35€
-                        </p>
-                    </div>
-                </li>
-                <li class="w-100 sidebar-cart-item d-flex px-4 my-2">
-                    <button class="btn-sidebar-cart-remove btn-circle-custom">
-                        <img src="../assets/png/cancel.png" alt="button-cancel-item">
-                    </button>
-                    <div class="sidebar-cart-item-picture h-100">
-                        <img src="../assets/images/items/item-2.jpg" alt="produit-1">
-                    </div>
-                    <div class="sidebar-cart-item-content h-100 ps-2 d-flex justify-content-between">
-                        <div class="sidebar-cart-item-content-title d-flex flex-column">
-                            <a href="">
-                                <h3 class="c-red text-uppercase DINCondensedDemiBold">
-                                    Demoiselle 
-                                </h3>
-                            </a>
-                            <h3 class="text-uppercase fs-4">
-                                Colliers
-                            </h3>
-                            <div class="sidebar-cart-item-change d-flex">
-                                <button class="btn-sidebar-cart-item-remove btn-circle-custom fs-4">
-                                    -
-                                </button>
-                                <p class="px-2 fs-4">
-                                    2
-                                </p>
-                                <button class="btn-sidebar-cart-item-add btn-circle-custom fs-4">
-                                    +
-                                </button>
-                            </div>
+                        <div class="ps-3">
+                            <p class="DINCondensedDemiBold fs-5 fw-bold">
+                                35€
+                            </p>
                         </div>
-                        <p class="sidebar-cart-item-content-price fw-bold fs-4">
-                            35€
-                        </p>
                     </div>
                 </li>
             </ul>
-            <div class="w-100 sidebar-cart-bot d-flex flex-column justify-content-center">
-                <div class="lineBreak bg-black mb-1 mb-lg-3"></div>
-                <div class="w-100 d-flex justify-content-between">
-                    <span class="cart-total c-black text-uppercase DINCondensedDemiBold">Total</span>
-                    <span class="cart-total c-black text-uppercase DINCondensedDemiBold">70€</span>
-                </div>
-                <p class="c-black py-1 py-lg-4 fs-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaec neque fuga quo  Obcaec neque fuga quo.
-                </p>
-                <div class="acton-cart-end d-flex justify-content-between mb-1 mb-sm-0">
-                    <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-white c-black rounded-pill pt-2 pb-1">
-                        Voir le panier
-                    </button>
-                    <button type="button" class="border-0 DINCondensedDemiBold fs-3 text-uppercase bg-black c-white rounded-pill pt-2 pb-1">
-                        Paiement
-                    </button>
+            <div class="sidebar-cart-action">
+                <div class="lineBreak bg-black"></div>
+                <div class="py-2 py-lg-4">
+                    <div class="w-100 d-flex justify-content-between fs-5">
+                        <span class="cart-total c-black text-uppercase DINCondensedDemiBold">Total</span>
+                        <span class="cart-total c-black text-uppercase DINCondensedDemiBold">70€</span>
+                    </div>
+                    <p class="c-black fs-6 pb-3 py-lg-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaec neque fuga quo  Obcaec neque fuga quo.
+                    </p>
+                    <div class="acton-cart-end d-flex justify-content-between">
+                        <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-white c-black rounded-pill pt-2 pb-1">
+                            Voir le panier
+                        </button>
+                        <button type="button" class="border-0 DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1">
+                            Paiement
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
