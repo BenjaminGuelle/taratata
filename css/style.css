@@ -552,6 +552,17 @@ item:hover {
   -webkit-backdrop-filter: blur(10.5px);
 }
 
+/* sidebar content scroll */
+.sidebar-content {
+  width: 100%;
+  flex: 1;
+  min-height: 212px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
 @media screen and (min-width: 1200px) {
   .sidebar {
     width: 30%;
@@ -606,9 +617,6 @@ item:hover {
 }
 
 /* Sidebar => connexion content */
-.title-signin {
-  letter-spacing: 0.1rem;
-}
 
 .form-sidebar .input-custom {
   width: 100%;
@@ -631,23 +639,9 @@ item:hover {
   height: 2rem;
 }
 
-.sidebar-search-icon {
-  width: 100%;
-}
-
-/* SideBar 
+/* SideBar cart
 ------------------------------*/
-.sidebar-cart {
-  width: 100%;
-  flex: 1;
-  min-height: 212px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-}
 
-/* SideBar : container */
 /* SideBar : item */
 .sidebar-cart-item {
   width: 100%;

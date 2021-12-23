@@ -456,34 +456,36 @@
     <!-- menu mobile END ------ -->
 
     <!-- ------ sidebar : connexion -->
-    <div class="sidebar px-4" data-set="signin">
+    <div class="sidebar d-flex flex-column px-4" data-set="signin">
         <div class="sidebar-close w-100 d-flex justify-content-end align-items-center">
             <div class="btn-sidebar-close" data-target="signin"></div>
         </div>
-        <div class="container w-75 mx-auto px-0 pt-3 pb-5 d-flex flex-column align-items-center">
-            <h1 class="title-signin DINCondensedDemiBold c-black text-uppercase text-center mb-4">
-                Connexion
-            </h1>
-            <h2 class="title-signin DINCondensedDemiBold c-black text-uppercase text-center">
-                Déjà client ?
-            </h2>
-            <form action="#" method="POST" class="form-sidebar w-100">
-                <input type="mail" class="input-custom mb-3" placeholder="Login">
-                <input type="password" class="input-custom" placeholder="Mot de passe">
-            </form>
-            <p class="text-center my-4">
-                Vous avez oublié votre mot de passe ?
-            </p>
-            <button type="button" class="border-0 DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4 mb-2">
-                Se connecter
-            </button>
-            <div class="lineBreak bg-black my-4"></div>
-            <h2 class="title-signin DINCondensedDemiBold c-black text-uppercase text-center">
-                Nouveau client ?
-            </h2>
-            <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-white c-black rounded-pill pt-2 pb-1 px-4">
-                Créer un compte
-            </button>
+        <div class="sidebar-content d-flex">
+            <div class=" flex-grow-1 overflow-auto d-flex flex-column align-items-center py-3 px-3 px-lg-5">
+                <h1 class="DINCondensedDemiBold fs-1 text-uppercase m-0 pb-4">
+                    Connexion
+                </h1>
+                <h2 class="DINCondensedDemiBold fs-2 text-uppercase m-0 pb-3">
+                    Déjà client ?
+                </h2>
+                <form action="#" method="POST" class="d-flex flex-column align-items-center w-100 pb-3">
+                    <input type="mail" class="input-custom-full mb-3" placeholder="Login">
+                    <input type="password" class="input-custom-full" placeholder="Mot de passe">
+                </form>
+                <p class="fs-6 pb-4">
+                    Vous avez oublié votre mot de passe ?
+                </p>
+                <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4">
+                    Se connecter
+                </button>
+                <div class="lineBreak bg-black pt-1 my-5"></div>
+                <h2 class="DINCondensedDemiBold fs-3 text-uppercase m-0 pb-3">
+                    Nouveau client ?
+                </h2>
+                <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-white c-black rounded-pill pt-2 pb-1 px-4">
+                    Créer un compte
+                </button>
+            </div>
         </div>
     </div>
     <!-- sidebar : connexion END ------ -->
@@ -494,12 +496,12 @@
         </div>
         <div class="container w-75 mx-auto pt-3 d-flex flex-column align-items-center">
             <div class="sidebar-search mb-4">
-                <img src="../assets/icons/search.svg" alt="icon-search" class="sidebar-search-icon">
+                <img src="../assets/icons/search.svg" alt="icon-search" class="w-100">
             </div>
             <form action="#" method="POST" class="form-sidebar w-100">
                 <input type="text" class="input-custom mb-3" placeholder="exp: boucles d'oreilles">
             </form>
-            <button type="button" class="border-0 DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4 mb-2">
+            <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4">
                 Rechercher
             </button>
         </div>
@@ -510,7 +512,7 @@
         <div class="sidebar-close w-100 d-flex justify-content-end align-items-center">
             <div class="btn-sidebar-close" data-target="cart"></div>
         </div>
-        <div class="sidebar-cart">
+        <div class="sidebar-content">
             <ul class="sidebar-cart-list overflow-auto flex-grow-1 list-unstyled m-0 p-0">
                 <li class="sidebar-cart-item d-flex my-2">
                     <div class="sidebar-cart-item_picture bg-white">
@@ -562,10 +564,10 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaec neque fuga quo  Obcaec neque fuga quo.
                     </p>
                     <div class="acton-cart-end d-flex justify-content-between">
-                        <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-white c-black rounded-pill pt-2 pb-1">
+                        <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-white c-black rounded-pill pt-2 pb-1 px-sm-4">
                             Voir le panier
                         </button>
-                        <button type="button" class="border-0 DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1">
+                        <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-sm-4">
                             Paiement
                         </button>
                     </div>
