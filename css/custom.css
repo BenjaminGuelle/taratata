@@ -161,6 +161,30 @@ p {
   font-size: 2rem;
 }
 
+/* Custom btn */
+.custom-button {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.custom-button img{
+}
+
+/* CUSTOM BUTTON HOVER */
+.custom-button-hover-black,
+.custom-button-hover-gold {
+  transition: all 0.2s ease-in-out;
+}
+.custom-button-hover-black:hover {
+  background-color: #1d1d1c;
+}
+.custom-button-hover-gold:hover {
+  background-color: #e1be63;
+}
+
 /*
 *************************
      Product card -------
