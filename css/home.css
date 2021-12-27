@@ -256,7 +256,6 @@
 #home-actus .btn-home-actus {
   width: 60%;
   padding: 0.3rem 0rem;
-  font-size: 1.5rem;
 }
 #home-actus .btn-home-actus:hover {
   background-color: black;
@@ -272,7 +271,6 @@
 
   #home-actus .btn-home-actus {
     width: initial;
-    font-size: 2rem;
     padding: 0.3rem 2.3rem;
   }
 }

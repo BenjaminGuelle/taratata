@@ -161,18 +161,6 @@ p {
   font-size: 2rem;
 }
 
-/* Custom btn */
-.custom-button {
-  width: 1.5rem;
-  height: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.custom-button img{
-}
-
 /* CUSTOM BUTTON HOVER */
 .custom-button-hover-black,
 .custom-button-hover-gold {
@@ -358,29 +346,9 @@ p {
     CUSTOM SPLIDE -------
 *************************
 */
-#best-sales .splide__pagination__page {
-  display: inline-block;
-  width: 3rem;
-  height: 0.5rem;
-  background: #a3b7bc;
-  border-radius: 0;
-  margin: 3px;
-  padding: 0;
-  transition: transform 0.2s linear;
-  border: none;
-  opacity: 0.5;
-}
-
-#best-sales .splide__pagination__page.is-active {
-  transform: scale(1);
-  opacity: 1;
-  background: #a3b7bc;
-}
-
-#cart .splide__pagination__page {
+.splide__pagination__page {
   display: none;
 }
-
 /*
 *************************
     BUYING PROCESS ------
@@ -679,25 +647,43 @@ MEDIA QUERIES CUSTOM ----
 }
 
 @media (min-width: 576px) {
+  .product-card {
+    height: calc(100vw / 2);
+  }
+  #unmissable .product-card {
+    height: 100vw;
+  }
 }
 
 @media (min-width: 768px) {
   .DINCondensedDemiBold {
     letter-spacing: 0.2rem;
   }
+  .product-card {
+    height: calc(100vw / 2);
+  }
 }
 
 @media (min-width: 992px) {
   .product-card {
-    width: 100%;
     height: calc(100vw / 3);
   }
   #cart .product-card {
     height: calc(100vw / 4);
   }
+  #unmissable .product-card {
+    height: calc(100vw / 2);
+  }
+  
 }
 
 @media (min-width: 1200px) {
+  .product-card {
+    height: calc(100vw / 4);
+  }
+  #unmissable .product-card {
+    height: calc(100vw / 3);
+  }
   .icon-title-start,
   .icon-title-end {
     width: 3rem;
