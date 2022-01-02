@@ -15,7 +15,6 @@
 /* shop : description */
 .shop-description {
     border-radius: 3rem;
-    width: 100%;
 }
 
 /* shop : filter bar */
@@ -29,6 +28,7 @@
 
 .product-filter-item {
     width: calc(100vw / 8);
+    margin: 0 2rem;
 }
 
 .btn-see-more {
@@ -135,7 +135,6 @@
     top: 18px;
     left: 40px;
 }
-/* TODO : dropdown hover : set color */
 .mobile-filters-sidebar .mobile-filters-dropdown {
     width: 100%;
     margin: 1rem 0;
@@ -171,9 +170,6 @@
 
 /* shop : MQ */
 @media (min-width: 1200px) {
-    .shop-description {
-        width: 70%;
-    }
 
     .product-filters {
         position: initial;

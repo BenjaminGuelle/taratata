@@ -127,36 +127,6 @@ p {
   width: 100%;
 }
 
-.btn-circle {
-  width: 2rem;
-  height: 2rem;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: transform 0.2s ease-in-out;
-}
-
-.btn-circle:hover {
-  transform: scale(1.1);
-}
-
-.btn-circle .btn-circle-line {
-  position: relative;
-  width: 50%;
-  height: 0.1rem;
-  background-color: black;
-}
-.btn-circle .btn-circle-line.remove::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0.1rem;
-  background-color: black;
-  transform: translateX(-50%) rotate(90deg);
-}
-
 .add-remove-item_number {
   font-size: 2rem;
 }
@@ -336,10 +306,12 @@ p {
 
 .icon-title-start {
   left: -2rem;
+  top: 0.8rem;
 }
 
 .icon-title-end {
   right: -2rem;
+  top: 0.8rem;
 }
 /*
 *************************
