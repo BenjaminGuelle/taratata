@@ -7,4 +7,5 @@ document.addEventListener('DOMContentLoaded', function() {
     initActionSlider();
     initOpenFiltersOnMobile();
     switchSlideAfterdelay();
+    initCookiesValide();
 });

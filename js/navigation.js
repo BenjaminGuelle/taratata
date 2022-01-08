@@ -27,7 +27,7 @@ const initActionPanel = () => {
     animBackFirstPanel.addEventListener('click', handleSwitchBackAnim);
 }
 
-// ----- submenu event`
+// ----- submenu event`
 const initHoverSubmenu = () => {
     let linkBoutique = document.querySelector('#hover-boutique');
     linkBoutique.addEventListener('mouseover', handleHoverSubmenu);
@@ -37,8 +37,6 @@ const initHoverSubmenu = () => {
 const initActionSidebar = () => {
     // open current sidebar
     let btnSidebarOpen = document.querySelectorAll('.btn-sidebar-open');
-    console.log('ALL BTN');
-    console.log(btnSidebarOpen);
     btnSidebarOpen.forEach((item) => {
         item.addEventListener('click', handleFadeAllSidebar);
     });
@@ -54,16 +52,26 @@ const initActionSidebar = () => {
     btnMobileConnect.addEventListener('click', handleFadeAllSidebar);
 }
 
-// ----- mobile filters event`
+// ----- mobile filters event`
 const initOpenFiltersOnMobile = () => {
    const btnMobileOpenFilters = document.querySelector('.btn-mobile-filters_open');
    btnMobileOpenFilters.addEventListener('click', handleOpenFiltersMobile);
+}
+
+// ----- cookies
+const initCookiesValide = () => {
+    console.log('INIT COOKIES');
 }
 
 /***********************************
  *********** METHOD LIST ***********
  ***********************************
  */
+
+ // Valide cookies bar
+ const handleValideCookiesBar = () => {
+     console.log('COOKIES')
+ }
 
 // Display filters sidebar on mobile
 const handleOpenFiltersMobile = () => {
