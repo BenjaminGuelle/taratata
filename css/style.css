@@ -24,18 +24,6 @@ header {
   height: 4rem;
 }
 
-@media (min-width: 992px) {
-  .navbar {
-    height: 6rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .navbar {
-    height: 8rem;
-  }
-}
-
 /* Navbar : btn burger */
 .btn-burger {
   width: 20px;
@@ -237,11 +225,6 @@ header {
   right: 10%;
 }
 
-@media (min-width: 1200px) {
-  .dropdown-lang {
-    right: 5%;
-  }
-}
 .dropdown-lang a {
   font-size: 1rem;
   text-decoration: none;
@@ -285,12 +268,6 @@ item:hover {
   background: rgba(21, 145, 159, 0.65);
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
-}
-
-@media screen and (min-width: 360px), (min-height: 568px) {
-  .menu-mobile {
-    height: 90vh;
-  }
 }
 
 .menu-mobile.menu-opened {
@@ -532,8 +509,76 @@ item:hover {
     opacity: 0;
   }
 }
-/* Menu mobile END
+
+/* LOADING GIF
 -------------------------- */
+
+.gif-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif {
+  width: 10rem;
+}
+
+/* COOKIES BAR
+-------------------------- */
+#cookies {
+  z-index: 1300;
+}
+#cookies.isValid,
+#newsletter.isValid {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1300;
+}
+
+/* NEWSLETTER
+-------------------------- */
+#newsletter {
+  position: fixed;
+  z-index: 1250;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#newsletter .news-modal {
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+}
+
+#newsletter .news-modal .news-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 3.5rem;
+}
+
+#newsletter .news-modal .news-modal-container .news-image {
+  width: 5rem;
+}
+#newsletter .news-modal .news-modal-container .news-close {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
 
 /* Sidebar 
 -------------------------- */
@@ -563,30 +608,6 @@ item:hover {
   position: relative;
 }
 
-/* LOADING 
--------------------------- */
-
-.gif-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gif {
-  width: 10rem;
-}
-
-/* MEDIA QUERIES 
--------------------------- */
-
-@media screen and (min-width: 1200px) {
-  .sidebar {
-    width: 30%;
-  }
-}
-
 .sidebar.sidebar-opened {
   transform: translateX(0);
 }
@@ -596,19 +617,8 @@ item:hover {
   height: 4rem;
 }
 
-@media (min-width: 992px) {
-  .sidebar-close {
-    height: 6rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .sidebar-close {
-    height: 8rem;
-  }
-}
-
-.btn-sidebar-close {
+.btn-sidebar-close,
+.btn-news-close {
   position: relative;
   width: 1.5rem;
   height: 1.5rem;
@@ -616,7 +626,9 @@ item:hover {
 }
 
 .btn-sidebar-close::before,
-.btn-sidebar-close::after {
+.btn-sidebar-close::after,
+.btn-news-close::before,
+.btn-news-close::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -626,11 +638,13 @@ item:hover {
   background-color: #1d1d1c;
 }
 
-.btn-sidebar-close::before {
+.btn-sidebar-close::before,
+.btn-news-close::before {
   transform: rotate(45deg);
 }
 
-.btn-sidebar-close::after {
+.btn-sidebar-close::after,
+.btn-news-close::after {
   transform: rotate(-45deg);
 }
 
@@ -680,6 +694,17 @@ item:hover {
   object-fit: cover;
 }
 
+.sidebar-cart-item_picture .cart-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-cart-item-action .cart-button img{
+  width: 50%;
+  object-fit: cover;
+}
+
 .cart-button {
   width: 1.5rem;
   height: 1.5rem;
@@ -693,16 +718,9 @@ item:hover {
   object-fit: cover;
 }
 
-.sidebar-cart-item_picture .cart-button {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
-.sidebar-cart-item-action .cart-button img{
-  width: 50%;
-  object-fit: cover;
-} 
+/* MEDIA QUERIES 
+-------------------------- */
 
 @media (min-width: 360px) {
   .sidebar-cart-item {
@@ -734,4 +752,35 @@ item:hover {
     transform: translateY(-50%);
   }
 }
+
+@media screen and (min-width: 360px), (min-height: 568px) {
+  .menu-mobile {
+    height: 90vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    height: 6rem;
+  }
+  .sidebar-close {
+    height: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    height: 8rem;
+  }
+  .dropdown-lang {
+    right: 5%;
+  }
+  .sidebar {
+    width: 30%;
+  }
+  .sidebar-close {
+    height: 8rem;
+  }
+}
+
 

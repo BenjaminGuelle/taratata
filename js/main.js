@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initHoverSubmenu();
     initActionSidebar();
     initActionSlider();
-    initOpenFiltersOnMobile();
     switchSlideAfterdelay();
     initCookiesValide();
+    initNewsletterShow();
+    initOpenFiltersOnMobile()
 });

@@ -60,7 +60,14 @@ const initOpenFiltersOnMobile = () => {
 
 // ----- cookies
 const initCookiesValide = () => {
-    console.log('INIT COOKIES');
+    const btnValideCookies = document.querySelector('.cookies_valide');
+    btnValideCookies.addEventListener('click', handleValideCookiesBar);
+}
+
+// ----- newsletter
+const initNewsletterShow = () => {
+    const btnNewsletterClose = document.querySelector('.btn-newsletter');
+    btnNewsletterClose.addEventListener('click', handleCloseNewsletter);
 }
 
 /***********************************
@@ -68,9 +75,24 @@ const initCookiesValide = () => {
  ***********************************
  */
 
+
+ const handleCloseNewsletter = () => {
+     const newsletterPop = document.querySelector('#newsletter');
+     newsletterPop.style.display = 'none';
+ }
+
  // Valide cookies bar
  const handleValideCookiesBar = () => {
-     console.log('COOKIES')
+     const cookiesBar = document.querySelector('#cookies');
+     if (cookiesBar.classList.contains('isValid')) {
+        //todo : add callback here
+     }
+     else {
+         cookiesBar.classList.add('isValid');
+         setTimeout(() => {
+            cookiesBar.style.display = 'none';
+         },400)
+    };
  }
 
 // Display filters sidebar on mobile
@@ -80,9 +102,7 @@ const handleOpenFiltersMobile = () => {
     if (elmtFiltersSidebar.classList.contains('active')) {
         elmtFiltersSidebar.classList.remove('active');
     }
-    else {
-        elmtFiltersSidebar.classList.add('active');
-    }
+    else elmtFiltersSidebar.classList.add('active');
 
     console.log('CLICK FILTERS');
     console.log(elmtFiltersSidebar);
