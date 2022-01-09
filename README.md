@@ -24,7 +24,7 @@ Cadre de tous les templates, base.html contient également les popups **Newslett
 * ##### register.html
 * ##### shop.html
 
-
+Des classes pour afficher les prix soldé ou tooltips solde sont actives via des classes.
 
 
 
