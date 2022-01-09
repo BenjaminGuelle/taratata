@@ -70,12 +70,24 @@ const initNewsletterShow = () => {
     btnNewsletterClose.addEventListener('click', handleCloseNewsletter);
 }
 
+// ----- solde
+const initSoldePopupShow = () => {
+    console.log('SOLDE init');
+    const btnSoldePopupClose = document.querySelector('.solde-popup-close');
+    btnSoldePopupClose.addEventListener('click', handleCloseSoldePopup);
+}
+
 /***********************************
  *********** METHOD LIST ***********
  ***********************************
  */
 
 
+ const handleCloseSoldePopup = () => {
+     console.log('SOLDE action');
+     const soldePopup = document.querySelector('#solde');
+     soldePopup.style.display = 'none';
+ }
  const handleCloseNewsletter = () => {
      const newsletterPop = document.querySelector('#newsletter');
      newsletterPop.style.display = 'none';

@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initHoverSubmenu();
     initActionSidebar();
     initActionSlider();
-    switchSlideAfterdelay();
+    // switchSlideAfterdelay(); // if you want active auto switch hero slider uncomment this
     initCookiesValide();
     initNewsletterShow();
-    initOpenFiltersOnMobile()
+    initSoldePopupShow();
+    initOpenFiltersOnMobile();
 });

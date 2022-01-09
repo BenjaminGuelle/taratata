@@ -7,7 +7,7 @@
  const initActionSlider = () => {
      const sliderBtns = document.querySelectorAll('.hero-slider-btn');
      sliderBtns.forEach((item) => {
-        item.addEventListener('click', handleSliderBtn);
+        item.addEventListener('click', handleSwitchSlideHero);
      });
  }
 
@@ -18,7 +18,7 @@
  ***********************************
  */
 
- const handleSliderBtn = (e) => {
+ const handleSwitchSlideHero = (e) => {
     const targetSlideHero = e.currentTarget.getAttribute('data-slide-target');
     const currentBtn = e.currentTarget;
     const lastBtnActive = document.querySelector('#hero .hero-slider-btn.active');
@@ -40,6 +40,8 @@
 const totalSteps = getAllHeroSlideItem().length;
 let selectedStep = 0;
 const myInterval = null;
+
+// auto switch hero slider
 const switchSlideAfterdelay = () => {
     setInterval(() => {
         if (selectedStep >= totalSteps) {
