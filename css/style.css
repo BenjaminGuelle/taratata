@@ -168,7 +168,6 @@ header {
 
 /* Navbar : menu right */
 .btn-nav-spacepro {
-  box-shadow: 0px 8px 50px 1px rgba(0, 0, 0, 0.42);
   font-size: 1rem;
 }
 .btn-nav-spacepro:hover {
@@ -551,9 +550,9 @@ item:hover {
 }
 #newsletter .news-modal {
   border-radius: 100%;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10.5px);
-  -webkit-backdrop-filter: blur(10.5px);
+  background: rgba( 255, 255, 255, 0.7 );
+  backdrop-filter: blur( 7px );
+  -webkit-backdrop-filter: blur( 7px );
 }
 
 #newsletter .news-modal .news-modal-container {
@@ -615,8 +614,8 @@ item:hover {
   height: 100vh;
   transform: translateX(100%);
   background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10.5px);
-  -webkit-backdrop-filter: blur(10.5px);
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
 }
 
 /* sidebar content scroll */
@@ -830,5 +829,3 @@ item:hover {
     width: 30%;
   }
 }
-
-
