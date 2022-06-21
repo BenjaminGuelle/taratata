@@ -130,7 +130,12 @@ p {
 .add-remove-item_number {
   font-size: 2rem;
 }
-
+.d-inline-block > h2 {
+  font-size: 1.5rem !important;
+}
+.d-inline-block > h3 {
+  line-height: 0.9;
+}
 /* CUSTOM BUTTON HOVER */
 .custom-button-hover-black,
 .custom-button-hover-gold {
@@ -234,7 +239,7 @@ p {
 
 .product-card-hover_picture img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -303,12 +308,12 @@ p {
 
 .icon-title-start {
   left: -2rem;
-  top: 0.8rem;
+  top: 0rem;
 }
 
 .icon-title-end {
   right: -2rem;
-  top: 0.8rem;
+  top: 0rem;
 }
 /*
 *************************
@@ -626,7 +631,7 @@ MEDIA QUERIES CUSTOM ----
 
 @media (min-width: 768px) {
   .DINCondensedDemiBold {
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.5rem;
   }
   .product-card {
     height: calc(100vw / 2);
@@ -635,7 +640,7 @@ MEDIA QUERIES CUSTOM ----
 
 @media (min-width: 992px) {
   .product-card {
-    height: calc(100vw / 3);
+    height: calc(100vw / 4);
   }
   #cart .product-card {
     height: calc(100vw / 4);
@@ -643,7 +648,9 @@ MEDIA QUERIES CUSTOM ----
   #unmissable .product-card {
     height: calc(100vw / 2);
   }
-  
+  img.logo {
+    width: 120% !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -659,11 +666,11 @@ MEDIA QUERIES CUSTOM ----
   }
 
   .icon-title-start {
-    left: -3rem;
+    left: -3.5rem;
   }
 
   .icon-title-end {
-    right: -3rem;
+    right: -3.5rem;
   }
 
   #product-card .badge-solde {
@@ -705,4 +712,30 @@ MEDIA QUERIES CUSTOM ----
 }
 
 @media (min-width: 1400px) {
+}
+#expanded {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#expanded:focus ~ label {
+  outline: -webkit-focus-ring-color auto 5px;
+  border-bottom: 1px solid #000;
+}
+#expanded:checked + p {
+  -webkit-line-clamp: unset;
+}
+#expanded:checked + p {
+  -webkit-line-clamp: unset;
+}
+
+#expanded:checked ~ label {
+  display: none;
+}
+.news-single-text > p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }

@@ -132,8 +132,8 @@ header {
   width: calc(100vw - 2.5rem);
   display: none;
   background: rgba(209, 205, 205, 0.55);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
   padding: 0;
 }
