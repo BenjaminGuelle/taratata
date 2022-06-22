@@ -136,6 +136,9 @@ p {
 .d-inline-block > h3 {
   line-height: 0.9;
 }
+.pb-3 > .text-uppercase {
+  text-align: center;
+}
 /* CUSTOM BUTTON HOVER */
 .custom-button-hover-black,
 .custom-button-hover-gold {
@@ -285,6 +288,7 @@ p {
 .badge-solde {
   z-index: 1000;
   display: none;
+  transform: translate(25%,25%)!important;
 }
 .badge-solde.active {
   display: block;
@@ -674,8 +678,8 @@ MEDIA QUERIES CUSTOM ----
   }
 
   #product-card .badge-solde {
-    top: 0;
-    left: 100%;
+    top: 5%;
+    left: 90%;
     transform: translate(-50%, -50%);
   }
 
@@ -726,9 +730,6 @@ MEDIA QUERIES CUSTOM ----
 #expanded:checked + p {
   -webkit-line-clamp: unset;
 }
-#expanded:checked + p {
-  -webkit-line-clamp: unset;
-}
 
 #expanded:checked ~ label {
   display: none;
@@ -738,4 +739,14 @@ MEDIA QUERIES CUSTOM ----
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
   overflow: hidden;
+  white-space: pre-line;
+  text-overflow: ellipsis;
+}
+.news-single-text > label {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.my-5 {
+  margin-top: 6rem!important;
 }
