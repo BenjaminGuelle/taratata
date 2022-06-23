@@ -370,6 +370,9 @@ p {
   font-size: 1rem !important;
   margin-bottom: 1rem;
 }
+#faq > div > div:nth-child(2) {
+  padding: 0rem 5rem 10rem 5rem !important;
+}
 /*
 *************************
      Input  ------
