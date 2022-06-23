@@ -240,6 +240,10 @@
 .pt-5 {
   padding-top: 1.5rem!important;
 }
+main.container-fluid.px-0.px-lg-3 {
+  padding-right: 5rem!important;
+  padding-left: 5rem!important;
+}
 @media (min-width: 992px) {
   .pb-lg-5 {
     padding-bottom: 5rem!important;
