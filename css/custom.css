@@ -136,9 +136,7 @@ p {
 .d-inline-block > h3 {
   line-height: 0.9;
 }
-.pb-3 > .text-uppercase {
-  text-align: center;
-}
+
 /* CUSTOM BUTTON HOVER */
 .custom-button-hover-black,
 .custom-button-hover-gold {
@@ -167,7 +165,7 @@ p {
 ------------------------- */
 .product-card {
   width: 100%;
-  height: 100vw;
+  width: calc(100vw /4);
 }
 
 /* Product card : picture */
@@ -193,6 +191,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .product-price_outline {
@@ -221,13 +220,14 @@ p {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
   transition: all 0.5s ease-in-out;
+  width: calc(100vw /4);
 }
 
 .product-item:hover .product-card-hover {
   visibility: visible;
   opacity: 1;
+  width: calc(100vw /4);
 }
 
 /* Product card hover : picture */
@@ -241,7 +241,7 @@ p {
 }
 
 .product-card-hover_picture img {
-  width: 100%;
+  width: 65%;
   height: 100%;
   object-fit: cover;
 }
@@ -262,7 +262,9 @@ p {
   transform: scale(1);
   transition: all 0.2s ease-in-out;
 }
-
+.product-item:hover .product-card {
+  filter: blur(10px);
+}
 .product-card-hover_content a:hover {
   transform: scale(1.1);
 }
@@ -626,7 +628,7 @@ MEDIA QUERIES CUSTOM ----
 
 @media (min-width: 576px) {
   .product-card {
-    height: calc(100vw / 2);
+    width: calc(100vw / 2);
   }
   #unmissable .product-card {
     height: 100vw;
@@ -638,13 +640,13 @@ MEDIA QUERIES CUSTOM ----
     letter-spacing: 0.5rem;
   }
   .product-card {
-    height: calc(100vw / 2);
+    width: calc(100vw / 2);
   }
 }
 
 @media (min-width: 992px) {
   .product-card {
-    height: calc(100vw / 4);
+    width: calc(100vw / 4);
   }
   #cart .product-card {
     height: calc(100vw / 4);
@@ -659,7 +661,7 @@ MEDIA QUERIES CUSTOM ----
 
 @media (min-width: 1200px) {
   .product-card {
-    height: calc(100vw / 4);
+    width: calc(100vw / 4);
   }
   #unmissable .product-card {
     height: calc(100vw / 3);
@@ -678,7 +680,7 @@ MEDIA QUERIES CUSTOM ----
   }
 
   #product-card .badge-solde {
-    top: 5%;
+    top: -2%;
     left: 90%;
     transform: translate(-50%, -50%);
   }
