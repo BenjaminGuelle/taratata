@@ -241,7 +241,7 @@ p {
 }
 
 .product-card-hover_picture img {
-  width: 65%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
 }
@@ -363,7 +363,13 @@ p {
   bottom: -10%;
   left: 10%;
 }
-
+.buy-item {
+  margin-bottom: 10rem !important;
+}
+#contact > div > div > div > p {
+  font-size: 1rem !important;
+  margin-bottom: 1rem;
+}
 /*
 *************************
      Input  ------
