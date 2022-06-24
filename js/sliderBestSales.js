@@ -15,9 +15,12 @@ new Splide( '.splide', {
             gap    : '1rem',
         },
     },
-    pagination: false,
+    arrows: false,
+    pagination: true,
 } ).mount();
 
 new Splide( '.splide-single', {
-    perPage: 1
+    perPage: 1,
+    arrows: false,
+    pagination: true,
 } ).mount();

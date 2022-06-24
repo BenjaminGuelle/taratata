@@ -20,7 +20,7 @@ Colors Custom -----------
   color: #1d1d1c;
 }
 .c-red {
-  color: #dd1a1e;
+  color: #EE3F46;
 }
 .c-red-dark {
   color: #eb1d25;
@@ -59,7 +59,7 @@ Colors Custom -----------
   background-color: #1d1d1c;
 }
 .bg-red {
-  background-color: #dd1a1e;
+  background-color: #EB1D25;
 }
 .bg-red-dark {
   background-color: #eb1d25;
@@ -130,6 +130,12 @@ p {
 .add-remove-item_number {
   font-size: 2rem;
 }
+.d-inline-block > h2 {
+  font-size: 1.5rem !important;
+}
+.d-inline-block > h3 {
+  line-height: 0.9;
+}
 
 /* CUSTOM BUTTON HOVER */
 .custom-button-hover-black,
@@ -159,7 +165,7 @@ p {
 ------------------------- */
 .product-card {
   width: 100%;
-  height: 100vw;
+  width: calc(100vw /4);
 }
 
 /* Product card : picture */
@@ -185,6 +191,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .product-price_outline {
@@ -213,13 +220,14 @@ p {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
   transition: all 0.5s ease-in-out;
+  width: calc(100vw /4);
 }
 
 .product-item:hover .product-card-hover {
   visibility: visible;
   opacity: 1;
+  width: calc(100vw /4);
 }
 
 /* Product card hover : picture */
@@ -233,8 +241,8 @@ p {
 }
 
 .product-card-hover_picture img {
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -254,7 +262,9 @@ p {
   transform: scale(1);
   transition: all 0.2s ease-in-out;
 }
-
+.product-item:hover .product-card {
+  filter: blur(10px);
+}
 .product-card-hover_content a:hover {
   transform: scale(1.1);
 }
@@ -280,6 +290,7 @@ p {
 .badge-solde {
   z-index: 1000;
   display: none;
+  transform: translate(25%,25%)!important;
 }
 .badge-solde.active {
   display: block;
@@ -303,12 +314,12 @@ p {
 
 .icon-title-start {
   left: -2rem;
-  top: 0.8rem;
+  top: 0rem;
 }
 
 .icon-title-end {
   right: -2rem;
-  top: 0.8rem;
+  top: 0rem;
 }
 /*
 *************************
@@ -352,7 +363,16 @@ p {
   bottom: -10%;
   left: 10%;
 }
-
+.buy-item {
+  margin-bottom: 10rem !important;
+}
+#contact > div > div > div > p {
+  font-size: 1rem !important;
+  margin-bottom: 1rem;
+}
+#faq > div > div:nth-child(2) {
+  padding: 0rem 5rem 10rem 5rem !important;
+}
 /*
 *************************
      Input  ------
@@ -617,7 +637,7 @@ MEDIA QUERIES CUSTOM ----
 
 @media (min-width: 576px) {
   .product-card {
-    height: calc(100vw / 2);
+    width: calc(100vw / 2);
   }
   #unmissable .product-card {
     height: 100vw;
@@ -626,16 +646,16 @@ MEDIA QUERIES CUSTOM ----
 
 @media (min-width: 768px) {
   .DINCondensedDemiBold {
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.5rem;
   }
   .product-card {
-    height: calc(100vw / 2);
+    width: calc(100vw / 2);
   }
 }
 
 @media (min-width: 992px) {
   .product-card {
-    height: calc(100vw / 3);
+    width: calc(100vw / 4);
   }
   #cart .product-card {
     height: calc(100vw / 4);
@@ -643,12 +663,14 @@ MEDIA QUERIES CUSTOM ----
   #unmissable .product-card {
     height: calc(100vw / 2);
   }
-  
+  img.logo {
+    width: 120% !important;
+  }
 }
 
 @media (min-width: 1200px) {
   .product-card {
-    height: calc(100vw / 4);
+    width: calc(100vw / 4);
   }
   #unmissable .product-card {
     height: calc(100vw / 3);
@@ -659,16 +681,16 @@ MEDIA QUERIES CUSTOM ----
   }
 
   .icon-title-start {
-    left: -3rem;
+    left: -3.5rem;
   }
 
   .icon-title-end {
-    right: -3rem;
+    right: -3.5rem;
   }
 
   #product-card .badge-solde {
-    top: 0;
-    left: 100%;
+    top: -2%;
+    left: 90%;
     transform: translate(-50%, -50%);
   }
 
@@ -705,4 +727,37 @@ MEDIA QUERIES CUSTOM ----
 }
 
 @media (min-width: 1400px) {
+}
+#expanded {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#expanded:focus ~ label {
+  outline: -webkit-focus-ring-color auto 5px;
+  border-bottom: 1px solid #000;
+}
+#expanded:checked + p {
+  -webkit-line-clamp: unset;
+}
+
+#expanded:checked ~ label {
+  display: none;
+}
+.news-single-text > p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  white-space: pre-line;
+  text-overflow: ellipsis;
+}
+.news-single-text > label {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.my-5 {
+  margin-top: 6rem!important;
 }

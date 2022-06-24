@@ -47,8 +47,12 @@ footer a:hover {
 /* footer : map list */
 .footer-map-list {
     width: 100%;
+    flex-wrap: wrap;
 }
-
+.copyright {
+    font-size: 1rem !important;
+    padding-top: 1rem;
+}
 /* footer : MQ */
 @media (min-width: 992px) {
     .footer-linebreak {
@@ -59,6 +63,7 @@ footer a:hover {
 
     .footer-map-list {
         width: 75%;
+        padding-bottom: 4rem !important;
     }
 }
 

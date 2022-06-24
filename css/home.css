@@ -214,20 +214,54 @@
   overflow-y: scroll;
   line-height: 1.8rem;
 }
+/* width */
+.jewerly-designer-content::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+.jewerly-designer-content::-webkit-scrollbar-track {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+/* Handle */
+.jewerly-designer-content::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/* Handle on hover */
+.jewerly-designer-content::-webkit-scrollbar-thumb:hover {
+  background: #cccccc;
+}
+.mb-5 {
+  margin-bottom: 1rem!important;
+}
+.pt-5 {
+  padding-top: 1.5rem!important;
+}
+main.container-fluid.px-0.px-lg-3 {
+  padding-right: 5rem!important;
+  padding-left: 5rem!important;
+}
+@media (min-width: 992px) {
+  .pb-lg-5 {
+    padding-bottom: 5rem!important;
+  }
+}
 @media screen and (min-width: 1200px) {
   .jewerly-designer-picture {
-    width: 70%;
+    width: 80%;
     height: 80%;
     transform: rotate(355deg);
   }
   .jewerly-designer-content {
-    width: 70%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 1400px) {
   .jewerly-designer-picture {
-    width: 60%;
+    width: 80%;
     transform: rotate(355deg);
   }
 }
@@ -247,7 +281,9 @@
 #home-actus a:hover .see-more-line .hover-see-more-line {
   width: 100%;
 }
-
+#home-actus a:hover span {
+  color: #e1be63;
+}
 #home-actus .home-propos {
   border-radius: 3rem;
   min-height: 50vh;
