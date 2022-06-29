@@ -165,7 +165,7 @@ p {
 ------------------------- */
 .product-card {
   width: 100%;
-  width: calc(100vw /4);
+  /* width: calc(100vw /4); */
 }
 
 /* Product card : picture */
@@ -221,19 +221,19 @@ p {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease-in-out;
-  width: calc(100vw /4);
+  /* width: calc(100vw /4); */
 }
 
 .product-item:hover .product-card-hover {
   visibility: visible;
   opacity: 1;
-  width: calc(100vw /4);
+  /* width: calc(100vw /4); */
 }
 
 /* Product card hover : picture */
 .product-card-hover_picture {
-  width: 100%;
-  height: 65%;
+/*   width: calc(100vw / 4); */
+  height: 70%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -265,10 +265,15 @@ p {
 .product-item:hover .product-card {
   filter: blur(10px);
 }
+.product-item:not(:hover) .product-card {
+  transition: all 0.8s ease-in-out;
+}
 .product-card-hover_content a:hover {
   transform: scale(1.1);
 }
-
+.ps-3 {
+  padding-left: 3rem!important;
+}
 /* Product item : GIF CARD
 -------------------------- */
 .gift-card-picture {
@@ -639,8 +644,17 @@ MEDIA QUERIES CUSTOM ----
   .product-card {
     width: calc(100vw / 2);
   }
+  .product-card-hover {
+    width: calc(100vw / 2);
+  }
+  .product-item:hover .product-card-hover {
+    width: calc(100vw / 2);
+  }
   #unmissable .product-card {
     height: 100vw;
+  }
+  .product-card-hover_picture {
+    width: calc(100wv / 2);
   }
 }
 
@@ -657,6 +671,9 @@ MEDIA QUERIES CUSTOM ----
   .product-card {
     width: calc(100vw / 4);
   }
+  .product-item:hover .product-card-hover{
+    width: calc(100vw / 4);
+  }
   #cart .product-card {
     height: calc(100vw / 4);
   }
@@ -665,6 +682,12 @@ MEDIA QUERIES CUSTOM ----
   }
   img.logo {
     width: 120% !important;
+  }
+  .product-card-hover_picture {
+    width: calc(100wv / 4);
+  }
+  .product-card-hover {
+    width: calc(100vw / 4);
   }
 }
 
