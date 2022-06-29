@@ -25,7 +25,7 @@
     console.log(currentBtn);
     console.log(lastBtnActive);
 
-    if (getAllHeroSlideItem() != undefined || targetSlideHero != undefined) {
+    if (getAllHeroSlideItem() !== undefined || targetSlideHero !== undefined) {
         if (getAllHeroSlideItem().length > targetSlideHero) {
             handleHeroSliderTl();
             // TODO clear interval after click btn

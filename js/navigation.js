@@ -142,7 +142,7 @@ const handleSwitchPanel = (e) => {
     let targetPanel = e.currentTarget.getAttribute('data-target');
 
     // function to switch
-    if ((getPanelNext(targetPanel) != undefined) && (getCurrentPanel(currentPanel) != undefined ))
+    if ((getPanelNext(targetPanel) !== undefined) && (getCurrentPanel(currentPanel) !== undefined ))
     {
         removeAllClassPanel(getCurrentPanel(currentPanel));
         removeAllClassPanel(getPanelNext(targetPanel));
@@ -186,7 +186,7 @@ const handleFadeAllSidebar = (e) => {
     console.log('OPEN');
     const elmtActionSidebar = e.currentTarget;
     const currentDataTargetSidebar = e.currentTarget.getAttribute('data-target');
-    if (currentDataTargetSidebar != undefined && elmtActionSidebar != undefined) {
+    if (currentDataTargetSidebar !== undefined && elmtActionSidebar !== undefined) {
         getAllSidebar().forEach((item) => {
             if (elmtActionSidebar.classList.contains('btn-sidebar-close')) {
                 if (item.getAttribute('data-set') === currentDataTargetSidebar) {

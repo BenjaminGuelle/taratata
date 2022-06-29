@@ -58,7 +58,7 @@ const addRightStart = (item) => {
 const restartMenuMobile = () => {
     setTimeout(() => {
         getAllPanel().forEach((item) => {
-            if (item.getAttribute('data-panel') != 'panel-1') 
+            if (item.getAttribute('data-panel') !== 'panel-1')
             {
                 removeAllClassPanel(item);
                 addPanelClosed(item);
