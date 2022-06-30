@@ -29,9 +29,9 @@
 .back-to-news-list img {
     width: 3rem;
 }
-.splide__slide {
+/* .splide__slide {
     width: calc(((100% + 1rem) / 1) - 1rem) !important;
-}
+} */
 @media screen and (min-width: 1200px) {
     .news-single {
         width: 80%;

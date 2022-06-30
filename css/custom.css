@@ -334,6 +334,16 @@ p {
 .splide__pagination__page {
   display: none;
 }
+.special-splide > .product-card-hover{
+  left: -2% !important;
+}
+button.splide__pagination__page {
+  border-radius: 0 !important;
+  width: 20px !important;
+}
+.splide__pagination__page.is-active {
+  border: 1px solid #ccc;
+}
 /*
 *************************
     BUYING PROCESS ------
