@@ -7,13 +7,15 @@
     <title>Taratata Bijoux</title>
 
     <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="../assets/font/DINCondensedDemiBold/MyFontsWebfontsKit.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+          rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
@@ -27,7 +29,7 @@
     <link rel="stylesheet" href="../css/faq.css">
     <link rel="stylesheet" href="../css/news.css">
     <link rel="stylesheet" href="../css/login.css">
-    
+
 
     <!-- Splide Js -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
@@ -35,1481 +37,1462 @@
 
 </head>
 <body>
-    <!-- ------ header -->
-    <header class="container-fluid sticky-top bg-white px-0 px-lg-2">
-        <nav class="container-fluid py-0 navbar">
-            <div class="row w-100 h-100 m-0">
-                <!-- navbar : brand -->
-                <div class="col-4 order-1 order-lg-0 col-lg-1 p-0 d-flex align-items-center justify-content-center justify-content-lg-start">
-                    <a href="#" class="navbar-brand mx-auto mx-lg-0">
-                        <img src="../assets/images/taratata.svg" alt="taratata-bijoux" class="w-100 logo">
-                    </a>
-                </div>
-                <div class="col-4 order-0 order-lg-1 col-lg-7 p-0 d-flex align-items-center">
-                    <!-- navbar : btn menu mobile -->
-                    <button type="button" id="btn-mobile-opened" class="btn-burger d-flex d-lg-none justify-content-center align-items-center">
-                        <div class="line"></div>
-                    </button>
-                    <!-- navbar navlink list & submenu -->
-                    <ul class="nav-links h-100 p-0 ps-3 pt-3 d-flex flex-grow-1 d-none d-lg-flex order-lg-2">
-                        <li class="nav-item h-100 d-flex align-items-center">
-                           <a href="#" class="link-item h-100 c-black d-flex align-items-center fs-6">
-                                Accueil
-                           </a>
-                        </li>
-                        <li class="nav-item h-100 d-flex align-items-center">
-                            <a href="#" id="hover-boutique" class="link-item h-100 c-black d-flex align-items-center fs-6">
-                                Boutique
-                            </a>
-                            <!-- submenu -->
-                            <div class="submenu-shop p-5">
-                                <div class="row m-0 w-100 ps-5 h-auto">
-                                    <div class="col-2 p-o">
-                                        <ul class="submenu-list submenu-list-1 list-unstyled">
-                                            <li class="submenu-item">
-                                                <h2 class="text-uppercase DINCondensedDemiBold c-black fs-3">
-                                                    À ne pas rater
-                                                </h2>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link c-black fs-6">
-                                                    Incontournables
-                                                </a>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link c-black fs-6">
-                                                    Soldes hiver 2020
-                                                </a>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link c-black fs-6">
-                                                    Solde été 2020
-                                                </a>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link c-black fs-6">
-                                                    Outlet
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-2 p-o">
-                                        <ul class="submenu-list submenu-list-2 list-unstyled">
-                                            <li class="submenu-item">
-                                                <h2 class="text-uppercase DINCondensedDemiBold c-black fs-3">
-                                                    Bijoux
-                                                </h2>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link c-black fs-6">
-                                                    Collier
-                                                </a>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link c-black fs-6">
-                                                    Broche
-                                                </a>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link c-black fs-6">
-                                                    Bracelet
-                                                </a>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link c-black fs-6">
-                                                    Bague
-                                                </a>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link c-black fs-6">
-                                                    Boucle d'oreille
-                                                </a>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link text-capitalize c-black fs-6">
-                                                    - clips
-                                                </a>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link text-capitalize c-black fs-6">
-                                                    - dormeuses
-                                                </a>
-                                            </li>
-                                            <li class="submenu-item">
-                                                <a href="#" class="submenu-link text-capitalize c-black fs-6">
-                                                    - puces
-                                                </a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                    <div class="col-8 p-o">
-                                        <div class="submenu-collection d-flex flex-column flex-grow-1">
-                                            <h2 class="m-0 text-uppercase submenu-item c-black DINCondensedDemiBold fs-3">Collection</h2>
-                                            <!-- submenu : slider -->
-                                            <div class="slider-collection">
-                                                <div id="submenu-collection-slider" class="carousel slide h-100 w-100" data-bs-ride="carousel">
-                                                    <div class="carousel-indicators w-75">
-                                                      <button type="button" data-bs-target="#submenu-collection-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                      <button type="button" data-bs-target="#submenu-collection-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                      <button type="button" data-bs-target="#submenu-collection-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<!-- ------ header -->
+<header class="container-fluid sticky-top bg-white px-0 px-lg-2">
+    <nav class="container-fluid py-0 navbar">
+        <div class="row w-100 h-100 m-0">
+            <!-- navbar : brand -->
+            <div class="col-4 order-1 order-lg-0 col-lg-1 p-0 d-flex align-items-center justify-content-center justify-content-lg-start">
+                <a href="#" class="navbar-brand mx-auto mx-lg-0">
+                    <img src="../assets/images/taratata.svg" alt="taratata-bijoux" class="w-100 logo">
+                </a>
+            </div>
+            <div class="col-4 order-0 order-lg-1 col-lg-7 p-0 d-flex align-items-center">
+                <!-- navbar : btn menu mobile -->
+                <button type="button" id="btn-mobile-opened"
+                        class="btn-burger d-flex d-lg-none justify-content-center align-items-center">
+                    <div class="line"></div>
+                </button>
+                <!-- navbar navlink list & submenu -->
+                <ul class="nav-links h-100 p-0 ps-3 pt-3 d-flex flex-grow-1 d-none d-lg-flex order-lg-2">
+                    <li class="nav-item h-100 d-flex align-items-center">
+                        <a href="#" class="link-item h-100 c-black d-flex align-items-center fs-6">
+                            Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item h-100 d-flex align-items-center">
+                        <a href="#" id="hover-boutique" class="link-item h-100 c-black d-flex align-items-center fs-6">
+                            Boutique
+                        </a>
+                        <!-- submenu -->
+                        <div class="submenu-shop p-5">
+                            <div class="row m-0 w-100 ps-5 h-auto">
+                                <div class="col-2 p-o">
+                                    <ul class="submenu-list submenu-list-1 list-unstyled">
+                                        <li class="submenu-item">
+                                            <h2 class="text-uppercase DINCondensedDemiBold c-black fs-3">
+                                                À ne pas rater
+                                            </h2>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link c-black fs-6">
+                                                Incontournables
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link c-black fs-6">
+                                                Soldes hiver 2020
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link c-black fs-6">
+                                                Solde été 2020
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link c-black fs-6">
+                                                Outlet
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 p-o">
+                                    <ul class="submenu-list submenu-list-2 list-unstyled">
+                                        <li class="submenu-item">
+                                            <h2 class="text-uppercase DINCondensedDemiBold c-black fs-3">
+                                                Bijoux
+                                            </h2>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link c-black fs-6">
+                                                Collier
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link c-black fs-6">
+                                                Broche
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link c-black fs-6">
+                                                Bracelet
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link c-black fs-6">
+                                                Bague
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link c-black fs-6">
+                                                Boucle d'oreille
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link text-capitalize c-black fs-6">
+                                                - clips
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link text-capitalize c-black fs-6">
+                                                - dormeuses
+                                            </a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="#" class="submenu-link text-capitalize c-black fs-6">
+                                                - puces
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-8 p-o">
+                                    <div class="submenu-collection d-flex flex-column flex-grow-1">
+                                        <h2 class="m-0 text-uppercase submenu-item c-black DINCondensedDemiBold fs-3">
+                                            Collection</h2>
+                                        <!-- submenu : slider -->
+                                        <div class="slider-collection">
+                                            <div id="submenu-collection-slider" class="carousel slide h-100 w-100"
+                                                 data-bs-ride="carousel">
+                                                <div class="carousel-indicators w-75">
+                                                    <button type="button" data-bs-target="#submenu-collection-slider"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#submenu-collection-slider"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#submenu-collection-slider"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                </div>
+                                                <div class="carousel-inner h-100 w-75">
+                                                    <div class="carousel-item active container h-100 p-0">
+                                                        <div class="row h-100 m-0">
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                        </div>
                                                     </div>
-                                                    <div class="carousel-inner h-100 w-75">
-                                                      <div class="carousel-item active container h-100 p-0">
+                                                    <div class="carousel-item container h-100 p-0">
                                                         <div class="row h-100 m-0">
                                                             <div class="col me-4 w-25 h-75 bg-white border"></div>
                                                             <div class="col me-4 w-25 h-75 bg-white border"></div>
                                                             <div class="col me-4 w-25 h-75 bg-white border"></div>
                                                             <div class="col me-4 w-25 h-75 bg-white border"></div>
                                                         </div>
-                                                      </div>
-                                                      <div class="carousel-item container h-100 p-0">
+                                                    </div>
+                                                    <div class="carousel-item container h-100 p-0">
                                                         <div class="row h-100 m-0">
                                                             <div class="col me-4 w-25 h-75 bg-white border"></div>
                                                             <div class="col me-4 w-25 h-75 bg-white border"></div>
                                                             <div class="col me-4 w-25 h-75 bg-white border"></div>
                                                             <div class="col me-4 w-25 h-75 bg-white border"></div>
                                                         </div>
-                                                      </div>
-                                                      <div class="carousel-item container h-100 p-0">
-                                                        <div class="row h-100 m-0">
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                        </div>
-                                                      </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- submenu : slider END -->
                                         </div>
+                                        <!-- submenu : slider END -->
                                     </div>
                                 </div>
                             </div>
-                            <!-- submenu END -->
-                        </li>
-                        <li class="nav-item h-100 d-flex align-items-center">
-                            <a href="../tpl/news-list.html" class="link-item h-100 c-black d-flex align-items-center fs-6">
-                                Actualités
-                            </a>
-                        </li>
-                        <li class="nav-item h-100 d-flex align-items-center">
-                            <a href="#" class="link-item h-100 c-black d-flex align-items-center fs-6">
-                                Contact
-                            </a>
-                        </li>
-                        <li class="nav-item h-100 d-flex align-items-center">
-                            <a href="#" class="link-item h-100 c-black d-flex align-items-center fs-6">
-                                Nous trouver
-                            </a>
-                        </li>
-                        <li class="nav-item h-100 d-flex align-items-center">
-                            <a href="#" class="link-item h-100 c-black d-flex align-items-center fs-6">
-                                Soldes
-                            </a>
-                        </li>
-                        <li class="nav-item h-100 d-flex align-items-center">
-                            <a href="#" class="link-item h-100 c-black d-flex align-items-center fs-6">
-                                A propos
-                            </a>
-                        </li>
+                        </div>
+                        <!-- submenu END -->
+                    </li>
+                    <li class="nav-item h-100 d-flex align-items-center">
+                        <a href="../tpl/news-list.html" class="link-item h-100 c-black d-flex align-items-center fs-6">
+                            Actualités
+                        </a>
+                    </li>
+                    <li class="nav-item h-100 d-flex align-items-center">
+                        <a href="#" class="link-item h-100 c-black d-flex align-items-center fs-6">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item h-100 d-flex align-items-center">
+                        <a href="#" class="link-item h-100 c-black d-flex align-items-center fs-6">
+                            Nous trouver
+                        </a>
+                    </li>
+                    <li class="nav-item h-100 d-flex align-items-center">
+                        <a href="#" class="link-item h-100 c-black d-flex align-items-center fs-6">
+                            Soldes
+                        </a>
+                    </li>
+                    <li class="nav-item h-100 d-flex align-items-center">
+                        <a href="#" class="link-item h-100 c-black d-flex align-items-center fs-6">
+                            A propos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- navbar : navlinks end -->
+            <div class="col-4 order-2 col-lg-4 p-0 d-flex justify-content-end align-items-center">
+                <a type="button"
+                   class="btn-nav-spacepro border-0 rounded-pill text-uppercase fw-light c-white bg-red d-none d-lg-flex pt-1 px-2 mb-1">
+                    Espace Pro
+                </a>
+                <a href="#" class="btn-sidebar-open nav-link-signup c-black text-uppercase mx-4 d-none d-lg-flex"
+                   data-target="signin">
+                    Connexion
+                </a>
+                <a href="#" class="btn-sidebar-open nav-link-icon mb-lg-1" data-target="search">
+                    <img src="../assets/icons/search.svg" alt="search" class="icon-search">
+                </a>
+                <a href="#" class="btn-sidebar-open nav-link-icon position-relative" data-target="cart">
+                    <img src="../assets/svg/taratata-bijoux-caddie.svg" alt="taratata-bijoux-caddie"
+                         class="w-100 mb-lg-1">
+                    <span id="shopping-number" class="c-white number-shop ms-1">02</span>
+                </a>
+                <!-- navbar : dropdown lang -->
+                <div class="dropdown dropdown-lang d-none d-lg-flex">
+                    <a class="dropdown-toggle c-black" href="#" role="button" id="dropdownMenuLink"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        FR
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">EN</a></li>
+                        <li><a class="dropdown-item" href="#">ES</a></li>
+                        <li><a class="dropdown-item" href="#">FR</a></li>
                     </ul>
                 </div>
-                <!-- navbar : navlinks end -->
-                <div class="col-4 order-2 col-lg-4 p-0 d-flex justify-content-end align-items-center">
-                    <a type="button" class="btn-nav-spacepro border-0 rounded-pill text-uppercase fw-light c-white bg-red d-none d-lg-flex pt-1 px-2 mb-1">
-                        Espace Pro
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- header END ------ -->
+
+<!-- ------ menu mobile -->
+<div id="mobile-wrapper" class="menu-mobile pb-3">
+    <!-- menu mobile : btn close -->
+    <div class="menu-mobile-close px-5 position-relative d-flex align-items-center">
+        <button type="button" class="btn-mobile-close d-flex justify-content-center align-items-center">
+            <span class="close-icon"></span>
+        </button>
+    </div>
+    <!-- menu mobile : list panels -->
+    <div class="panels px-5">
+        <!-- menu mobile : panel 1 -->
+        <div id="panel-1" class="panel panel-opened" data-panel="panel-1">
+            <ul class="panel-list panel-list-1">
+                <li class="panel-item pb-3">
+                    <a href="../tpl/home.html" class="panel-link fs-5 text-uppercase c-white">Accueil</a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="../tpl/about.html" class="panel-link fs-5 text-uppercase c-white">À propos</a>
+                </li>
+                <li class="panel-item d-flex justify-content-between align-items-center pb-3">
+                    <a href="../tpl/shop.html"
+                       class="panel-link fs-5 panel-link-boutique text-uppercase c-white d-flex justify-content-between align-items-center">
+                        <span>Boutique</span>
                     </a>
-                    <a href="#" class="btn-sidebar-open nav-link-signup c-black text-uppercase mx-4 d-none d-lg-flex" data-target="signin">
-                        Connexion
+                    <div class="panel-next pb-1" data-panel="panel-1" data-target="panel-2">
+                        <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                    </div>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="../tpl/news-list.html" class="panel-link fs-5 text-uppercase c-white">Actualités</a>
+                </li>
+                <li class="panel-item pb-3">
+                    <a href="../tpl/contact.html" class="panel-link fs-5 text-uppercase c-white">Contact</a>
+                </li>
+            </ul>
+            <div class="panel-br bg-white mb-4"></div>
+            <a href="#" class="rounded-pill c-white bg-red-dark DINCondensedDemiBold text-uppercase fs-3 px-3 py-2">
+                Espace pro
+            </a><br>
+            <button type="button" class="btn-mobile-connect c-white fs-3 py-2 mt-3" data-target="signin">
+                Connexion
+            </button>
+        </div>
+        <!-- menu mobile : panel 2 -->
+        <div id="panel-2" class="panel panel-closed" data-panel="panel-2">
+            <div id="panel-back-first" class="panel-back d-flex align-items-center" data-panel="panel-2"
+                 data-target="panel-1">
+                <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche"
+                     class="panel-back-icon">
+                <span class="panel-back-txt fs-4 c-white">Retour</span>
+            </div>
+            <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Boutique</h2>
+            <ul class="panel-list">
+                <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>À ne pas rater</span>
                     </a>
-                    <a href="#" class="btn-sidebar-open nav-link-icon mb-lg-1" data-target="search">
-                        <img src="../assets/icons/search.svg" alt="search" class="icon-search">
+                    <div class="panel-next" data-panel="panel-2" data-target="panel-3">
+                        <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                    </div>
+                </li>
+                <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Bijoux</span>
                     </a>
-                    <a href="#" class="btn-sidebar-open nav-link-icon position-relative" data-target="cart">
-                        <img src="../assets/svg/taratata-bijoux-caddie.svg" alt="taratata-bijoux-caddie" class="w-100 mb-lg-1">
-                        <span id="shopping-number" class="c-white number-shop ms-1">02</span>
+                    <div class="panel-next" data-panel="panel-2" data-target="panel-4">
+                        <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                    </div>
+                </li>
+                <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Collections</span>
                     </a>
-                    <!-- navbar : dropdown lang -->
-                    <div class="dropdown dropdown-lang d-none d-lg-flex">
-                        <a class="dropdown-toggle c-black" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                          FR
+                    <div class="panel-next" data-panel="panel-2" data-target="panel-5">
+                        <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- menu mobile : panel 3 -->
+        <div id="panel-3" class="panel panel-closed" data-panel="panel-3">
+            <div class="panel-back d-flex align-items-center" data-panel="panel-3" data-target="panel-2">
+                <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche"
+                     class="panel-back-icon">
+                <span class="panel-back-txt fs-4 c-white">Retour</span>
+            </div>
+            <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">À ne pas rater</h2>
+            <ul class="panel-list">
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Incontournables</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Soldes hiver 2020</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Soldes été 2020</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Outlet</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- menu mobile : panel 4 -->
+        <div id="panel-4" class="panel panel-closed" data-panel="panel-4">
+            <div class="panel-back d-flex align-items-center" data-panel="panel-4" data-target="panel-2">
+                <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche"
+                     class="panel-back-icon">
+                <span class="panel-back-txt fs-4 c-white">Retour</span>
+            </div>
+            <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Bijoux</h2>
+            <ul class="panel-list">
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Collier</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Broche</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Bracelet</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Bague</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Boucle d'oreille</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- menu mobile : panel 5 -->
+        <div id="panel-5" class="panel panel-closed" data-panel="panel-5">
+            <div class="panel-back d-flex align-items-center" data-panel="panel-5" data-target="panel-2">
+                <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche"
+                     class="panel-back-icon">
+                <span class="panel-back-txt fs-4 c-white">Retour</span>
+            </div>
+            <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Collections</h2>
+            <ul class="panel-list">
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Item collection</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Item collection</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Item collection</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Item collection</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Item collection</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Item collection</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Item collection</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Item collection</span>
+                    </a>
+                </li>
+                <li class="panel-item mb-2">
+                    <a href="#" class="panel-link fs-5 text-uppercase c-white">
+                        <span>Item collection</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Dorpdown lang mobile -->
+    <div class="btn-mobile-dropdown d-flex justify-content-between align-items-center px-3 mx-auto">
+        <a class="dropdown-toggle d-flex justify-content-between align-items-center w-100 c-white" href="#"
+           role="button" id="dropdownLangMobile" data-bs-toggle="dropdown" aria-expanded="false">
+            <span>Français</span>
+            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="dropdown-mobile-icon">
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownLangMobile">
+            <li><a class="dropdown-item" href="#">EN</a></li>
+            <li><a class="dropdown-item" href="#">ES</a></li>
+            <li><a class="dropdown-item" href="#">FR</a></li>
+        </ul>
+    </div>
+</div>
+<!-- menu mobile END ------ -->
+
+<!-- ------ sidebar : connexion -->
+<div class="sidebar d-flex flex-column px-4" data-set="signin">
+    <div class="sidebar-close w-100 d-flex justify-content-end align-items-center">
+        <div class="btn-sidebar-close" data-target="signin"></div>
+    </div>
+    <div class="sidebar-content d-flex">
+        <div class=" flex-grow-1 overflow-auto d-flex flex-column align-items-center py-3 px-3 px-lg-5">
+            <h1 class="DINCondensedDemiBold fs-1 text-uppercase m-0 pb-4">
+                Connexion
+            </h1>
+            <h2 class="DINCondensedDemiBold fs-2 text-uppercase m-0 pb-3">
+                Déjà client ?
+            </h2>
+            <form action="#" method="POST" class="d-flex flex-column align-items-center w-100 pb-3">
+                <input type="mail" class="input-custom-full mb-3" placeholder="Login">
+                <input type="password" class="input-custom-full" placeholder="Mot de passe">
+            </form>
+            <p class="fs-6 pb-4">
+                Vous avez oublié votre mot de passe ?
+            </p>
+            <button type="button"
+                    class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4">
+                Se connecter
+            </button>
+            <div class="lineBreak bg-black pt-1 my-5"></div>
+            <h2 class="DINCondensedDemiBold fs-3 text-uppercase m-0 pb-3">
+                Nouveau client ?
+            </h2>
+            <button type="button"
+                    class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-white c-black rounded-pill pt-2 pb-1 px-4">
+                Créer un compte
+            </button>
+        </div>
+    </div>
+</div>
+<!-- sidebar : connexion END ------ -->
+<!-- ------ sidebar : search -->
+<div class="sidebar px-4" data-set="search">
+    <div class="sidebar-close w-100 d-flex justify-content-end align-items-center">
+        <div class="btn-sidebar-close" data-target="search"></div>
+    </div>
+    <div class="container w-75 mx-auto pt-3 d-flex flex-column align-items-center">
+        <div class="sidebar-search mb-4">
+            <img src="../assets/icons/search.svg" alt="icon-search" class="w-100">
+        </div>
+        <form action="#" method="POST" class="form-sidebar w-100">
+            <input type="text" class="input-custom mb-3" placeholder="exp: boucles d'oreilles">
+        </form>
+        <button type="button"
+                class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4">
+            Rechercher
+        </button>
+    </div>
+</div>
+<!-- sidebar : search END ------ -->
+<!-- ------ sidebar : cart -->
+<div class="sidebar d-flex flex-column px-4" data-set="cart">
+    <div class="sidebar-close w-100 d-flex justify-content-end align-items-center">
+        <div class="btn-sidebar-close" data-target="cart"></div>
+    </div>
+    <div class="sidebar-content">
+        <ul class="sidebar-cart-list overflow-auto flex-grow-1 list-unstyled m-0 p-0">
+            <li class="sidebar-cart-item d-flex my-2">
+                <div class="sidebar-cart-item_picture bg-white">
+                    <button class="cart-button rounded rounded-circle bg-white p-0 border-0">
+                        <img src="../assets/icons/remove.png" alt="boutton suppression produit">
+                    </button>
+                    <img src="../assets/images/items/bague-banane.jpg" alt="photo de produit">
+                </div>
+                <div class="d-flex flex-grow-1 justify-content-between flex-wrap pt-3">
+                    <div class="sidebar-cart-content flex-grow-1 d-flex flex-column ps-3">
+                        <a href="">
+                            <h3 class="c-red text-uppercase DINCondensedDemiBold fs-5 pt-1">
+                                Demoiselle
+                            </h3>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">EN</a></li>
-                          <li><a class="dropdown-item" href="#">ES</a></li>
-                          <li><a class="dropdown-item" href="#">FR</a></li>
+                        <h3 class="text-uppercase fs-6 m-0">
+                            Colliers
+                        </h3>
+
+                        <div class="sidebar-cart-item-action d-flex align-items-center position-relative">
+                            <button class="cart-button rounded rounded-circle bg-white p-0 border-0">
+                                <img src="../assets/icons/less.png" alt="retirer un élément">
+                            </button>
+                            <p class="px-2 fs-5">
+                                2
+                            </p>
+                            <button class="cart-button rounded rounded-circle bg-white p-0 border-0">
+                                <img src="../assets/icons/add.png" alt="ajouter un élément">
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="ps-3">
+                        <p class="DINCondensedDemiBold fs-5 fw-bold">
+                            35€
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="sidebar-cart-action">
+            <div class="lineBreak bg-black"></div>
+            <div class="py-2 py-lg-4">
+                <div class="w-100 d-flex justify-content-between fs-5">
+                    <span class="cart-total c-black text-uppercase DINCondensedDemiBold">Total</span>
+                    <span class="cart-total c-black text-uppercase DINCondensedDemiBold">70€</span>
+                </div>
+                <p class="c-black fs-6 pb-3 py-lg-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaec neque fuga quo Obcaec neque fuga
+                    quo.
+                </p>
+                <div class="acton-cart-end d-flex justify-content-between">
+                    <button type="button"
+                            class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-white c-black rounded-pill pt-2 pb-1 px-sm-4">
+                        Voir le panier
+                    </button>
+                    <button type="button"
+                            class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-sm-4">
+                        Paiement
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- sidebar : cart END ------ -->
+
+<!-- ------ main -->
+<main class="container-fluid px-0 px-lg-3">
+    <!-- ------ section hero -->
+    <section id="hero" class="container-fluid">
+        <!-- ------ slider content -->
+        <div class="w-100 hero-slider position-relative bg-grey">
+            <ul class="hero-slider-inner w-100 h-100 list-unstyled m-0 p-0">
+                <!-- ------ slider item -->
+                <li class="hero-slider-item active w-100 h-100 flex-column flex-lg-row" data-hero-slide="1">
+                    <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase fs-1 d-lg-none py-3 py-lg-5 ps-3 ps-lg-5">
+                        Bienvenue<br>sur notre boutique
+                    </h1>
+                    <div class="hero-slider-start bg-green"></div>
+                    <div class="hero-slider-end bg-grey d-flex flex-column">
+                        <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase fs-1 d-none d-lg-block py-3 py-lg-5 ps-3 ps-lg-5">
+                            Bienvenue<br>sur notre boutique
+                        </h1>
+                        <aside class="hero-slider-content position-relative d-flex flex-lg-row justify-content-lg-end">
+                            <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
+                                <img src="../assets/images/face/face3.jpg" alt="portrait" class="w-100">
+                            </div>
+                            <div class="hero-slider-content-txt fs-5 d-flex align-content-lg-center">
+                                <p class="fw-light pt-2 pt-lg-0 p-lg-5 my-lg-auto">
+                                    vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleines de vie
+                                    !
+                                </p>
+                            </div>
+                        </aside>
+                    </div>
+                </li>
+                <!-- ------ slider item -->
+                <li class="hero-slider-item w-100 h-100 flex-column flex-lg-row" data-hero-slide="2">
+                    <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase fs-1 d-lg-none py-3 py-lg-5 ps-3 ps-lg-5">
+                        Bienvenue<br>sur notre boutique
+                    </h1>
+                    <div class="hero-slider-start bg-red"></div>
+                    <div class="hero-slider-end bg-grey d-flex flex-column">
+                        <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase fs-1 d-none d-lg-block py-3 py-lg-5 ps-3 ps-lg-5">
+                            Bienvenue<br>sur notre boutique
+                        </h1>
+                        <aside class="hero-slider-content position-relative d-flex flex-lg-row justify-content-lg-end">
+                            <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
+                                <img src="../assets/images/face/face2.jpg" alt="portrait" class="w-100">
+                            </div>
+                            <div class="hero-slider-content-txt fs-5 d-flex align-content-lg-center">
+                                <p class="fw-light pt-2 pt-lg-0 p-lg-2 my-lg-auto">
+                                    vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleines de vie
+                                    !
+                                </p>
+                            </div>
+                        </aside>
+                    </div>
+                </li>
+                <!-- ------ slider item -->
+                <li class="hero-slider-item w-100 h-100 flex-column flex-lg-row" data-hero-slide="3">
+                    <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase fs-1 d-lg-none py-3 py-lg-5 ps-3 ps-lg-5">
+                        Bienvenue<br>sur notre boutique
+                    </h1>
+                    <div class="hero-slider-start bg-black"></div>
+                    <div class="hero-slider-end bg-grey d-flex flex-column">
+                        <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase fs-1 d-none d-lg-block py-3 py-lg-5 ps-3 ps-lg-5">
+                            Bienvenue<br>sur notre boutique
+                        </h1>
+                        <aside class="hero-slider-content position-relative d-flex flex-lg-row justify-content-lg-end">
+                            <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
+                                <img src="../assets/images/face/face1.jpg" alt="portrait" class="w-100">
+                            </div>
+                            <div class="hero-slider-content-txt fs-5 d-flex align-content-lg-center">
+                                <p class="fw-light pt-2 pt-lg-0 p-lg-2 my-lg-auto">
+                                    vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleines de vie
+                                    !
+                                </p>
+                            </div>
+                        </aside>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="hero-slider-nav w-100 d-flex justify-content-center justify-content-lg-end">
+                <div class="hero-slider-btns d-flex justify-content-center">
+                    <button type="button" data-slide-target="0" class="hero-slider-btn active" aria-current="true"
+                            aria-label="Slide 1"></button>
+                    <button type="button" data-slide-target="1" class="hero-slider-btn" aria-label="Slide 2"></button>
+                    <button type="button" data-slide-target="2" class="hero-slider-btn" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------ section best sales -->
+    <section id="best-sales" class="container-fluid">
+        <div class="w-100 bg-grey d-flex justify-content-center py-5">
+            <div class="d-inline-block position-relative">
+                <h2 class="text-center fs-2 fw-light m-0 c-black">Bijoux Fantaisies</h2>
+                <h3 class="DINCondensedDemiBold fs-1 text-uppercase c-black">Meilleurs ventes</h3>
+                <img src="../assets/png/taratata-bijoux-icon-titre-gauche.png"
+                     class="position-absolute icon-title-start" alt="icon du titre créateur de bijoux">
+                <img src="../assets/png/taratata-bijoux-icon-titre-droit.png" class="position-absolute icon-title-end"
+                     alt="icon du titre créateur de bijoux">
+            </div>
+        </div>
+        <div class="w-100 p-2 bg-grey-dark">
+            <div class="w-100 bg-white">
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide product-item">
+                                <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
+                                        -20%
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                <article class="product-card">
+                                    <div class="product-card_picture bg-white">
+                                        <img src="../assets/images/items/bague-banane.jpg"
+                                             alt="photo du produit">
+                                    </div>
+                                    <div class="product-card_content">
+                                        <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La
+                                            havanne</h3>
+                                        <p class="fs-5 text-uppercase">Bague troika</p>
+                                        <p class="product-price fs-5 d-flex justify-content-center align-items-center">
+                                            <span class="product-price_outline">35€</span>
+                                            <span class="product-price-solde c-red">25€</span>
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="product-card-hover">
+                                    <div class="product-card-hover_picture bg-white">
+                                        <img src="../assets/images/face/face1.jpg"
+                                             alt="photo du produit sur manequin">
+                                    </div>
+                                    <div class="product-card-hover_content">
+                                        <a href="#" class="me-3 me-lg-5">
+                                            <img src="../assets/png/taratata-bijoux-oeil-BD.png"
+                                                 alt="voir le détail du produit">
+                                        </a>
+                                        <a href="#" class="">
+                                            <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png"
+                                                 alt="ajouter le produit">
+                                        </a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="splide__slide product-item">
+                                <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
+                                        -20%
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                <article class="product-card">
+                                    <div class="product-card_picture bg-white">
+                                        <img src="../assets/images/items/bague-banane.jpg"
+                                             alt="photo du produit">
+                                    </div>
+                                    <div class="product-card_content">
+                                        <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La
+                                            havanne</h3>
+                                        <p class="fs-5 text-uppercase">Bague troika</p>
+                                        <p class="product-price fs-5 d-flex justify-content-center align-items-center">
+                                            <span class="product-price_outline">35€</span>
+                                            <span class="product-price-solde c-red">25€</span>
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="product-card-hover">
+                                    <div class="product-card-hover_picture bg-white">
+                                        <img src="../assets/images/face/face1.jpg"
+                                             alt="photo du produit sur manequin">
+                                    </div>
+                                    <div class="product-card-hover_content">
+                                        <a href="#" class="me-3 me-lg-5">
+                                            <img src="../assets/png/taratata-bijoux-oeil-BD.png"
+                                                 alt="voir le détail du produit">
+                                        </a>
+                                        <a href="#" class="">
+                                            <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png"
+                                                 alt="ajouter le produit">
+                                        </a>
+                                    </div>
+                                </article>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <!-- header END ------ -->
+        </div>
 
-    <!-- ------ menu mobile -->
-    <div id="mobile-wrapper" class="menu-mobile pb-3">
-        <!-- menu mobile : btn close -->
-        <div class="menu-mobile-close px-5 position-relative d-flex align-items-center">
-            <button type="button" class="btn-mobile-close d-flex justify-content-center align-items-center">
-                <span class="close-icon"></span>
-            </button>
-        </div>
-        <!-- menu mobile : list panels -->
-        <div class="panels px-5">
-            <!-- menu mobile : panel 1 -->
-            <div id="panel-1" class="panel panel-opened" data-panel="panel-1">
-                <ul class="panel-list panel-list-1">
-                    <li class="panel-item pb-3">
-                        <a href="../tpl/home.html" class="panel-link fs-5 text-uppercase c-white">Accueil</a>
-                    </li>
-                    <li class="panel-item pb-3">
-                        <a href="../tpl/about.html" class="panel-link fs-5 text-uppercase c-white">À propos</a>
-                    </li>
-                    <li class="panel-item d-flex justify-content-between align-items-center pb-3">
-                        <a href="../tpl/shop.html" class="panel-link fs-5 panel-link-boutique text-uppercase c-white d-flex justify-content-between align-items-center">
-                            <span>Boutique</span>
-                        </a>
-                        <div class="panel-next pb-1" data-panel="panel-1" data-target="panel-2">
-                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
-                        </div>
-                    </li>
-                    <li class="panel-item pb-3">
-                        <a href="../tpl/news-list.html" class="panel-link fs-5 text-uppercase c-white">Actualités</a>
-                    </li>
-                    <li class="panel-item pb-3">
-                        <a href="../tpl/contact.html" class="panel-link fs-5 text-uppercase c-white">Contact</a>
-                    </li>
-                </ul>
-                <div class="panel-br bg-white mb-4"></div>
-                <a href="#" class="rounded-pill c-white bg-red-dark DINCondensedDemiBold text-uppercase fs-3 px-3 py-2">
-                    Espace pro
-                </a><br>
-                <button type="button" class="btn-mobile-connect c-white fs-3 py-2 mt-3" data-target="signin">
-                    Connexion
-                </button>
-            </div>
-            <!-- menu mobile : panel 2 -->
-            <div id="panel-2" class="panel panel-closed" data-panel="panel-2">
-                <div id="panel-back-first" class="panel-back d-flex align-items-center" data-panel="panel-2" data-target="panel-1">
-                    <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
-                    <span class="panel-back-txt fs-4 c-white">Retour</span>
-                </div>
-                <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Boutique</h2>
-                <ul class="panel-list">
-                    <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>À ne pas rater</span>
-                        </a>
-                        <div class="panel-next" data-panel="panel-2" data-target="panel-3">
-                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
-                        </div>
-                    </li>
-                    <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Bijoux</span>
-                        </a>
-                        <div class="panel-next" data-panel="panel-2" data-target="panel-4">
-                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
-                        </div>
-                    </li>
-                    <li class="panel-item pb-3 d-flex justify-content-between align-items-center">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Collections</span>
-                        </a>
-                        <div class="panel-next" data-panel="panel-2" data-target="panel-5">
-                            <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="panel-link-icon">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- menu mobile : panel 3 -->
-            <div id="panel-3" class="panel panel-closed" data-panel="panel-3">
-                <div class="panel-back d-flex align-items-center" data-panel="panel-3" data-target="panel-2">
-                    <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
-                    <span class="panel-back-txt fs-4 c-white">Retour</span>
-                </div>
-                <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">À ne pas rater</h2>
-                <ul class="panel-list">
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Incontournables</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Soldes hiver 2020</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Soldes été 2020</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Outlet</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- menu mobile : panel 4 -->
-            <div id="panel-4" class="panel panel-closed" data-panel="panel-4">
-                <div class="panel-back d-flex align-items-center" data-panel="panel-4" data-target="panel-2">
-                    <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
-                    <span class="panel-back-txt fs-4 c-white">Retour</span>
-                </div>
-                <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Bijoux</h2>
-                <ul class="panel-list">
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Collier</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Broche</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Bracelet</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Bague</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Boucle d'oreille</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- menu mobile : panel 5 -->
-            <div id="panel-5" class="panel panel-closed" data-panel="panel-5">
-                <div class="panel-back d-flex align-items-center" data-panel="panel-5" data-target="panel-2">
-                    <img src="../assets/svg/taratata-bijoux-fleche-gauche-white.svg" alt="taratata-bijoux-fleche-gauche" class="panel-back-icon">
-                    <span class="panel-back-txt fs-4 c-white">Retour</span>
-                </div>
-                <h2 class="panel-title text-uppercase fs-1 DINCondensedDemiBold c-white">Collections</h2>
-                <ul class="panel-list">
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Item collection</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Item collection</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Item collection</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Item collection</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Item collection</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Item collection</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Item collection</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Item collection</span>
-                        </a>
-                    </li>
-                    <li class="panel-item mb-2">
-                        <a href="#" class="panel-link fs-5 text-uppercase c-white">
-                            <span>Item collection</span>
-                        </a>
-                    </li>
-                </ul>
+    </section>
+    <!-- ------ section unmissable -->
+    <section id="unmissable" class="container-fluid">
+        <div class="row p-0 m-0 pt-4 pt-lg-5">
+            <div class="col-9 col-lg-8 bg-gold p-3 py-lg-3 unmissable-box-title d-flex flex-column flex-xl-row justify-content-lg-around">
+                <h3 class="DINCondensedDemiBold text-uppercase fs-3 c-white m-0 pb-1">Promotions</h3>
+                <h3 class="DINCondensedDemiBold text-uppercase fs-3 c-white m-0 pb-1">Incontournables</h3>
+                <h3 class="DINCondensedDemiBold text-uppercase fs-3 c-white m-0">Toutes les collections</h3>
             </div>
         </div>
-        <!-- Dorpdown lang mobile -->
-        <div class="btn-mobile-dropdown d-flex justify-content-between align-items-center px-3 mx-auto">
-            <a class="dropdown-toggle d-flex justify-content-between align-items-center w-100 c-white" href="#" role="button" id="dropdownLangMobile" data-bs-toggle="dropdown" aria-expanded="false">
-                <span>Français</span>
-                <img src="../assets/icons/chevron.svg" alt="icon-boutique-mobile" class="dropdown-mobile-icon">
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownLangMobile">
-              <li><a class="dropdown-item" href="#">EN</a></li>
-              <li><a class="dropdown-item" href="#">ES</a></li>
-              <li><a class="dropdown-item" href="#">FR</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- menu mobile END ------ -->
-
-    <!-- ------ sidebar : connexion -->
-    <div class="sidebar d-flex flex-column px-4" data-set="signin">
-        <div class="sidebar-close w-100 d-flex justify-content-end align-items-center">
-            <div class="btn-sidebar-close" data-target="signin"></div>
-        </div>
-        <div class="sidebar-content d-flex">
-            <div class=" flex-grow-1 overflow-auto d-flex flex-column align-items-center py-3 px-3 px-lg-5">
-                <h1 class="DINCondensedDemiBold fs-1 text-uppercase m-0 pb-4">
-                    Connexion
-                </h1>
-                <h2 class="DINCondensedDemiBold fs-2 text-uppercase m-0 pb-3">
-                    Déjà client ?
-                </h2>
-                <form action="#" method="POST" class="d-flex flex-column align-items-center w-100 pb-3">
-                    <input type="mail" class="input-custom-full mb-3" placeholder="Login">
-                    <input type="password" class="input-custom-full" placeholder="Mot de passe">
-                </form>
-                <p class="fs-6 pb-4">
-                    Vous avez oublié votre mot de passe ?
+        <div class="row p-0 m-0">
+            <div class="col-12 col-lg-8 order-1 order-lg-0 p-0">
+                <img src="../assets/images/face/face4.jpg" class="w-100 h-auto" alt="photo manequin boucle d'oreille">
+            </div>
+            <div class="col-12 col-lg-4 order-0 order-lg-1 px-0 px-xl-5 ps-lg-4 d-flex flex-column justify-content-center align-items-center">
+                <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red  px-xl-2">Des bijoux fantaisie tendances et
+                    originaux</h3><br>
+                <p class="fs-5 fw-light px-xl-2">
+                    <strong>A vous les bagues, clips, broches, bracelets, manchettes, boucles d'oreilles, colliers,
+                        sautoirs et pendentifs !</strong>
                 </p>
-                <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4">
-                    Se connecter
-                </button>
-                <div class="lineBreak bg-black pt-1 my-5"></div>
-                <h2 class="DINCondensedDemiBold fs-3 text-uppercase m-0 pb-3">
-                    Nouveau client ?
-                </h2>
-                <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-white c-black rounded-pill pt-2 pb-1 px-4">
-                    Créer un compte
-                </button>
+                <p class="fs-5 fw-light px-xl-2">
+                    Deux options pour vous faire plaisir ou choisir un cadeau à offrir :
+                </p>
+                <p class="fs-5 fw-light px-xl-2">
+                    <strong>commandez en ligne</strong> en restant lovées dans votre canapé. Gardez vos chaussons, on
+                    s'occupe de la livraison ! Courageuses, enfourchez vos vélos, trottinettes et autres bolides à
+                    roulettes et <strong>foncez faire votre shopping en boutique chez nos revendeurs</strong> pour nous
+                    offrir l'immense plaisir de vous voir porter nos bijoux, et ça on adore, on aime !
+                </p>
             </div>
         </div>
-    </div>
-    <!-- sidebar : connexion END ------ -->
-    <!-- ------ sidebar : search -->
-    <div class="sidebar px-4" data-set="search">
-        <div class="sidebar-close w-100 d-flex justify-content-end align-items-center">
-            <div class="btn-sidebar-close" data-target="search"></div>
-        </div>
-        <div class="container w-75 mx-auto pt-3 d-flex flex-column align-items-center">
-            <div class="sidebar-search mb-4">
-                <img src="../assets/icons/search.svg" alt="icon-search" class="w-100">
-            </div>
-            <form action="#" method="POST" class="form-sidebar w-100">
-                <input type="text" class="input-custom mb-3" placeholder="exp: boucles d'oreilles">
-            </form>
-            <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-4">
-                Rechercher
-            </button>
-        </div>
-    </div>
-    <!-- sidebar : search END ------ -->
-    <!-- ------ sidebar : cart -->
-    <div class="sidebar d-flex flex-column px-4" data-set="cart">
-        <div class="sidebar-close w-100 d-flex justify-content-end align-items-center">
-            <div class="btn-sidebar-close" data-target="cart"></div>
-        </div>
-        <div class="sidebar-content">
-            <ul class="sidebar-cart-list overflow-auto flex-grow-1 list-unstyled m-0 p-0">
-                <li class="sidebar-cart-item d-flex my-2">
-                    <div class="sidebar-cart-item_picture bg-white">
-                        <button class="cart-button rounded rounded-circle bg-white p-0 border-0">
-                            <img src="../assets/icons/remove.png" alt="boutton suppression produit">
-                        </button>
-                        <img src="../assets/images/items/bague-banane.jpg" alt="photo de produit">
-                    </div>
-                    <div class="d-flex flex-grow-1 justify-content-between flex-wrap pt-3">
-                        <div class="sidebar-cart-content flex-grow-1 d-flex flex-column ps-3">
-                            <a href="">
-                                <h3 class="c-red text-uppercase DINCondensedDemiBold fs-5 pt-1">
-                                    Demoiselle 
-                                </h3>
-                            </a>
-                            <h3 class="text-uppercase fs-6 m-0">
-                                Colliers
-                            </h3>
-                            
-                            <div class="sidebar-cart-item-action d-flex align-items-center position-relative">
-                                <button class="cart-button rounded rounded-circle bg-white p-0 border-0">
-                                    <img src="../assets/icons/less.png" alt="retirer un élément">
-                                </button>
-                                <p class="px-2 fs-5">
-                                    2
+        <!-- ------ Wrapper grid start -->
+        <div class="wrapper-grid w-100 pb-5 bg-grey">
+            <div class="row w-100 m-0 p-0 bg-black">
+                <div class="col col-12 col-lg-6 col-xl-4 bg-white p-0 grid-item-box p-0" data-set-grid-box="item-box">
+                    <div class="product-item position-relative">
+                        <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
+                            -20%
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                        <article class="product-card">
+                            <div class="product-card_picture bg-white">
+                                <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
+                            </div>
+                            <div class="product-card_content">
+                                <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
+                                <p class="fs-5 text-uppercase">Bague troika</p>
+                                <p class="product-price fs-5 d-flex justify-content-center align-items-center">
+                                    <span class="product-price_outline">35€</span>
+                                    <span class="product-price-solde c-red">25€</span>
                                 </p>
-                                <button class="cart-button rounded rounded-circle bg-white p-0 border-0">
-                                    <img src="../assets/icons/add.png" alt="ajouter un élément">
-                                </button>
                             </div>
-                            
-                        </div>
-                        <div class="ps-3">
-                            <p class="DINCondensedDemiBold fs-5 fw-bold">
-                                35€
-                            </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="sidebar-cart-action">
-                <div class="lineBreak bg-black"></div>
-                <div class="py-2 py-lg-4">
-                    <div class="w-100 d-flex justify-content-between fs-5">
-                        <span class="cart-total c-black text-uppercase DINCondensedDemiBold">Total</span>
-                        <span class="cart-total c-black text-uppercase DINCondensedDemiBold">70€</span>
-                    </div>
-                    <p class="c-black fs-6 pb-3 py-lg-4">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaec neque fuga quo  Obcaec neque fuga quo.
-                    </p>
-                    <div class="acton-cart-end d-flex justify-content-between">
-                        <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-white c-black rounded-pill pt-2 pb-1 px-sm-4">
-                            Voir le panier
-                        </button>
-                        <button type="button" class="border border-2 border-dark DINCondensedDemiBold fs-5 text-uppercase bg-black c-white rounded-pill pt-2 pb-1 px-sm-4">
-                            Paiement
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- sidebar : cart END ------ -->
-
-    <!-- ------ main -->
-    <main class="container-fluid px-0 px-lg-3">
-        <!-- ------ section hero -->
-        <section id="hero" class="container-fluid">
-            <!-- ------ slider content -->
-            <div class="w-100 hero-slider position-relative bg-grey">
-                <ul class="hero-slider-inner w-100 h-100 list-unstyled m-0 p-0">
-                    <!-- ------ slider item -->
-                    <li class="hero-slider-item active w-100 h-100 flex-column flex-lg-row" data-hero-slide="1">
-                        <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase fs-1 d-lg-none py-3 py-lg-5 ps-3 ps-lg-5">
-                            Bienvenue<br>sur notre boutique
-                        </h1>
-                        <div class="hero-slider-start bg-green"></div>
-                        <div class="hero-slider-end bg-grey d-flex flex-column">
-                            <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase fs-1 d-none d-lg-block py-3 py-lg-5 ps-3 ps-lg-5">
-                                Bienvenue<br>sur notre boutique
-                            </h1>
-                            <aside class="hero-slider-content position-relative d-flex flex-lg-row justify-content-lg-end">
-                                <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
-                                    <img src="../assets/images/face/face3.jpg" alt="portrait" class="w-100">
-                                </div>
-                                <div class="hero-slider-content-txt fs-5 d-flex align-content-lg-center">
-                                    <p class="fw-light pt-2 pt-lg-0 p-lg-5 my-lg-auto">
-                                        vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleines de vie !
-                                    </p>
-                                </div>
-                            </aside>
-                        </div>
-                    </li>
-                    <!-- ------ slider item -->
-                    <li class="hero-slider-item w-100 h-100 flex-column flex-lg-row" data-hero-slide="2">
-                        <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase fs-1 d-lg-none py-3 py-lg-5 ps-3 ps-lg-5">
-                            Bienvenue<br>sur notre boutique
-                        </h1>
-                        <div class="hero-slider-start bg-red"></div>
-                        <div class="hero-slider-end bg-grey d-flex flex-column">
-                            <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase fs-1 d-none d-lg-block py-3 py-lg-5 ps-3 ps-lg-5">
-                                Bienvenue<br>sur notre boutique
-                            </h1>
-                            <aside class="hero-slider-content position-relative d-flex flex-lg-row justify-content-lg-end">
-                                <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
-                                    <img src="../assets/images/face/face2.jpg" alt="portrait" class="w-100">
-                                </div>
-                                <div class="hero-slider-content-txt fs-5 d-flex align-content-lg-center">
-                                    <p class="fw-light pt-2 pt-lg-0 p-lg-2 my-lg-auto">
-                                        vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleines de vie !
-                                    </p>
-                                </div>
-                            </aside>
-                        </div>
-                    </li>
-                    <!-- ------ slider item -->
-                    <li class="hero-slider-item w-100 h-100 flex-column flex-lg-row" data-hero-slide="3">
-                        <h1 class="hero-slider-title-top DINCondensedDemiBold text-uppercase fs-1 d-lg-none py-3 py-lg-5 ps-3 ps-lg-5">
-                            Bienvenue<br>sur notre boutique
-                        </h1>
-                        <div class="hero-slider-start bg-black"></div>
-                        <div class="hero-slider-end bg-grey d-flex flex-column">
-                            <h1 class="hero-slider-title-desktop DINCondensedDemiBold text-uppercase fs-1 d-none d-lg-block py-3 py-lg-5 ps-3 ps-lg-5">
-                                Bienvenue<br>sur notre boutique
-                            </h1>
-                            <aside class="hero-slider-content position-relative d-flex flex-lg-row justify-content-lg-end">
-                                <div class="hero-slider-content-box bg-white d-flex justify-content-center align-content-center p-2">
-                                    <img src="../assets/images/face/face1.jpg" alt="portrait" class="w-100">
-                                </div>
-                                <div class="hero-slider-content-txt fs-5 d-flex align-content-lg-center">
-                                    <p class="fw-light pt-2 pt-lg-0 p-lg-2 my-lg-auto">
-                                        vente en ligne de bijoux fantaisie originaux pour femmes joyeuses et pleines de vie !
-                                    </p>
-                                </div>
-                            </aside>
-                        </div>
-                    </li>
-                    
-                </ul>
-                <div class="hero-slider-nav w-100 d-flex justify-content-center justify-content-lg-end">
-                    <div class="hero-slider-btns d-flex justify-content-center">
-                        <button type="button" data-slide-target="0" class="hero-slider-btn active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-slide-target="1" class="hero-slider-btn" aria-label="Slide 2"></button>
-                        <button type="button" data-slide-target="2" class="hero-slider-btn" aria-label="Slide 3"></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ------ section best sales -->
-        <section id="best-sales" class="container-fluid">
-            <div class="w-100 bg-grey d-flex justify-content-center py-5">
-                <div class="d-inline-block position-relative">
-                    <h2 class="text-center fs-2 fw-light m-0 c-black">Bijoux Fantaisies</h2>
-                    <h3 class="DINCondensedDemiBold fs-1 text-uppercase c-black">Meilleurs ventes</h3>
-                    <img src="../assets/png/taratata-bijoux-icon-titre-gauche.png" class="position-absolute icon-title-start" alt="icon du titre créateur de bijoux">
-                    <img src="../assets/png/taratata-bijoux-icon-titre-droit.png" class="position-absolute icon-title-end" alt="icon du titre créateur de bijoux">
-                </div>
-            </div>
-            <div class="w-100 p-2 bg-grey-dark">
-                <div class="w-100 bg-white">
-                    <div class="splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide d-flex flex-column justify-content-center align-content-center">
-                                    <div class="product-item position-relative">
-                                        <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                            -20%
-                                            <span class="visually-hidden">unread messages</span>
-                                        </span>
-                                        <article class="product-card">
-                                            <div class="product-card_picture bg-white">
-                                                <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                            </div>
-                                            <div class="product-card_content">
-                                                <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
-                                                <p class="fs-5 text-uppercase">Bague troika</p>
-                                                <p class="product-price fs-5 d-flex justify-content-center align-items-center">
-                                                    <span class="product-price_outline">35€</span>
-                                                    <span class="product-price-solde c-red">25€</span>
-                                                </p>
-                                            </div>
-                                        </article>
-                                        <article class="product-card-hover">
-                                            <div class="product-card-hover_picture bg-white">
-                                                <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                            </div>
-                                            <div class="product-card-hover_content">
-                                                <a href="#" class="me-3 me-lg-5">
-                                                    <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </li>
-                                <li class="splide__slide d-flex flex-column justify-content-center align-content-center">
-                                    <div class="product-item position-relative">
-                                        <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                            -20%
-                                            <span class="visually-hidden">unread messages</span>
-                                        </span>
-                                        <article class="product-card">
-                                            <div class="product-card_picture bg-white">
-                                                <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                            </div>
-                                            <div class="product-card_content">
-                                                <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
-                                                <p class="fs-5 text-uppercase">Bague troika</p>
-                                                <p class="product-price fs-5 d-flex justify-content-center align-items-center">
-                                                    <span class="product-price_outline">35€</span>
-                                                    <span class="product-price-solde c-red">25€</span>
-                                                </p>
-                                            </div>
-                                        </article>
-                                        <article class="product-card-hover">
-                                            <div class="product-card-hover_picture bg-white">
-                                                <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                            </div>
-                                            <div class="product-card-hover_content">
-                                                <a href="#" class="me-3 me-lg-5">
-                                                    <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </li>
-                                <li class="splide__slide d-flex flex-column justify-content-center align-content-center">
-                                    <div class="product-item position-relative">
-                                        <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                            -20%
-                                            <span class="visually-hidden">unread messages</span>
-                                        </span>
-                                        <article class="product-card">
-                                            <div class="product-card_picture bg-white">
-                                                <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                            </div>
-                                            <div class="product-card_content">
-                                                <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
-                                                <p class="fs-5 text-uppercase">Bague troika</p>
-                                                <p class="product-price fs-5 d-flex justify-content-center align-items-center">
-                                                    <span class="product-price_outline">35€</span>
-                                                    <span class="product-price-solde c-red">25€</span>
-                                                </p>
-                                            </div>
-                                        </article>
-                                        <article class="product-card-hover">
-                                            <div class="product-card-hover_picture bg-white">
-                                                <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                            </div>
-                                            <div class="product-card-hover_content">
-                                                <a href="#" class="me-3 me-lg-5">
-                                                    <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </li>
-                                <li class="splide__slide d-flex flex-column justify-content-center align-content-center">
-                                    <div class="product-item position-relative">
-                                        <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                            -20%
-                                            <span class="visually-hidden">unread messages</span>
-                                        </span>
-                                        <article class="product-card">
-                                            <div class="product-card_picture bg-white">
-                                                <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                            </div>
-                                            <div class="product-card_content">
-                                                <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
-                                                <p class="fs-5 text-uppercase">Bague troika</p>
-                                                <p class="product-price fs-5 d-flex justify-content-center align-items-center">
-                                                    <span class="product-price_outline">35€</span>
-                                                    <span class="product-price-solde c-red">25€</span>
-                                                </p>
-                                            </div>
-                                        </article>
-                                        <article class="product-card-hover">
-                                            <div class="product-card-hover_picture bg-white">
-                                                <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                            </div>
-                                            <div class="product-card-hover_content">
-                                                <a href="#" class="me-3 me-lg-5">
-                                                    <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </li>
-                                <li class="splide__slide d-flex flex-column justify-content-center align-content-center">
-                                    <div class="product-item position-relative">
-                                        <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                            -20%
-                                            <span class="visually-hidden">unread messages</span>
-                                        </span>
-                                        <article class="product-card">
-                                            <div class="product-card_picture bg-white">
-                                                <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                            </div>
-                                            <div class="product-card_content">
-                                                <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
-                                                <p class="fs-5 text-uppercase">Bague troika</p>
-                                                <p class="product-price fs-5 d-flex justify-content-center align-items-center">
-                                                    <span class="product-price_outline">35€</span>
-                                                    <span class="product-price-solde c-red">25€</span>
-                                                </p>
-                                            </div>
-                                        </article>
-                                        <article class="product-card-hover">
-                                            <div class="product-card-hover_picture bg-white">
-                                                <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                            </div>
-                                            <div class="product-card-hover_content">
-                                                <a href="#" class="me-3 me-lg-5">
-                                                    <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                </a>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ------ section unmissable -->
-        <section id="unmissable" class="container-fluid">
-            <div class="row p-0 m-0 pt-4 pt-lg-5">
-                <div class="col-9 col-lg-8 bg-gold p-3 py-lg-3 unmissable-box-title d-flex flex-column flex-xl-row justify-content-lg-around">
-                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 c-white m-0 pb-1">Promotions</h3>
-                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 c-white m-0 pb-1">Incontournables</h3>
-                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 c-white m-0">Toutes les collections</h3>
-                </div>
-            </div>
-            <div class="row p-0 m-0">
-                <div class="col-12 col-lg-8 order-1 order-lg-0 p-0">
-                    <img src="../assets/images/face/face4.jpg" class="w-100 h-auto" alt="photo manequin boucle d'oreille">
-                </div>
-                <div class="col-12 col-lg-4 order-0 order-lg-1 px-0 px-xl-5 ps-lg-4 d-flex flex-column justify-content-center align-items-center">
-                    <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red  px-xl-2">Des bijoux fantaisie tendances et originaux</h3><br>
-                    <p class="fs-5 fw-light px-xl-2">
-                        <strong>A vous les bagues, clips, broches, bracelets, manchettes, boucles d'oreilles, colliers, sautoirs et pendentifs !</strong>
-                    </p>
-                    <p class="fs-5 fw-light px-xl-2">
-                        Deux options pour vous faire plaisir ou choisir un cadeau à offrir :
-                    </p>
-                    <p class="fs-5 fw-light px-xl-2">
-                        <strong>commandez en ligne</strong> en restant lovées dans votre canapé. Gardez vos chaussons, on s'occupe de la livraison !  Courageuses, enfourchez vos vélos, trottinettes et autres bolides à roulettes et <strong>foncez faire votre shopping en boutique chez nos revendeurs</strong> pour nous offrir l'immense plaisir de vous voir porter nos bijoux, et ça on adore, on aime !
-                    </p>
-                </div>
-            </div>
-            <!-- ------ Wrapper grid start -->
-            <div class="wrapper-grid w-100 pb-5 bg-grey">
-                <div class="row w-100 m-0 p-0">
-                    <div class="col col-12 col-lg-6 col-xl-4 bg-white p-0 grid-item-box p-0" data-set-grid-box="item-box">
-                        <div class="product-item position-relative">
-                            <div class="product-item position-relative">
-                                <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                    -20%
-                                    <span class="visually-hidden">unread messages</span>
-                                </span>
-                                <article class="product-card">
-                                    <div class="product-card_picture bg-white">
-                                        <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                    </div>
-                                    <div class="product-card_content">
-                                        <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
-                                        <p class="fs-5 text-uppercase">Bague troika</p>
-                                        <p class="product-price fs-5 d-flex justify-content-center align-items-center">
-                                            <span class="product-price_outline">35€</span>
-                                            <span class="product-price-solde c-red">25€</span>
-                                        </p>
-                                    </div>
-                                </article>
-                                <article class="product-card-hover">
-                                    <div class="product-card-hover_picture bg-white">
-                                        <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                    </div>
-                                    <div class="product-card-hover_content">
-                                        <a href="#" class="me-3 me-lg-5">
-                                            <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                        </a>
-                                        <a href="#" class="">
-                                            <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                        </a>
-                                    </div>
-                                </article>
+                        </article>
+                        <article class="product-card-hover">
+                            <div class="product-card-hover_picture bg-white">
+                                <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
                             </div>
-                        </div>
+                            <div class="product-card-hover_content">
+                                <a href="#" class="me-3 me-lg-5">
+                                    <img src="../assets/png/taratata-bijoux-oeil-BD.png"
+                                         alt="voir le détail du produit">
+                                </a>
+                                <a href="#" class="">
+                                    <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png"
+                                         alt="ajouter le produit">
+                                </a>
+                            </div>
+                        </article>
                     </div>
-                    <div class="col col-12 col-lg-6 col-xl-4 p-0 bg-grey grid-picture-box p-0" data-set-grid-box="picture-box">
+                </div>
+                <div class="col col-12 col-lg-6 col-xl-4 p-0 bg-grey grid-picture-box p-0"
+                     data-set-grid-box="picture-box">
+                    <a href="#" class="position-relative w-100 h-100">
+                        <img src="../assets/images/face/face1.jpg" class="w-100 h-100" alt="portrait manequin">
+                        <h4 class="position-absolute ps-3 bottom-0 left-start c-white">
+                            <span class="fs-5 fw-lighter ">Bijoux fantaisies</span><br>
+                            <span class="DINCondensedDemiBold fs-3 text-uppercase">Broches</span>
+                        </h4>
+                    </a>
+                </div>
+                <div class="col col-12 col-lg-6 col-xl-4 p-0 bg-white grid-item-box p-0" data-set-grid-box="item-box">
+                    <div class="product-item position-relative">
+                        <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
+                            -20%
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                        <article class="product-card">
+                            <div class="product-card_picture bg-white">
+                                <img src="../assets/images/items/bague-troika.jpg" alt="photo du produit">
+                            </div>
+                            <div class="product-card_content">
+                                <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
+                                <p class="fs-5 text-uppercase">Bague troika</p>
+                                <p class="product-price fs-5 d-flex justify-content-center align-items-center">
+                                    <span class="product-price_outline">35€</span>
+                                    <span class="product-price-solde c-red">25€</span>
+                                </p>
+                            </div>
+                        </article>
+                        <article class="product-card-hover">
+                            <div class="product-card-hover_picture bg-white">
+                                <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
+                            </div>
+                            <div class="product-card-hover_content">
+                                <a href="#" class="me-3 me-lg-5">
+                                    <img src="../assets/png/taratata-bijoux-oeil-BD.png"
+                                         alt="voir le détail du produit">
+                                </a>
+                                <a href="#" class="">
+                                    <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png"
+                                         alt="ajouter le produit">
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row span-2 col-xl-4 p-0 m-0">
+                    <div class="col col-12 col-lg-6 col-xl-12 bg-grey grid-picture-box p-0"
+                         data-set-grid-box="picture-box">
                         <a href="#" class="position-relative w-100 h-100">
-                            <img src="../assets/images/face/face1.jpg" class="w-100 h-100" alt="portrait manequin">
+                            <img src="../assets/images/face/face2.jpg" class="w-100 h-100" alt="portrait manequin">
                             <h4 class="position-absolute ps-3 bottom-0 left-start c-white">
                                 <span class="fs-5 fw-lighter ">Bijoux fantaisies</span><br>
-                                <span class="DINCondensedDemiBold fs-3 text-uppercase">Broches</span>
+                                <span class="DINCondensedDemiBold fs-3 text-uppercase fs-1">Colliers</span>
                             </h4>
                         </a>
                     </div>
-                    <div class="col col-12 col-lg-6 col-xl-4 p-0 bg-white grid-item-box p-0" data-set-grid-box="item-box">
+                    <div class="col col-12 col-lg-6 col-xl-12 bg-white grid-item-box p-0" data-set-grid-box="item-box">
                         <div class="product-item position-relative">
-                            <div class="product-item position-relative">
-                                <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
-                                    -20%
-                                    <span class="visually-hidden">unread messages</span>
-                                </span>
-                                <article class="product-card">
-                                    <div class="product-card_picture bg-white">
-                                        <img src="../assets/images/items/bague-troika.jpg" alt="photo du produit">
-                                    </div>
-                                    <div class="product-card_content">
-                                        <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
-                                        <p class="fs-5 text-uppercase">Bague troika</p>
-                                        <p class="product-price fs-5 d-flex justify-content-center align-items-center">
-                                            <span class="product-price_outline">35€</span>
-                                            <span class="product-price-solde c-red">25€</span>
-                                        </p>
-                                    </div>
-                                </article>
-                                <article class="product-card-hover">
-                                    <div class="product-card-hover_picture bg-white">
-                                        <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                    </div>
-                                    <div class="product-card-hover_content">
-                                        <a href="#" class="me-3 me-lg-5">
-                                            <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                        </a>
-                                        <a href="#" class="">
-                                            <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                        </a>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row span-2 col-xl-4 p-0 m-0">
-                        <div class="col col-12 col-lg-6 col-xl-12 bg-grey grid-picture-box p-0" data-set-grid-box="picture-box">
-                            <a href="#" class="position-relative w-100 h-100">
-                                <img src="../assets/images/face/face2.jpg" class="w-100 h-100" alt="portrait manequin">
-                                <h4 class="position-absolute ps-3 bottom-0 left-start c-white">
-                                    <span class="fs-5 fw-lighter ">Bijoux fantaisies</span><br>
-                                    <span class="DINCondensedDemiBold fs-3 text-uppercase fs-1">Colliers</span>
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="col col-12 col-lg-6 col-xl-12 bg-white grid-item-box p-0" data-set-grid-box="item-box">
-                            <div class="product-item position-relative">
-                                <div class="product-item position-relative">
                                     <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
                                         -20%
                                         <span class="visually-hidden">unread messages</span>
                                     </span>
-                                    <article class="product-card">
-                                        <div class="product-card_picture bg-white">
-                                            <img src="../assets/images/items/boucle-oreille-banane.jpg" alt="photo du produit">
-                                        </div>
-                                        <div class="product-card_content">
-                                            <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
-                                            <p class="fs-5 text-uppercase">Bague troika</p>
-                                            <p class="product-price fs-5 d-flex justify-content-center align-items-center">
-                                                <span class="product-price_outline">35€</span>
-                                                <span class="product-price-solde c-red">25€</span>
-                                            </p>
-                                        </div>
-                                    </article>
-                                    <article class="product-card-hover">
-                                        <div class="product-card-hover_picture bg-white">
-                                            <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                        </div>
-                                        <div class="product-card-hover_content">
-                                            <a href="#" class="me-3 me-lg-5">
-                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                            </a>
-                                            <a href="#" class="">
-                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                            </a>
-                                        </div>
-                                    </article>
+                            <article class="product-card">
+                                <div class="product-card_picture bg-white">
+                                    <img src="../assets/images/items/boucle-oreille-banane.jpg"
+                                         alt="photo du produit">
                                 </div>
-                            </div>
+                                <div class="product-card_content">
+                                    <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
+                                    <p class="fs-5 text-uppercase">Bague troika</p>
+                                    <p class="product-price fs-5 d-flex justify-content-center align-items-center">
+                                        <span class="product-price_outline">35€</span>
+                                        <span class="product-price-solde c-red">25€</span>
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="product-card-hover">
+                                <div class="product-card-hover_picture bg-white">
+                                    <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
+                                </div>
+                                <div class="product-card-hover_content">
+                                    <a href="#" class="me-3 me-lg-5">
+                                        <img src="../assets/png/taratata-bijoux-oeil-BD.png"
+                                             alt="voir le détail du produit">
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png"
+                                             alt="ajouter le produit">
+                                    </a>
+                                </div>
+                            </article>
                         </div>
                     </div>
-                    <div class="col col-12 col-lg-6 span-2 col-xl-8 p-0 bg-grey grid-picture-box p-0" data-set-grid-box="picture-box">
+                </div>
+                <div class="col col-12 col-lg-6 span-2 col-xl-8 p-0 bg-grey grid-picture-box p-0"
+                     data-set-grid-box="picture-box">
+                    <a href="#" class="position-relative w-100 h-100">
+                        <img src="../assets/images/face/face3.jpg" class="w-100 h-100" alt="portrait manequin">
+                        <h4 class="position-absolute ps-3 bottom-0 c-white">
+                            <span class="fs-5 fw-lighter ">Bijoux fantaisies</span><br>
+                            <span class="DINCondensedDemiBold fs-3 text-uppercase">Boucles d'oreilles</span><br>
+                            <span class="fs-5 fw-lighter ">Puces / clips / dormeuses</span>
+                        </h4>
+                    </a>
+                </div>
+                <div class="col col-12 col-lg-6 span-2 col-xl-8 p-0 bg-gold grid-picture-box p-0"
+                     data-set-box="picture-box">
+                    <a href="#" class="position-relative w-100 h-100">
+                        <img src="../assets/images/face/face5.jpg" class="w-100 h-100" alt="portrait manequin">
+                        <h4 class="position-absolute ps-3 bottom-0 c-white">
+                            <span class="fs-5 fw-lighter ">Bijoux fantaisies</span><br>
+                            <span class="DINCondensedDemiBold text-uppercase fs-3">Bracelets</span><br>
+                            <span class="fs-5 fw-lighter ">Puces / clips / dormeuses</span>
+                        </h4>
+                    </a>
+                </div>
+                <div class="row span-2 col-xl-4 p-0 m-0">
+                    <div class="col col-12 col-lg-6 col-xl-12 bg-green grid-picture-box p-0"
+                         data-set-grid-box="picture-box">
                         <a href="#" class="position-relative w-100 h-100">
-                            <img src="../assets/images/face/face3.jpg" class="w-100 h-100" alt="portrait manequin">
-                            <h4 class="position-absolute ps-3 bottom-0 c-white">
+                            <img src="../assets/images/face/face4.jpg" class="w-100 h-100" alt="portrait manequin">
+                            <h4 class="position-absolute ps-3 bottom-0 left-start c-white">
                                 <span class="fs-5 fw-lighter ">Bijoux fantaisies</span><br>
-                                <span class="DINCondensedDemiBold fs-3 text-uppercase">Boucles d'oreilles</span><br>
-                                <span class="fs-5 fw-lighter ">Puces / clips / dormeuses</span>
+                                <span class="DINCondensedDemiBold text-uppercase fs-3">Bagues</span>
                             </h4>
                         </a>
                     </div>
-                    <div class="col col-12 col-lg-6 span-2 col-xl-8 p-0 bg-gold grid-picture-box p-0" data-set-box="picture-box">
-                        <a href="#" class="position-relative w-100 h-100">
-                            <img src="../assets/images/face/face5.jpg" class="w-100 h-100" alt="portrait manequin">
-                            <h4 class="position-absolute ps-3 bottom-0 c-white">
-                                <span class="fs-5 fw-lighter ">Bijoux fantaisies</span><br>
-                                <span class="DINCondensedDemiBold text-uppercase fs-3">Bracelets</span><br>
-                                <span class="fs-5 fw-lighter ">Puces / clips / dormeuses</span>
-                            </h4>
-                        </a>
-                    </div>
-                    <div class="row span-2 col-xl-4 p-0 m-0">
-                        <div class="col col-12 col-lg-6 col-xl-12 bg-green grid-picture-box p-0" data-set-grid-box="picture-box">
-                            <a href="#" class="position-relative w-100 h-100">
-                                <img src="../assets/images/face/face4.jpg" class="w-100 h-100" alt="portrait manequin">
-                                <h4 class="position-absolute ps-3 bottom-0 left-start c-white">
-                                    <span class="fs-5 fw-lighter ">Bijoux fantaisies</span><br>
-                                    <span class="DINCondensedDemiBold text-uppercase fs-3">Bagues</span>
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="col col-12 col-lg-6 col-xl-12 bg-white grid-item-box p-0" data-set-grid-box="item-box">
-                            <div class="product-item position-relative">
-                                <div class="product-item position-relative">
+                    <div class="col col-12 col-lg-6 col-xl-12 bg-white grid-item-box p-0" data-set-grid-box="item-box">
+                        <div class="product-item position-relative">
                                     <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
                                         -20%
                                         <span class="visually-hidden">unread messages</span>
                                     </span>
-                                    <article class="product-card">
-                                        <div class="product-card_picture bg-white">
-                                            <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                        </div>
-                                        <div class="product-card_content">
-                                            <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
-                                            <p class="fs-5 text-uppercase">Bague troika</p>
-                                            <p class="product-price fs-5 d-flex justify-content-center align-items-center">
-                                                <span class="product-price_outline">35€</span>
-                                                <span class="product-price-solde c-red">25€</span>
-                                            </p>
-                                        </div>
-                                    </article>
-                                    <article class="product-card-hover">
-                                        <div class="product-card-hover_picture bg-white">
-                                            <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                        </div>
-                                        <div class="product-card-hover_content">
-                                            <a href="#" class="me-3 me-lg-5">
-                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                            </a>
-                                            <a href="#" class="">
-                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                            </a>
-                                        </div>
-                                    </article>
+                            <article class="product-card">
+                                <div class="product-card_picture bg-white">
+                                    <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
                                 </div>
-                            </div>
+                                <div class="product-card_content">
+                                    <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La havanne</h3>
+                                    <p class="fs-5 text-uppercase">Bague troika</p>
+                                    <p class="product-price fs-5 d-flex justify-content-center align-items-center">
+                                        <span class="product-price_outline">35€</span>
+                                        <span class="product-price-solde c-red">25€</span>
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="product-card-hover">
+                                <div class="product-card-hover_picture bg-white">
+                                    <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
+                                </div>
+                                <div class="product-card-hover_content">
+                                    <a href="#" class="me-3 me-lg-5">
+                                        <img src="../assets/png/taratata-bijoux-oeil-BD.png"
+                                             alt="voir le détail du produit">
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png"
+                                             alt="ajouter le produit">
+                                    </a>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ------ section jewerly designer -->
-        <section id="jewerly-designer" class="container-fluid">
-            <div class="w-100 h-auto py-3 py-lg-5 bg-grey">
-                <div class="w-100 h-auto bg-gold pt-3">
-                    <div class="w-100 d-flex justify-content-center py-5">
-                        <div class="d-inline-block position-relative">
-                            <h2 class="text-center fs-2 fw-light m-0 c-white">Bijoux Fantaisies</h2>
-                            <h3 class="DINCondensedDemiBold fs-1 text-uppercase c-white">Créateur de bijoux fantaise</h3>
-                            <img src="../assets/svg/taratata-bijoux-icon-titre-gauche-white.svg" class="position-absolute icon-title-start" alt="icon du titre créateur de bijoux">
-                            <img src="../assets/svg/taratata-bijoux-icon-titre-droit-white.svg" class="position-absolute icon-title-end" alt="icon du titre créateur de bijoux">
+        </div>
+    </section>
+    <!-- ------ section jewerly designer -->
+    <section id="jewerly-designer" class="container-fluid">
+        <div class="w-100 h-auto py-3 py-lg-5 bg-grey">
+            <div class="w-100 h-auto bg-gold pt-3">
+                <div class="w-100 d-flex justify-content-center py-5">
+                    <div class="d-inline-block position-relative">
+                        <h2 class="text-center fs-2 fw-light m-0 c-white">Bijoux Fantaisies</h2>
+                        <h3 class="DINCondensedDemiBold fs-1 text-uppercase c-white">Créateur de bijoux fantaise</h3>
+                        <img src="../assets/svg/taratata-bijoux-icon-titre-gauche-white.svg"
+                             class="position-absolute icon-title-start" alt="icon du titre créateur de bijoux">
+                        <img src="../assets/svg/taratata-bijoux-icon-titre-droit-white.svg"
+                             class="position-absolute icon-title-end" alt="icon du titre créateur de bijoux">
+                    </div>
+                </div>
+                <div class="row w-100 m-0">
+                    <div class="col-12 col-lg-6 px-5 p-lg-5 d-flex justify-content-center">
+                        <div class="jewerly-designer-picture">
+                            <img src="../assets/images/face/face2.jpg" alt="photo de créateur de bijoux">
                         </div>
                     </div>
-                    <div class="row w-100 m-0">
-                        <div class="col-12 col-lg-6 px-5 p-lg-5 d-flex justify-content-center">
-                            <div class="jewerly-designer-picture">
-                                <img src="../assets/images/face/face2.jpg" alt="photo de créateur de bijoux">
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 p-0 pb-lg-5 c-white fs-5 fw-light d-flex justify-content-center justify-content-lg-start align-items-center overflow-hidden">
-                            <div class="jewerly-designer-content m-5 m-lg-0 mb-5">
-                                <p class="px-lg-4 py-2">
-                                    <strong>
-                                        Notre passion est d'imaginer pour les femmes, des collections de bijoux branchés et délicieusement décalés
-                                    </strong>
-                                    , dotés de style et d'une joyeuse originalité. Sensibles à l'art, aux couleurs et à la culture Pop,
-                                    pour créer nos accessoires, nous détournons sans complexe les icônes Arty, les symboles du quotidien et autres archétypes kitsch et insolites.
-                                </p>
-                                <p class="px-lg-4 y-2">
-                                    Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte, modèle, colore, coupe, soude, monte et démonte</strong>
-                                    . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le meilleur. Les modèles se façonnent avec les...
-                                </p>
-                                <p class="px-lg-4 y-2">
-                                    Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte, modèle, colore, coupe, soude, monte et démonte</strong>
-                                    . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le meilleur. Les modèles se façonnent avec les...
-                                </p>
-                                <p class="px-lg-4 y-2">
-                                    Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte, modèle, colore, coupe, soude, monte et démonte</strong>
-                                    . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le meilleur. Les modèles se façonnent avec les...
-                                </p>
-                            </div>
+                    <div class="col-12 col-lg-6 p-0 pb-lg-5 c-white fs-5 fw-light d-flex justify-content-center justify-content-lg-start align-items-center overflow-hidden">
+                        <div class="jewerly-designer-content m-5 m-lg-0 mb-5">
+                            <p class="px-lg-4 py-2">
+                                <strong>
+                                    Notre passion est d'imaginer pour les femmes, des collections de bijoux branchés et
+                                    délicieusement décalés
+                                </strong>
+                                , dotés de style et d'une joyeuse originalité. Sensibles à l'art, aux couleurs et à la
+                                culture Pop,
+                                pour créer nos accessoires, nous détournons sans complexe les icônes Arty, les symboles
+                                du quotidien et autres archétypes kitsch et insolites.
+                            </p>
+                            <p class="px-lg-4 y-2">
+                                Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte,
+                                modèle, colore, coupe, soude, monte et démonte</strong>
+                                . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le
+                                meilleur. Les modèles se façonnent avec les...
+                            </p>
+                            <p class="px-lg-4 y-2">
+                                Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte,
+                                modèle, colore, coupe, soude, monte et démonte</strong>
+                                . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le
+                                meilleur. Les modèles se façonnent avec les...
+                            </p>
+                            <p class="px-lg-4 y-2">
+                                Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte,
+                                modèle, colore, coupe, soude, monte et démonte</strong>
+                                . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le
+                                meilleur. Les modèles se façonnent avec les...
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ------ section home actu -->
-        <section id="home-actus" class="container-fluid">
-            <div class="row w-100 bg-grey m-0">
-                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-content-center p-0 position-relative mb-lg-5">
-                    <div class="w-100 d-flex justify-content-center py-5">
-                        <div class="d-inline-block position-relative">
-                            <h2 class="fs-2 text-center fw-light m-0 c-gold">Bijoux Fantaisies</h2>
-                            <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-gold">Actualités</h3>
-                            <img src="../assets/svg/taratata-bijoux-icon-titre-gauche-gold.svg" class="position-absolute icon-title-start" alt="icon du titre créateur de bijoux">
-                            <img src="../assets/svg/taratata-bijoux-icon-titre-droit-gold.svg" class="position-absolute icon-title-end" alt="icon du titre créateur de bijoux">
+        </div>
+    </section>
+    <!-- ------ section home actu -->
+    <section id="home-actus" class="container-fluid">
+        <div class="row w-100 bg-grey m-0">
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-content-center p-0 position-relative mb-lg-5">
+                <div class="w-100 d-flex justify-content-center py-5">
+                    <div class="d-inline-block position-relative">
+                        <h2 class="fs-2 text-center fw-light m-0 c-gold">Bijoux Fantaisies</h2>
+                        <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-gold">Actualités</h3>
+                        <img src="../assets/svg/taratata-bijoux-icon-titre-gauche-gold.svg"
+                             class="position-absolute icon-title-start" alt="icon du titre créateur de bijoux">
+                        <img src="../assets/svg/taratata-bijoux-icon-titre-droit-gold.svg"
+                             class="position-absolute icon-title-end" alt="icon du titre créateur de bijoux">
+                    </div>
+                </div>
+                <div class="w-100 max-vh-100 bg-gold-light p-5">
+                    <div class="w-100 h-50 overflow-hidden">
+                        <img src="../assets/images/face/face1.jpg" class="w-100" alt="photo derniere actualité">
+                    </div>
+                    <div class="w-100 h-50 d-flex flex-column justify-content-center align-items-center p-3 p-lg-5">
+                        <h3 class="DINCondensedDemiBold text-uppercase fs-3 c-gold py-2 m-0">
+                            Congés d'été
+                        </h3>
+                        <p class="fs-5 text-uppercase fw-light pb-4">
+                            24 juillet 2020
+                        </p>
+                        <p class="fs-5 fw-light">
+                            L'équipe fait un break estival ! Nous seront absents du 14 au 24 août.
+                            Les commandes passées jeudi 13 août 16h00 seront envoyées le jour même...
+                        </p>
+                        <a href="#" class="DINCondensedDemiBold text-uppercase fs-3 ms-auto pb-3 pb-lg-0 pe-5">
+                            <span class="c-black">Voir</span><br>
+                            <div class="see-more-line bg-black">
+                                <div class="hover-see-more-line bg-gold"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button type="button"
+                        class="btn btn-home-actus fs-5 rounded-pill position-absolute top-100 start-50 translate-middle border-0 bg-gold c-white DINCondensedDemiBold text-uppercase">
+                    Toutes les actus
+                </button>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-content-center p-0 pt-3 p-lg-5">
+                <div class="w-100 d-flex justify-content-center pt-5 pb-3 py-lg-5">
+                    <div class="d-inline-block position-relative">
+                        <h2 class="fs-2 text-center fw-light m-0 c-gold">Bijoux Fantaisies</h2>
+                        <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-gold">À Propos</h3>
+                        <img src="../assets/svg/taratata-bijoux-icon-titre-gauche-gold.svg"
+                             class="position-absolute icon-title-start" alt="icon du titre créateur de bijoux">
+                        <img src="../assets/svg/taratata-bijoux-icon-titre-droit-gold.svg"
+                             class="position-absolute icon-title-end" alt="icon du titre créateur de bijoux">
+                    </div>
+                </div>
+                <div class="home-propos w-100 overflow-hidden">
+                    <img src="../assets/images/face/face2.jpg" class="w-100 h-auto" alt="illustration section à propos">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------ section jewerly designer step 2 -->
+    <section id="jewerly-designer-step-2" class="container-fluid">
+        <div class="w-100 h-auto pt-3 pt-lg-5 bg-grey">
+            <div class="w-100 h-auto bg-green-dark pt-3">
+                <div class="w-100 d-flex justify-content-center py-5">
+                    <div class="d-inline-block position-relative">
+                        <h2 class="text-center fs-2 fw-light m-0 c-white">Bijoux Fantaisies</h2>
+                        <h3 class="DINCondensedDemiBold fs-1 text-uppercase c-white">Créateur de bijoux fantaise</h3>
+                        <img src="../assets/svg/taratata-bijoux-icon-titre-gauche-white.svg"
+                             class="position-absolute icon-title-start" alt="icon du titre créateur de bijoux">
+                        <img src="../assets/svg/taratata-bijoux-icon-titre-droit-white.svg"
+                             class="position-absolute icon-title-end" alt="icon du titre créateur de bijoux">
+                    </div>
+                </div>
+                <div class="row w-100 m-0">
+                    <div class="col-12 col-lg-6 px-5 p-lg-5 d-flex justify-content-center">
+                        <div class="jewerly-designer-picture">
+                            <img src="../assets/images/face/face2.jpg" alt="photo de créateur de bijoux">
                         </div>
                     </div>
-                    <div class="w-100 max-vh-100 bg-gold-light p-5">
-                        <div class="w-100 h-50 overflow-hidden">
-                            <img src="../assets/images/face/face1.jpg" class="w-100" alt="photo derniere actualité">
-                        </div>
-                        <div class="w-100 h-50 d-flex flex-column justify-content-center align-items-center p-3 p-lg-5">
-                            <h3 class="DINCondensedDemiBold text-uppercase fs-3 c-gold py-2 m-0">
-                                Congés d'été
+                    <div class="col-12 col-lg-6 p-0 pb-lg-5 c-white fs-5 fw-light d-flex justify-content-center justify-content-lg-start align-items-center overflow-hidden">
+                        <div class="jewerly-designer-content m-5 m-lg-0 mb-5">
+                            <h3 class="DINCondensedDemiBold text-uppercase fs-3 m-0 px-lg-4 pb-3">
+                                Créateur de bijoux
                             </h3>
-                            <p class="fs-5 text-uppercase fw-light pb-4">
-                                24 juillet 2020
+                            <p class="px-lg-4">
+                                <strong>
+                                    Notre passion est d'imaginer pour les femmes, des collections de bijoux branchés et
+                                    délicieusement décalés
+                                </strong>
+                                , dotés de style et d'une joyeuse originalité. Sensibles à l'art, aux couleurs et à la
+                                culture Pop,
+                                pour créer nos accessoires, nous détournons sans complexe les icônes Arty, les symboles
+                                du quotidien et autres archétypes kitsch et insolites.
                             </p>
-                            <p class="fs-5 fw-light">
-                                L'équipe fait un break estival ! Nous seront absents du 14 au 24 août.
-                                Les commandes passées jeudi 13 août 16h00 seront envoyées le jour même...
+                            <p class="px-lg-4">
+                                Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte,
+                                modèle, colore, coupe, soude, monte et démonte</strong>
+                                . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le
+                                meilleur. Les modèles se façonnent avec les...
                             </p>
-                            <a href="#" class="DINCondensedDemiBold text-uppercase fs-3 ms-auto pb-3 pb-lg-0 pe-5">
-                                <span class="c-black">Voir</span><br>
-                                <div class="see-more-line bg-black">
-                                    <div class="hover-see-more-line bg-gold"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-home-actus fs-5 rounded-pill position-absolute top-100 start-50 translate-middle border-0 bg-gold c-white DINCondensedDemiBold text-uppercase">
-                        Toutes les actus
-                    </button>
-                </div>
-                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-content-center p-0 pt-3 p-lg-5">
-                    <div class="w-100 d-flex justify-content-center pt-5 pb-3 py-lg-5">
-                        <div class="d-inline-block position-relative">
-                            <h2 class="fs-2 text-center fw-light m-0 c-gold">Bijoux Fantaisies</h2>
-                            <h3 class="DINCondensedDemiBold text-center fs-1 text-uppercase c-gold">À Propos</h3>
-                            <img src="../assets/svg/taratata-bijoux-icon-titre-gauche-gold.svg" class="position-absolute icon-title-start" alt="icon du titre créateur de bijoux">
-                            <img src="../assets/svg/taratata-bijoux-icon-titre-droit-gold.svg" class="position-absolute icon-title-end" alt="icon du titre créateur de bijoux">
-                        </div>
-                    </div>
-                    <div class="home-propos w-100 overflow-hidden">
-                        <img src="../assets/images/face/face2.jpg" class="w-100 h-auto" alt="illustration section à propos">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ------ section jewerly designer step 2 -->
-        <section id="jewerly-designer-step-2" class="container-fluid">
-            <div class="w-100 h-auto pt-3 pt-lg-5 bg-grey">
-                <div class="w-100 h-auto bg-green-dark pt-3">
-                    <div class="w-100 d-flex justify-content-center py-5">
-                        <div class="d-inline-block position-relative">
-                            <h2 class="text-center fs-2 fw-light m-0 c-white">Bijoux Fantaisies</h2>
-                            <h3 class="DINCondensedDemiBold fs-1 text-uppercase c-white">Créateur de bijoux fantaise</h3>
-                            <img src="../assets/svg/taratata-bijoux-icon-titre-gauche-white.svg" class="position-absolute icon-title-start" alt="icon du titre créateur de bijoux">
-                            <img src="../assets/svg/taratata-bijoux-icon-titre-droit-white.svg" class="position-absolute icon-title-end" alt="icon du titre créateur de bijoux">
-                        </div>
-                    </div>
-                    <div class="row w-100 m-0">
-                        <div class="col-12 col-lg-6 px-5 p-lg-5 d-flex justify-content-center">
-                            <div class="jewerly-designer-picture">
-                                <img src="../assets/images/face/face2.jpg" alt="photo de créateur de bijoux">
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 p-0 pb-lg-5 c-white fs-5 fw-light d-flex justify-content-center justify-content-lg-start align-items-center overflow-hidden">
-                            <div class="jewerly-designer-content m-5 m-lg-0 mb-5">
-                                <h3 class="DINCondensedDemiBold text-uppercase fs-3 m-0 px-lg-4 pb-3">
-                                    Créateur de bijoux
-                                </h3>
-                                <p class="px-lg-4">
-                                    <strong>
-                                        Notre passion est d'imaginer pour les femmes, des collections de bijoux branchés et délicieusement décalés
-                                    </strong>
-                                    , dotés de style et d'une joyeuse originalité. Sensibles à l'art, aux couleurs et à la culture Pop,
-                                    pour créer nos accessoires, nous détournons sans complexe les icônes Arty, les symboles du quotidien et autres archétypes kitsch et insolites.
-                                </p>
-                                <p class="px-lg-4">
-                                    Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte, modèle, colore, coupe, soude, monte et démonte</strong>
-                                    . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le meilleur. Les modèles se façonnent avec les...
-                                </p>
-                                <p class="px-lg-4">
-                                    Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte, modèle, colore, coupe, soude, monte et démonte</strong>
-                                    . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le meilleur. Les modèles se façonnent avec les...
-                                </p>
-                                <p class="px-lg-4">
-                                    Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte, modèle, colore, coupe, soude, monte et démonte</strong>
-                                    . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le meilleur. Les modèles se façonnent avec les...
-                                </p>
-                            </div>
+                            <p class="px-lg-4">
+                                Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte,
+                                modèle, colore, coupe, soude, monte et démonte</strong>
+                                . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le
+                                meilleur. Les modèles se façonnent avec les...
+                            </p>
+                            <p class="px-lg-4">
+                                Alors pour ça, <strong>on gribouille nos idées, peint, brode, dessine, gomme, sculte,
+                                modèle, colore, coupe, soude, monte et démonte</strong>
+                                . Bref, on se gratte le chignon, on rigole, on pleure, on s'énerve et on obtient le
+                                meilleur. Les modèles se façonnent avec les...
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ------ section instagram -->
-        <section id="instagramm" class="container-fluid">
-            <div class="row g-2 py-2">
-                <div class="col col-6 col-lg-2">
-                    <a href="#" class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
-                        <img src="../assets/icons/social/instagram.png" class="w-50 h-auto " alt="image instagram">
-                    </a>
-                </div>
-                <div class="col col-6 col-lg-2">
-                    <a href="#" class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
-                        <img src="../assets/icons/social/instagram.png" class="w-50 h-auto" alt="image instagram">
-                    </a>
-                </div>
-                <div class="col col-6 col-lg-2">
-                    <a href="#" class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
-                        <img src="../assets/icons/social/instagram.png" class="w-50 h-auto" alt="image instagram">
-                    </a>
-                </div>
-                <div class="col col-6 col-lg-2">
-                    <a href="#" class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
-                        <img src="../assets/icons/social/instagram.png" class="w-50 h-auto" alt="image instagram">
-                    </a>
-                </div>
-                <div class="col col-6 col-lg-2">
-                    <a href="#" class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
-                        <img src="../assets/icons/social/instagram.png" class="w-50 h-auto" alt="image instagram">
-                    </a>
-                </div>
-                <div class="col col-6 col-lg-2">
-                    <a href="#" class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
-                        <img src="../assets/icons/social/instagram.png" class="w-50 h-auto" alt="image instagram">
-                    </a>
-                </div>
+        </div>
+    </section>
+    <!-- ------ section instagram -->
+    <section id="instagramm" class="container-fluid">
+        <div class="row g-2 py-2">
+            <div class="col col-6 col-lg-2">
+                <a href="#"
+                   class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
+                    <img src="../assets/icons/social/instagram.png" class="w-50 h-auto " alt="image instagram">
+                </a>
             </div>
-        </section>
-    </main>
-    <!-- ------ footer -->
-    <footer class="container-fluid px-0 px-lg-2 mb-4">
-        <section class="container-fluid">
-            <div class="w-100 min-vh-100 bg-green">
-                <div class="container-lg h-100 d-flex flex-column align-items-center bg-green c-white">
-                    <!-- Footer top -->
-                    <a href="" class="py-5 brand">
-                        <img src="../assets/images/taratata-white.svg" alt="taratata-bijoux">
-                    </a>
-                    <p class="fs-4 fw-light text-center">
-                        7 rue de la miséricorde - 14000 Caen
-                    </p>
-                    <h5 class="DINCondensedDemiBold fs-3 text-uppercase m-0">
-                        Service clients
-                    </h5>
-                    <p class="fs-4 fw-light text-center">
-                        du lundi au vendredi
-                    </p>
-                    <div class="d-flex flex-column flex-lg-row text-center fs-4 fw-light  c-white">
+            <div class="col col-6 col-lg-2">
+                <a href="#"
+                   class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
+                    <img src="../assets/icons/social/instagram.png" class="w-50 h-auto" alt="image instagram">
+                </a>
+            </div>
+            <div class="col col-6 col-lg-2">
+                <a href="#"
+                   class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
+                    <img src="../assets/icons/social/instagram.png" class="w-50 h-auto" alt="image instagram">
+                </a>
+            </div>
+            <div class="col col-6 col-lg-2">
+                <a href="#"
+                   class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
+                    <img src="../assets/icons/social/instagram.png" class="w-50 h-auto" alt="image instagram">
+                </a>
+            </div>
+            <div class="col col-6 col-lg-2">
+                <a href="#"
+                   class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
+                    <img src="../assets/icons/social/instagram.png" class="w-50 h-auto" alt="image instagram">
+                </a>
+            </div>
+            <div class="col col-6 col-lg-2">
+                <a href="#"
+                   class="w-100 h-100 bg-grey-dark overflow-hidden d-flex justify-content-center align-items-center">
+                    <img src="../assets/icons/social/instagram.png" class="w-50 h-auto" alt="image instagram">
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- ------ footer -->
+<footer class="container-fluid px-0 px-lg-2 mb-4">
+    <section class="container-fluid">
+        <div class="w-100 min-vh-100 bg-green">
+            <div class="container-lg h-100 d-flex flex-column align-items-center bg-green c-white">
+                <!-- Footer top -->
+                <a href="" class="py-5 brand">
+                    <img src="../assets/images/taratata-white.svg" alt="taratata-bijoux">
+                </a>
+                <p class="fs-4 fw-light text-center">
+                    7 rue de la miséricorde - 14000 Caen
+                </p>
+                <h5 class="DINCondensedDemiBold fs-3 text-uppercase m-0">
+                    Service clients
+                </h5>
+                <p class="fs-4 fw-light text-center">
+                    du lundi au vendredi
+                </p>
+                <div class="d-flex flex-column flex-lg-row text-center fs-4 fw-light  c-white">
                         <span>
                             9h - 12h30 et 13h30 - 13h30 
                         </span>
-                        <a href="tel:0231397199" class="c-white">
-                            (+33) 02 31 39 71 99
+                    <a href="tel:0231397199" class="c-white">
+                        (+33) 02 31 39 71 99
+                    </a>
+                </div>
+                <!-- Footer social -->
+                <ul class="footer-social-list py-2 py-lg-4 px-0 m-0 d-flex list-unstyled mx-auto">
+                    <li class="footer-social-link fs-5 overflow-hidden">
+                        <a href="#">
+                            <img src="../assets/icons/social/facebook.png" alt="facebook">
                         </a>
+                    </li>
+                    <li class="footer-social-link fs-5 overflow-hidden">
+                        <a href="#">
+                            <img src="../assets/icons/social/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="footer-social-link fs-5 overflow-hidden">
+                        <a href="#">
+                            <img src="../assets/icons/social/twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="footer-social-link fs-5 overflow-hidden">
+                        <a href="#">
+                            <img src="../assets/icons/social/pinterest.png" alt="pinterest">
+                        </a>
+                    </li>
+                </ul>
+                <!-- Footer linebreak -->
+                <div class="my-4 footer-linebreak">
+                    <div class="line"></div>
+                </div>
+                <!-- Footer map -->
+                <div class="footer-map-list row m-0 p-0 py-4 list-unstyled">
+                    <div class="col-12 col-lg-4 p-0">
+                        <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start">
+                            <li>
+                                <h3 class="DINCondensedDemiBold text-uppercase fs-3 m-0 py-2 py-lg-4">
+                                    Boutique
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Collier
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Broche
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Bracelet
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Bague
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Boucles d'oreilles
+                                </a>
+                                <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start">
+                                    <li>
+                                        <a href="#" class="fs-5 fw-light c-white">
+                                            - clips
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fs-5 fw-light c-white">
+                                            - dormeuses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fs-5 fw-light c-white">
+                                            - puces
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- Footer social -->
-                    <ul class="footer-social-list py-2 py-lg-4 px-0 m-0 d-flex list-unstyled mx-auto">
-                        <li class="footer-social-link fs-5 overflow-hidden">
-                            <a href="#">
-                                <img src="../assets/icons/social/facebook.png" alt="facebook">
-                            </a>
-                        </li>
-                        <li class="footer-social-link fs-5 overflow-hidden">
-                            <a href="#">
-                                <img src="../assets/icons/social/instagram.png" alt="instagram">
-                            </a>
-                        </li>
-                        <li class="footer-social-link fs-5 overflow-hidden">
-                            <a href="#">
-                                <img src="../assets/icons/social/twitter.png" alt="twitter">
-                            </a>
-                        </li>
-                        <li class="footer-social-link fs-5 overflow-hidden">
-                            <a href="#">
-                                <img src="../assets/icons/social/pinterest.png" alt="pinterest">
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Footer linebreak -->
-                    <div class="my-4 footer-linebreak">
-                        <div class="line"></div>
+                    <div class="col-12 col-lg-4 p-0">
+                        <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start py-4 py-lg-0">
+                            <li>
+                                <h3 class="DINCondensedDemiBold text-uppercase fs-3 m-0 py-2 py-lg-4">
+                                    Collection
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Soldes hiver 2020
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Taraboum 2021
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Soldes Taraboum 2021
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Soldes été 2020
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Nouveautés
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Incontournables
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-5 text-uppercase fw-light c-white">
+                                    Outlet
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- Footer map -->
-                    <div class="footer-map-list row m-0 p-0 py-4 list-unstyled">
-                        <div class="col-12 col-lg-4 p-0">
-                            <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start">
-                                <li>
-                                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 m-0 py-2 py-lg-4">
-                                        Boutique
-                                    </h3>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Collier
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Broche
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Bracelet
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Bague
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Boucles d'oreilles
-                                    </a>
-                                    <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start">
-                                        <li>
-                                            <a href="#" class="fs-5 fw-light c-white">
-                                                - clips
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fs-5 fw-light c-white">
-                                                - dormeuses
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="fs-5 fw-light c-white">
-                                                - puces
-                                            </a>
-                                        </li> 
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-lg-4 p-0">
-                            <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start py-4 py-lg-0">
-                                <li>
-                                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 m-0 py-2 py-lg-4">
-                                        Collection
-                                    </h3>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Soldes hiver 2020
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Taraboum 2021
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Soldes Taraboum 2021
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Soldes été 2020
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Nouveautés
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Incontournables
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fs-5 text-uppercase fw-light c-white">
-                                        Outlet
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-lg-4 p-0">
-                            <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start">
-                                <li>
-                                    <h3 class="DINCondensedDemiBold text-uppercase fs-3 m-0 py-2 py-lg-4">
-                                        Bijoux Frantaisie
-                                    </h3>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-5 text-uppercase fw-light c-white">
-                                        À propos
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-5 text-uppercase fw-light c-white">
-                                        Actualités
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-5 text-uppercase fw-light c-white">
-                                        Contact
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-5 text-uppercase fw-light c-white">
-                                        Mentions légales
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-5 text-uppercase fw-light c-white">
-                                        Conditions de vente
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-5 text-uppercase fw-light c-white">
-                                        Livraison
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-5 text-uppercase fw-light c-white">
-                                        Entretien des bijoux
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="fs-5 text-uppercase fw-light c-white">
-                                        Faq
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer bot -->
-                    <p class="fs-5 fw-light text-center">
-                        Copyright 2016 Taratata - Tous droits réservés SAS JLN Capital 60000€ R.C.S CAEN 351693 973 -
-                    </p>
-                    <p class="fs-5 fw-light text-center">
-                        Design by 
-                        <a class="text-decoration-underline c-white">
-                            Alice Reveilliez - Webdesign Caen
-                        </a>
-                         - 
-                        <a class="text-decoration-underline c-white">
-                            Site développé et hébergé par TGM
-                        </a>
-                        , solutions points de vente et création de site internet 
-                    </p>
-                    <div class="d-flex flex-column flex-lg-row fs-5 fw-light text-center text-uppercase py-5">
-                        <a href="#" class="c-white">
-                            CGV
-                        </a>
-                        <span class="px-2">-</span>
-                        <a href="#" class="c-white">
-                            Mentions Légales
-                        </a>
-                        <span class="px-2">-</span>
-                        <a href="#" class="c-white">
-                            GRPD
-                        </a>
+                    <div class="col-12 col-lg-4 p-0">
+                        <ul class="m-0 p-0 list-unstyled c-white d-flex flex-column align-items-center align-items-lg-start">
+                            <li>
+                                <h3 class="DINCondensedDemiBold text-uppercase fs-3 m-0 py-2 py-lg-4">
+                                    Bijoux Frantaisie
+                                </h3>
+                            </li>
+                            <li>
+                                <a href="" class="fs-5 text-uppercase fw-light c-white">
+                                    À propos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-5 text-uppercase fw-light c-white">
+                                    Actualités
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-5 text-uppercase fw-light c-white">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-5 text-uppercase fw-light c-white">
+                                    Mentions légales
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-5 text-uppercase fw-light c-white">
+                                    Conditions de vente
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-5 text-uppercase fw-light c-white">
+                                    Livraison
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-5 text-uppercase fw-light c-white">
+                                    Entretien des bijoux
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="fs-5 text-uppercase fw-light c-white">
+                                    Faq
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <!-- Footer bot -->
+                <p class="fs-5 fw-light text-center">
+                    Copyright 2016 Taratata - Tous droits réservés SAS JLN Capital 60000€ R.C.S CAEN 351693 973 -
+                </p>
+                <p class="fs-5 fw-light text-center">
+                    Design by
+                    <a class="text-decoration-underline c-white">
+                        Alice Reveilliez - Webdesign Caen
+                    </a>
+                    -
+                    <a class="text-decoration-underline c-white">
+                        Site développé et hébergé par TGM
+                    </a>
+                    , solutions points de vente et création de site internet
+                </p>
+                <div class="d-flex flex-column flex-lg-row fs-5 fw-light text-center text-uppercase py-5">
+                    <a href="#" class="c-white">
+                        CGV
+                    </a>
+                    <span class="px-2">-</span>
+                    <a href="#" class="c-white">
+                        Mentions Légales
+                    </a>
+                    <span class="px-2">-</span>
+                    <a href="#" class="c-white">
+                        GRPD
+                    </a>
+                </div>
             </div>
-        </section>
-    </footer>
-    <!-- script GSAP = Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+        </div>
+    </section>
+</footer>
+<!-- script GSAP = Greensock -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
-    <!-- script Js Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
-    <!-- script Custom Js -->
-    <script src="../js/main.js"></script>
-    <script src="../js/tools.js"></script>
-    <script src="../js/navigation.js"></script>
-    <script src="../js/heroSlider.js"></script>
-    <script src="../js/sliderBestSales.js"></script>
+<!-- script Js Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<!-- script Custom Js -->
+<script src="../js/main.js"></script>
+<script src="../js/tools.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/heroSlider.js"></script>
+<script src="../js/sliderBestSales.js"></script>
 </body>
 </html>
