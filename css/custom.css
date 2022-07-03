@@ -199,6 +199,13 @@ p {
     height: 30rem;
 }
 
+@media (min-width: 360px) {
+    .grid-item-box {
+        height: 5rem;
+        overflow: hidden;
+    }
+}
+
 /* Product card : picture */
 .product-card_picture {
     width: 20rem;
@@ -712,25 +719,25 @@ MEDIA QUERIES CUSTOM ----
 }
 
 @media (min-width: 576px) {
-    .product-card {
-        width: calc(100vw / 2);
-    }
+    /*.product-card {*/
+    /*    width: calc(100vw / 2);*/
+    /*}*/
 
-    .product-card-hover {
-        width: calc(100vw / 2);
-    }
+    /*.product-card-hover {*/
+    /*    width: calc(100vw / 2);*/
+    /*}*/
 
-    .product-item:hover .product-card-hover {
-        width: calc(100vw / 2);
-    }
+    /*.product-item:hover .product-card-hover {*/
+    /*    width: calc(100vw / 2);*/
+    /*}*/
 
     #unmissable .product-card {
         height: 100vw;
     }
 
-    .product-card-hover_picture {
-        width: calc(100wv / 2);
-    }
+    /*.product-card-hover_picture {*/
+    /*    width: calc(100wv / 2);*/
+    /*}*/
 }
 
 @media (min-width: 768px) {
@@ -738,19 +745,19 @@ MEDIA QUERIES CUSTOM ----
         letter-spacing: 0.5rem;
     }
 
-    .product-card {
-        width: calc(100vw / 2);
-    }
+    /*.product-card {*/
+    /*    width: calc(100vw / 2);*/
+    /*}*/
 }
 
 @media (min-width: 992px) {
-    .product-card {
-        width: calc(100vw / 4);
-    }
+    /*.product-card {*/
+    /*    width: calc(100vw / 4);*/
+    /*}*/
 
-    .product-item:hover .product-card-hover {
-        width: calc(100vw / 4);
-    }
+    /*.product-item:hover .product-card-hover {*/
+    /*    width: calc(100vw / 4);*/
+    /*}*/
 
     #cart .product-card {
         height: calc(100vw / 4);
@@ -764,19 +771,19 @@ MEDIA QUERIES CUSTOM ----
         width: 120% !important;
     }
 
-    .product-card-hover_picture {
-        width: calc(100wv / 4);
-    }
+    /*.product-card-hover_picture {*/
+    /*    width: calc(100wv / 4);*/
+    /*}*/
 
-    .product-card-hover {
-        width: calc(100vw / 4);
-    }
+    /*.product-card-hover {*/
+    /*    width: calc(100vw / 4);*/
+    /*}*/
 }
 
 @media (min-width: 1200px) {
-    .product-card {
-        width: calc(100vw / 4);
-    }
+    /*.product-card {*/
+    /*    width: calc(100vw / 4);*/
+    /*}*/
 
     #unmissable .product-card {
         height: calc(100vw / 3);
