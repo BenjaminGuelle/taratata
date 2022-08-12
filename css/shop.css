@@ -20,7 +20,7 @@
 /* shop : filter bar */
 .product-filters {
     position: fixed;
-    top: 4rem;
+    top: 4.5rem;
     left: 0;
     height: 2rem;
     z-index: 1020;
