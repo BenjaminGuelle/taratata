@@ -23,9 +23,11 @@ const splide = new Splide( '.splide', {
     pagination: true,
 } ).mount();
 
-/* 
-const splide2 = new Splide( '.splide-single', {
-    perPage: 1,
-    arrows: false,
-    pagination: true,
-} ).mount(); */
+
+// const splide2 = new Splide( '.splide-single', {
+//     perPage: 1,
+//     arrows: false,
+//     pagination: true,
+// } ).mount();
+
+

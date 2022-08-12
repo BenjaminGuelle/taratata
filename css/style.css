@@ -17,6 +17,7 @@ body {
 }
 
 header {
+  width: 100%;
   z-index: 1200;
 }
 /* Header 
@@ -73,7 +74,26 @@ header {
   display: block;
   padding: 0 1rem 0 0;
 }
-
+@media screen and (min-width: 992px) and (max-width: 1300px) { /* menu responsive sarai */
+  .link-item {
+    font-size: 0.75rem!important;
+    white-space: nowrap;
+  }
+  .nav-item {
+    padding: 0 0.6rem 0 0;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1486px){ /* menu responsivesarai */
+  .link-item {
+    font-size: 0.875rem!important; /* 14px */
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1486px){ /* menu responsivesarai */
+  .link-item {
+    white-space: nowrap;
+  }
+}
 .nav-item a {
   position: relative;
   text-decoration: none;
@@ -124,11 +144,15 @@ header {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
   }
 }
-
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+  .nav-f-responsive, .nav-f-responsive .btn-nav-spacepro {
+    font-size: 0.75rem!important;
+  }
+}
 /* Navbar : submenu shop */
 .submenu-shop {
   position: absolute;
-  top: 128px;
+  top: 96px;
   left: 12px;
   width: calc(100vw - 2.5rem);
   display: none;
@@ -165,6 +189,12 @@ header {
 .carousel-indicators {
   left: -12px;
   margin-left: 0;
+}
+
+/* Navbar : submenu -> boutique -> collection image */
+
+#submenu-collection-slider .carousel-item col {
+  
 }
 
 /* Navbar : menu right */
@@ -209,7 +239,6 @@ header {
 .icon-search {
   width: 70%;
 }
-
 /* Navbar : icon shopping cart -> number */
 .number-shop {
   position: absolute;
@@ -811,6 +840,10 @@ button.splide__arrow {
   #solde .solde-popup {
     width: 50%;
   }
+  .dropdown-lang {
+    top: .5rem;
+    right: 1rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -818,7 +851,8 @@ button.splide__arrow {
     height: 8rem;
   }
   .dropdown-lang {
-    right: 5%;
+    top: 1rem;
+    right: 2rem;
   }
   .sidebar {
     width: 30%;

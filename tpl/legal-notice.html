@@ -154,31 +154,31 @@
                                                       <button type="button" data-bs-target="#submenu-collection-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                                       <button type="button" data-bs-target="#submenu-collection-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                                     </div>
-                                                    <div class="carousel-inner h-100 w-75">
-                                                      <div class="carousel-item active container h-100 p-0">
-                                                        <div class="row h-100 m-0">
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                    <div class="carousel-inner h-100 w-100">
+                                                        <div class="carousel-item active container w-100 h-100 p-0 pt-3">
+                                                            <div class="row h-100 m-0">
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                            </div>
                                                         </div>
-                                                      </div>
-                                                      <div class="carousel-item container h-100 p-0">
-                                                        <div class="row h-100 m-0">
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                        <div class="carousel-item container h-100 p-0">
+                                                            <div class="row h-100 m-0">
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                            </div>
                                                         </div>
-                                                      </div>
-                                                      <div class="carousel-item container h-100 p-0">
-                                                        <div class="row h-100 m-0">
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
-                                                            <div class="col me-4 w-25 h-75 bg-white border"></div>
+                                                        <div class="carousel-item container h-100 p-0">
+                                                            <div class="row h-100 m-0">
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                                <div class="col me-4 w-50 h-50 bg-white border"></div>
+                                                            </div>
                                                         </div>
-                                                      </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -217,11 +217,11 @@
                     </ul>
                 </div>
                 <!-- navbar : navlinks end -->
-                <div class="col-4 order-2 col-lg-4 p-0 d-flex justify-content-end align-items-center">
+                <div class="col-4 order-2 col-lg-4 p-0 d-flex justify-content-end align-items-center nav-f-responsive">
                     <a type="button" class="btn-nav-spacepro border-0 rounded-pill text-uppercase fw-light c-white bg-red d-none d-lg-flex pt-1 px-2 mb-1">
                         Espace Pro
                     </a>
-                    <a href="#" class="btn-sidebar-open nav-link-signup c-black text-uppercase mx-4 d-none d-lg-flex" data-target="signin">
+                    <a href="#" class="btn-sidebar-open nav-link-signup c-black text-uppercase mx-3 d-none d-lg-flex" data-target="signin">
                         Connexion
                     </a>
                     <a href="#" class="btn-sidebar-open nav-link-icon mb-lg-1" data-target="search">
@@ -583,7 +583,7 @@
     <!-- sidebar : cart END ------ -->
 
     <!-- ------ main -->
-    <main class="container-fluid px-0 px-lg-2 position-relative">
+    <main class="container-fluid px-0 px-lg-2 position-relative width-control">
         <!-- ------ section about -->
         <section id="legal-notice" class="container-fluid">
             <div class="w-100 bg-grey">
@@ -678,45 +678,160 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 order-0 order-lg-1 mb-5 mb-lg-0">
-                        <div class="box-right w-100 h-100 p-2 bg-grey-dark">
-                            <div class="w-100 h-100 bg-white">
-                                <div class="splide splide-single h-100">
-                                    <div class="splide__track h-100">
+                        <div class="w-100 p-2 bg-grey-dark slider-dsk-mini">
+                            <div class="w-100 bg-white">
+                                <div class="splide splide-single">
+                                    <div class="splide__track">
                                         <ul class="splide__list">
-                                            <li class="splide__slide px-5 d-flex flex-column justify-content-center align-content-center">
-                                                <div class="product-item position-relative h-100">
-                                                    <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
+                                            <li class="splide__slide product-item">
+                                                <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
                                                         -20%
                                                         <span class="visually-hidden">unread messages</span>
                                                     </span>
-                                                    <article class="product-card h-100">
-                                                        <div class="product-card_picture bg-white">
-                                                            <img src="../assets/images/items/bague-banane.jpg" alt="photo du produit">
-                                                        </div>
-                                                        <div class="product-card_content">
-                                                            <h3 class="DINCondensedDemiBold fs-2 text-uppercase c-red">La havanne</h3>
-                                                            <p class="fs-4 text-uppercase">Bague troika</p>
-                                                            <p class="product-price fs-4 d-flex justify-content-center align-items-center">
-                                                                <span class="product-price_outline">35€</span>
-                                                                <span class="product-price-solde c-red">25€</span>
-                                                            </p>
-                                                        </div>
-                                                    </article>
-                                                    <article class="product-card-hover">
-                                                        <div class="product-card-hover_picture bg-white">
-                                                            <img src="../assets/images/face/face1.jpg" alt="photo du produit sur manequin">
-                                                        </div>
-                                                        <div class="product-card-hover_content">
-                                                            <a href="#" class="me-3 me-lg-5">
-                                                                <img src="../assets/png/taratata-bijoux-oeil-BD.png" alt="voir le détail du produit">
-                                                            </a>
-                                                            <a href="#" class="">
-                                                                <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png" alt="ajouter le produit">
-                                                            </a>
-                                                        </div>
-                                                    </article>
-                                                </div>
+                                                <article class="product-card">
+                                                    <div class="product-card_picture bg-white">
+                                                        <img src="../assets/images/items/bague-banane.jpg"
+                                                             alt="photo du produit">
+                                                    </div>
+                                                    <div class="product-card_content">
+                                                        <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La
+                                                            havanne</h3>
+                                                        <p class="fs-5 text-uppercase">Bague troika 1</p>
+                                                        <p class="product-price fs-5 d-flex justify-content-center align-items-center">
+                                                            <span class="product-price_outline">35€</span>
+                                                            <span class="product-price-solde c-red">25€</span>
+                                                        </p>
+                                                    </div>
+                                                </article>
+                                                <article class="product-card-hover">
+                                                    <div class="product-card-hover_picture bg-white">
+                                                        <img src="../assets/images/face/face1.jpg"
+                                                             alt="photo du produit sur manequin">
+                                                    </div>
+                                                    <div class="product-card-hover_content">
+                                                        <a href="#" class="me-3 me-lg-5">
+                                                            <img src="../assets/png/taratata-bijoux-oeil-BD.png"
+                                                                 alt="voir le détail du produit">
+                                                        </a>
+                                                        <a href="#" class="">
+                                                            <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png"
+                                                                 alt="ajouter le produit">
+                                                        </a>
+                                                    </div>
+                                                </article>
                                             </li>
+                                            <li class="splide__slide product-item">
+                                                <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
+                                                        -20%
+                                                        <span class="visually-hidden">unread messages</span>
+                                                    </span>
+                                                <article class="product-card">
+                                                    <div class="product-card_picture bg-white">
+                                                        <img src="../assets/images/items/bague-banane.jpg"
+                                                             alt="photo du produit">
+                                                    </div>
+                                                    <div class="product-card_content">
+                                                        <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La
+                                                            havanne</h3>
+                                                        <p class="fs-5 text-uppercase">Bague troika 2</p>
+                                                        <p class="product-price fs-5 d-flex justify-content-center align-items-center">
+                                                            <span class="product-price_outline">35€</span>
+                                                            <span class="product-price-solde c-red">25€</span>
+                                                        </p>
+                                                    </div>
+                                                </article>
+                                                <article class="product-card-hover">
+                                                    <div class="product-card-hover_picture bg-white">
+                                                        <img src="../assets/images/face/face1.jpg"
+                                                             alt="photo du produit sur manequin">
+                                                    </div>
+                                                    <div class="product-card-hover_content">
+                                                        <a href="#" class="me-3 me-lg-5">
+                                                            <img src="../assets/png/taratata-bijoux-oeil-BD.png"
+                                                                 alt="voir le détail du produit">
+                                                        </a>
+                                                        <a href="#" class="">
+                                                            <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png"
+                                                                 alt="ajouter le produit">
+                                                        </a>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li class="splide__slide product-item">
+                                                <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
+                                                        -20%
+                                                        <span class="visually-hidden">unread messages</span>
+                                                    </span>
+                                                <article class="product-card">
+                                                    <div class="product-card_picture bg-white">
+                                                        <img src="../assets/images/items/bague-banane.jpg"
+                                                             alt="photo du produit">
+                                                    </div>
+                                                    <div class="product-card_content">
+                                                        <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La
+                                                            havanne</h3>
+                                                        <p class="fs-5 text-uppercase">Bague troika 3</p>
+                                                        <p class="product-price fs-5 d-flex justify-content-center align-items-center">
+                                                            <span class="product-price_outline">35€</span>
+                                                            <span class="product-price-solde c-red">25€</span>
+                                                        </p>
+                                                    </div>
+                                                </article>
+                                                <article class="product-card-hover">
+                                                    <div class="product-card-hover_picture bg-white">
+                                                        <img src="../assets/images/face/face1.jpg"
+                                                             alt="photo du produit sur manequin">
+                                                    </div>
+                                                    <div class="product-card-hover_content">
+                                                        <a href="#" class="me-3 me-lg-5">
+                                                            <img src="../assets/png/taratata-bijoux-oeil-BD.png"
+                                                                 alt="voir le détail du produit">
+                                                        </a>
+                                                        <a href="#" class="">
+                                                            <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png"
+                                                                 alt="ajouter le produit">
+                                                        </a>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li class="splide__slide product-item">
+                                                <span class="badge-solde position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger fs-5 fw-light">
+                                                        -20%
+                                                        <span class="visually-hidden">unread messages</span>
+                                                    </span>
+                                                <article class="product-card">
+                                                    <div class="product-card_picture bg-white">
+                                                        <img src="../assets/images/items/bague-banane.jpg"
+                                                             alt="photo du produit">
+                                                    </div>
+                                                    <div class="product-card_content">
+                                                        <h3 class="DINCondensedDemiBold fs-3 text-uppercase c-red">La
+                                                            havanne</h3>
+                                                        <p class="fs-5 text-uppercase">Bague troika 4</p>
+                                                        <p class="product-price fs-5 d-flex justify-content-center align-items-center">
+                                                            <span class="product-price_outline">35€</span>
+                                                            <span class="product-price-solde c-red">25€</span>
+                                                        </p>
+                                                    </div>
+                                                </article>
+                                                <article class="product-card-hover">
+                                                    <div class="product-card-hover_picture bg-white">
+                                                        <img src="../assets/images/face/face1.jpg"
+                                                             alt="photo du produit sur manequin">
+                                                    </div>
+                                                    <div class="product-card-hover_content">
+                                                        <a href="#" class="me-3 me-lg-5">
+                                                            <img src="../assets/png/taratata-bijoux-oeil-BD.png"
+                                                                 alt="voir le détail du produit">
+                                                        </a>
+                                                        <a href="#" class="">
+                                                            <img src="../assets/png/taratata-bijoux-ajout-panier-BD.png"
+                                                                 alt="ajouter le produit">
+                                                        </a>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -984,6 +1099,6 @@
     <script src="../js/tools.js"></script>
     <script src="../js/navigation.js"></script>
     <script src="../js/heroSlider.js"></script>
-    <script src="../js/sliderBestSales.js"></script>
+    <script src="../js/sliderSingle.js"></script>
 </body>
 </html>
