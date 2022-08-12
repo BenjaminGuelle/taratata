@@ -691,7 +691,7 @@
                 <div class="col-12 col-lg-4 order-0 order-lg-1 mb-5 mb-lg-0">
                     <div class="w-100 p-2 bg-grey-dark slider-dsk-mini">
                         <div class="w-100 bg-white">
-                            <div class="splide">
+                            <div class="splide splide-single">
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <li class="splide__slide product-item">
@@ -1111,26 +1111,6 @@
     <script src="../js/tools.js"></script>
     <script src="../js/navigation.js"></script>
     <script src="../js/heroSlider.js"></script>
-    <script src="../js/sliderBestSales.js"></script>
-    <script>
-        new Splide( '.splide', {
-            type   : 'loop',
-	        breakpoints: {
-		        481: {
-			        perPage: 1
-		        },
-                768: {
-			        perPage: 2
-		        },
-                992: {
-			        perPage: 3
-		        },
-                3000: {
-			        perPage: 1,
-                    perMove: 1
-		        }
-	        }
-        }).mount();
-    </script>
+    <script src="../js/sliderSingle.js"></script>
 </body>
 </html>

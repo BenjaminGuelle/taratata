@@ -101,7 +101,7 @@
     position: absolute;
     top: 2rem;
     left: 0;
-    transform: translateX(-120%);
+    transform: translateX(-500%);
     width: 100%;
     height: calc(100vh - 6rem);
     transition: transform 0.3s ease-in-out;

@@ -282,6 +282,7 @@
 .jewerly-designer-content {
     width: 100%;
     max-height: 50vh;
+    margin: 1.5rem;
     overflow-y: scroll;
     line-height: 1.8rem;
 }
@@ -315,6 +316,23 @@
     padding-top: 1.5rem !important;
 }
 
+.jewerly-designer-title h2, #jewerly-designer-step-2 h2 {
+    font-size: 1.2rem!important;
+}
+.jewerly-designer-title h3, #jewerly-designer-step-2 h3 {
+    font-size: 1.4rem!important;
+}
+@media (min-width: 420px) {
+    .jewerly-designer-title h2, #jewerly-designer-step-2 h2 {
+        font-size: 1.5rem!important;
+    }
+    .jewerly-designer-title h3, #jewerly-designer-step-2 h3 {
+        font-size: calc(1.375rem + 1.5vw) !important;
+    }
+    .jewerly-designer-content {
+        margin: 3rem;
+    }
+}
 @media (min-width: 992px) {
     .pb-lg-5 {
         padding-bottom: 5rem !important;

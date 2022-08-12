@@ -191,6 +191,12 @@ header {
   margin-left: 0;
 }
 
+/* Navbar : submenu -> boutique -> collection image */
+
+#submenu-collection-slider .carousel-item col {
+  
+}
+
 /* Navbar : menu right */
 .btn-nav-spacepro {
   font-size: 1rem;
