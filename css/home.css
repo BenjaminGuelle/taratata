@@ -23,6 +23,7 @@
 
 #hero .hero-slider-item {
     display: none;
+    height: 100%;
 }
 
 #hero .hero-slider-item.active {
@@ -51,24 +52,23 @@
 }
 
 .hero-slider-content {
-    flex: 1;
-}
+    align-items: flex-start;
+    flex-direction: column;
 
-.hero-slider-content-box {
+}
+.hero-slider-content-box { /* affichage image + text en petit ecran */
     position: absolute;
     top: 0;
-    right: 0;
-    transform: translateY(0%);
+    left: 50%;
+    transform: translateX(-50%);
     width: 9rem;
     height: 9rem;
-    opacity: 0;
 }
 
 .hero-slider-content-txt {
-    width: 100%;
-    height: 100%;
-    padding-left: 0;
-    padding-right: 9rem;
+    margin-top: 5em;
+    padding-left: 1em;
+    padding-right: 0;
     opacity: 0;
 }
 
@@ -101,15 +101,42 @@
 
 /* section hero : MQ  */
 @media (min-width: 360px) {
+    
     .hero-slider-nav {
-        bottom: 10%;
+        bottom: 5%;
     }
 
     body {
         padding: 0 1rem;
     }
 }
-
+@media (min-width: 460px) { 
+    .hero-slider-content {
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    
+    }
+    .hero-slider-content-box { 
+        position: absolute;
+        top: -1.75em;
+        left: auto;
+        right: 1.75em;
+        transform: translate(0%)!important;
+        width: 9rem;
+        height: 9rem;
+        opacity: 0;
+    }
+    
+    .hero-slider-content-txt {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        padding-left: 1em;
+        padding-right: 10em;
+        opacity: 0;
+    }    
+}
 @media (min-width: 992px) {
     .hero-slider-start {
         width: 65%;
@@ -121,11 +148,17 @@
         height: 100%;
     }
 
+    .hero-slider-content {
+        /**/
+        flex-direction: row;
+        flex: 1;
+    }
+
     .hero-slider-content-box {
         position: absolute;
         top: 0;
         left: 0;
-        transform: translateX(0%);
+        transform: translate(-50%)!important;
         width: 15rem;
         height: 15rem;
         opacity: 0;
@@ -138,7 +171,7 @@
     }
 
     .hero-slider-btns {
-        width: 35%;
+        width: 30%;
     }
 }
 
@@ -156,11 +189,11 @@
     }
 
     .hero-slider-btns {
-        width: 35%;
+        width: 25%;
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) { 
     .hero-slider-content-box {
         width: 25rem;
         height: 25rem;
@@ -168,10 +201,16 @@
 
     .hero-slider-content-txt {
         height: 25rem;
-        padding-left: 13rem;
+        padding-left: 11rem;
     }
 }
-
+/* section beas-sales
+-------------------------- */
+@media screen and (min-width: 1400px) { 
+    #best-sales > div.py-5 {
+        padding-top: 5.5rem!important;
+    }
+}
 /* section unmissable
 -------------------------- */
 .unmissable-box-title {
@@ -180,7 +219,7 @@
 
 /* section unmissable : GRID */
 .wrapper-grid .col {
-    height: auto;
+    height: calc(100vw - 1.75em);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,9 +228,14 @@
 }
 
 /* section unmissable : GRID : MQ*/
+@media (min-width: 360px) { 
+    .wrapper-grid .col { 
+        height: calc(100vw - 3.5em);
+    }
+}
 @media (min-width: 992px) {
     .wrapper-grid .col {
-        height: calc(100vw / 2);
+        height: calc(100vw / 2 - 2.75em);
     }
 }
 
@@ -201,18 +245,25 @@
     }
 
     .wrapper-grid .col {
-        height: calc(100vw / 3);
+        height: calc(100vw / 3 - 3.75em);
     }
 
     .wrapper-grid .col.span-2 {
-        height: calc((100vw / 3) * 2);
+        height: calc((100vw / 3 - 3.75em) * 2);
     }
 
     .wrapper-grid .row.span-2 {
-        height: calc((100vw / 3) * 2);
+        height: calc((100vw / 3 - 3.75em) * 2);
     }
 }
-
+@media screen and (min-width: 1628px) { /* 1500px + (4rem*2) */
+    .wrapper-grid .col {
+        height: 480px;
+    }
+    .wrapper-grid .col.span-2, .wrapper-grid .row.span-2 {
+        height: 960px;
+    }
+}
 /* section jewerly designer
 -------------------------- */
 .jewerly-designer-picture {
@@ -342,7 +393,7 @@
 /* section instagram
 -------------------------- */
 #instagramm .col {
-    height: calc(100vw / 2);
+    height: calc((100vw / 2) - 2rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -350,42 +401,67 @@
 }
 
 /* section unmissable : GRID : MQ*/
-@media screen and (min-width: 1200px) {
-    #instagramm .col {
-        height: calc(100vw / 6 - 0.5rem);
+@media screen and (min-width: 992px) {
+    #instagramm .instagram-box .col {
+      height: calc((100vw / 6) - 1.25rem );
     }
+}
+@media screen and (min-width: 1200px) { 
+    #instagramm .instagram-box .col {
+        height: calc((100vw / 6) - 2.25rem );
+      }
+}
+@media screen and (min-width: 1628px) { /* 1500px + (4rem*2) */
+    #instagramm .instagram-box .col {
+        height: 234px;
+      }
+}
+
+.unmissable-photo img {
+    object-fit: cover;
 }
 
 .unmissable-item {
+    position: relative;
     width: 100%;
     height: 100%;
-    padding: 0 2rem;
+    background-color: #fff;
 }
 
 .unmissable-item-img {
     width: 100%;
+    text-align: center;
     z-index: 0;
 }
 .unmissable-item-img img {
-    width: 100%;
+    width: calc(100% - 101.6px);
     object-fit: contain;
 }
 
 .unmissable-item-content {
+    position: absolute;
+    bottom: 0.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.unmissable-item:hover {
+/* Effet Hover orange 11.08.2022 Sarai */
+.unmissable-item-bloc {
+    position: relative;
+    background: #ad7900!important;
+}
+.unmissable-item-bloc:hover .unmissable-item {
+    opacity: 75%;
+    transition : 0.3s;
+}
+/* .unmissable-item:hover {
     background: rgba( 247, 220, 111, 0.6 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 3.5px );
     -webkit-backdrop-filter: blur( 3.5px );
-    border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
+} */
 
 
 

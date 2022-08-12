@@ -1,5 +1,14 @@
 /*
 *************************
+Base Custom -----------
+*************************
+*/
+.width-control {
+    width: 100%;
+    max-width: 1500px!important;
+}
+/*
+*************************
 Font Custom -----------
 *************************
 */
@@ -187,10 +196,9 @@ p {
 /* Product item
 -------------------------- */
 .product-item {
+    height: 100%;
     margin: 0;
     cursor: pointer;
-    width: 100%;
-    height: 30rem;
 }
 #about .splide__slide.product-item {
     width: 100%!important;
@@ -200,9 +208,8 @@ p {
 ------------------------- */
 .product-card {
     width: 100%;
-    height: 30rem;
+    height: 100%;
 }
-
 @media (min-width: 360px) {
     .grid-item-box {
         height: 5rem;
@@ -214,7 +221,7 @@ p {
 .product-card_picture,
 .product-card-hover_picture {
     width: 100%;
-    height: 20rem;
+    height: auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -230,12 +237,12 @@ p {
 /* Product card : content */
 .product-card_content {
     width: 100%;
-    height: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .product-price_outline {
@@ -319,6 +326,14 @@ p {
 
 .ps-3 {
     padding-left: 3rem !important;
+}
+@media screen and (min-width: 992px) and (max-width: 1000px) { /* menu responsive sarai */
+    .nav-links.ps-3 {
+        padding-left: 2rem !important;
+    }
+    .btn-nav-spacepro.mb-1 {
+        margin-bottom: 0!important;
+    }
 }
 
 /* Product item : GIF CARD
@@ -746,6 +761,17 @@ MEDIA QUERIES CUSTOM ----
     /*    width: calc(100vw / 2);*/
     /*}*/
 }
+@media (min-width: 1200px) {
+    .DINCondensedDemiBold {
+        letter-spacing: 0.25rem;
+        margin-right: 10px!important;
+    }
+}
+@media (min-width: 1400px) {
+    .DINCondensedDemiBold {
+        letter-spacing: 0.4rem;
+    }
+}
 
 @media (min-width: 992px) {
     /*.product-card {*/
@@ -876,4 +902,12 @@ MEDIA QUERIES CUSTOM ----
 
 .my-5 {
     margin-top: 6rem !important;
+}
+/*
+*************************
+SLIDER CUSTOM ----
+*************************
+*/
+.slider-mini li {
+    width: 100%;
 }
