@@ -152,7 +152,7 @@ header {
 /* Navbar : submenu shop */
 .submenu-shop {
   position: absolute;
-  top: 128px;
+  top: 96px;
   left: 12px;
   width: calc(100vw - 2.5rem);
   display: none;

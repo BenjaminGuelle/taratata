@@ -908,6 +908,9 @@ MEDIA QUERIES CUSTOM ----
 SLIDER CUSTOM ----
 *************************
 */
-.slider-mini li {
-    width: 100%;
+@media screen and (min-width: 992px){
+    .slider-dsk-mini {
+        min-width: 320px!important;
+        max-width: 320px!important;
+    }
 }
