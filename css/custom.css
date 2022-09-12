@@ -6,6 +6,14 @@ Base Custom -----------
 .width-control {
     width: 100%;
     max-width: 1500px!important;
+    margin: 0 auto;
+}
+.width-control-content {
+    max-width: 1400px!important;
+    margin: 0 auto;
+}
+.obj-p-middle {
+    object-position: 50% 50%;
 }
 /*
 *************************
@@ -313,11 +321,12 @@ p {
 }
 
 .product-item:hover .product-card {
+    opacity: 0.6;
     filter: blur(10px);
 }
 
 .product-item:not(:hover) .product-card {
-    transition: all 0.8s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .product-card-hover_content a:hover {
