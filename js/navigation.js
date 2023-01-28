@@ -5,50 +5,50 @@
 
 // ----- navbar event
 const initActionNavbar = () => {
-    let btnMobileOpened = document.querySelector('#btn-mobile-opened');
+    const btnMobileOpened = document.querySelector('#btn-mobile-opened');
     btnMobileOpened.addEventListener('click', handleClickBtnMobile);
     // menu mobile
-    let btnMobileClose = document.querySelector('.btn-mobile-close');
+    const btnMobileClose = document.querySelector('.btn-mobile-close');
     btnMobileClose.addEventListener('click', handleClickBtnMobile);
 }
 
 // ----- panel event
 const initActionPanel = () => {
-    let panelNext = document.querySelectorAll('.panel-next');
+    const panelNext = document.querySelectorAll('.panel-next');
     panelNext.forEach((item) => (
         item.addEventListener('click', handleSwitchPanel)
     ));
-    let panelBack = document.querySelectorAll('.panel-back');
+    const panelBack = document.querySelectorAll('.panel-back');
     panelBack.forEach((item) => {
         item.addEventListener('click', handleSwitchPanel);
     });
     // event to anim back first panel menu mobile
-    let animBackFirstPanel = document.querySelector('#panel-back-first');
+    const animBackFirstPanel = document.querySelector('#panel-back-first');
     animBackFirstPanel.addEventListener('click', handleSwitchBackAnim);
 }
 
 // ----- submenu event`
 const initHoverSubmenu = () => {
-    let linkBoutique = document.querySelector('#hover-boutique');
+    const linkBoutique = document.querySelector('#hover-boutique');
     linkBoutique.addEventListener('mouseover', handleHoverSubmenu);
 }
 
 // ----- sidebar event
 const initActionSidebar = () => {
     // open current sidebar
-    let btnSidebarOpen = document.querySelectorAll('.btn-sidebar-open');
+    const btnSidebarOpen = document.querySelectorAll('.btn-sidebar-open');
     btnSidebarOpen.forEach((item) => {
         item.addEventListener('click', handleFadeAllSidebar);
     });
 
     // close current sidebar
-    let btnSidebarClose = document.querySelectorAll('.btn-sidebar-close');
+    const btnSidebarClose = document.querySelectorAll('.btn-sidebar-close');
     btnSidebarClose.forEach((item) => {
         item.addEventListener('click', handleFadeAllSidebar);
     });
 
     // open sidebar connect from btn-mobile-connect
-    let btnMobileConnect = document.querySelector('.btn-mobile-connect');
+    const btnMobileConnect = document.querySelector('.btn-mobile-connect');
     btnMobileConnect.addEventListener('click', handleFadeAllSidebar);
 }
 
@@ -72,7 +72,6 @@ const initNewsletterShow = () => {
 
 // ----- solde
 const initSoldePopupShow = () => {
-    console.log('SOLDE init');
     const btnSoldePopupClose = document.querySelector('.solde-popup-close');
     btnSoldePopupClose.addEventListener('click', handleCloseSoldePopup);
 }
@@ -84,7 +83,6 @@ const initSoldePopupShow = () => {
 
 
  const handleCloseSoldePopup = () => {
-     console.log('SOLDE action');
      const soldePopup = document.querySelector('#solde');
      soldePopup.style.display = 'none';
  }
@@ -96,28 +94,19 @@ const initSoldePopupShow = () => {
  // Valide cookies bar
  const handleValideCookiesBar = () => {
      const cookiesBar = document.querySelector('#cookies');
-     if (cookiesBar.classList.contains('isValid')) {
-        //todo : add callback here
-     }
-     else {
-         cookiesBar.classList.add('isValid');
-         setTimeout(() => {
-            cookiesBar.style.display = 'none';
-         },400)
-    };
+     cookiesBar.classList.add('isValid');
+     setTimeout(() => {
+         cookiesBar.style.display = 'none';
+     },400)
  }
 
 // Display filters sidebar on mobile
 const handleOpenFiltersMobile = () => {
-    
-    const elmtFiltersSidebar = document.querySelector('.mobile-filters-sidebar');
-    if (elmtFiltersSidebar.classList.contains('active')) {
-        elmtFiltersSidebar.classList.remove('active');
+    const elmFiltersSidebar = document.querySelector('.mobile-filters-sidebar');
+    if (elmFiltersSidebar.classList.contains('active')) {
+        elmFiltersSidebar.classList.remove('active');
     }
-    else elmtFiltersSidebar.classList.add('active');
-
-    console.log('CLICK FILTERS');
-    console.log(elmtFiltersSidebar);
+    else elmFiltersSidebar.classList.add('active');
 }
 
 // Display menu mobile
